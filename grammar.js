@@ -126,13 +126,13 @@ module.exports = grammar({
     /* Talon Script */
 
     statement: ($) =>
-      choice($.expression, $.key_statement, $.sleep_statement, $.assignment),
+      choice($.expression, $.key_statement, $.sleep_statement, $.assignment_statement),
 
     key_statement: ($) => seq("key", "(", $._string_content, ")"),
 
     sleep_statement: ($) => seq("sleep", "(", $._string_content, ")"),
 
-    assignment: ($) =>
+    assignment_statement: ($) =>
       seq(field("left", $.identifier), "=", field("right", $.expression)),
 
     /* Expressions */
@@ -188,7 +188,7 @@ module.exports = grammar({
 
     /* Values */
 
-    value: ($) => choice($.string, $.number),
+    value: ($) => choice($.number, $.string),
 
     /* Numbers */
 
