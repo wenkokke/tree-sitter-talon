@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+for talon in `find examples -name '*.talon'`; do
+  rule_number=0
+  has_context=`awk 'BEGIN{found=0} /^-$/{found=1} END{print found}' "$talon"`
+  IFS=$'\n'
+  awk_script="BEGIN{found=$has_context} /^-$/{found=1} /^([^ ^#][^:]+):/{if (found) print \$1}"
+  for rule in `awk -F: "$awk_script" "$talon"`; do
+    if [[ "$rule" != "tag()" && "$rule" != "settings()" ]]; then
+      rule_number=$((rule_number+1))
+      header_title="${talon#examples/knausj_talon/} $rule_number"
+      header_bar=`echo "$header_title" | sed 's/./=/g'`
+      echo $header_bar
+      echo $header_title
+      echo $header_bar
+      echo
+      echo "$rule"
+      echo
+      echo '---'
+      echo
+      echo
+    fi
+  done
+done
