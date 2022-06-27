@@ -1,0 +1,2421 @@
+================================================================================
+settings.talon
+================================================================================
+
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches))
+
+================================================================================
+misc/splits.talon
+================================================================================
+
+tag: user.splits
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+misc/messaging.talon
+================================================================================
+
+tag: user.messaging
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+misc/chapters.talon
+================================================================================
+
+tag: user.chapters
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+misc/abbreviate.talon
+================================================================================
+
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches))
+
+================================================================================
+misc/help_scope_open.talon
+================================================================================
+
+mode: user.help_scope
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+misc/git_add_patch.talon
+================================================================================
+
+tag: terminal
+and tag: user.git
+title: /git add .*\-p/
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+misc/git.talon
+================================================================================
+
+tag: terminal
+and tag: user.git
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+misc/tabs.talon
+================================================================================
+
+tag: user.tabs
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+misc/multiple_cursors.talon
+================================================================================
+
+tag: user.multiple_cursors
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+misc/pages.talon
+================================================================================
+
+tag: user.pages
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+misc/help_open.talon
+================================================================================
+
+mode: user.help
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+misc/mouse_cursor.talon
+================================================================================
+
+tag: user.mouse_cursor_commands_enable
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+draft_editor/draft_editor.talon
+================================================================================
+
+user.draft_editor_running: True
+not tag: user.draft_editor_app_focused
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)
+        (qualified_identifier
+          (identifier))))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+draft_editor/draft_editor_open.talon
+================================================================================
+
+tag: user.draft_editor_active
+and tag: user.draft_editor_app_focused
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+modes/dictation_mode.talon
+================================================================================
+
+mode: dictation
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+modes/dragon_modes.talon
+================================================================================
+
+#defines modes specific to Dragon.
+speech.engine: dragon
+mode: all
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)
+        (qualified_identifier
+          (identifier))))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+modes/sleep_mode.talon
+================================================================================
+
+mode: sleep
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+modes/modes.talon
+================================================================================
+
+not mode: sleep
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+modes/wake_up.talon
+================================================================================
+
+#defines the commands that sleep/wake Talon
+mode: all
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+modes/sleep_mode_wav2letter.talon
+================================================================================
+
+mode: sleep
+speech.engine: wav2letter
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)
+        (qualified_identifier
+          (identifier))))))
+
+================================================================================
+emoji/emoji.talon
+================================================================================
+
+tag: user.emoji
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+talon_draft_window/draft_window_open.talon
+================================================================================
+
+# These are available when the draft window is open, but not necessarily focussed
+tag: user.draft_window_showing
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+talon_draft_window/draft_window.talon
+================================================================================
+
+# These are active when we have focus on the draft window
+title:Talon Draft
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+talon_draft_window/draft_global.talon
+================================================================================
+
+# These are available globally (in command mode)
+mode: command
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/terraform/terraform.talon
+================================================================================
+
+tag: user.terraform
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/talon/talon.talon
+================================================================================
+
+tag: user.talon
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/vimscript/vimscript.talon
+================================================================================
+
+tag: user.vimscript
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/go/go.talon
+================================================================================
+
+tag: user.go
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/proto/proto.talon
+================================================================================
+
+tag: user.protobuf
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/python/python.talon
+================================================================================
+
+tag: user.python
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/css/css.talon
+================================================================================
+
+tag: user.css
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/markdown/markdown.talon
+================================================================================
+
+tag: user.markdown
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/typescript/typescript.talon
+================================================================================
+
+tag: user.typescript
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/typescript/typescriptreact.talon
+================================================================================
+
+tag: user.typescriptreact
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/rust/rust.talon
+================================================================================
+
+tag: user.rust
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/r/r.talon
+================================================================================
+
+tag: user.r
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/java/java.talon
+================================================================================
+
+tag: user.java
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/php/php.talon
+================================================================================
+
+tag: user.php
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/tags/comment_block.talon
+================================================================================
+
+tag: user.code_comment_block
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/tags/comment_documentation.talon
+================================================================================
+
+tag: user.code_comment_documentation
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/tags/keywords.talon
+================================================================================
+
+tag: user.code_keywords
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/tags/functions_common.talon
+================================================================================
+
+tag: user.code_functions_common
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/tags/comment_line.talon
+================================================================================
+
+tag: user.code_comment_line
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/tags/data_null.talon
+================================================================================
+
+tag: user.code_data_null
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/tags/object_oriented.talon
+================================================================================
+
+tag: user.code_object_oriented
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/tags/data_bool.talon
+================================================================================
+
+tag: user.code_data_bool
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/tags/library_gui_open.talon
+================================================================================
+
+tag: user.code_libraries_gui_showing
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/tags/operators_lambda.talon
+================================================================================
+
+tag: user.code_operators_lambda
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/tags/operators_array.talon
+================================================================================
+
+tag: user.code_operators_array
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/tags/operators_math.talon
+================================================================================
+
+tag: user.code_operators_math
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/tags/libraries.talon
+================================================================================
+
+tag: user.code_libraries
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/tags/functions_common_gui_active.talon
+================================================================================
+
+tag: user.code_functions_common_gui_active
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/tags/functions.talon
+================================================================================
+
+tag: user.code_functions
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/tags/operators_assignment.talon
+================================================================================
+
+tag: user.code_operators_assignment
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/tags/imperative.talon
+================================================================================
+
+tag: user.code_imperative
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/tags/operators_bitwise.talon
+================================================================================
+
+tag: user.code_operators_bitwise
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/tags/libraries_gui.talon
+================================================================================
+
+tag: user.code_libraries_gui
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/tags/operators_pointer.talon
+================================================================================
+
+tag: user.code_operators_pointer
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/scala/scala.talon
+================================================================================
+
+tag: user.scala
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/batch/batch.talon
+================================================================================
+
+tag: user.batch
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/csharp/csharp.talon
+================================================================================
+
+tag: user.csharp
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/javascript/javascript.talon
+================================================================================
+
+tag: user.javascript
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/javascript/javascriptreact.talon
+================================================================================
+
+tag: user.javascriptreact
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/c/c.talon
+================================================================================
+
+tag: user.c
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/ruby/ruby.talon
+================================================================================
+
+tag: user.ruby
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+lang/sql/sql.talon
+================================================================================
+
+tag: user.sql
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+text/numbers.talon
+================================================================================
+
+not tag: user.mouse_grid_showing
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+text/homophones_open.talon
+================================================================================
+
+mode: user.homophones
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+text/find_and_replace.talon
+================================================================================
+
+tag: user.find_and_replace
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+text/line_commands.talon
+================================================================================
+
+tag: user.line_commands
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/firefox/firefox.talon
+================================================================================
+
+app: firefox
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/anaconda/anaconda.talon
+================================================================================
+
+tag: terminal
+and tag: user.anaconda
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/kindle/kindle.talon
+================================================================================
+
+app: kindle
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/terraform/terraform.talon
+================================================================================
+
+tag: terminal
+and tag: user.terraform_client
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/generic_browser.talon
+================================================================================
+
+tag: browser
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/calibre/calibre_viewer.talon
+================================================================================
+
+app: calibre_viewer
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/okular/okular.talon
+================================================================================
+
+app: okular
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/platforms/win/wsl/wsl.talon
+================================================================================
+
+# NOTE: to use these commands you will need to activate the tag below in whatever contexts you
+# choose.
+#
+# do this in a separate .talon file or via python. for example, if you use windows terminal for
+# wsl then you might do this:
+#
+#    os: windows
+#    app: windows_terminal
+#    -
+#    tag(): user.wsl
+#
+# however, if you also use windows terminal for other things (powershell), you will want something
+# more specific...like this:
+#
+#    os: windows
+#    app: windows_terminal
+#    title: /^WSL:/
+#    -
+#    tag(): user.wsl
+#
+# then, you will need to find a way to set the window title accordingly. for example, to match
+# the title pattern above, you can set the prompt in your .bashrc file like this:
+#
+#    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}WSL:${WSL_DISTRO_NAME} \u@\h: \w\a\]$PS1"
+#
+# ALSO: if you do populate your window title with your distro name, make sure the 'wsl_title_regex'
+# value in wsl.py is set accordingly.
+tag: user.wsl
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/platforms/win/windows_terminal/windows_terminal.talon
+================================================================================
+
+app: windows_terminal
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/platforms/win/sumatrapdf/sumatrapdf.talon
+================================================================================
+
+app: sumatrapdf
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/platforms/win/explorer/explorer.talon
+================================================================================
+
+app: windows_explorer
+app: windows_file_browser
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/platforms/win/powershell/power_shell.talon
+================================================================================
+
+os: windows
+and app.name: Windows PowerShell
+os: windows
+and app.exe: powershell.exe
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)
+        (qualified_identifier
+          (identifier))))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)
+        (qualified_identifier
+          (identifier))))))
+
+================================================================================
+apps/platforms/win/nitro_reader/nitro_reader_5.talon
+================================================================================
+
+app: nitro_reader_five
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/platforms/win/outlook/outlook.talon
+================================================================================
+
+os: windows
+and app: Outlook
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/platforms/mac/iterm/iterm.talon
+================================================================================
+
+os: mac
+app: iterm2
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/platforms/mac/terminal/apple_terminal.talon
+================================================================================
+
+app: apple_terminal
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/platforms/mac/notes/notes.talon
+================================================================================
+
+os: mac
+and app: notes
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/platforms/mac/finder/finder.talon
+================================================================================
+
+os: mac
+app: finder
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/platforms/mac/rstudio.talon
+================================================================================
+
+os: mac
+app: RStudio
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/platforms/linux/taskwarrior.talon
+================================================================================
+
+os: linux
+tag: terminal
+and tag: user.taskwarrior
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/platforms/linux/tmux.talon
+================================================================================
+
+os: linux
+tag: user.tmux
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/platforms/linux/atril/atril.talon
+================================================================================
+
+app: atril
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/platforms/linux/termite.talon
+================================================================================
+
+app: termite
+and not win.title: /VIM/
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)
+        (qualified_identifier
+          (identifier))))))
+
+================================================================================
+apps/platforms/linux/gnome-terminal/gnome-terminal.talon
+================================================================================
+
+app: gnome_terminal
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/platforms/linux/nautilus/nautilus.talon
+================================================================================
+
+app: nautilus
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/platforms/linux/kde-konsole/kde-konsole.talon
+================================================================================
+
+os: linux
+and app.name: konsole
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)
+        (qualified_identifier
+          (identifier))))))
+
+================================================================================
+apps/platforms/linux/evince/evince.talon
+================================================================================
+
+app: evince
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/platforms/linux/signal.talon
+================================================================================
+
+app: signal
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/platforms/linux/dunst.talon
+================================================================================
+
+os: linux
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/platforms/linux/keepassx.talon
+================================================================================
+
+app: keepass
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/gdb/gdb.talon
+================================================================================
+
+os: linux
+# XXX - this matches .gdb files atm
+#win.title: /gdb/
+tag: terminal
+mode: user.gdb
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/discord/discord.talon
+================================================================================
+
+app: discord
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/eclipse/eclipse.talon
+================================================================================
+
+#custom eclipse commands go here
+app: eclipse
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/visualstudio/visual_studio.talon
+================================================================================
+
+os: windows
+app: visual_studio
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/evernote/mac.talon
+================================================================================
+
+app: evernote
+os: mac
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/web/github.talon
+================================================================================
+
+# https://help.github.com/en/github/getting-started-with-github/keyboard-shortcuts
+tag: browser
+browser.host: github.com
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)
+        (qualified_identifier
+          (identifier))))))
+
+================================================================================
+apps/web/twitter.talon
+================================================================================
+
+tag: browser
+browser.host: twitter.com
+#win.title: /Twitter/
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)
+        (qualified_identifier
+          (identifier))))
+    (context_matches_stmt
+      (comment))))
+
+================================================================================
+apps/web/outlook.talon
+================================================================================
+
+# https://support.office.com/en-us/article/keyboard-shortcuts-for-outlook-3cdeb221-7ae5-4c1d-8c1d-9e63216c1efd#PickTab=Web
+# the shortcuts below our based half of the bill in short cut menu, but the
+# link above has significantly more that could so be added
+
+os: linux
+tag: browser
+win.title: /Outlook/
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)
+        (qualified_identifier
+          (identifier))))))
+
+================================================================================
+apps/web/protonmail.talon
+================================================================================
+
+tag: browser
+win.title: /ProtonMail/
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)
+        (qualified_identifier
+          (identifier))))))
+
+================================================================================
+apps/web/gitlab.talon
+================================================================================
+
+# Shortcuts taken from: https://docs.gitlab.com/ee/user/shortcuts.html
+#
+
+tag: browser
+browser.host: /gitlab\.com/
+#win.title: /GitLab/
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)
+        (qualified_identifier
+          (identifier))))
+    (context_matches_stmt
+      (comment))))
+
+================================================================================
+apps/generic_debugger.talon
+================================================================================
+
+tag: debugger
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/i3wm/i3wm.talon
+================================================================================
+
+# NOTE: If you want to use i3wm you must enable the tag settings.talon. ex: `tag(): user.i3wm`
+os: linux
+tag: user.i3wm
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/windbg/windbg.talon
+================================================================================
+
+# XXX - trigger alt-1 to hit command window for necessary commands?
+# ex: user.windbg_insert_in_cmd()
+#    edit.left()
+
+mode: user.windbg
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/amethyst/amethyst.talon
+================================================================================
+
+user.running: amethyst
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)
+        (qualified_identifier
+          (identifier))))))
+
+================================================================================
+apps/jetbrains/jetbrains.talon
+================================================================================
+
+# Requires https://plugins.jetbrains.com/plugin/10504-voice-code-idea
+app: jetbrains
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/adobe/adobe_acrobat_reader_dc.talon
+================================================================================
+
+app: adobe_acrobat_reader_dc
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/generic_snippets/generic_snippets.talon
+================================================================================
+
+tag: user.snippets
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/generic_snippets/generic_snippets_open.talon
+================================================================================
+
+tag: user.snippets_showing
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/teams/teams_mac.talon
+================================================================================
+
+os: mac
+app: com.microsoft.teams
+
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/teams/teams.talon
+================================================================================
+
+app: microsoft_teams
+os: windows
+os: linux
+
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/slack/slack_win.talon
+================================================================================
+
+os: windows
+os: linux
+app: slack
+#todo: some sort of plugin, consolidate with teams or something?
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (comment))))
+
+================================================================================
+apps/slack/slack_mac.talon
+================================================================================
+
+os: mac
+app: slack
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/generic_terminal/generic_terminal.talon
+================================================================================
+
+tag: terminal
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/talon_repl.talon
+================================================================================
+
+win.title:/repl/
+win.title:/Talon - REPL/
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)
+        (qualified_identifier
+          (identifier))))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)
+        (qualified_identifier
+          (identifier))))))
+
+================================================================================
+apps/file_manager.talon
+================================================================================
+
+tag: user.file_manager
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/kubectl/kubectl.talon
+================================================================================
+
+tag: terminal
+and tag: user.kubectl
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/vscode/vscode.talon
+================================================================================
+
+#custom vscode commands go here
+app: vscode
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (comment))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/thunderbird/thunderbird.talon
+================================================================================
+
+app: thunderbird
+and not app: thunderbird_contacts
+and not app: thunderbird_composer
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/thunderbird/thunderbird_inbox.talon
+================================================================================
+
+app: thunderbird_inbox
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/thunderbird/thunderbird_contacts.talon
+================================================================================
+
+app: thunderbird_contacts
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/thunderbird/thunderbird_tasks.talon
+================================================================================
+
+app: thunderbird_tasks
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/thunderbird/thunderbird_composer.talon
+================================================================================
+
+app: thunderbird_composer
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/thunderbird/thunderbird_calendar.talon
+================================================================================
+
+app: thunderbird_calendar
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+apps/1password/1password_global.talon
+================================================================================
+
+#todo: tags
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (comment))))
+
+================================================================================
+apps/1password/1password.talon
+================================================================================
+
+app: one_password
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+mouse_grid/mouse_grid_open.talon
+================================================================================
+
+tag: user.mouse_grid_showing
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
+
+================================================================================
+mouse_grid/mouse_grid.talon
+================================================================================
+
+tag: user.mouse_grid_enabled
+-
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (context_matches
+    (context_matches_stmt
+      (qualified_identifier
+        (identifier)))))
