@@ -8,7 +8,7 @@
         "required": true,
         "types": [
           {
-            "type": "qualified_identifier",
+            "type": "action_identifier",
             "named": true
           }
         ]
@@ -26,7 +26,7 @@
     }
   },
   {
-    "type": "anchor",
+    "type": "action_identifier",
     "named": true,
     "fields": {},
     "children": {
@@ -34,51 +34,7 @@
       "required": true,
       "types": [
         {
-          "type": "anchor",
-          "named": true
-        },
-        {
-          "type": "capture",
-          "named": true
-        },
-        {
-          "type": "choice",
-          "named": true
-        },
-        {
-          "type": "end_anchor",
-          "named": true
-        },
-        {
-          "type": "list",
-          "named": true
-        },
-        {
-          "type": "number",
-          "named": true
-        },
-        {
-          "type": "optional",
-          "named": true
-        },
-        {
-          "type": "repeat",
-          "named": true
-        },
-        {
-          "type": "repeat1",
-          "named": true
-        },
-        {
-          "type": "seq",
-          "named": true
-        },
-        {
-          "type": "start_anchor",
-          "named": true
-        },
-        {
-          "type": "word",
+          "type": "identifier",
           "named": true
         }
       ]
@@ -128,6 +84,10 @@
           "named": true
         },
         {
+          "type": "identifier",
+          "named": true
+        },
+        {
           "type": "integer",
           "named": true
         },
@@ -137,10 +97,6 @@
         },
         {
           "type": "parenthesized_expression",
-          "named": true
-        },
-        {
-          "type": "qualified_identifier",
           "named": true
         },
         {
@@ -185,6 +141,10 @@
             "named": true
           },
           {
+            "type": "identifier",
+            "named": true
+          },
+          {
             "type": "integer",
             "named": true
           },
@@ -194,10 +154,6 @@
           },
           {
             "type": "parenthesized_expression",
-            "named": true
-          },
-          {
-            "type": "qualified_identifier",
             "named": true
           },
           {
@@ -233,6 +189,10 @@
             "named": true
           },
           {
+            "type": "identifier",
+            "named": true
+          },
+          {
             "type": "integer",
             "named": true
           },
@@ -242,10 +202,6 @@
           },
           {
             "type": "parenthesized_expression",
-            "named": true
-          },
-          {
-            "type": "qualified_identifier",
             "named": true
           },
           {
@@ -305,6 +261,10 @@
             "named": true
           },
           {
+            "type": "identifier",
+            "named": true
+          },
+          {
             "type": "integer",
             "named": true
           },
@@ -314,10 +274,6 @@
           },
           {
             "type": "parenthesized_expression",
-            "named": true
-          },
-          {
-            "type": "qualified_identifier",
             "named": true
           },
           {
@@ -341,7 +297,22 @@
       "required": true,
       "types": [
         {
-          "type": "qualified_identifier",
+          "type": "capture_identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "capture_identifier",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
           "named": true
         }
       ]
@@ -356,15 +327,11 @@
       "required": true,
       "types": [
         {
-          "type": "anchor",
-          "named": true
-        },
-        {
           "type": "capture",
           "named": true
         },
         {
-          "type": "choice",
+          "type": "end_anchor",
           "named": true
         },
         {
@@ -372,11 +339,11 @@
           "named": true
         },
         {
-          "type": "number",
+          "type": "optional",
           "named": true
         },
         {
-          "type": "optional",
+          "type": "parenthesized_rule",
           "named": true
         },
         {
@@ -389,6 +356,10 @@
         },
         {
           "type": "seq",
+          "named": true
+        },
+        {
+          "type": "start_anchor",
           "named": true
         },
         {
@@ -484,6 +455,10 @@
           "named": true
         },
         {
+          "type": "identifier",
+          "named": true
+        },
+        {
           "type": "integer",
           "named": true
         },
@@ -496,15 +471,26 @@
           "named": true
         },
         {
-          "type": "qualified_identifier",
-          "named": true
-        },
-        {
           "type": "sleep_action",
           "named": true
         },
         {
           "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "include_tag",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "tag_identifier",
           "named": true
         }
       ]
@@ -531,6 +517,10 @@
           "named": true
         },
         {
+          "type": "identifier",
+          "named": true
+        },
+        {
           "type": "integer",
           "named": true
         },
@@ -540,10 +530,6 @@
         },
         {
           "type": "parenthesized_expression",
-          "named": true
-        },
-        {
-          "type": "qualified_identifier",
           "named": true
         },
         {
@@ -581,7 +567,22 @@
       "required": true,
       "types": [
         {
-          "type": "qualified_identifier",
+          "type": "list_identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "list_identifier",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "identifier",
           "named": true
         }
       ]
@@ -596,8 +597,52 @@
         "required": true,
         "types": [
           {
-            "type": "match_key",
+            "type": "app",
+            "named": false
+          },
+          {
+            "type": "app.bundle",
+            "named": false
+          },
+          {
+            "type": "app.exe",
+            "named": false
+          },
+          {
+            "type": "app.name",
+            "named": false
+          },
+          {
+            "type": "code.language",
+            "named": false
+          },
+          {
+            "type": "language",
+            "named": false
+          },
+          {
+            "type": "mode",
+            "named": false
+          },
+          {
+            "type": "os",
+            "named": false
+          },
+          {
+            "type": "scope_identifier",
             "named": true
+          },
+          {
+            "type": "speech.engine",
+            "named": false
+          },
+          {
+            "type": "tag",
+            "named": false
+          },
+          {
+            "type": "title",
+            "named": false
           }
         ]
       },
@@ -606,7 +651,27 @@
         "required": true,
         "types": [
           {
-            "type": "match_pattern",
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "implicit_string",
+            "named": true
+          },
+          {
+            "type": "mode_identifier",
+            "named": true
+          },
+          {
+            "type": "os",
+            "named": true
+          },
+          {
+            "type": "speech_engine",
+            "named": true
+          },
+          {
+            "type": "tag_identifier",
             "named": true
           }
         ]
@@ -614,42 +679,15 @@
     }
   },
   {
-    "type": "match_key",
+    "type": "mode_identifier",
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": true,
       "types": [
         {
-          "type": "qualified_identifier",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "match_pattern",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "implicit_string",
-          "named": true
-        },
-        {
-          "type": "os",
-          "named": true
-        },
-        {
-          "type": "qualified_identifier",
-          "named": true
-        },
-        {
-          "type": "regex",
+          "type": "identifier",
           "named": true
         }
       ]
@@ -694,13 +732,9 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": true,
       "types": [
-        {
-          "type": "anchor",
-          "named": true
-        },
         {
           "type": "capture",
           "named": true
@@ -710,15 +744,19 @@
           "named": true
         },
         {
+          "type": "end_anchor",
+          "named": true
+        },
+        {
           "type": "list",
           "named": true
         },
         {
-          "type": "number",
+          "type": "optional",
           "named": true
         },
         {
-          "type": "optional",
+          "type": "parenthesized_rule",
           "named": true
         },
         {
@@ -731,6 +769,10 @@
         },
         {
           "type": "seq",
+          "named": true
+        },
+        {
+          "type": "start_anchor",
           "named": true
         },
         {
@@ -789,6 +831,10 @@
           "named": true
         },
         {
+          "type": "identifier",
+          "named": true
+        },
+        {
           "type": "integer",
           "named": true
         },
@@ -798,10 +844,6 @@
         },
         {
           "type": "parenthesized_expression",
-          "named": true
-        },
-        {
-          "type": "qualified_identifier",
           "named": true
         },
         {
@@ -816,7 +858,7 @@
     }
   },
   {
-    "type": "qualified_identifier",
+    "type": "parenthesized_rule",
     "named": true,
     "fields": {},
     "children": {
@@ -824,26 +866,47 @@
       "required": true,
       "types": [
         {
-          "type": "identifier",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "regex",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "regex_escape_sequence",
+          "type": "capture",
           "named": true
         },
         {
-          "type": "regex_flag",
+          "type": "choice",
+          "named": true
+        },
+        {
+          "type": "end_anchor",
+          "named": true
+        },
+        {
+          "type": "list",
+          "named": true
+        },
+        {
+          "type": "optional",
+          "named": true
+        },
+        {
+          "type": "parenthesized_rule",
+          "named": true
+        },
+        {
+          "type": "repeat",
+          "named": true
+        },
+        {
+          "type": "repeat1",
+          "named": true
+        },
+        {
+          "type": "seq",
+          "named": true
+        },
+        {
+          "type": "start_anchor",
+          "named": true
+        },
+        {
+          "type": "word",
           "named": true
         }
       ]
@@ -873,15 +936,7 @@
       "required": true,
       "types": [
         {
-          "type": "anchor",
-          "named": true
-        },
-        {
           "type": "capture",
-          "named": true
-        },
-        {
-          "type": "choice",
           "named": true
         },
         {
@@ -889,11 +944,11 @@
           "named": true
         },
         {
-          "type": "number",
+          "type": "optional",
           "named": true
         },
         {
-          "type": "optional",
+          "type": "parenthesized_rule",
           "named": true
         },
         {
@@ -902,10 +957,6 @@
         },
         {
           "type": "repeat1",
-          "named": true
-        },
-        {
-          "type": "seq",
           "named": true
         },
         {
@@ -924,15 +975,7 @@
       "required": true,
       "types": [
         {
-          "type": "anchor",
-          "named": true
-        },
-        {
           "type": "capture",
-          "named": true
-        },
-        {
-          "type": "choice",
           "named": true
         },
         {
@@ -940,11 +983,11 @@
           "named": true
         },
         {
-          "type": "number",
+          "type": "optional",
           "named": true
         },
         {
-          "type": "optional",
+          "type": "parenthesized_rule",
           "named": true
         },
         {
@@ -953,10 +996,6 @@
         },
         {
           "type": "repeat1",
-          "named": true
-        },
-        {
-          "type": "seq",
           "named": true
         },
         {
@@ -971,13 +1010,9 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": true,
       "types": [
-        {
-          "type": "anchor",
-          "named": true
-        },
         {
           "type": "capture",
           "named": true
@@ -987,15 +1022,19 @@
           "named": true
         },
         {
+          "type": "end_anchor",
+          "named": true
+        },
+        {
           "type": "list",
           "named": true
         },
         {
-          "type": "number",
+          "type": "optional",
           "named": true
         },
         {
-          "type": "optional",
+          "type": "parenthesized_rule",
           "named": true
         },
         {
@@ -1011,7 +1050,26 @@
           "named": true
         },
         {
+          "type": "start_anchor",
+          "named": true
+        },
+        {
           "type": "word",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "scope_identifier",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
           "named": true
         }
       ]
@@ -1026,15 +1084,7 @@
       "required": true,
       "types": [
         {
-          "type": "anchor",
-          "named": true
-        },
-        {
           "type": "capture",
-          "named": true
-        },
-        {
-          "type": "choice",
           "named": true
         },
         {
@@ -1042,11 +1092,11 @@
           "named": true
         },
         {
-          "type": "number",
+          "type": "optional",
           "named": true
         },
         {
-          "type": "optional",
+          "type": "parenthesized_rule",
           "named": true
         },
         {
@@ -1058,11 +1108,22 @@
           "named": true
         },
         {
-          "type": "seq",
-          "named": true
-        },
-        {
           "type": "word",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "setting_identifier",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
           "named": true
         }
       ]
@@ -1092,7 +1153,7 @@
         "required": false,
         "types": [
           {
-            "type": "qualified_identifier",
+            "type": "setting_identifier",
             "named": true
           }
         ]
@@ -1128,7 +1189,7 @@
         "required": true,
         "types": [
           {
-            "type": "qualified_identifier",
+            "type": "setting_identifier",
             "named": true
           }
         ]
@@ -1177,15 +1238,20 @@
           "named": true
         },
         {
-          "type": "settings",
+          "type": "include_tag",
           "named": true
         },
         {
-          "type": "tag",
+          "type": "settings",
           "named": true
         }
       ]
     }
+  },
+  {
+    "type": "speech_engine",
+    "named": true,
+    "fields": {}
   },
   {
     "type": "string",
@@ -1207,15 +1273,15 @@
     }
   },
   {
-    "type": "tag",
+    "type": "tag_identifier",
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": true,
       "types": [
         {
-          "type": "qualified_identifier",
+          "type": "identifier",
           "named": true
         }
       ]
@@ -1309,8 +1375,32 @@
     "named": false
   },
   {
+    "type": "app",
+    "named": false
+  },
+  {
+    "type": "app.bundle",
+    "named": false
+  },
+  {
+    "type": "app.exe",
+    "named": false
+  },
+  {
+    "type": "app.name",
+    "named": false
+  },
+  {
+    "type": "code.language",
+    "named": false
+  },
+  {
     "type": "comment",
     "named": true
+  },
+  {
+    "type": "dragon",
+    "named": false
   },
   {
     "type": "end_anchor",
@@ -1337,11 +1427,19 @@
     "named": false
   },
   {
+    "type": "language",
+    "named": false
+  },
+  {
     "type": "linux",
     "named": false
   },
   {
     "type": "mac",
+    "named": false
+  },
+  {
+    "type": "mode",
     "named": false
   },
   {
@@ -1353,8 +1451,8 @@
     "named": false
   },
   {
-    "type": "regex_flag",
-    "named": true
+    "type": "os",
+    "named": false
   },
   {
     "type": "settings()",
@@ -1362,6 +1460,10 @@
   },
   {
     "type": "sleep",
+    "named": false
+  },
+  {
+    "type": "speech.engine",
     "named": false
   },
   {
@@ -1373,7 +1475,19 @@
     "named": true
   },
   {
+    "type": "tag",
+    "named": false
+  },
+  {
     "type": "tag()",
+    "named": false
+  },
+  {
+    "type": "title",
+    "named": false
+  },
+  {
+    "type": "wav2letter",
     "named": false
   },
   {
