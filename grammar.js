@@ -99,7 +99,8 @@ module.exports = grammar({
 
     /* Tags */
 
-    include_tag: ($) => seq("tag()", ":", $.tag_identifier, $._newline),
+    include_tag: ($) =>
+      seq("tag()", ":", $.tag_identifier, $._newline),
 
     /* Settings */
 
