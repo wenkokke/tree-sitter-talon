@@ -20,6 +20,9 @@ namespace
     STRING_START,
     STRING_CONTENT,
     STRING_END,
+    REGEX_START,
+    REGEX_CONTENT,
+    REGEX_END,
     COMMENT,
     CLOSE_PAREN,
     CLOSE_BRACKET,
@@ -32,8 +35,7 @@ namespace
     {
       SingleQuote = 1 << 0,
       DoubleQuote = 1 << 1,
-      BackQuote = 1 << 2,
-      ForwardSlash = 1 << 3
+      BackQuote = 1 << 2
     };
 
     Delimiter() : flags(0) {}
@@ -46,8 +48,6 @@ namespace
         return '"';
       if (flags & BackQuote)
         return '`';
-      if (flags & ForwardSlash)
-        return '/';
       return 0;
     }
 
@@ -63,9 +63,6 @@ namespace
         break;
       case '`':
         flags |= BackQuote;
-        break;
-      case '/':
-        flags |= ForwardSlash;
         break;
       default:
         assert(false);
@@ -147,7 +144,7 @@ namespace
 
     bool scan(TSLexer *lexer, const bool *valid_symbols)
     {
-      bool error_recovery_mode = valid_symbols[STRING_CONTENT] && valid_symbols[INDENT];
+      bool error_recovery_mode = (valid_symbols[STRING_CONTENT] || valid_symbols[REGEX_CONTENT]) && valid_symbols[INDENT];
       bool within_brackets = valid_symbols[CLOSE_BRACE] || valid_symbols[CLOSE_PAREN] || valid_symbols[CLOSE_BRACKET];
 
       if (valid_symbols[STRING_CONTENT] && !delimiter_stack.empty() && !error_recovery_mode)
@@ -180,6 +177,40 @@ namespace
               lexer->advance(lexer, false);
               delimiter_stack.pop_back();
               lexer->result_symbol = STRING_END;
+            }
+            lexer->mark_end(lexer);
+            return true;
+          }
+          else if (lexer->lookahead == '\n' && has_content)
+          {
+            return false;
+          }
+          advance(lexer);
+          has_content = true;
+        }
+      }
+
+      if (valid_symbols[REGEX_CONTENT] && !error_recovery_mode)
+      {
+        bool has_content = false;
+        while (lexer->lookahead)
+        {
+          if (lexer->lookahead == '\\')
+          {
+            lexer->mark_end(lexer);
+            lexer->result_symbol = REGEX_CONTENT;
+            return has_content;
+          }
+          else if (lexer->lookahead == '/')
+          {
+            if (has_content)
+            {
+              lexer->result_symbol = REGEX_CONTENT;
+            }
+            else
+            {
+              lexer->advance(lexer, false);
+              lexer->result_symbol = REGEX_END;
             }
             lexer->mark_end(lexer);
             return true;
@@ -325,17 +356,22 @@ namespace
           advance(lexer);
           lexer->mark_end(lexer);
         }
-        else if (lexer->lookahead == '/')
-        {
-          delimiter.set_end_character('/');
-          advance(lexer);
-          lexer->mark_end(lexer);
-        }
 
         if (delimiter.end_character())
         {
           delimiter_stack.push_back(delimiter);
           lexer->result_symbol = STRING_START;
+          return true;
+        }
+      }
+
+      if (first_comment_indent_length == -1 && valid_symbols[REGEX_START])
+      {
+        if (lexer->lookahead == '/')
+        {
+          advance(lexer);
+          lexer->mark_end(lexer);
+          lexer->result_symbol = REGEX_START;
           return true;
         }
       }
@@ -358,7 +394,7 @@ extern "C"
   }
 
   bool tree_sitter_talon_external_scanner_scan(void *payload, TSLexer *lexer,
-                                                const bool *valid_symbols)
+                                               const bool *valid_symbols)
   {
     Scanner *scanner = static_cast<Scanner *>(payload);
     return scanner->scan(lexer, valid_symbols);

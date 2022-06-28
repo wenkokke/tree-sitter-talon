@@ -3,7 +3,7 @@
 for talon in `find examples -name '*.talon'`; do
   has_context=`awk 'BEGIN{found=0} /^-$/{found=1} END{print found}' "$talon"`
   if [ "$has_context" == "1" ]; then
-    header_title="${talon#examples/knausj_talon/}"
+    header_title="Context ${talon#examples/knausj_talon/}"
     header_bar=`echo "$header_title" | sed 's/./=/g'`
     echo $header_bar
     echo $header_title

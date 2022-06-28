@@ -1,4 +1,11 @@
-const PREC = {
+const RULE_PREC = {
+  parenthesized_rule: 1,
+  choice: 10,
+  anchor: 18,
+  seq: 19,
+};
+
+const EXPRESSION_PREC = {
   parenthesized_expression: 1,
   or: 10,
   plus: 18,
@@ -9,7 +16,7 @@ const PREC = {
 module.exports = grammar({
   name: "talon",
 
-  extras: ($) => [$.comment],
+  extras: ($) => [$.comment, /[\s\f\uFEFF\u2060\u200B]|\\\r?\n/],
 
   externals: ($) => [
     $._newline,
@@ -18,6 +25,9 @@ module.exports = grammar({
     $._string_start,
     $._string_content,
     $._string_end,
+    $._regex_start,
+    $._regex_content,
+    $._regex_end,
 
     // Mark comments as external tokens so that the external scanner is always
     // invoked, even if no external token is expected. This allows for better
@@ -34,39 +44,57 @@ module.exports = grammar({
   ],
 
   rules: {
-    source_file: ($) => seq(optional($.context), repeat($.declaration)),
+    source_file: ($) =>
+      seq(optional($.context), repeat(choice($.tag, $.settings, $.command))),
 
     comment: ($) => token(seq("#", /.*/)),
 
     /* Context */
 
-    context: ($) => seq(repeat($.match_statement), "-", $._newline),
+    context: ($) => seq(optional($._optional_or), "-", $._newline),
 
-    match_statement: ($) =>
-      seq(
-        optional("and"),
-        optional("not"),
-        field("key", $.qualified_identifier),
-        ":",
-        field("value", /.*/),
-        $._newline
+    _optional_or: ($) => choice($.or, $._optional_and),
+
+    or: ($) => repeat2($._optional_and),
+
+    _optional_and: ($) => choice($.and, $._optional_not),
+
+    and: ($) => seq($._optional_not, "and", $._optional_and),
+
+    _optional_not: ($) => choice($.not, $.match),
+
+    not: ($) => seq("not", $.match),
+
+    match: ($) =>
+      seq(field("key", $.match_key), ":", field("pattern", $.match_pattern)),
+
+    match_key: ($) => $.qualified_identifier,
+
+    match_pattern: ($) =>
+      choice(
+        prec.dynamic(2, $.os),
+        prec.dynamic(1, $.qualified_identifier),
+        prec.dynamic(1, $.regex),
+        prec.dynamic(0, $.implicit_string)
       ),
 
-    /* Declarations */
-    declaration: ($) =>
-      choice($.tag_declaration, $.settings_declaration, $.command_declaration),
+    os: ($) => choice("linux", "mac", "windows"),
 
     /* Tags */
-    tag_declaration: ($) => seq("tag()", ":", $.qualified_identifier),
+
+    tag: ($) => seq("tag()", ":", $.qualified_identifier),
 
     /* Settings */
-    settings_declaration: ($) => seq("settings()", ":", $._settings_suite),
 
-    _settings_suite: ($) =>
-      choice(
-        alias($.settings_statement, $.settings_block),
-        seq($._indent, $.settings_block),
-        alias($._newline, $.settings_block)
+    settings: ($) =>
+      seq(
+        "settings()",
+        ":",
+        choice(
+          alias($.settings_statement, $.settings_block),
+          seq($._indent, $.settings_block),
+          alias($._newline, $.settings_block)
+        )
       ),
 
     settings_block: ($) => seq(repeat($.settings_statement), $._dedent),
@@ -75,89 +103,105 @@ module.exports = grammar({
       seq(field("left", $.qualified_identifier), "=", field("right", $.value)),
 
     /* Commands */
-    command_declaration: ($) => seq($.top_level_rule, ":", $._command_suite),
-
-    _command_suite: ($) =>
-      choice(
-        alias($.statement, $.command_block),
-        seq($._indent, $.command_block),
-        alias($._newline, $.command_block)
+    command: ($) =>
+      seq(
+        $.rule,
+        ":",
+        choice(
+          alias($._statement, $.command_block),
+          seq($._indent, $.command_block),
+          alias($._newline, $.command_block)
+        )
       ),
 
-    command_block: ($) => seq(repeat($.statement), $._dedent),
+    command_block: ($) => seq(repeat($._statement), $._dedent),
 
     /* Rules */
 
-    top_level_rule: ($) =>
-      seq(optional($.start_anchor), $.rule, optional($.end_anchor)),
+    rule: ($) => $._optional_choice,
+
+    _optional_choice: ($) => choice($.choice, $._optional_anchor),
+
+    choice: ($) => sep2($._optional_anchor, "|"),
+
+    _optional_anchor: ($) => choice($.anchor, $._optional_seq),
+
+    anchor: ($) =>
+      choice(
+        seq($.start_anchor, $._optional_seq),
+        seq($._optional_seq, $.end_anchor),
+        seq($.start_anchor, $._optional_seq, $.end_anchor)
+      ),
 
     start_anchor: ($) => "^",
     end_anchor: ($) => "$",
 
-    rule: ($) => choice($.choice, $.primary_rule),
+    _optional_seq: ($) => choice($._primary_rule, $.seq),
 
-    primary_rule: ($) =>
+    seq: ($) => repeat2($._primary_rule),
+
+    _primary_rule: ($) =>
       choice(
         $.word,
+        $.list,
+        $.capture,
         $.optional,
         $.repeat,
         $.repeat1,
-        $.list,
-        $.capture,
-        $.parenthesized_rule
+        $._parenthesized_rule
       ),
 
-    parenthesized_rule: ($) => seq("(", repeat1($.rule), ")"),
-
-    word: ($) => /[a-z]+/,
-
-    optional: ($) => seq("[", $.rule, "]"),
-
-    repeat: ($) => seq($.primary_rule, "*"),
-
-    repeat1: ($) => seq($.primary_rule, "+"),
-
-    choice: ($) => seq($.primary_rule, "|", $.rule),
+    word: ($) => /[A-Za-z-]+/,
 
     list: ($) => seq("{", $.qualified_identifier, "}"),
 
     capture: ($) => seq("<", $.qualified_identifier, ">"),
 
-    /* Talon Script */
+    optional: ($) => seq("[", $._optional_choice, "]"),
 
-    statement: ($) =>
-      choice($.expression, $.key_statement, $.sleep_statement, $.assignment_statement),
+    repeat: ($) => seq($._primary_rule, "*"),
 
-    key_statement: ($) => seq("key", "(", $._string_content, ")"),
+    repeat1: ($) => seq($._primary_rule, "+"),
 
-    sleep_statement: ($) => seq("sleep", "(", $._string_content, ")"),
+    _parenthesized_rule: ($) => seq("(", $._optional_choice, ")"),
+
+    /* Statements */
+
+    _statement: ($) => choice($.expression_statement, $.assignment_statement),
 
     assignment_statement: ($) =>
-      seq(field("left", $.identifier), "=", field("right", $.expression)),
+      seq(field("left", $.identifier), "=", field("right", $._expression)),
+
+    expression_statement: ($) => $._expression,
 
     /* Expressions */
 
-    expression: ($) =>
+    _expression: ($) =>
       choice(
         $.binary_operator,
         $.string,
         $.integer,
         $.float,
+        $.key_expression,
+        $.sleep_expression,
         $.action,
         $.parenthesized_expression
       ),
 
     parenthesized_expression: ($) =>
-      prec(PREC.parenthesized_expression, seq("(", $.expression, ")")),
+      prec(
+        EXPRESSION_PREC.parenthesized_expression,
+        seq("(", $._expression, ")")
+      ),
 
     binary_operator: ($) => {
       const table = [
-        [prec.left, "+", PREC.plus],
-        [prec.left, "-", PREC.plus],
-        [prec.left, "*", PREC.times],
-        [prec.left, "/", PREC.times],
-        [prec.left, "%", PREC.times],
-        [prec.left, "or", PREC.or],
+        [prec.left, "+", EXPRESSION_PREC.plus],
+        [prec.left, "-", EXPRESSION_PREC.plus],
+        [prec.left, "*", EXPRESSION_PREC.times],
+        [prec.left, "/", EXPRESSION_PREC.times],
+        [prec.left, "%", EXPRESSION_PREC.times],
+        [prec.left, "or", EXPRESSION_PREC.or],
       ];
 
       return choice(
@@ -165,18 +209,22 @@ module.exports = grammar({
           fn(
             precedence,
             seq(
-              field("left", $.expression),
+              field("left", $._expression),
               field("operator", operator),
-              field("right", $.expression)
+              field("right", $._expression)
             )
           )
         )
       );
     },
 
+    key_expression: ($) => seq("key", "(", $.implicit_string, ")"),
+
+    sleep_expression: ($) => seq("sleep", "(", $.implicit_string, ")"),
+
     action: ($) =>
       prec(
-        PREC.action,
+        EXPRESSION_PREC.action,
         seq(
           field("action", $.qualified_identifier),
           field("arguments", $.argument_list)
@@ -184,7 +232,7 @@ module.exports = grammar({
       ),
 
     argument_list: ($) =>
-      seq("(", optional(commaSep1($.expression)), optional(","), ")"),
+      seq("(", optional(sep1($._expression, ",")), optional(","), ")"),
 
     /* Values */
 
@@ -226,7 +274,33 @@ module.exports = grammar({
       );
     },
 
+    /* Regular Expression */
+
+    regex: ($) =>
+      seq(
+        alias($._regex_start, "/"),
+        repeat(
+          choice(
+            $._regex_content,
+            $.regex_escape_sequence,
+            $._not_escapesequence
+          )
+        ),
+        alias($._regex_end, "/"),
+        repeat($.regex_flag)
+      ),
+
+    regex_escape_sequence: ($) =>
+      choice(
+        alias($.string_escape_sequence, $.regex_escape_sequence),
+        token(prec(1, /\\[\^\$\.\|\?\*\+\(\)\[\]\{\}\/]/))
+      ),
+
+    regex_flag: ($) => /[a-z]/,
+
     /* Strings */
+
+    implicit_string: ($) => token(/.*/),
 
     string: ($) =>
       seq(
@@ -235,19 +309,19 @@ module.exports = grammar({
           choice(
             $.interpolation,
             $._escape_interpolation,
-            $.escape_sequence,
-            $._not_escape_sequence,
+            $.string_escape_sequence,
+            $._not_escapesequence,
             $._string_content
           )
         ),
         alias($._string_end, '"')
       ),
 
-    interpolation: ($) => seq("{", $.value, "}"),
+    interpolation: ($) => seq("{", $._expression, "}"),
 
     _escape_interpolation: ($) => choice("{{", "}}"),
 
-    escape_sequence: ($) =>
+    string_escape_sequence: ($) =>
       token(
         prec(
           1,
@@ -265,24 +339,24 @@ module.exports = grammar({
         )
       ),
 
-    _not_escape_sequence: ($) => "\\",
+    _not_escapesequence: ($) => "\\",
 
     /* Identifiers */
 
-    qualified_identifier: ($) =>
-      choice(
-        $.identifier,
-        seq(field("namespace", $.identifier), ".", $.qualified_identifier)
-      ),
+    qualified_identifier: ($) => sep1($.identifier, "."),
 
-    identifier: ($) => /[A-Za-z_]+/,
+    identifier: ($) => /[A-Za-z][A-Za-z0-9_-]*/,
   },
 });
 
-function commaSep1(rule) {
-  return sep1(rule, ",");
-}
-
 function sep1(rule, separator) {
   return seq(rule, repeat(seq(separator, rule)));
+}
+
+function sep2(rule, separator) {
+  return seq(rule, repeat1(seq(separator, rule)));
+}
+
+function repeat2(rule) {
+  return seq(rule, repeat1(rule));
 }

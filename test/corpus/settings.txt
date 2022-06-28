@@ -1,0 +1,713 @@
+================================================================================
+Settings settings.talon
+================================================================================
+
+settings():
+    # Adjust the scale of the imgui to my liking
+    imgui.scale = 1.3
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (settings
+    (comment)
+    (settings_block
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (number
+            (float)))))))
+
+================================================================================
+Settings modes/sleep_mode.talon
+================================================================================
+
+settings():
+    #stop continuous scroll/gaze scroll with a pop
+    user.mouse_enable_pop_stops_scroll = 0
+	#enable pop click with 'control mouse' mode
+	user.mouse_enable_pop_click = 0
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (settings
+    (comment)
+    (settings_block
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (number
+            (integer))))
+      (comment)
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (number
+            (integer)))))))
+
+================================================================================
+Settings talon_draft_window/draft_window.talon
+================================================================================
+
+settings():
+  # Enable 'Smart dictation mode', see https://github.com/knausj85/knausj_talon/pull/356
+  user.context_sensitive_dictation = 1
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (settings
+    (comment)
+    (settings_block
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (number
+            (integer)))))))
+
+================================================================================
+Settings lang/vimscript/vimscript.talon
+================================================================================
+
+settings():
+    user.code_private_function_formatter = "SNAKE_CASE"
+    user.code_protected_function_formatter = "SNAKE_CASE"
+    user.code_public_function_formatter = "SNAKE_CASE"
+    user.code_private_variable_formatter = "SNAKE_CASE"
+    user.code_protected_variable_formatter = "SNAKE_CASE"
+    user.code_public_variable_formatter = "SNAKE_CASE"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (settings
+    (settings_block
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string))))))
+
+================================================================================
+Settings lang/python/python.talon
+================================================================================
+
+settings():
+    user.code_private_function_formatter = "SNAKE_CASE"
+    user.code_protected_function_formatter = "SNAKE_CASE"
+    user.code_public_function_formatter = "SNAKE_CASE"
+    user.code_private_variable_formatter = "SNAKE_CASE"
+    user.code_protected_variable_formatter = "SNAKE_CASE"
+    user.code_public_variable_formatter = "SNAKE_CASE"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (settings
+    (settings_block
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string))))))
+
+================================================================================
+Settings lang/css/css.talon
+================================================================================
+
+settings():
+    user.code_public_variable_formatter = "DASH_SEPARATED"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (settings
+    (settings_block
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string))))))
+
+================================================================================
+Settings lang/rust/rust.talon
+================================================================================
+
+settings():
+    user.code_private_function_formatter = "SNAKE_CASE"
+    user.code_protected_function_formatter = "SNAKE_CASE"
+    user.code_public_function_formatter = "SNAKE_CASE"
+    user.code_private_variable_formatter = "SNAKE_CASE"
+    user.code_protected_variable_formatter = "SNAKE_CASE"
+    user.code_public_variable_formatter = "SNAKE_CASE"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (settings
+    (settings_block
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string))))))
+
+================================================================================
+Settings lang/r/r.talon
+================================================================================
+
+settings():
+    user.code_private_function_formatter = "SNAKE_CASE"
+    user.code_protected_function_formatter = "SNAKE_CASE"
+    user.code_public_function_formatter = "SNAKE_CASE"
+    user.code_private_variable_formatter = "SNAKE_CASE"
+    user.code_protected_variable_formatter = "SNAKE_CASE"
+    user.code_public_variable_formatter = "SNAKE_CASE"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (settings
+    (settings_block
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string))))))
+
+================================================================================
+Settings lang/java/java.talon
+================================================================================
+
+settings():
+    user.code_private_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_protected_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_public_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_private_variable_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_protected_variable_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_public_variable_formatter = "PRIVATE_CAMEL_CASE"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (settings
+    (settings_block
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string))))))
+
+================================================================================
+Settings lang/php/php.talon
+================================================================================
+
+settings():
+    user.code_private_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_protected_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_public_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_private_variable_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_protected_variable_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_public_variable_formatter = "PRIVATE_CAMEL_CASE"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (settings
+    (settings_block
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string))))))
+
+================================================================================
+Settings lang/scala/scala.talon
+================================================================================
+
+settings():
+    user.code_private_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_protected_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_public_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_private_variable_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_protected_variable_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_public_variable_formatter = "PRIVATE_CAMEL_CASE"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (settings
+    (settings_block
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string))))))
+
+================================================================================
+Settings lang/csharp/csharp.talon
+================================================================================
+
+settings():
+    user.code_private_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_protected_function_formatter = "PUBLIC_CAMEL_CASE"
+    user.code_public_function_formatter = "PUBLIC_CAMEL_CASE"
+    user.code_private_variable_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_protected_variable_formatter = "PUBLIC_CAMEL_CASE"
+    user.code_public_variable_formatter = "PUBLIC_CAMEL_CASE"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (settings
+    (settings_block
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string))))))
+
+================================================================================
+Settings lang/javascript/javascript.talon
+================================================================================
+
+settings():
+    user.code_private_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_protected_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_public_function_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_private_variable_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_protected_variable_formatter = "PRIVATE_CAMEL_CASE"
+    user.code_public_variable_formatter = "PRIVATE_CAMEL_CASE"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (settings
+    (settings_block
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string))))))
+
+================================================================================
+Settings lang/c/c.talon
+================================================================================
+
+settings():
+    user.code_private_function_formatter = "SNAKE_CASE"
+    user.code_protected_function_formatter = "SNAKE_CASE"
+    user.code_public_function_formatter = "SNAKE_CASE"
+    user.code_private_variable_formatter = "SNAKE_CASE"
+    user.code_protected_variable_formatter = "SNAKE_CASE"
+    user.code_public_variable_formatter = "SNAKE_CASE"
+    # whether or not to use uint_8 style datatypes
+    #    user.use_stdint_datatypes = 1
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (settings
+    (settings_block
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (comment)
+      (comment))))
+
+================================================================================
+Settings lang/ruby/ruby.talon
+================================================================================
+
+settings():
+    user.code_private_function_formatter = "SNAKE_CASE"
+    user.code_protected_function_formatter = "SNAKE_CASE"
+    user.code_public_function_formatter = "SNAKE_CASE"
+    user.code_private_variable_formatter = "SNAKE_CASE"
+    user.code_protected_variable_formatter = "SNAKE_CASE"
+    user.code_public_variable_formatter = "SNAKE_CASE"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (settings
+    (settings_block
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string)))
+      (settings_statement
+        (qualified_identifier
+          (identifier)
+          (identifier))
+        (value
+          (string))))))
+
+================================================================================
+Settings apps/evernote/mac.talon
+================================================================================
+
+settings():
+    # Necessary to stop commands like 'slap' getting jumbled
+    key_wait = 9.0
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (settings
+    (comment)
+    (settings_block
+      (settings_statement
+        (qualified_identifier
+          (identifier))
+        (value
+          (number
+            (float)))))))

@@ -1,5 +1,5 @@
 ================================================================================
-settings.talon
+Context settings.talon
 ================================================================================
 
 -
@@ -7,10 +7,10 @@ settings.talon
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches))
+  (context))
 
 ================================================================================
-misc/splits.talon
+Context misc/splits.talon
 ================================================================================
 
 tag: user.splits
@@ -19,13 +19,16 @@ tag: user.splits
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-misc/messaging.talon
+Context misc/messaging.talon
 ================================================================================
 
 tag: user.messaging
@@ -34,13 +37,16 @@ tag: user.messaging
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-misc/chapters.talon
+Context misc/chapters.talon
 ================================================================================
 
 tag: user.chapters
@@ -49,13 +55,16 @@ tag: user.chapters
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-misc/abbreviate.talon
+Context misc/abbreviate.talon
 ================================================================================
 
 -
@@ -63,10 +72,10 @@ misc/abbreviate.talon
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches))
+  (context))
 
 ================================================================================
-misc/help_scope_open.talon
+Context misc/help_scope_open.talon
 ================================================================================
 
 mode: user.help_scope
@@ -75,13 +84,16 @@ mode: user.help_scope
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-misc/git_add_patch.talon
+Context misc/git_add_patch.talon
 ================================================================================
 
 tag: terminal
@@ -92,19 +104,30 @@ title: /git add .*\-p/
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (or
+      (and
+        (match
+          (match_key
+            (qualified_identifier
+              (identifier)))
+          (match_pattern
+            (implicit_string)))
+        (match
+          (match_key
+            (qualified_identifier
+              (identifier)))
+          (match_pattern
+            (implicit_string))))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (regex))))))
 
 ================================================================================
-misc/git.talon
+Context misc/git.talon
 ================================================================================
 
 tag: terminal
@@ -114,16 +137,23 @@ and tag: user.git
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (and
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string))))))
 
 ================================================================================
-misc/tabs.talon
+Context misc/tabs.talon
 ================================================================================
 
 tag: user.tabs
@@ -132,13 +162,16 @@ tag: user.tabs
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-misc/multiple_cursors.talon
+Context misc/multiple_cursors.talon
 ================================================================================
 
 tag: user.multiple_cursors
@@ -147,13 +180,16 @@ tag: user.multiple_cursors
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-misc/pages.talon
+Context misc/pages.talon
 ================================================================================
 
 tag: user.pages
@@ -162,13 +198,16 @@ tag: user.pages
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-misc/help_open.talon
+Context misc/help_open.talon
 ================================================================================
 
 mode: user.help
@@ -177,13 +216,16 @@ mode: user.help
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-misc/mouse_cursor.talon
+Context misc/mouse_cursor.talon
 ================================================================================
 
 tag: user.mouse_cursor_commands_enable
@@ -192,13 +234,16 @@ tag: user.mouse_cursor_commands_enable
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-draft_editor/draft_editor.talon
+Context draft_editor/draft_editor.talon
 ================================================================================
 
 user.draft_editor_running: True
@@ -208,18 +253,25 @@ not tag: user.draft_editor_app_focused
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)
-        (qualified_identifier
-          (identifier))))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (or
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)
+            (identifier)))
+        (match_pattern
+          (implicit_string)))
+      (not
+        (match
+          (match_key
+            (qualified_identifier
+              (identifier)))
+          (match_pattern
+            (implicit_string)))))))
 
 ================================================================================
-draft_editor/draft_editor_open.talon
+Context draft_editor/draft_editor_open.talon
 ================================================================================
 
 tag: user.draft_editor_active
@@ -229,16 +281,23 @@ and tag: user.draft_editor_app_focused
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (and
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string))))))
 
 ================================================================================
-modes/dictation_mode.talon
+Context modes/dictation_mode.talon
 ================================================================================
 
 mode: dictation
@@ -247,13 +306,16 @@ mode: dictation
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-modes/dragon_modes.talon
+Context modes/dragon_modes.talon
 ================================================================================
 
 #defines modes specific to Dragon.
@@ -264,20 +326,25 @@ mode: all
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)
-        (qualified_identifier
-          (identifier))))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (comment)
+  (context
+    (or
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)
+            (identifier)))
+        (match_pattern
+          (implicit_string)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string))))))
 
 ================================================================================
-modes/sleep_mode.talon
+Context modes/sleep_mode.talon
 ================================================================================
 
 mode: sleep
@@ -286,13 +353,16 @@ mode: sleep
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-modes/modes.talon
+Context modes/modes.talon
 ================================================================================
 
 not mode: sleep
@@ -301,13 +371,17 @@ not mode: sleep
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (not
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string))))))
 
 ================================================================================
-modes/wake_up.talon
+Context modes/wake_up.talon
 ================================================================================
 
 #defines the commands that sleep/wake Talon
@@ -317,15 +391,17 @@ mode: all
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (comment)
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-modes/sleep_mode_wav2letter.talon
+Context modes/sleep_mode_wav2letter.talon
 ================================================================================
 
 mode: sleep
@@ -335,18 +411,24 @@ speech.engine: wav2letter
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)
-        (qualified_identifier
-          (identifier))))))
+  (context
+    (or
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)
+            (identifier)))
+        (match_pattern
+          (implicit_string))))))
 
 ================================================================================
-emoji/emoji.talon
+Context emoji/emoji.talon
 ================================================================================
 
 tag: user.emoji
@@ -355,13 +437,16 @@ tag: user.emoji
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-talon_draft_window/draft_window_open.talon
+Context talon_draft_window/draft_window_open.talon
 ================================================================================
 
 # These are available when the draft window is open, but not necessarily focussed
@@ -371,15 +456,17 @@ tag: user.draft_window_showing
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (comment)
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-talon_draft_window/draft_window.talon
+Context talon_draft_window/draft_window.talon
 ================================================================================
 
 # These are active when we have focus on the draft window
@@ -389,15 +476,17 @@ title:Talon Draft
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (comment)
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-talon_draft_window/draft_global.talon
+Context talon_draft_window/draft_global.talon
 ================================================================================
 
 # These are available globally (in command mode)
@@ -407,15 +496,17 @@ mode: command
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (comment)
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/terraform/terraform.talon
+Context lang/terraform/terraform.talon
 ================================================================================
 
 tag: user.terraform
@@ -424,13 +515,16 @@ tag: user.terraform
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/talon/talon.talon
+Context lang/talon/talon.talon
 ================================================================================
 
 tag: user.talon
@@ -439,13 +533,16 @@ tag: user.talon
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/vimscript/vimscript.talon
+Context lang/vimscript/vimscript.talon
 ================================================================================
 
 tag: user.vimscript
@@ -454,13 +551,16 @@ tag: user.vimscript
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/go/go.talon
+Context lang/go/go.talon
 ================================================================================
 
 tag: user.go
@@ -469,13 +569,16 @@ tag: user.go
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/proto/proto.talon
+Context lang/proto/proto.talon
 ================================================================================
 
 tag: user.protobuf
@@ -484,13 +587,16 @@ tag: user.protobuf
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/python/python.talon
+Context lang/python/python.talon
 ================================================================================
 
 tag: user.python
@@ -499,13 +605,16 @@ tag: user.python
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/css/css.talon
+Context lang/css/css.talon
 ================================================================================
 
 tag: user.css
@@ -514,13 +623,16 @@ tag: user.css
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/markdown/markdown.talon
+Context lang/markdown/markdown.talon
 ================================================================================
 
 tag: user.markdown
@@ -529,13 +641,16 @@ tag: user.markdown
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/typescript/typescript.talon
+Context lang/typescript/typescript.talon
 ================================================================================
 
 tag: user.typescript
@@ -544,13 +659,16 @@ tag: user.typescript
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/typescript/typescriptreact.talon
+Context lang/typescript/typescriptreact.talon
 ================================================================================
 
 tag: user.typescriptreact
@@ -559,13 +677,16 @@ tag: user.typescriptreact
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/rust/rust.talon
+Context lang/rust/rust.talon
 ================================================================================
 
 tag: user.rust
@@ -574,13 +695,16 @@ tag: user.rust
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/r/r.talon
+Context lang/r/r.talon
 ================================================================================
 
 tag: user.r
@@ -589,13 +713,16 @@ tag: user.r
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/java/java.talon
+Context lang/java/java.talon
 ================================================================================
 
 tag: user.java
@@ -604,13 +731,16 @@ tag: user.java
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/php/php.talon
+Context lang/php/php.talon
 ================================================================================
 
 tag: user.php
@@ -619,13 +749,16 @@ tag: user.php
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/tags/comment_block.talon
+Context lang/tags/comment_block.talon
 ================================================================================
 
 tag: user.code_comment_block
@@ -634,13 +767,16 @@ tag: user.code_comment_block
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/tags/comment_documentation.talon
+Context lang/tags/comment_documentation.talon
 ================================================================================
 
 tag: user.code_comment_documentation
@@ -649,13 +785,16 @@ tag: user.code_comment_documentation
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/tags/keywords.talon
+Context lang/tags/keywords.talon
 ================================================================================
 
 tag: user.code_keywords
@@ -664,13 +803,16 @@ tag: user.code_keywords
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/tags/functions_common.talon
+Context lang/tags/functions_common.talon
 ================================================================================
 
 tag: user.code_functions_common
@@ -679,13 +821,16 @@ tag: user.code_functions_common
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/tags/comment_line.talon
+Context lang/tags/comment_line.talon
 ================================================================================
 
 tag: user.code_comment_line
@@ -694,13 +839,16 @@ tag: user.code_comment_line
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/tags/data_null.talon
+Context lang/tags/data_null.talon
 ================================================================================
 
 tag: user.code_data_null
@@ -709,13 +857,16 @@ tag: user.code_data_null
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/tags/object_oriented.talon
+Context lang/tags/object_oriented.talon
 ================================================================================
 
 tag: user.code_object_oriented
@@ -724,13 +875,16 @@ tag: user.code_object_oriented
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/tags/data_bool.talon
+Context lang/tags/data_bool.talon
 ================================================================================
 
 tag: user.code_data_bool
@@ -739,13 +893,16 @@ tag: user.code_data_bool
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/tags/library_gui_open.talon
+Context lang/tags/library_gui_open.talon
 ================================================================================
 
 tag: user.code_libraries_gui_showing
@@ -754,13 +911,16 @@ tag: user.code_libraries_gui_showing
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/tags/operators_lambda.talon
+Context lang/tags/operators_lambda.talon
 ================================================================================
 
 tag: user.code_operators_lambda
@@ -769,13 +929,16 @@ tag: user.code_operators_lambda
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/tags/operators_array.talon
+Context lang/tags/operators_array.talon
 ================================================================================
 
 tag: user.code_operators_array
@@ -784,13 +947,16 @@ tag: user.code_operators_array
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/tags/operators_math.talon
+Context lang/tags/operators_math.talon
 ================================================================================
 
 tag: user.code_operators_math
@@ -799,13 +965,16 @@ tag: user.code_operators_math
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/tags/libraries.talon
+Context lang/tags/libraries.talon
 ================================================================================
 
 tag: user.code_libraries
@@ -814,13 +983,16 @@ tag: user.code_libraries
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/tags/functions_common_gui_active.talon
+Context lang/tags/functions_common_gui_active.talon
 ================================================================================
 
 tag: user.code_functions_common_gui_active
@@ -829,13 +1001,16 @@ tag: user.code_functions_common_gui_active
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/tags/functions.talon
+Context lang/tags/functions.talon
 ================================================================================
 
 tag: user.code_functions
@@ -844,13 +1019,16 @@ tag: user.code_functions
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/tags/operators_assignment.talon
+Context lang/tags/operators_assignment.talon
 ================================================================================
 
 tag: user.code_operators_assignment
@@ -859,13 +1037,16 @@ tag: user.code_operators_assignment
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/tags/imperative.talon
+Context lang/tags/imperative.talon
 ================================================================================
 
 tag: user.code_imperative
@@ -874,13 +1055,16 @@ tag: user.code_imperative
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/tags/operators_bitwise.talon
+Context lang/tags/operators_bitwise.talon
 ================================================================================
 
 tag: user.code_operators_bitwise
@@ -889,13 +1073,16 @@ tag: user.code_operators_bitwise
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/tags/libraries_gui.talon
+Context lang/tags/libraries_gui.talon
 ================================================================================
 
 tag: user.code_libraries_gui
@@ -904,13 +1091,16 @@ tag: user.code_libraries_gui
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/tags/operators_pointer.talon
+Context lang/tags/operators_pointer.talon
 ================================================================================
 
 tag: user.code_operators_pointer
@@ -919,13 +1109,16 @@ tag: user.code_operators_pointer
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/scala/scala.talon
+Context lang/scala/scala.talon
 ================================================================================
 
 tag: user.scala
@@ -934,13 +1127,16 @@ tag: user.scala
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/batch/batch.talon
+Context lang/batch/batch.talon
 ================================================================================
 
 tag: user.batch
@@ -949,13 +1145,16 @@ tag: user.batch
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/csharp/csharp.talon
+Context lang/csharp/csharp.talon
 ================================================================================
 
 tag: user.csharp
@@ -964,13 +1163,16 @@ tag: user.csharp
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/javascript/javascript.talon
+Context lang/javascript/javascript.talon
 ================================================================================
 
 tag: user.javascript
@@ -979,13 +1181,16 @@ tag: user.javascript
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/javascript/javascriptreact.talon
+Context lang/javascript/javascriptreact.talon
 ================================================================================
 
 tag: user.javascriptreact
@@ -994,13 +1199,16 @@ tag: user.javascriptreact
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/c/c.talon
+Context lang/c/c.talon
 ================================================================================
 
 tag: user.c
@@ -1009,13 +1217,16 @@ tag: user.c
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/ruby/ruby.talon
+Context lang/ruby/ruby.talon
 ================================================================================
 
 tag: user.ruby
@@ -1024,13 +1235,16 @@ tag: user.ruby
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-lang/sql/sql.talon
+Context lang/sql/sql.talon
 ================================================================================
 
 tag: user.sql
@@ -1039,13 +1253,16 @@ tag: user.sql
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-text/numbers.talon
+Context text/numbers.talon
 ================================================================================
 
 not tag: user.mouse_grid_showing
@@ -1054,13 +1271,17 @@ not tag: user.mouse_grid_showing
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (not
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string))))))
 
 ================================================================================
-text/homophones_open.talon
+Context text/homophones_open.talon
 ================================================================================
 
 mode: user.homophones
@@ -1069,13 +1290,16 @@ mode: user.homophones
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-text/find_and_replace.talon
+Context text/find_and_replace.talon
 ================================================================================
 
 tag: user.find_and_replace
@@ -1084,13 +1308,16 @@ tag: user.find_and_replace
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-text/line_commands.talon
+Context text/line_commands.talon
 ================================================================================
 
 tag: user.line_commands
@@ -1099,13 +1326,16 @@ tag: user.line_commands
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/firefox/firefox.talon
+Context apps/firefox/firefox.talon
 ================================================================================
 
 app: firefox
@@ -1114,13 +1344,16 @@ app: firefox
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/anaconda/anaconda.talon
+Context apps/anaconda/anaconda.talon
 ================================================================================
 
 tag: terminal
@@ -1130,16 +1363,23 @@ and tag: user.anaconda
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (and
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string))))))
 
 ================================================================================
-apps/kindle/kindle.talon
+Context apps/kindle/kindle.talon
 ================================================================================
 
 app: kindle
@@ -1148,13 +1388,16 @@ app: kindle
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/terraform/terraform.talon
+Context apps/terraform/terraform.talon
 ================================================================================
 
 tag: terminal
@@ -1164,16 +1407,23 @@ and tag: user.terraform_client
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (and
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string))))))
 
 ================================================================================
-apps/generic_browser.talon
+Context apps/generic_browser.talon
 ================================================================================
 
 tag: browser
@@ -1182,13 +1432,16 @@ tag: browser
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/calibre/calibre_viewer.talon
+Context apps/calibre/calibre_viewer.talon
 ================================================================================
 
 app: calibre_viewer
@@ -1197,13 +1450,16 @@ app: calibre_viewer
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/okular/okular.talon
+Context apps/okular/okular.talon
 ================================================================================
 
 app: okular
@@ -1212,13 +1468,16 @@ app: okular
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/platforms/win/wsl/wsl.talon
+Context apps/platforms/win/wsl/wsl.talon
 ================================================================================
 
 # NOTE: to use these commands you will need to activate the tag below in whatever contexts you
@@ -1254,67 +1513,43 @@ tag: user.wsl
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/platforms/win/windows_terminal/windows_terminal.talon
+Context apps/platforms/win/windows_terminal/windows_terminal.talon
 ================================================================================
 
 app: windows_terminal
@@ -1323,13 +1558,16 @@ app: windows_terminal
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/platforms/win/sumatrapdf/sumatrapdf.talon
+Context apps/platforms/win/sumatrapdf/sumatrapdf.talon
 ================================================================================
 
 app: sumatrapdf
@@ -1338,13 +1576,16 @@ app: sumatrapdf
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/platforms/win/explorer/explorer.talon
+Context apps/platforms/win/explorer/explorer.talon
 ================================================================================
 
 app: windows_explorer
@@ -1354,16 +1595,23 @@ app: windows_file_browser
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (or
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string))))))
 
 ================================================================================
-apps/platforms/win/powershell/power_shell.talon
+Context apps/platforms/win/powershell/power_shell.talon
 ================================================================================
 
 os: windows
@@ -1375,26 +1623,39 @@ and app.exe: powershell.exe
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)
-        (qualified_identifier
-          (identifier))))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)
-        (qualified_identifier
-          (identifier))))))
+  (context
+    (or
+      (and
+        (match
+          (match_key
+            (qualified_identifier
+              (identifier)))
+          (match_pattern
+            (os)))
+        (match
+          (match_key
+            (qualified_identifier
+              (identifier)
+              (identifier)))
+          (match_pattern
+            (implicit_string))))
+      (and
+        (match
+          (match_key
+            (qualified_identifier
+              (identifier)))
+          (match_pattern
+            (os)))
+        (match
+          (match_key
+            (qualified_identifier
+              (identifier)
+              (identifier)))
+          (match_pattern
+            (implicit_string)))))))
 
 ================================================================================
-apps/platforms/win/nitro_reader/nitro_reader_5.talon
+Context apps/platforms/win/nitro_reader/nitro_reader_5.talon
 ================================================================================
 
 app: nitro_reader_five
@@ -1403,13 +1664,16 @@ app: nitro_reader_five
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/platforms/win/outlook/outlook.talon
+Context apps/platforms/win/outlook/outlook.talon
 ================================================================================
 
 os: windows
@@ -1419,16 +1683,23 @@ and app: Outlook
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (and
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (os)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string))))))
 
 ================================================================================
-apps/platforms/mac/iterm/iterm.talon
+Context apps/platforms/mac/iterm/iterm.talon
 ================================================================================
 
 os: mac
@@ -1438,16 +1709,23 @@ app: iterm2
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (or
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (os)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string))))))
 
 ================================================================================
-apps/platforms/mac/terminal/apple_terminal.talon
+Context apps/platforms/mac/terminal/apple_terminal.talon
 ================================================================================
 
 app: apple_terminal
@@ -1456,13 +1734,16 @@ app: apple_terminal
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/platforms/mac/notes/notes.talon
+Context apps/platforms/mac/notes/notes.talon
 ================================================================================
 
 os: mac
@@ -1472,16 +1753,23 @@ and app: notes
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (and
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (os)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string))))))
 
 ================================================================================
-apps/platforms/mac/finder/finder.talon
+Context apps/platforms/mac/finder/finder.talon
 ================================================================================
 
 os: mac
@@ -1491,16 +1779,23 @@ app: finder
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (or
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (os)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string))))))
 
 ================================================================================
-apps/platforms/mac/rstudio.talon
+Context apps/platforms/mac/rstudio.talon
 ================================================================================
 
 os: mac
@@ -1510,16 +1805,23 @@ app: RStudio
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (or
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (os)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string))))))
 
 ================================================================================
-apps/platforms/linux/taskwarrior.talon
+Context apps/platforms/linux/taskwarrior.talon
 ================================================================================
 
 os: linux
@@ -1530,19 +1832,30 @@ and tag: user.taskwarrior
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (or
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (os)))
+      (and
+        (match
+          (match_key
+            (qualified_identifier
+              (identifier)))
+          (match_pattern
+            (implicit_string)))
+        (match
+          (match_key
+            (qualified_identifier
+              (identifier)))
+          (match_pattern
+            (implicit_string)))))))
 
 ================================================================================
-apps/platforms/linux/tmux.talon
+Context apps/platforms/linux/tmux.talon
 ================================================================================
 
 os: linux
@@ -1552,16 +1865,23 @@ tag: user.tmux
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (or
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (os)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string))))))
 
 ================================================================================
-apps/platforms/linux/atril/atril.talon
+Context apps/platforms/linux/atril/atril.talon
 ================================================================================
 
 app: atril
@@ -1570,13 +1890,16 @@ app: atril
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/platforms/linux/termite.talon
+Context apps/platforms/linux/termite.talon
 ================================================================================
 
 app: termite
@@ -1586,18 +1909,25 @@ and not win.title: /VIM/
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)
-        (qualified_identifier
-          (identifier))))))
+  (context
+    (and
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string)))
+      (not
+        (match
+          (match_key
+            (qualified_identifier
+              (identifier)
+              (identifier)))
+          (match_pattern
+            (regex)))))))
 
 ================================================================================
-apps/platforms/linux/gnome-terminal/gnome-terminal.talon
+Context apps/platforms/linux/gnome-terminal/gnome-terminal.talon
 ================================================================================
 
 app: gnome_terminal
@@ -1606,13 +1936,16 @@ app: gnome_terminal
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/platforms/linux/nautilus/nautilus.talon
+Context apps/platforms/linux/nautilus/nautilus.talon
 ================================================================================
 
 app: nautilus
@@ -1621,13 +1954,16 @@ app: nautilus
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/platforms/linux/kde-konsole/kde-konsole.talon
+Context apps/platforms/linux/kde-konsole/kde-konsole.talon
 ================================================================================
 
 os: linux
@@ -1637,18 +1973,24 @@ and app.name: konsole
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)
-        (qualified_identifier
-          (identifier))))))
+  (context
+    (and
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (os)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)
+            (identifier)))
+        (match_pattern
+          (implicit_string))))))
 
 ================================================================================
-apps/platforms/linux/evince/evince.talon
+Context apps/platforms/linux/evince/evince.talon
 ================================================================================
 
 app: evince
@@ -1657,13 +1999,16 @@ app: evince
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/platforms/linux/signal.talon
+Context apps/platforms/linux/signal.talon
 ================================================================================
 
 app: signal
@@ -1672,13 +2017,16 @@ app: signal
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/platforms/linux/dunst.talon
+Context apps/platforms/linux/dunst.talon
 ================================================================================
 
 os: linux
@@ -1687,13 +2035,16 @@ os: linux
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (os)))))
 
 ================================================================================
-apps/platforms/linux/keepassx.talon
+Context apps/platforms/linux/keepassx.talon
 ================================================================================
 
 app: keepass
@@ -1702,13 +2053,16 @@ app: keepass
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/gdb/gdb.talon
+Context apps/gdb/gdb.talon
 ================================================================================
 
 os: linux
@@ -1721,23 +2075,31 @@ mode: user.gdb
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (or
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (os)))
+      (comment)
+      (comment)
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string))))))
 
 ================================================================================
-apps/discord/discord.talon
+Context apps/discord/discord.talon
 ================================================================================
 
 app: discord
@@ -1746,13 +2108,16 @@ app: discord
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/eclipse/eclipse.talon
+Context apps/eclipse/eclipse.talon
 ================================================================================
 
 #custom eclipse commands go here
@@ -1762,15 +2127,17 @@ app: eclipse
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (comment)
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/visualstudio/visual_studio.talon
+Context apps/visualstudio/visual_studio.talon
 ================================================================================
 
 os: windows
@@ -1780,16 +2147,23 @@ app: visual_studio
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (or
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (os)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string))))))
 
 ================================================================================
-apps/evernote/mac.talon
+Context apps/evernote/mac.talon
 ================================================================================
 
 app: evernote
@@ -1799,16 +2173,23 @@ os: mac
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (or
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (os))))))
 
 ================================================================================
-apps/web/github.talon
+Context apps/web/github.talon
 ================================================================================
 
 # https://help.github.com/en/github/getting-started-with-github/keyboard-shortcuts
@@ -1819,20 +2200,25 @@ browser.host: github.com
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)
-        (qualified_identifier
-          (identifier))))))
+  (comment)
+  (context
+    (or
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)
+            (identifier)))
+        (match_pattern
+          (implicit_string))))))
 
 ================================================================================
-apps/web/twitter.talon
+Context apps/web/twitter.talon
 ================================================================================
 
 tag: browser
@@ -1843,20 +2229,25 @@ browser.host: twitter.com
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)
-        (qualified_identifier
-          (identifier))))
-    (context_matches_stmt
-      (comment))))
+  (context
+    (or
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)
+            (identifier)))
+        (match_pattern
+          (implicit_string))))
+    (comment)))
 
 ================================================================================
-apps/web/outlook.talon
+Context apps/web/outlook.talon
 ================================================================================
 
 # https://support.office.com/en-us/article/keyboard-shortcuts-for-outlook-3cdeb221-7ae5-4c1d-8c1d-9e63216c1efd#PickTab=Web
@@ -1871,27 +2262,33 @@ win.title: /Outlook/
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)
-        (qualified_identifier
-          (identifier))))))
+  (comment)
+  (comment)
+  (comment)
+  (context
+    (or
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (os)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)
+            (identifier)))
+        (match_pattern
+          (regex))))))
 
 ================================================================================
-apps/web/protonmail.talon
+Context apps/web/protonmail.talon
 ================================================================================
 
 tag: browser
@@ -1901,18 +2298,24 @@ win.title: /ProtonMail/
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)
-        (qualified_identifier
-          (identifier))))))
+  (context
+    (or
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)
+            (identifier)))
+        (match_pattern
+          (regex))))))
 
 ================================================================================
-apps/web/gitlab.talon
+Context apps/web/gitlab.talon
 ================================================================================
 
 # Shortcuts taken from: https://docs.gitlab.com/ee/user/shortcuts.html
@@ -1926,24 +2329,28 @@ browser.host: /gitlab\.com/
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)
-        (qualified_identifier
-          (identifier))))
-    (context_matches_stmt
-      (comment))))
+  (comment)
+  (comment)
+  (context
+    (or
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)
+            (identifier)))
+        (match_pattern
+          (regex
+            (regex_escape_sequence)))))
+    (comment)))
 
 ================================================================================
-apps/generic_debugger.talon
+Context apps/generic_debugger.talon
 ================================================================================
 
 tag: debugger
@@ -1952,13 +2359,16 @@ tag: debugger
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/i3wm/i3wm.talon
+Context apps/i3wm/i3wm.talon
 ================================================================================
 
 # NOTE: If you want to use i3wm you must enable the tag settings.talon. ex: `tag(): user.i3wm`
@@ -1969,18 +2379,24 @@ tag: user.i3wm
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (comment)
+  (context
+    (or
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (os)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string))))))
 
 ================================================================================
-apps/windbg/windbg.talon
+Context apps/windbg/windbg.talon
 ================================================================================
 
 # XXX - trigger alt-1 to hit command window for necessary commands?
@@ -1993,19 +2409,19 @@ mode: user.windbg
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (comment)
+  (comment)
+  (comment)
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/amethyst/amethyst.talon
+Context apps/amethyst/amethyst.talon
 ================================================================================
 
 user.running: amethyst
@@ -2014,15 +2430,17 @@ user.running: amethyst
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)
+  (context
+    (match
+      (match_key
         (qualified_identifier
-          (identifier))))))
+          (identifier)
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/jetbrains/jetbrains.talon
+Context apps/jetbrains/jetbrains.talon
 ================================================================================
 
 # Requires https://plugins.jetbrains.com/plugin/10504-voice-code-idea
@@ -2032,15 +2450,17 @@ app: jetbrains
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (comment)
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/adobe/adobe_acrobat_reader_dc.talon
+Context apps/adobe/adobe_acrobat_reader_dc.talon
 ================================================================================
 
 app: adobe_acrobat_reader_dc
@@ -2049,13 +2469,16 @@ app: adobe_acrobat_reader_dc
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/generic_snippets/generic_snippets.talon
+Context apps/generic_snippets/generic_snippets.talon
 ================================================================================
 
 tag: user.snippets
@@ -2064,13 +2487,16 @@ tag: user.snippets
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/generic_snippets/generic_snippets_open.talon
+Context apps/generic_snippets/generic_snippets_open.talon
 ================================================================================
 
 tag: user.snippets_showing
@@ -2079,13 +2505,16 @@ tag: user.snippets_showing
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/teams/teams_mac.talon
+Context apps/teams/teams_mac.talon
 ================================================================================
 
 os: mac
@@ -2096,16 +2525,23 @@ app: com.microsoft.teams
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (or
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (os)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string))))))
 
 ================================================================================
-apps/teams/teams.talon
+Context apps/teams/teams.talon
 ================================================================================
 
 app: microsoft_teams
@@ -2117,19 +2553,29 @@ os: linux
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (or
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (os)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (os))))))
 
 ================================================================================
-apps/slack/slack_win.talon
+Context apps/slack/slack_win.talon
 ================================================================================
 
 os: windows
@@ -2141,21 +2587,30 @@ app: slack
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (comment))))
+  (context
+    (or
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (os)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (os)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string))))
+    (comment)))
 
 ================================================================================
-apps/slack/slack_mac.talon
+Context apps/slack/slack_mac.talon
 ================================================================================
 
 os: mac
@@ -2165,16 +2620,23 @@ app: slack
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (or
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (os)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string))))))
 
 ================================================================================
-apps/generic_terminal/generic_terminal.talon
+Context apps/generic_terminal/generic_terminal.talon
 ================================================================================
 
 tag: terminal
@@ -2183,13 +2645,16 @@ tag: terminal
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/talon_repl.talon
+Context apps/talon_repl.talon
 ================================================================================
 
 win.title:/repl/
@@ -2199,20 +2664,25 @@ win.title:/Talon - REPL/
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)
-        (qualified_identifier
-          (identifier))))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)
-        (qualified_identifier
-          (identifier))))))
+  (context
+    (or
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)
+            (identifier)))
+        (match_pattern
+          (regex)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)
+            (identifier)))
+        (match_pattern
+          (regex))))))
 
 ================================================================================
-apps/file_manager.talon
+Context apps/file_manager.talon
 ================================================================================
 
 tag: user.file_manager
@@ -2221,13 +2691,16 @@ tag: user.file_manager
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/kubectl/kubectl.talon
+Context apps/kubectl/kubectl.talon
 ================================================================================
 
 tag: terminal
@@ -2237,16 +2710,23 @@ and tag: user.kubectl
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (and
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string)))
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string))))))
 
 ================================================================================
-apps/vscode/vscode.talon
+Context apps/vscode/vscode.talon
 ================================================================================
 
 #custom vscode commands go here
@@ -2256,15 +2736,17 @@ app: vscode
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (comment))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (comment)
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/thunderbird/thunderbird.talon
+Context apps/thunderbird/thunderbird.talon
 ================================================================================
 
 app: thunderbird
@@ -2275,19 +2757,32 @@ and not app: thunderbird_composer
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (and
+      (match
+        (match_key
+          (qualified_identifier
+            (identifier)))
+        (match_pattern
+          (implicit_string)))
+      (and
+        (not
+          (match
+            (match_key
+              (qualified_identifier
+                (identifier)))
+            (match_pattern
+              (implicit_string))))
+        (not
+          (match
+            (match_key
+              (qualified_identifier
+                (identifier)))
+            (match_pattern
+              (implicit_string))))))))
 
 ================================================================================
-apps/thunderbird/thunderbird_inbox.talon
+Context apps/thunderbird/thunderbird_inbox.talon
 ================================================================================
 
 app: thunderbird_inbox
@@ -2296,13 +2791,16 @@ app: thunderbird_inbox
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/thunderbird/thunderbird_contacts.talon
+Context apps/thunderbird/thunderbird_contacts.talon
 ================================================================================
 
 app: thunderbird_contacts
@@ -2311,13 +2809,16 @@ app: thunderbird_contacts
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/thunderbird/thunderbird_tasks.talon
+Context apps/thunderbird/thunderbird_tasks.talon
 ================================================================================
 
 app: thunderbird_tasks
@@ -2326,13 +2827,16 @@ app: thunderbird_tasks
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/thunderbird/thunderbird_composer.talon
+Context apps/thunderbird/thunderbird_composer.talon
 ================================================================================
 
 app: thunderbird_composer
@@ -2341,13 +2845,16 @@ app: thunderbird_composer
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/thunderbird/thunderbird_calendar.talon
+Context apps/thunderbird/thunderbird_calendar.talon
 ================================================================================
 
 app: thunderbird_calendar
@@ -2356,13 +2863,16 @@ app: thunderbird_calendar
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-apps/1password/1password_global.talon
+Context apps/1password/1password_global.talon
 ================================================================================
 
 #todo: tags
@@ -2371,12 +2881,11 @@ apps/1password/1password_global.talon
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (comment))))
+  (comment)
+  (context))
 
 ================================================================================
-apps/1password/1password.talon
+Context apps/1password/1password.talon
 ================================================================================
 
 app: one_password
@@ -2385,13 +2894,16 @@ app: one_password
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-mouse_grid/mouse_grid_open.talon
+Context mouse_grid/mouse_grid_open.talon
 ================================================================================
 
 tag: user.mouse_grid_showing
@@ -2400,13 +2912,16 @@ tag: user.mouse_grid_showing
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))
 
 ================================================================================
-mouse_grid/mouse_grid.talon
+Context mouse_grid/mouse_grid.talon
 ================================================================================
 
 tag: user.mouse_grid_enabled
@@ -2415,7 +2930,10 @@ tag: user.mouse_grid_enabled
 --------------------------------------------------------------------------------
 
 (source_file
-  (context_matches
-    (context_matches_stmt
-      (qualified_identifier
-        (identifier)))))
+  (context
+    (match
+      (match_key
+        (qualified_identifier
+          (identifier)))
+      (match_pattern
+        (implicit_string)))))

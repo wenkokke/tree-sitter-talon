@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+for talon in `find examples -name '*.talon'`; do
+  has_settings=`awk 'BEGIN{found=0} /^settings\(\):/{found=1} END{print found}' "$talon"`
+  if [[ "$has_settings" == "1" ]]; then
+    header_title="Settings ${talon#examples/knausj_talon/}"
+    header_bar=`echo "$header_title" | sed 's/./=/g'`
+    echo "$header_bar"
+    echo "$header_title"
+    echo "$header_bar"
+    echo
+    awk 'BEGIN{found=0} /^settings\(\):/{found=1} /^$/{found=0} {if (found) print}' "$talon"
+    echo
+    echo '---'
+    echo
+    echo
+  fi
+done

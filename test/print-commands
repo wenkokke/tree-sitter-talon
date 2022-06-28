@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+for talon in `find examples -name '*.talon'`; do
+  has_no_context=`awk 'BEGIN{has_no_context=1} /^-$/{has_no_context=0} END{print has_no_context}' "$talon"`
+  header_title="Command ${talon#examples/knausj_talon/}"
+  header_bar=`echo "$header_title" | sed 's/./=/g'`
+  sep="\n\n---\n\n$header_bar\n$header_title\n$header_bar\n\n"
+  echo "$header_bar"
+  echo "$header_title"
+  echo "$header_bar"
+  echo
+  echo
+  awk_script="BEGIN{file_body=$has_no_context; command_body=0}\
+              /^-$/{file_body=1}\
+              /^ /{if (command_body) print}\
+              !/^ /{if (command_body) {print \"$sep\"}; command_body=0}\
+              /:/{if (file_body) {command_body=1; print}}"
+  awk "$awk_script" "$talon"
+  echo
+  echo
+  echo "---"
+  echo
+  echo
+done
