@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+for talon in `find examples -name '*.talon'`; do
+  header_title="File ${talon#examples/}"
+  header_bar=`echo "$header_title" | sed 's/./=/g'`
+  echo $header_bar
+  echo $header_title
+  echo $header_bar
+  echo
+  cat "$talon"
+  echo
+  echo '---'
+  echo
+  echo
+done

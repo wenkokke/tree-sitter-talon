@@ -54,6 +54,10 @@
           "named": true
         },
         {
+          "type": "number",
+          "named": true
+        },
+        {
           "type": "optional",
           "named": true
         },
@@ -128,7 +132,7 @@
           "named": true
         },
         {
-          "type": "key_expression",
+          "type": "key_action",
           "named": true
         },
         {
@@ -136,7 +140,11 @@
           "named": true
         },
         {
-          "type": "sleep_expression",
+          "type": "qualified_identifier",
+          "named": true
+        },
+        {
+          "type": "sleep_action",
           "named": true
         },
         {
@@ -181,7 +189,7 @@
             "named": true
           },
           {
-            "type": "key_expression",
+            "type": "key_action",
             "named": true
           },
           {
@@ -189,7 +197,11 @@
             "named": true
           },
           {
-            "type": "sleep_expression",
+            "type": "qualified_identifier",
+            "named": true
+          },
+          {
+            "type": "sleep_action",
             "named": true
           },
           {
@@ -225,7 +237,7 @@
             "named": true
           },
           {
-            "type": "key_expression",
+            "type": "key_action",
             "named": true
           },
           {
@@ -233,7 +245,11 @@
             "named": true
           },
           {
-            "type": "sleep_expression",
+            "type": "qualified_identifier",
+            "named": true
+          },
+          {
+            "type": "sleep_action",
             "named": true
           },
           {
@@ -293,7 +309,7 @@
             "named": true
           },
           {
-            "type": "key_expression",
+            "type": "key_action",
             "named": true
           },
           {
@@ -301,7 +317,11 @@
             "named": true
           },
           {
-            "type": "sleep_expression",
+            "type": "qualified_identifier",
+            "named": true
+          },
+          {
+            "type": "sleep_action",
             "named": true
           },
           {
@@ -349,6 +369,10 @@
         },
         {
           "type": "list",
+          "named": true
+        },
+        {
+          "type": "number",
           "named": true
         },
         {
@@ -464,7 +488,7 @@
           "named": true
         },
         {
-          "type": "key_expression",
+          "type": "key_action",
           "named": true
         },
         {
@@ -472,7 +496,11 @@
           "named": true
         },
         {
-          "type": "sleep_expression",
+          "type": "qualified_identifier",
+          "named": true
+        },
+        {
+          "type": "sleep_action",
           "named": true
         },
         {
@@ -507,7 +535,7 @@
           "named": true
         },
         {
-          "type": "key_expression",
+          "type": "key_action",
           "named": true
         },
         {
@@ -515,7 +543,11 @@
           "named": true
         },
         {
-          "type": "sleep_expression",
+          "type": "qualified_identifier",
+          "named": true
+        },
+        {
+          "type": "sleep_action",
           "named": true
         },
         {
@@ -526,7 +558,7 @@
     }
   },
   {
-    "type": "key_expression",
+    "type": "key_action",
     "named": true,
     "fields": {},
     "children": {
@@ -682,6 +714,10 @@
           "named": true
         },
         {
+          "type": "number",
+          "named": true
+        },
+        {
           "type": "optional",
           "named": true
         },
@@ -757,7 +793,7 @@
           "named": true
         },
         {
-          "type": "key_expression",
+          "type": "key_action",
           "named": true
         },
         {
@@ -765,7 +801,11 @@
           "named": true
         },
         {
-          "type": "sleep_expression",
+          "type": "qualified_identifier",
+          "named": true
+        },
+        {
+          "type": "sleep_action",
           "named": true
         },
         {
@@ -849,6 +889,10 @@
           "named": true
         },
         {
+          "type": "number",
+          "named": true
+        },
+        {
           "type": "optional",
           "named": true
         },
@@ -893,6 +937,10 @@
         },
         {
           "type": "list",
+          "named": true
+        },
+        {
+          "type": "number",
           "named": true
         },
         {
@@ -943,6 +991,10 @@
           "named": true
         },
         {
+          "type": "number",
+          "named": true
+        },
+        {
           "type": "optional",
           "named": true
         },
@@ -987,6 +1039,10 @@
         },
         {
           "type": "list",
+          "named": true
+        },
+        {
+          "type": "number",
           "named": true
         },
         {
@@ -1090,7 +1146,7 @@
     }
   },
   {
-    "type": "sleep_expression",
+    "type": "sleep_action",
     "named": true,
     "fields": {},
     "children": {
@@ -1333,19 +1389,11 @@
     "named": false
   },
   {
-    "type": "{{",
-    "named": false
-  },
-  {
     "type": "|",
     "named": false
   },
   {
     "type": "}",
-    "named": false
-  },
-  {
-    "type": "}}",
     "named": false
   }
 ]

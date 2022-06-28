@@ -11,6 +11,8 @@ const EXPRESSION_PREC = {
   plus: 18,
   times: 19,
   action: 22,
+  key: 25,
+  sleep: 25,
 };
 
 module.exports = grammar({
@@ -109,8 +111,7 @@ module.exports = grammar({
         ":",
         choice(
           alias($._statement, $.command_block),
-          seq($._indent, $.command_block),
-          alias($._newline, $.command_block)
+          seq($._indent, $.command_block)
         )
       ),
 
@@ -143,6 +144,7 @@ module.exports = grammar({
     _primary_rule: ($) =>
       choice(
         $.word,
+        $.number,
         $.list,
         $.capture,
         $.optional,
@@ -170,20 +172,26 @@ module.exports = grammar({
     _statement: ($) => choice($.expression_statement, $.assignment_statement),
 
     assignment_statement: ($) =>
-      seq(field("left", $.identifier), "=", field("right", $._expression)),
+      seq(
+        field("left", $.identifier),
+        "=",
+        field("right", $._expression),
+        $._newline
+      ),
 
-    expression_statement: ($) => $._expression,
+    expression_statement: ($) => seq($._expression, $._newline),
 
     /* Expressions */
 
     _expression: ($) =>
       choice(
         $.binary_operator,
+        $.qualified_identifier,
         $.string,
         $.integer,
         $.float,
-        $.key_expression,
-        $.sleep_expression,
+        $.key_action,
+        $.sleep_action,
         $.action,
         $.parenthesized_expression
       ),
@@ -218,9 +226,17 @@ module.exports = grammar({
       );
     },
 
-    key_expression: ($) => seq("key", "(", $.implicit_string, ")"),
+    key_action: ($) =>
+      prec(
+        EXPRESSION_PREC.key,
+        seq("key", "(", alias(/[^\)]*/, $.implicit_string), ")")
+      ),
 
-    sleep_expression: ($) => seq("sleep", "(", $.implicit_string, ")"),
+    sleep_action: ($) =>
+      prec(
+        EXPRESSION_PREC.sleep,
+        seq("sleep", "(", alias(/[^\)]*/, $.implicit_string), ")")
+      ),
 
     action: ($) =>
       prec(
@@ -292,11 +308,34 @@ module.exports = grammar({
 
     regex_escape_sequence: ($) =>
       choice(
-        alias($.string_escape_sequence, $.regex_escape_sequence),
-        token(prec(1, /\\[\^\$\.\|\?\*\+\(\)\[\]\{\}\/]/))
+        token(
+          prec(
+            2,
+            seq(
+              "\\",
+              choice(
+                "^",
+                "$",
+                ".",
+                "|",
+                "?",
+                "*",
+                "+",
+                "(",
+                ")",
+                "[",
+                "]",
+                "{",
+                "}",
+                "/"
+              )
+            )
+          )
+        ),
+        alias($.string_escape_sequence, $.regex_escape_sequence)
       ),
 
-    regex_flag: ($) => /[a-z]/,
+    regex_flag: ($) => token.immediate(/[a-z]/),
 
     /* Strings */
 
@@ -309,6 +348,7 @@ module.exports = grammar({
           choice(
             $.interpolation,
             $._escape_interpolation,
+            $._not_interpolation,
             $.string_escape_sequence,
             $._not_escapesequence,
             $._string_content
@@ -317,9 +357,10 @@ module.exports = grammar({
         alias($._string_end, '"')
       ),
 
-    interpolation: ($) => seq("{", $._expression, "}"),
+    interpolation: ($) => prec(1, seq("{", $._expression, "}")),
 
-    _escape_interpolation: ($) => choice("{{", "}}"),
+    _escape_interpolation: ($) =>
+      prec(1, choice(alias("{{", "{"), alias("}}", "}"))),
 
     string_escape_sequence: ($) =>
       token(
@@ -333,13 +374,24 @@ module.exports = grammar({
               /x[a-fA-F\d]{2}/,
               /\d{3}/,
               /\r?\n/,
-              /['"abfrntv\\]/
+              "'",
+              '"',
+              "a",
+              "b",
+              "f",
+              "r",
+              "n",
+              "t",
+              "v",
+              "\\"
             )
           )
         )
       ),
 
     _not_escapesequence: ($) => "\\",
+
+    _not_interpolation: ($) => choice("{", "}"),
 
     /* Identifiers */
 
