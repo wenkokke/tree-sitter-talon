@@ -13,7 +13,7 @@ settings():
     (comment)
     (settings_block
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
@@ -37,7 +37,7 @@ settings():
     (comment)
     (settings_block
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
@@ -45,7 +45,7 @@ settings():
             (integer))))
       (comment)
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
@@ -67,7 +67,7 @@ settings():
     (comment)
     (settings_block
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
@@ -92,37 +92,37 @@ settings():
   (settings
     (settings_block
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
@@ -146,37 +146,37 @@ settings():
   (settings
     (settings_block
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
@@ -195,7 +195,7 @@ settings():
   (settings
     (settings_block
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
@@ -219,37 +219,37 @@ settings():
   (settings
     (settings_block
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
@@ -273,37 +273,37 @@ settings():
   (settings
     (settings_block
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
@@ -327,37 +327,37 @@ settings():
   (settings
     (settings_block
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
@@ -381,37 +381,37 @@ settings():
   (settings
     (settings_block
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
@@ -435,37 +435,37 @@ settings():
   (settings
     (settings_block
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
@@ -489,37 +489,37 @@ settings():
   (settings
     (settings_block
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
@@ -543,37 +543,37 @@ settings():
   (settings
     (settings_block
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
@@ -599,37 +599,37 @@ settings():
   (settings
     (settings_block
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
@@ -655,37 +655,37 @@ settings():
   (settings
     (settings_block
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
           (string)))
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier)
           (identifier))
         (value
@@ -706,7 +706,7 @@ settings():
     (comment)
     (settings_block
       (settings_statement
-        (qualified_identifier
+        (setting_identifier
           (identifier))
         (value
           (number
