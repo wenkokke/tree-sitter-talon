@@ -8,7 +8,7 @@
         "required": true,
         "types": [
           {
-            "type": "action_identifier",
+            "type": "identifier",
             "named": true
           }
         ]
@@ -23,21 +23,6 @@
           }
         ]
       }
-    }
-  },
-  {
-    "type": "action_identifier",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "identifier",
-          "named": true
-        }
-      ]
     }
   },
   {
@@ -113,59 +98,48 @@
   {
     "type": "assignment_statement",
     "named": true,
-    "fields": {
-      "left": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "identifier",
-            "named": true
-          }
-        ]
-      },
-      "right": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "action",
-            "named": true
-          },
-          {
-            "type": "binary_operator",
-            "named": true
-          },
-          {
-            "type": "float",
-            "named": true
-          },
-          {
-            "type": "identifier",
-            "named": true
-          },
-          {
-            "type": "integer",
-            "named": true
-          },
-          {
-            "type": "key_action",
-            "named": true
-          },
-          {
-            "type": "parenthesized_expression",
-            "named": true
-          },
-          {
-            "type": "sleep_action",
-            "named": true
-          },
-          {
-            "type": "string",
-            "named": true
-          }
-        ]
-      }
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "action",
+          "named": true
+        },
+        {
+          "type": "binary_operator",
+          "named": true
+        },
+        {
+          "type": "float",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "integer",
+          "named": true
+        },
+        {
+          "type": "key_action",
+          "named": true
+        },
+        {
+          "type": "parenthesized_expression",
+          "named": true
+        },
+        {
+          "type": "sleep_action",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
     }
   },
   {
@@ -297,21 +271,6 @@
       "required": true,
       "types": [
         {
-          "type": "capture_identifier",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "capture_identifier",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
           "type": "identifier",
           "named": true
         }
@@ -397,11 +356,47 @@
       "required": false,
       "types": [
         {
+          "type": "action",
+          "named": true
+        },
+        {
           "type": "assignment_statement",
           "named": true
         },
         {
+          "type": "binary_operator",
+          "named": true
+        },
+        {
           "type": "expression_statement",
+          "named": true
+        },
+        {
+          "type": "float",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "integer",
+          "named": true
+        },
+        {
+          "type": "key_action",
+          "named": true
+        },
+        {
+          "type": "parenthesized_expression",
+          "named": true
+        },
+        {
+          "type": "sleep_action",
+          "named": true
+        },
+        {
+          "type": "string",
           "named": true
         }
       ]
@@ -482,6 +477,11 @@
     }
   },
   {
+    "type": "identifier",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "include_tag",
     "named": true,
     "fields": {},
@@ -490,7 +490,7 @@
       "required": true,
       "types": [
         {
-          "type": "tag_identifier",
+          "type": "identifier",
           "named": true
         }
       ]
@@ -567,21 +567,6 @@
       "required": true,
       "types": [
         {
-          "type": "list_identifier",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "list_identifier",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
           "type": "identifier",
           "named": true
         }
@@ -597,52 +582,8 @@
         "required": true,
         "types": [
           {
-            "type": "app",
-            "named": false
-          },
-          {
-            "type": "app.bundle",
-            "named": false
-          },
-          {
-            "type": "app.exe",
-            "named": false
-          },
-          {
-            "type": "app.name",
-            "named": false
-          },
-          {
-            "type": "code.language",
-            "named": false
-          },
-          {
-            "type": "language",
-            "named": false
-          },
-          {
-            "type": "mode",
-            "named": false
-          },
-          {
-            "type": "os",
-            "named": false
-          },
-          {
-            "type": "scope_identifier",
+            "type": "identifier",
             "named": true
-          },
-          {
-            "type": "speech.engine",
-            "named": false
-          },
-          {
-            "type": "tag",
-            "named": false
-          },
-          {
-            "type": "title",
-            "named": false
           }
         ]
       },
@@ -651,46 +592,11 @@
         "required": true,
         "types": [
           {
-            "type": "identifier",
-            "named": true
-          },
-          {
             "type": "implicit_string",
-            "named": true
-          },
-          {
-            "type": "mode_identifier",
-            "named": true
-          },
-          {
-            "type": "os",
-            "named": true
-          },
-          {
-            "type": "speech_engine",
-            "named": true
-          },
-          {
-            "type": "tag_identifier",
             "named": true
           }
         ]
       }
-    }
-  },
-  {
-    "type": "mode_identifier",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "identifier",
-          "named": true
-        }
-      ]
     }
   },
   {
@@ -804,11 +710,6 @@
         }
       ]
     }
-  },
-  {
-    "type": "os",
-    "named": true,
-    "fields": {}
   },
   {
     "type": "parenthesized_expression",
@@ -1061,21 +962,6 @@
     }
   },
   {
-    "type": "scope_identifier",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "identifier",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
     "type": "seq",
     "named": true,
     "fields": {},
@@ -1115,21 +1001,6 @@
     }
   },
   {
-    "type": "setting_identifier",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "identifier",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
     "type": "settings",
     "named": true,
     "fields": {},
@@ -1145,6 +1016,32 @@
     }
   },
   {
+    "type": "settings_assignment",
+    "named": true,
+    "fields": {
+      "left": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      },
+      "right": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
     "type": "settings_block",
     "named": true,
     "fields": {
@@ -1153,7 +1050,7 @@
         "required": false,
         "types": [
           {
-            "type": "setting_identifier",
+            "type": "identifier",
             "named": true
           }
         ]
@@ -1174,36 +1071,10 @@
       "required": false,
       "types": [
         {
-          "type": "settings_statement",
+          "type": "settings_assignment",
           "named": true
         }
       ]
-    }
-  },
-  {
-    "type": "settings_statement",
-    "named": true,
-    "fields": {
-      "left": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "setting_identifier",
-            "named": true
-          }
-        ]
-      },
-      "right": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "value",
-            "named": true
-          }
-        ]
-      }
     }
   },
   {
@@ -1249,11 +1120,6 @@
     }
   },
   {
-    "type": "speech_engine",
-    "named": true,
-    "fields": {}
-  },
-  {
     "type": "string",
     "named": true,
     "fields": {},
@@ -1267,21 +1133,6 @@
         },
         {
           "type": "string_escape_sequence",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "tag_identifier",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "identifier",
           "named": true
         }
       ]
@@ -1339,15 +1190,15 @@
     "named": false
   },
   {
-    "type": ".",
-    "named": false
-  },
-  {
     "type": "/",
     "named": false
   },
   {
     "type": ":",
+    "named": false
+  },
+  {
+    "type": ";",
     "named": false
   },
   {
@@ -1399,19 +1250,11 @@
     "named": true
   },
   {
-    "type": "dragon",
-    "named": false
-  },
-  {
     "type": "end_anchor",
     "named": true
   },
   {
     "type": "float",
-    "named": true
-  },
-  {
-    "type": "identifier",
     "named": true
   },
   {
@@ -1428,14 +1271,6 @@
   },
   {
     "type": "language",
-    "named": false
-  },
-  {
-    "type": "linux",
-    "named": false
-  },
-  {
-    "type": "mac",
     "named": false
   },
   {
@@ -1463,10 +1298,6 @@
     "named": false
   },
   {
-    "type": "speech.engine",
-    "named": false
-  },
-  {
     "type": "start_anchor",
     "named": true
   },
@@ -1484,14 +1315,6 @@
   },
   {
     "type": "title",
-    "named": false
-  },
-  {
-    "type": "wav2letter",
-    "named": false
-  },
-  {
-    "type": "windows",
     "named": false
   },
   {

@@ -1,16 +1,8 @@
-const RULE_PREC = {
-  parenthesized_rule: 1,
-  choice: 10,
-  anchor: 18,
-  seq: 19,
-};
-
-const EXPRESSION_PREC = {
+const PREC = {
   parenthesized_expression: 1,
   or: 10,
   plus: 18,
   times: 19,
-  qualified_identifier: 20,
   action: 22,
   key: 25,
   sleep: 25,
@@ -71,36 +63,37 @@ module.exports = grammar({
 
     not: ($) => seq("not", $.match),
 
-    match: ($) => {
-      const table = [
-        ["os", $.os, 1],
-        ["tag", $.tag_identifier, 1],
-        ["mode", $.mode_identifier, 1],
-        ["app", $.identifier, 1],
-        ["app.name", $.implicit_string, 1],
-        ["app.exe", $.implicit_string, 1],
-        ["app.bundle", $.implicit_string, 1],
-        ["title", $.implicit_string, 1],
-        ["code.language", $.identifier, 1],
-        ["language", $.identifier, 1],
-        ["speech.engine", $.speech_engine, 1],
-        [$.scope_identifier, $.implicit_string, 0],
-      ];
+    match: ($) =>
+      seq(
+        field("key", choice(
+          alias($.priority_key, $.identifier),
+          $.identifier,
+        )),
+        ":",
+        field("pattern", $.implicit_string),
+        $._newline
+      ),
 
-      return choice(
-        ...table.map(([key_rule, pattern_rule, precedence]) =>
-          prec(
-            precedence,
-            seq(field("key", key_rule), ":", field("pattern", pattern_rule))
-          )
+    priority_key: ($) =>
+      prec(
+        1,
+        choice(
+          "os",
+          "tag",
+          "mode",
+          "app",
+          "app.name",
+          "app.exe",
+          "app.bundle",
+          "title",
+          "code.language",
+          "language"
         )
-      );
-    },
+      ),
 
     /* Tags */
 
-    include_tag: ($) =>
-      seq("tag()", ":", $.tag_identifier, $._newline),
+    include_tag: ($) => seq("tag()", ":", $.identifier, $._newline),
 
     /* Settings */
 
@@ -109,16 +102,16 @@ module.exports = grammar({
         "settings()",
         ":",
         choice(
-          alias($.settings_statement, $.settings_block),
+          alias($.settings_assignment, $.settings_block),
           seq($._indent, $.settings_block),
           alias($._newline, $.settings_block)
         )
       ),
 
-    settings_block: ($) => seq(repeat($.settings_statement), $._dedent),
+    settings_block: ($) => seq(repeat($.settings_assignment), $._dedent),
 
-    settings_statement: ($) =>
-      seq(field("left", $.setting_identifier), "=", field("right", $.value)),
+    settings_assignment: ($) =>
+      seq(field("left", $.identifier), "=", field("right", $.value)),
 
     /* Commands */
 
@@ -127,12 +120,12 @@ module.exports = grammar({
         $.rule,
         ":",
         choice(
-          alias($._statement, $.command_block),
+          alias($._expression, $.command_block),
           seq($._newline, $._indent, $.command_block)
         )
       ),
 
-    command_block: ($) => seq(repeat($._statement), $._dedent),
+    command_block: ($) => seq(repeat($._simple_statements), $._dedent),
 
     /* Rules */
 
@@ -165,9 +158,9 @@ module.exports = grammar({
 
     word: ($) => /[A-Za-z-]+/,
 
-    list: ($) => seq("{", $.list_identifier, "}"),
+    list: ($) => seq("{", $.identifier, "}"),
 
-    capture: ($) => seq("<", $.capture_identifier, ">"),
+    capture: ($) => seq("<", $.identifier, ">"),
 
     optional: ($) => seq("[", $._optional_choice, "]"),
 
@@ -177,21 +170,17 @@ module.exports = grammar({
 
     parenthesized_rule: ($) => seq("(", $._optional_choice, ")"),
 
-    /* Statements */
-
-    _statement: ($) => choice($.expression_statement, $.assignment_statement),
-
-    assignment_statement: ($) =>
-      seq(
-        field("left", $.identifier),
-        "=",
-        field("right", $._expression),
-        $._newline
-      ),
-
-    expression_statement: ($) => seq($._expression, $._newline),
-
     /* Expressions */
+
+    _simple_statements: ($) =>
+      seq(sep1($._simple_statement, ";"), optional(";"), $._newline),
+
+    _simple_statement: ($) =>
+      choice($.assignment_statement, $.expression_statement),
+
+    assignment_statement: ($) => seq($.identifier, "=", $._expression),
+
+    expression_statement: ($) => $._expression,
 
     _expression: ($) =>
       choice(
@@ -207,19 +196,16 @@ module.exports = grammar({
       ),
 
     parenthesized_expression: ($) =>
-      prec(
-        EXPRESSION_PREC.parenthesized_expression,
-        seq("(", $._expression, ")")
-      ),
+      prec(PREC.parenthesized_expression, seq("(", $._expression, ")")),
 
     binary_operator: ($) => {
       const table = [
-        [prec.left, "+", EXPRESSION_PREC.plus],
-        [prec.left, "-", EXPRESSION_PREC.plus],
-        [prec.left, "*", EXPRESSION_PREC.times],
-        [prec.left, "/", EXPRESSION_PREC.times],
-        [prec.left, "%", EXPRESSION_PREC.times],
-        [prec.left, "or", EXPRESSION_PREC.or],
+        [prec.left, "+", PREC.plus],
+        [prec.left, "-", PREC.plus],
+        [prec.left, "*", PREC.times],
+        [prec.left, "/", PREC.times],
+        [prec.left, "%", PREC.times],
+        [prec.left, "or", PREC.or],
       ];
 
       return choice(
@@ -237,158 +223,25 @@ module.exports = grammar({
     },
 
     key_action: ($) =>
-      prec(
-        EXPRESSION_PREC.key,
-        seq("key", "(", alias(/[^\)]*/, $.implicit_string), ")")
-      ),
+      prec(PREC.key, seq("key", "(", alias(/[^\)]*/, $.implicit_string), ")")),
 
     sleep_action: ($) =>
       prec(
-        EXPRESSION_PREC.sleep,
+        PREC.sleep,
         seq("sleep", "(", alias(/[^\)]*/, $.implicit_string), ")")
       ),
 
     action: ($) =>
       prec(
-        EXPRESSION_PREC.action,
-        seq(
-          field("action", $.action_identifier),
-          field("arguments", $.argument_list)
-        )
+        PREC.action,
+        seq(field("action", $.identifier), field("arguments", $.argument_list))
       ),
 
-    argument_list: ($) =>
-      seq("(", sep($._expression, ","), optional(","), ")"),
+    argument_list: ($) => seq("(", sep($._expression, ","), optional(","), ")"),
 
     /* Identifiers */
 
-    qualified_identifier: ($) => $._qualified_identifier,
-
-    _qualified_identifier: ($) => sep1($.identifier, "."),
-
-    _user_identifier: ($) =>
-      seq(alias("user", $.identifier), ".", $._qualified_identifier),
-
-    identifier: ($) => /[A-Za-z][A-Za-z0-9_-]*/,
-
-    /* Builtin Identifiers */
-
-    // Builtin enums:
-
-    os: ($) => choice("linux", "mac", "windows"),
-
-    speech_engine: ($) => choice("dragon", "wav2letter"),
-
-    // Builtin modes:
-
-    mode_identifier: ($) =>
-      choice($._builtin_mode_identifier, $._user_identifier),
-
-    _builtin_mode_identifier: ($) =>
-      alias(choice("all", "command", "dictation", "sleep"), $.identifier),
-
-    // Builtin lists:
-
-    list_identifier: ($) =>
-      choice($._builtin_list_identifier, $._user_identifier),
-
-    _builtin_list_identifier: ($) => choice(),
-
-    // Builtin captures:
-
-    capture_identifier: ($) =>
-      choice($._builtin_capture_identifier, $._user_identifier),
-
-    _builtin_capture_identifier: ($) =>
-      alias(choice("phrase", "number", "number_small"), $.identifier),
-
-    // Builtin actions:
-
-    action_identifier: ($) =>
-      choice($._builtin_action_identifier, $._user_identifier),
-
-    _builtin_action_identifier: ($) =>
-      choice(
-        alias(
-          choice(
-            "insert",
-            "key",
-            "mouse_click",
-            "mouse_drag",
-            "mouse_move",
-            "mouse_release",
-            "mouse_scroll",
-            "mouse_x",
-            "mouse_y",
-            "skip",
-            "auto_format",
-            "auto_insert",
-            "mimic",
-            "print",
-            "sleep"
-          ),
-          $.identifier
-        ),
-        seq($._builtin_action_namespace, ".", $._qualified_identifier)
-      ),
-
-    _builtin_action_namespace: ($) =>
-      alias(
-        choice(
-          "speech",
-          "code",
-          "edit",
-          "app",
-          "browser",
-          "clip",
-          "core",
-          "dictate",
-          "migrate",
-          "mode",
-          "path",
-          "sound",
-          "win",
-          "experimental",
-          "menu"
-        ),
-        $.identifier
-      ),
-
-    // Builtin settings:
-
-    setting_identifier: ($) =>
-      choice($._builtin_setting_identifier, $._user_identifier),
-
-    _builtin_setting_identifier: ($) =>
-      choice(
-        alias(choice("key_wait"), $.identifier),
-        seq($._builtin_setting_namespace, ".", $._qualified_identifier)
-      ),
-
-    _builtin_setting_namespace: ($) =>
-      alias(choice("speech", "dictate", "imgui"), $.identifier),
-
-    // Builtin tags:
-
-    tag_identifier: ($) =>
-      choice($._builtin_tag_identifier, $._user_identifier),
-
-    _builtin_tag_identifier: ($) =>
-      alias(choice("browser", "terminal", "debugger"), $.identifier),
-
-    // Builtin scopes:
-
-    scope_identifier: ($) =>
-      choice($._builtin_scope_identifier, $._user_identifier),
-
-    _builtin_scope_identifier: ($) =>
-      seq($._builtin_scope_namespace, ".", $.identifier),
-
-    _builtin_scope_namespace: ($) =>
-      alias(
-        choice("app", "browser", "code", "main", "speech", "win"),
-        $.identifier
-      ),
+    identifier: ($) => /([A-Za-z][A-Za-z0-9_]*)(\.[A-Za-z][A-Za-z0-9_]*)*/,
 
     /* Values */
 
