@@ -11,14 +11,10 @@ settings():
 (source_file
   (settings
     (comment)
-    (settings_block
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (number
-            (float)))))))
+    (block
+      (assignment
+        (identifier)
+        (float)))))
 
 ================================================================================
 Settings modes/sleep_mode.talon
@@ -35,22 +31,14 @@ settings():
 (source_file
   (settings
     (comment)
-    (settings_block
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (number
-            (integer))))
+    (block
+      (assignment
+        (identifier)
+        (integer))
       (comment)
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (number
-            (integer)))))))
+      (assignment
+        (identifier)
+        (integer)))))
 
 ================================================================================
 Settings talon_draft_window/draft_window.talon
@@ -65,14 +53,10 @@ settings():
 (source_file
   (settings
     (comment)
-    (settings_block
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (number
-            (integer)))))))
+    (block
+      (assignment
+        (identifier)
+        (integer)))))
 
 ================================================================================
 Settings lang/vimscript/vimscript.talon
@@ -90,43 +74,25 @@ settings():
 
 (source_file
   (settings
-    (settings_block
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string))))))
+    (block
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string)))))
 
 ================================================================================
 Settings lang/python/python.talon
@@ -144,43 +110,25 @@ settings():
 
 (source_file
   (settings
-    (settings_block
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string))))))
+    (block
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string)))))
 
 ================================================================================
 Settings lang/css/css.talon
@@ -193,13 +141,10 @@ settings():
 
 (source_file
   (settings
-    (settings_block
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string))))))
+    (block
+      (assignment
+        (identifier)
+        (string)))))
 
 ================================================================================
 Settings lang/rust/rust.talon
@@ -217,43 +162,25 @@ settings():
 
 (source_file
   (settings
-    (settings_block
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string))))))
+    (block
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string)))))
 
 ================================================================================
 Settings lang/r/r.talon
@@ -271,43 +198,25 @@ settings():
 
 (source_file
   (settings
-    (settings_block
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string))))))
+    (block
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string)))))
 
 ================================================================================
 Settings lang/java/java.talon
@@ -325,43 +234,25 @@ settings():
 
 (source_file
   (settings
-    (settings_block
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string))))))
+    (block
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string)))))
 
 ================================================================================
 Settings lang/php/php.talon
@@ -379,43 +270,25 @@ settings():
 
 (source_file
   (settings
-    (settings_block
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string))))))
+    (block
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string)))))
 
 ================================================================================
 Settings lang/scala/scala.talon
@@ -433,43 +306,25 @@ settings():
 
 (source_file
   (settings
-    (settings_block
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string))))))
+    (block
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string)))))
 
 ================================================================================
 Settings lang/csharp/csharp.talon
@@ -487,43 +342,25 @@ settings():
 
 (source_file
   (settings
-    (settings_block
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string))))))
+    (block
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string)))))
 
 ================================================================================
 Settings lang/javascript/javascript.talon
@@ -541,43 +378,25 @@ settings():
 
 (source_file
   (settings
-    (settings_block
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string))))))
+    (block
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string)))))
 
 ================================================================================
 Settings lang/c/c.talon
@@ -597,43 +416,25 @@ settings():
 
 (source_file
   (settings
-    (settings_block
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
+    (block
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
       (comment)
       (comment))))
 
@@ -653,43 +454,25 @@ settings():
 
 (source_file
   (settings
-    (settings_block
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string)))
-      (settings_statement
-        (setting_identifier
-          (identifier)
-          (identifier))
-        (value
-          (string))))))
+    (block
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string))
+      (assignment
+        (identifier)
+        (string)))))
 
 ================================================================================
 Settings apps/evernote/mac.talon
@@ -704,10 +487,7 @@ settings():
 (source_file
   (settings
     (comment)
-    (settings_block
-      (settings_statement
-        (setting_identifier
-          (identifier))
-        (value
-          (number
-            (float)))))))
+    (block
+      (assignment
+        (identifier)
+        (float)))))

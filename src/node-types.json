@@ -96,50 +96,61 @@
     }
   },
   {
-    "type": "assignment_statement",
+    "type": "assignment",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "action",
-          "named": true
-        },
-        {
-          "type": "binary_operator",
-          "named": true
-        },
-        {
-          "type": "float",
-          "named": true
-        },
-        {
-          "type": "identifier",
-          "named": true
-        },
-        {
-          "type": "integer",
-          "named": true
-        },
-        {
-          "type": "key_action",
-          "named": true
-        },
-        {
-          "type": "parenthesized_expression",
-          "named": true
-        },
-        {
-          "type": "sleep_action",
-          "named": true
-        },
-        {
-          "type": "string",
-          "named": true
-        }
-      ]
+    "fields": {
+      "left": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      },
+      "right": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "action",
+            "named": true
+          },
+          {
+            "type": "binary_operator",
+            "named": true
+          },
+          {
+            "type": "float",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "integer",
+            "named": true
+          },
+          {
+            "type": "key_action",
+            "named": true
+          },
+          {
+            "type": "parenthesized_expression",
+            "named": true
+          },
+          {
+            "type": "sleep_action",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
@@ -263,6 +274,25 @@
     }
   },
   {
+    "type": "block",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "assignment",
+          "named": true
+        },
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "capture",
     "named": true,
     "fields": {},
@@ -337,66 +367,11 @@
       "required": true,
       "types": [
         {
-          "type": "command_block",
+          "type": "block",
           "named": true
         },
         {
           "type": "rule",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "command_block",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "action",
-          "named": true
-        },
-        {
-          "type": "assignment_statement",
-          "named": true
-        },
-        {
-          "type": "binary_operator",
-          "named": true
-        },
-        {
-          "type": "expression_statement",
-          "named": true
-        },
-        {
-          "type": "float",
-          "named": true
-        },
-        {
-          "type": "identifier",
-          "named": true
-        },
-        {
-          "type": "integer",
-          "named": true
-        },
-        {
-          "type": "key_action",
-          "named": true
-        },
-        {
-          "type": "parenthesized_expression",
-          "named": true
-        },
-        {
-          "type": "sleep_action",
-          "named": true
-        },
-        {
-          "type": "string",
           "named": true
         }
       ]
@@ -430,7 +405,7 @@
     }
   },
   {
-    "type": "expression_statement",
+    "type": "expression",
     "named": true,
     "fields": {},
     "children": {
@@ -475,11 +450,6 @@
         }
       ]
     }
-  },
-  {
-    "type": "identifier",
-    "named": true,
-    "fields": {}
   },
   {
     "type": "include_tag",
@@ -576,6 +546,25 @@
   {
     "type": "match",
     "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "match_key",
+          "named": true
+        },
+        {
+          "type": "match_pattern",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "match_key",
+    "named": true,
     "fields": {
       "key": {
         "multiple": false,
@@ -586,7 +575,13 @@
             "named": true
           }
         ]
-      },
+      }
+    }
+  },
+  {
+    "type": "match_pattern",
+    "named": true,
+    "fields": {
       "pattern": {
         "multiple": false,
         "required": true,
@@ -1009,69 +1004,7 @@
       "required": true,
       "types": [
         {
-          "type": "settings_block",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "settings_assignment",
-    "named": true,
-    "fields": {
-      "left": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "identifier",
-            "named": true
-          }
-        ]
-      },
-      "right": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "value",
-            "named": true
-          }
-        ]
-      }
-    }
-  },
-  {
-    "type": "settings_block",
-    "named": true,
-    "fields": {
-      "left": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "identifier",
-            "named": true
-          }
-        ]
-      },
-      "right": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "value",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "settings_assignment",
+          "type": "block",
           "named": true
         }
       ]
@@ -1133,25 +1066,6 @@
         },
         {
           "type": "string_escape_sequence",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "value",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "number",
-          "named": true
-        },
-        {
-          "type": "string",
           "named": true
         }
       ]
@@ -1226,26 +1140,6 @@
     "named": false
   },
   {
-    "type": "app",
-    "named": false
-  },
-  {
-    "type": "app.bundle",
-    "named": false
-  },
-  {
-    "type": "app.exe",
-    "named": false
-  },
-  {
-    "type": "app.name",
-    "named": false
-  },
-  {
-    "type": "code.language",
-    "named": false
-  },
-  {
     "type": "comment",
     "named": true
   },
@@ -1255,6 +1149,10 @@
   },
   {
     "type": "float",
+    "named": true
+  },
+  {
+    "type": "identifier",
     "named": true
   },
   {
@@ -1270,23 +1168,11 @@
     "named": false
   },
   {
-    "type": "language",
-    "named": false
-  },
-  {
-    "type": "mode",
-    "named": false
-  },
-  {
     "type": "not",
     "named": false
   },
   {
     "type": "or",
-    "named": false
-  },
-  {
-    "type": "os",
     "named": false
   },
   {
@@ -1306,15 +1192,7 @@
     "named": true
   },
   {
-    "type": "tag",
-    "named": false
-  },
-  {
     "type": "tag()",
-    "named": false
-  },
-  {
-    "type": "title",
     "named": false
   },
   {

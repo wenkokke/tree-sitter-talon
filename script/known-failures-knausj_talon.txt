@@ -1,16 +1,3 @@
-examples/knausj_talon/misc/messaging.talon
-examples/knausj_talon/misc/formatters.talon
-examples/knausj_talon/misc/websites_and_search_engines.talon
-examples/knausj_talon/talon_draft_window/draft_window.talon
-examples/knausj_talon/lang/terraform/terraform.talon
-examples/knausj_talon/lang/talon/talon.talon
 examples/knausj_talon/lang/go/go.talon
-examples/knausj_talon/lang/css/css.talon
-examples/knausj_talon/lang/java/java.talon
 examples/knausj_talon/lang/tags/comment_block.talon
 examples/knausj_talon/lang/tags/comment_line.talon
-examples/knausj_talon/apps/eclipse/eclipse.talon
-examples/knausj_talon/apps/jetbrains/jetbrains.talon
-examples/knausj_talon/apps/generic_snippets/generic_snippets.talon
-examples/knausj_talon/apps/teams/teams_mac.talon
-examples/knausj_talon/apps/vscode/vscode.talon

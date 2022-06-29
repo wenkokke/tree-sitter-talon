@@ -63,31 +63,36 @@ module.exports = grammar({
 
     not: ($) => seq("not", $.match),
 
-    match: ($) =>
-      seq(
-        field("key", choice(
-          alias($.priority_key, $.identifier),
-          $.identifier,
-        )),
-        ":",
-        field("pattern", $.implicit_string),
-        $._newline
-      ),
+    match: ($) => seq($.match_key, $.match_pattern, $._newline),
 
-    priority_key: ($) =>
+    match_key: ($) =>
+      choice($._prioritized_key, seq(field("key", $.identifier), ":")),
+
+    match_pattern: ($) => field("pattern", $.implicit_string),
+
+    _prioritized_key: ($) =>
       prec(
         1,
-        choice(
-          "os",
-          "tag",
-          "mode",
-          "app",
-          "app.name",
-          "app.exe",
-          "app.bundle",
-          "title",
-          "code.language",
-          "language"
+        seq(
+          field(
+            "key",
+            alias(
+              choice(
+                "os",
+                "tag",
+                "mode",
+                "app",
+                "app.name",
+                "app.exe",
+                "app.bundle",
+                "title",
+                "code.language",
+                "language"
+              ),
+              $.identifier
+            )
+          ),
+          token.immediate(":")
         )
       ),
 
@@ -97,35 +102,20 @@ module.exports = grammar({
 
     /* Settings */
 
-    settings: ($) =>
-      seq(
-        "settings()",
-        ":",
-        choice(
-          alias($.settings_assignment, $.settings_block),
-          seq($._indent, $.settings_block),
-          alias($._newline, $.settings_block)
-        )
-      ),
-
-    settings_block: ($) => seq(repeat($.settings_assignment), $._dedent),
-
-    settings_assignment: ($) =>
-      seq(field("left", $.identifier), "=", field("right", $.value)),
+    settings: ($) => seq("settings()", ":", $._suite),
 
     /* Commands */
 
-    command: ($) =>
-      seq(
-        $.rule,
-        ":",
-        choice(
-          alias($._expression, $.command_block),
-          seq($._newline, $._indent, $.command_block)
-        )
+    command: ($) => seq($.rule, ":", $._suite),
+
+    _suite: ($) =>
+      choice(
+        alias($._simple_statements, $.block),
+        seq($._indent, $.block),
+        alias($._newline, $.block)
       ),
 
-    command_block: ($) => seq(repeat($._simple_statements), $._dedent),
+    block: ($) => seq(repeat($._simple_statements), $._dedent),
 
     /* Rules */
 
@@ -175,12 +165,12 @@ module.exports = grammar({
     _simple_statements: ($) =>
       seq(sep1($._simple_statement, ";"), optional(";"), $._newline),
 
-    _simple_statement: ($) =>
-      choice($.assignment_statement, $.expression_statement),
+    _simple_statement: ($) => choice($.assignment, $.expression),
 
-    assignment_statement: ($) => seq($.identifier, "=", $._expression),
+    assignment: ($) =>
+      seq(field("left", $.identifier), "=", field("right", $._expression)),
 
-    expression_statement: ($) => $._expression,
+    expression: ($) => $._expression,
 
     _expression: ($) =>
       choice(
