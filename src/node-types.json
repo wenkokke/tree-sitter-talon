@@ -3,7 +3,7 @@
     "type": "action",
     "named": true,
     "fields": {
-      "action": {
+      "action_name": {
         "multiple": false,
         "required": true,
         "types": [
@@ -295,16 +295,17 @@
   {
     "type": "capture",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "identifier",
-          "named": true
-        }
-      ]
+    "fields": {
+      "capture_name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
@@ -518,7 +519,33 @@
     "type": "key_action",
     "named": true,
     "fields": {
-      "action": {
+      "action_name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      },
+      "arguments": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "implicit_string",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "list",
+    "named": true,
+    "fields": {
+      "list_name": {
         "multiple": false,
         "required": true,
         "types": [
@@ -528,31 +555,6 @@
           }
         ]
       }
-    },
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "implicit_string",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "list",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "identifier",
-          "named": true
-        }
-      ]
     }
   },
   {
@@ -618,56 +620,57 @@
   {
     "type": "optional",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "capture",
-          "named": true
-        },
-        {
-          "type": "choice",
-          "named": true
-        },
-        {
-          "type": "end_anchor",
-          "named": true
-        },
-        {
-          "type": "list",
-          "named": true
-        },
-        {
-          "type": "optional",
-          "named": true
-        },
-        {
-          "type": "parenthesized_rule",
-          "named": true
-        },
-        {
-          "type": "repeat",
-          "named": true
-        },
-        {
-          "type": "repeat1",
-          "named": true
-        },
-        {
-          "type": "seq",
-          "named": true
-        },
-        {
-          "type": "start_anchor",
-          "named": true
-        },
-        {
-          "type": "word",
-          "named": true
-        }
-      ]
+    "fields": {
+      "optional_name": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "capture",
+            "named": true
+          },
+          {
+            "type": "choice",
+            "named": true
+          },
+          {
+            "type": "end_anchor",
+            "named": true
+          },
+          {
+            "type": "list",
+            "named": true
+          },
+          {
+            "type": "optional",
+            "named": true
+          },
+          {
+            "type": "parenthesized_rule",
+            "named": true
+          },
+          {
+            "type": "repeat",
+            "named": true
+          },
+          {
+            "type": "repeat1",
+            "named": true
+          },
+          {
+            "type": "seq",
+            "named": true
+          },
+          {
+            "type": "start_anchor",
+            "named": true
+          },
+          {
+            "type": "word",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
@@ -1001,7 +1004,7 @@
     "type": "sleep_action",
     "named": true,
     "fields": {
-      "action": {
+      "action_name": {
         "multiple": false,
         "required": true,
         "types": [
@@ -1010,17 +1013,17 @@
             "named": true
           }
         ]
+      },
+      "arguments": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "implicit_string",
+            "named": true
+          }
+        ]
       }
-    },
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "implicit_string",
-          "named": true
-        }
-      ]
     }
   },
   {

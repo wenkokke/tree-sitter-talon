@@ -557,8 +557,12 @@
           "value": "{"
         },
         {
-          "type": "SYMBOL",
-          "name": "identifier"
+          "type": "FIELD",
+          "name": "list_name",
+          "content": {
+            "type": "SYMBOL",
+            "name": "identifier"
+          }
         },
         {
           "type": "STRING",
@@ -574,8 +578,12 @@
           "value": "<"
         },
         {
-          "type": "SYMBOL",
-          "name": "identifier"
+          "type": "FIELD",
+          "name": "capture_name",
+          "content": {
+            "type": "SYMBOL",
+            "name": "identifier"
+          }
         },
         {
           "type": "STRING",
@@ -591,8 +599,12 @@
           "value": "["
         },
         {
-          "type": "SYMBOL",
-          "name": "_optional_choice"
+          "type": "FIELD",
+          "name": "optional_name",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_optional_choice"
+          }
         },
         {
           "type": "STRING",
@@ -1004,7 +1016,7 @@
         "members": [
           {
             "type": "FIELD",
-            "name": "action",
+            "name": "action_name",
             "content": {
               "type": "ALIAS",
               "content": {
@@ -1020,13 +1032,17 @@
             "value": "("
           },
           {
-            "type": "ALIAS",
+            "type": "FIELD",
+            "name": "arguments",
             "content": {
-              "type": "PATTERN",
-              "value": "[^\\)]*"
-            },
-            "named": true,
-            "value": "implicit_string"
+              "type": "ALIAS",
+              "content": {
+                "type": "PATTERN",
+                "value": "[^\\)]*"
+              },
+              "named": true,
+              "value": "implicit_string"
+            }
           },
           {
             "type": "STRING",
@@ -1043,7 +1059,7 @@
         "members": [
           {
             "type": "FIELD",
-            "name": "action",
+            "name": "action_name",
             "content": {
               "type": "ALIAS",
               "content": {
@@ -1059,13 +1075,17 @@
             "value": "("
           },
           {
-            "type": "ALIAS",
+            "type": "FIELD",
+            "name": "arguments",
             "content": {
-              "type": "PATTERN",
-              "value": "[^\\)]*"
-            },
-            "named": true,
-            "value": "implicit_string"
+              "type": "ALIAS",
+              "content": {
+                "type": "PATTERN",
+                "value": "[^\\)]*"
+              },
+              "named": true,
+              "value": "implicit_string"
+            }
           },
           {
             "type": "STRING",
@@ -1082,7 +1102,7 @@
         "members": [
           {
             "type": "FIELD",
-            "name": "action",
+            "name": "action_name",
             "content": {
               "type": "SYMBOL",
               "name": "identifier"
