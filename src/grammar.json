@@ -168,12 +168,17 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "match_key"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "match_pattern"
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "_prioritized_match"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "_generic_match"
+            }
+          ]
         },
         {
           "type": "SYMBOL",
@@ -181,41 +186,32 @@
         }
       ]
     },
-    "match_key": {
-      "type": "CHOICE",
+    "_generic_match": {
+      "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "_prioritized_key"
+          "type": "FIELD",
+          "name": "key",
+          "content": {
+            "type": "SYMBOL",
+            "name": "identifier"
+          }
         },
         {
-          "type": "SEQ",
-          "members": [
-            {
-              "type": "FIELD",
-              "name": "key",
-              "content": {
-                "type": "SYMBOL",
-                "name": "identifier"
-              }
-            },
-            {
-              "type": "STRING",
-              "value": ":"
-            }
-          ]
+          "type": "STRING",
+          "value": ":"
+        },
+        {
+          "type": "FIELD",
+          "name": "pattern",
+          "content": {
+            "type": "SYMBOL",
+            "name": "implicit_string"
+          }
         }
       ]
     },
-    "match_pattern": {
-      "type": "FIELD",
-      "name": "pattern",
-      "content": {
-        "type": "SYMBOL",
-        "name": "implicit_string"
-      }
-    },
-    "_prioritized_key": {
+    "_prioritized_match": {
       "type": "PREC",
       "value": 1,
       "content": {
@@ -280,6 +276,14 @@
             "content": {
               "type": "STRING",
               "value": ":"
+            }
+          },
+          {
+            "type": "FIELD",
+            "name": "pattern",
+            "content": {
+              "type": "SYMBOL",
+              "name": "implicit_string"
             }
           }
         ]

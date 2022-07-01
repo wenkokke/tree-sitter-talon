@@ -546,25 +546,6 @@
   {
     "type": "match",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "match_key",
-          "named": true
-        },
-        {
-          "type": "match_pattern",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "match_key",
-    "named": true,
     "fields": {
       "key": {
         "multiple": false,
@@ -575,13 +556,7 @@
             "named": true
           }
         ]
-      }
-    }
-  },
-  {
-    "type": "match_pattern",
-    "named": true,
-    "fields": {
+      },
       "pattern": {
         "multiple": false,
         "required": true,

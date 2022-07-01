@@ -63,14 +63,13 @@ module.exports = grammar({
 
     not: ($) => seq("not", $.match),
 
-    match: ($) => seq($.match_key, $.match_pattern, $._newline),
+    match: ($) =>
+      seq(choice($._prioritized_match, $._generic_match), $._newline),
 
-    match_key: ($) =>
-      choice($._prioritized_key, seq(field("key", $.identifier), ":")),
+    _generic_match: ($) =>
+      seq(field("key", $.identifier), ":", field("pattern", $.implicit_string)),
 
-    match_pattern: ($) => field("pattern", $.implicit_string),
-
-    _prioritized_key: ($) =>
+    _prioritized_match: ($) =>
       prec(
         1,
         seq(
@@ -92,7 +91,8 @@ module.exports = grammar({
               $.identifier
             )
           ),
-          token.immediate(":")
+          token.immediate(":"),
+          field("pattern", $.implicit_string)
         )
       ),
 

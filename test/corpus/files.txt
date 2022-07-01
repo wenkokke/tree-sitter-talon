@@ -156,10 +156,8 @@ go split <number>: user.split_number(number)
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -848,10 +846,8 @@ upload file: user.messaging_upload_file()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (command
     (rule
@@ -1223,10 +1219,8 @@ go chapter final: user.chapter_final()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -1999,10 +1993,8 @@ scope (hide | close)$:   user.help_scope_toggle()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -2049,20 +2041,14 @@ air:
     (or
       (and
         (match
-          (match_key
-            (identifier))
-          (match_pattern
-            (implicit_string)))
+          (identifier)
+          (implicit_string))
         (match
-          (match_key
-            (identifier))
-          (match_pattern
-            (implicit_string))))
+          (identifier)
+          (implicit_string)))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (command
     (rule
       (word))
@@ -2364,15 +2350,11 @@ git commit highlighted:
   (context
     (and
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (comment)
   (command
     (rule
@@ -3448,15 +3430,11 @@ copy noun to replacements as <phrase>$: user.add_selection_to_words_to_replace(p
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (command
     (rule
       (seq
@@ -3967,10 +3945,8 @@ tab duplicate: user.tab_duplicate()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -4123,10 +4099,8 @@ cursor lines: user.multi_cursor_add_to_line_ends()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -4234,10 +4208,8 @@ go page final: user.page_final()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -4413,10 +4385,8 @@ help close$: user.help_hide()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -5410,10 +5380,8 @@ curse no: user.mouse_hide_cursor()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -5471,16 +5439,12 @@ draft submit:
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (not
         (match
-          (match_key
-            (identifier))
-          (match_pattern
-            (implicit_string))))))
+          (identifier)
+          (implicit_string)))))
   (command
     (rule
       (seq
@@ -5575,15 +5539,11 @@ draft discard:   user.draft_editor_discard()
   (context
     (and
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (command
     (rule
       (seq
@@ -5762,10 +5722,8 @@ spell that <user.formatters> <user.letters>:
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (start_anchor)
@@ -6329,15 +6287,11 @@ talon mode: user.talon_mode()
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (comment)
   (command
     (rule
@@ -6378,10 +6332,8 @@ settings():
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (settings
     (comment)
     (block
@@ -6416,10 +6368,8 @@ not mode: sleep
   (context
     (not
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (command
     (rule
       (start_anchor)
@@ -6504,10 +6454,8 @@ mode: all
   (comment)
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (start_anchor)
@@ -6612,15 +6560,11 @@ speech.engine: wav2letter
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (comment)
   (comment)
   (command
@@ -6648,10 +6592,8 @@ kaomoji {user.kaomoji}: user.paste(kaomoji)
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -6709,10 +6651,8 @@ draft submit:
   (comment)
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -6806,10 +6746,8 @@ replace <user.draft_anchor> with <user.text>:
   (comment)
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (settings
     (comment)
     (block
@@ -7070,10 +7008,8 @@ mode: command
   (comment)
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (start_anchor)
@@ -7252,10 +7188,8 @@ type {user.code_type}: insert("{code_type}")
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (include_tag
@@ -7409,10 +7343,8 @@ funk wrap <number>:
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (include_tag
@@ -7757,10 +7689,8 @@ state continue: "continue"
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (include_tag
@@ -8126,10 +8056,8 @@ swipe [<user.text>] [over]:
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (word))
@@ -9320,10 +9248,8 @@ repeated type {user.code_type}: "repeated {code_type}"
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (command
     (rule
@@ -9484,10 +9410,8 @@ from import: user.insert_between("from ", " import ")
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (include_tag
@@ -9779,10 +9703,8 @@ op important: " !important"
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (include_tag
@@ -10017,10 +9939,8 @@ level six: "###### "
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -10100,10 +10020,8 @@ tag(): user.javascript
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier)))
 
@@ -10121,10 +10039,8 @@ tag(): user.javascriptreact
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (include_tag
@@ -10244,10 +10160,8 @@ inner block dock comment: user.code_comment_documentation_block_inner()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (include_tag
@@ -10841,10 +10755,8 @@ named arg {user.code_parameter_name}: user.code_insert_named_argument(code_param
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (include_tag
@@ -11039,10 +10951,8 @@ op new:
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (include_tag
@@ -11220,10 +11130,8 @@ var <phrase> [over]:
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (include_tag
@@ -11395,10 +11303,8 @@ close block comment:
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -11618,10 +11524,8 @@ dock comment: user.code_comment_documentation()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -11646,10 +11550,8 @@ keyword (<user.code_keyword>+): user.code_keyword(code_keyword_list)
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -11686,10 +11588,8 @@ funk wrap <number>:
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -11812,10 +11712,8 @@ comment <user.text>$:
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (word))
@@ -11978,10 +11876,8 @@ is (none|null): user.code_insert_is_null()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -12047,10 +11943,8 @@ state class:
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -12100,10 +11994,8 @@ state false: user.code_insert_false()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -12141,10 +12033,8 @@ toggle libraries close: user.code_toggle_libraries()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (comment)
   (comment)
@@ -12183,10 +12073,8 @@ op lambda: user.code_operator_lambda()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (comment)
   (comment)
@@ -12221,10 +12109,8 @@ op subscript: user.code_operator_subscript()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (command
     (rule
@@ -12276,10 +12162,8 @@ op mod: user.code_operator_modulo()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (command
     (rule
@@ -12538,10 +12422,8 @@ state import: user.code_import()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -12567,10 +12449,8 @@ toggle funk: user.code_toggle_functions()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (command
     (rule
@@ -12619,10 +12499,8 @@ type <user.code_type>: insert(code_type)
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (comment)
   (comment)
@@ -12730,10 +12608,8 @@ op mod equals: user.code_operator_modulo_assignment()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (include_tag
@@ -12922,10 +12798,8 @@ state next: user.code_next()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (word))
@@ -13099,10 +12973,8 @@ tag: user.code_operators_bitwise
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (command
     (rule
@@ -13208,10 +13080,8 @@ tag: user.code_libraries_gui
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (comment)
   (comment)
@@ -13234,10 +13104,8 @@ op arrow: user.code_operator_structure_dereference()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (command
     (rule
@@ -13323,10 +13191,8 @@ block string:
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (include_tag
@@ -13483,10 +13349,8 @@ arg <number_small>: "%{number_small}"
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (comment)
@@ -13610,10 +13474,8 @@ settings():
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (include_tag
@@ -13729,10 +13591,8 @@ from import:
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (include_tag
@@ -13945,10 +13805,8 @@ tag(): user.javascript
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier)))
 
@@ -14057,10 +13915,8 @@ include <user.code_libraries>:
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (include_tag
@@ -14489,10 +14345,8 @@ state module: "module "
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (include_tag
@@ -14668,10 +14522,8 @@ date: user.insert_between("DATE '", "'")
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (include_tag
@@ -15773,10 +15625,8 @@ not tag: user.mouse_grid_showing
   (context
     (not
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (command
     (rule
       (capture
@@ -15961,10 +15811,8 @@ choose <user.formatters> <number_small>:
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -16111,10 +15959,8 @@ select next clip: user.select_next_occurrence(clip.text())
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -16763,10 +16609,8 @@ go camel right: user.camel_right()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (command
     (rule
@@ -18248,10 +18092,8 @@ tab search <user.text>$:
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (include_tag
@@ -18344,15 +18186,11 @@ anaconda verify:      "conda verify "
   (context
     (and
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (command
     (rule
       (word))
@@ -18644,10 +18482,8 @@ tag(): user.pages
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (include_tag
     (identifier)))
@@ -18678,15 +18514,11 @@ terraform validate: "terraform validate\n"
   (context
     (and
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (command
     (rule
       (word))
@@ -18865,10 +18697,8 @@ show cache: browser.show_clear_cache()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (choice
@@ -19188,10 +19018,8 @@ tag(): user.chapters
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (include_tag
     (identifier))
@@ -19212,10 +19040,8 @@ tag(): user.pages
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (include_tag
     (identifier)))
@@ -19297,10 +19123,8 @@ tag(): user.kubectl
   (comment)
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (include_tag
@@ -19397,10 +19221,8 @@ find it <phrase>$:
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (include_tag
     (identifier))
@@ -19519,10 +19341,8 @@ tag(): user.tabs
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (include_tag
     (identifier))
@@ -19547,15 +19367,11 @@ go program files: user.file_manager_open_directory("%programfiles%")
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (include_tag
     (identifier))
   (command
@@ -19625,26 +19441,18 @@ tag(): user.anaconda
     (or
       (and
         (match
-          (match_key
-            (identifier))
-          (match_pattern
-            (implicit_string)))
+          (identifier)
+          (implicit_string))
         (match
-          (match_key
-            (identifier))
-          (match_pattern
-            (implicit_string))))
+          (identifier)
+          (implicit_string)))
       (and
         (match
-          (match_key
-            (identifier))
-          (match_pattern
-            (implicit_string)))
+          (identifier)
+          (implicit_string))
         (match
-          (match_key
-            (identifier))
-          (match_pattern
-            (implicit_string))))))
+          (identifier)
+          (implicit_string)))))
   (comment)
   (include_tag
     (identifier))
@@ -19674,10 +19482,8 @@ tag(): user.tabs
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (include_tag
     (identifier))
@@ -19706,15 +19512,11 @@ accept: key(shift-f10 c c enter)
   (context
     (and
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (command
     (rule
       (word))
@@ -19797,15 +19599,11 @@ tag(): user.tabs
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (include_tag
     (identifier))
   (comment)
@@ -19852,10 +19650,8 @@ resume:
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (include_tag
     (identifier))
@@ -19938,15 +19734,11 @@ drag [line] up: key('ctrl-cmd-up')
   (context
     (and
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (command
     (rule
       (seq
@@ -20241,15 +20033,11 @@ hide others: app.window_hide_others()
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (include_tag
     (identifier))
   (include_tag
@@ -20562,15 +20350,11 @@ run git commit:                  key("ctrl-alt-m")
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (command
     (rule
       (seq
@@ -21506,21 +21290,15 @@ task <number> delete$: "task {number} delete"
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (and
         (match
-          (match_key
-            (identifier))
-          (match_pattern
-            (implicit_string)))
+          (identifier)
+          (implicit_string))
         (match
-          (match_key
-            (identifier))
-          (match_pattern
-            (implicit_string))))))
+          (identifier)
+          (implicit_string)))))
   (comment)
   (command
     (rule
@@ -21754,15 +21532,11 @@ mux pane numbers:
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (command
     (rule
       (word))
@@ -21995,10 +21769,8 @@ tag(): user.pages
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (include_tag
     (identifier)))
@@ -22031,16 +21803,12 @@ visual line mode: key("V")
   (context
     (and
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (not
         (match
-          (match_key
-            (identifier))
-          (match_pattern
-            (implicit_string))))))
+          (identifier)
+          (implicit_string)))))
   (comment)
   (comment)
   (comment)
@@ -22118,10 +21886,8 @@ tag(): user.kubectl
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (include_tag
     (identifier))
@@ -22149,10 +21915,8 @@ tag(): user.file_manager
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (include_tag
     (identifier))
@@ -22188,15 +21952,11 @@ tag(): user.tabs
   (context
     (and
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (comment)
   (include_tag
     (identifier))
@@ -22228,10 +21988,8 @@ tag(): user.pages
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (include_tag
     (identifier)))
@@ -22287,10 +22045,8 @@ remove [link] attachment: key("ctrl-shift-p")
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -22637,10 +22393,8 @@ dismiss all [notifications]: user.system_command('dunstctl close-all')
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -22711,10 +22465,8 @@ find <user.text>:
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (command
     (rule
@@ -22985,22 +22737,16 @@ clear screen: "shell clear\n"
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (comment)
       (comment)
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (include_tag
     (identifier))
   (include_tag
@@ -23671,10 +23417,8 @@ decline call: user.discord_decline_call()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (include_tag
@@ -23996,10 +23740,8 @@ copy line up: key(ctrl-alt-up)
   (comment)
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (include_tag
@@ -24551,15 +24293,11 @@ debug continue: key(f5)
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (include_tag
     (identifier))
   (include_tag
@@ -25115,15 +24853,11 @@ settings():
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (settings
     (comment)
     (block
@@ -25213,15 +24947,11 @@ fullscreen toggle: key(shift-f)
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (comment)
   (command
     (rule
@@ -25848,15 +25578,11 @@ expand photo: key(o)
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string))))
+        (identifier)
+        (implicit_string)))
     (comment))
   (comment)
   (command
@@ -26242,20 +25968,14 @@ categorize [this] message: key(c)
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (comment)
   (command
     (rule
@@ -26866,15 +26586,11 @@ save contact: key(ctrl-s)
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (comment)
   (comment)
   (command
@@ -27452,15 +27168,11 @@ edit page: key(e)
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string))))
+        (identifier)
+        (implicit_string)))
     (comment))
   (comment)
   (command
@@ -28104,10 +27816,8 @@ clear line: user.debugger_clear_line()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (comment)
   (command
@@ -28726,15 +28436,11 @@ new scratch (shell|window):
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (command
     (rule
       (seq
@@ -29465,10 +29171,8 @@ dump function params: "r @rcx,@rdx,@r8,@r9\n"
   (comment)
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (include_tag
@@ -29715,15 +29419,11 @@ tag(): user.git
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (include_tag
     (identifier))
   (include_tag
@@ -29751,10 +29451,8 @@ window reevaluate: key("alt-shift-z")
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -30102,10 +29800,8 @@ blacken: user.idea("action BLACKReformatCode")
   (comment)
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (include_tag
@@ -32339,10 +32035,8 @@ tag(): user.pages
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (include_tag
     (identifier))
@@ -32366,10 +32060,8 @@ snip show: user.snippet_toggle()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -32440,10 +32132,8 @@ snip close: user.snippet_hide()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -32542,15 +32232,11 @@ leave team meeting: key(super-shift-h)
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (command
     (rule
       (seq
@@ -33251,20 +32937,14 @@ go to suggested time: key(alt-shift-s)
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (comment)
   (comment)
   (comment)
@@ -33888,20 +33568,14 @@ toggle right sidebar: key(ctrl-.)
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string))))
+        (identifier)
+        (implicit_string)))
     (comment))
   (include_tag
     (identifier))
@@ -34533,15 +34207,11 @@ toggle right sidebar: key(cmd-.)
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (include_tag
     (identifier))
   (include_tag
@@ -35172,10 +34842,8 @@ copy paste:
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (command
     (rule
@@ -35376,15 +35044,11 @@ tag(): user.talon_python
   (context
     (or
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (include_tag
     (identifier))
   (comment)
@@ -35673,10 +35337,8 @@ file last: user.file_manager_previous_file_page()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -36072,15 +35734,11 @@ cube shell:
   (context
     (and
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))))
+        (identifier)
+        (implicit_string))))
   (command
     (rule
       (seq
@@ -36773,10 +36431,8 @@ install local: user.vscode("workbench.extensions.action.installVSIX")
   (comment)
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (include_tag
     (identifier))
   (include_tag
@@ -38746,23 +38402,17 @@ dev tools: user.thunderbird_mod("shift-i")
   (context
     (and
       (match
-        (match_key
-          (identifier))
-        (match_pattern
-          (implicit_string)))
+        (identifier)
+        (implicit_string))
       (and
         (not
           (match
-            (match_key
-              (identifier))
-            (match_pattern
-              (implicit_string))))
+            (identifier)
+            (implicit_string)))
         (not
           (match
-            (match_key
-              (identifier))
-            (match_pattern
-              (implicit_string)))))))
+            (identifier)
+            (implicit_string))))))
   (comment)
   (include_tag
     (identifier))
@@ -38880,10 +38530,8 @@ toggle (mail | message) [pane]: key(f8)
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (command
     (rule
@@ -39228,10 +38876,8 @@ contact down: key(down)
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -39322,10 +38968,8 @@ toggle today: key(f11)
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (command
     (rule
@@ -39397,10 +39041,8 @@ link delete: user.thunderbird_mod("shift-k")
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (command
     (rule
@@ -39545,10 +39187,8 @@ view month: user.thunderbird_calendar_view(4)
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (comment)
   (command
     (rule
@@ -39704,10 +39344,8 @@ password delete: user.password_delete()
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
@@ -39771,10 +39409,8 @@ grid back:
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (capture
@@ -39832,10 +39468,8 @@ M grid:
 (source_file
   (context
     (match
-      (match_key
-        (identifier))
-      (match_pattern
-        (implicit_string))))
+      (identifier)
+      (implicit_string)))
   (command
     (rule
       (seq
