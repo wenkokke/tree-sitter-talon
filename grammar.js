@@ -149,11 +149,11 @@ module.exports = grammar({
 
     word: ($) => /[A-Za-z-]+/,
 
-    list: ($) => seq("{", $.identifier, "}"),
+    list: ($) => seq("{", field("list_name", $.identifier), "}"),
 
-    capture: ($) => seq("<", $.identifier, ">"),
+    capture: ($) => seq("<", field("capture_name", $.identifier), ">"),
 
-    optional: ($) => seq("[", $._optional_choice, "]"),
+    optional: ($) => seq("[", field("optional_name", $._optional_choice), "]"),
 
     repeat: ($) => seq($._primary_rule, "*"),
 
@@ -214,18 +214,32 @@ module.exports = grammar({
     },
 
     key_action: ($) =>
-      prec(PREC.key, seq("key", "(", alias(/[^\)]*/, $.implicit_string), ")")),
+      prec(
+        PREC.key,
+        seq(
+            field("action_name", alias("key", $.identifier)),
+            "(",
+            field("arguments", alias(/[^\)]*/, $.implicit_string)),
+            ")"
+        )
+      ),
 
     sleep_action: ($) =>
       prec(
         PREC.sleep,
-        seq("sleep", "(", alias(/[^\)]*/, $.implicit_string), ")")
+        seq(
+            field("action_name", alias("sleep", $.identifier)),
+            "(",
+            field("arguments", alias(/[^\)]*/, $.implicit_string)),
+            ")"
+        )
       ),
 
     action: ($) =>
       prec(
         PREC.action,
-        seq(field("action", $.identifier), field("arguments", $.argument_list))
+        seq(
+            field("action_name", $.identifier), field("arguments", $.argument_list))
       ),
 
     argument_list: ($) => seq("(", sep($._expression, ","), optional(","), ")"),

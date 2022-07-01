@@ -301,8 +301,12 @@
           "value": ":"
         },
         {
-          "type": "SYMBOL",
-          "name": "identifier"
+          "type": "FIELD",
+          "name": "tag",
+          "content": {
+            "type": "SYMBOL",
+            "name": "identifier"
+          }
         },
         {
           "type": "SYMBOL",
@@ -999,8 +1003,17 @@
         "type": "SEQ",
         "members": [
           {
-            "type": "STRING",
-            "value": "key"
+            "type": "FIELD",
+            "name": "action",
+            "content": {
+              "type": "ALIAS",
+              "content": {
+                "type": "STRING",
+                "value": "key"
+              },
+              "named": true,
+              "value": "identifier"
+            }
           },
           {
             "type": "STRING",
@@ -1029,8 +1042,17 @@
         "type": "SEQ",
         "members": [
           {
-            "type": "STRING",
-            "value": "sleep"
+            "type": "FIELD",
+            "name": "action",
+            "content": {
+              "type": "ALIAS",
+              "content": {
+                "type": "STRING",
+                "value": "sleep"
+              },
+              "named": true,
+              "value": "identifier"
+            }
           },
           {
             "type": "STRING",

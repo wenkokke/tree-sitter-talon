@@ -1178,6 +1178,7 @@ slap: edit.line_insert_down()
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -1193,6 +1194,7 @@ slap: edit.line_insert_down()
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -1546,6 +1548,7 @@ media (play | pause): user.play_pause()
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -1555,6 +1558,7 @@ media (play | pause): user.play_pause()
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -1580,6 +1584,7 @@ media (play | pause): user.play_pause()
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -1591,6 +1596,7 @@ media (play | pause): user.play_pause()
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -1602,6 +1608,7 @@ media (play | pause): user.play_pause()
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -2055,9 +2062,11 @@ air:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -2065,9 +2074,11 @@ air:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -2075,9 +2086,11 @@ air:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -2085,9 +2098,11 @@ air:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -2095,9 +2110,11 @@ air:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -3075,6 +3092,7 @@ git commit highlighted:
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -3225,6 +3243,7 @@ git commit highlighted:
           (argument_list)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -3248,6 +3267,7 @@ git commit highlighted:
           (argument_list)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -3267,6 +3287,7 @@ git commit highlighted:
           (argument_list)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -3290,6 +3311,7 @@ git commit highlighted:
           (argument_list)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -3309,6 +3331,7 @@ git commit highlighted:
           (argument_list)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -3678,6 +3701,7 @@ customize {user.talon_settings_csv}:
             (identifier))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -3723,6 +3747,7 @@ press <user.keys>: key(keys)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -3752,6 +3777,7 @@ press <user.keys>: key(keys)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -3760,6 +3786,7 @@ press <user.keys>: key(keys)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -3768,6 +3795,7 @@ press <user.keys>: key(keys)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -3779,6 +3807,7 @@ press <user.keys>: key(keys)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -3790,6 +3819,7 @@ press <user.keys>: key(keys)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -3801,6 +3831,7 @@ press <user.keys>: key(keys)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -4684,6 +4715,7 @@ curse no:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -4692,6 +4724,7 @@ curse no:
             (integer))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (comment)
       (expression
@@ -4707,6 +4740,7 @@ curse no:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -4715,6 +4749,7 @@ curse no:
             (integer))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (comment)
       (expression
@@ -5735,6 +5770,7 @@ spell that <user.formatters> <user.letters>:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -5747,6 +5783,7 @@ spell that <user.formatters> <user.letters>:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (comment)
@@ -6880,6 +6917,7 @@ replace <user.draft_anchor> with <user.text>:
             (integer))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -6908,6 +6946,7 @@ replace <user.draft_anchor> with <user.text>:
             (integer))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -7121,6 +7160,7 @@ mode: command
           (argument_list)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -7146,6 +7186,7 @@ mode: command
           (argument_list)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -8101,6 +8142,7 @@ swipe [<user.text>] [over]:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -8177,6 +8219,7 @@ swipe [<user.text>] [over]:
             (string))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -8203,6 +8246,7 @@ swipe [<user.text>] [over]:
                 (string))))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -8239,6 +8283,7 @@ swipe [<user.text>] [over]:
       (comment)
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -8408,6 +8453,7 @@ swipe [<user.text>] [over]:
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -8720,6 +8766,7 @@ swipe [<user.text>] [over]:
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -8740,6 +8787,7 @@ swipe [<user.text>] [over]:
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -8773,6 +8821,7 @@ swipe [<user.text>] [over]:
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -8790,6 +8839,7 @@ swipe [<user.text>] [over]:
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -8884,6 +8934,7 @@ swipe [<user.text>] [over]:
             (string))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -8901,6 +8952,7 @@ swipe [<user.text>] [over]:
             (string))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -8970,9 +9022,11 @@ swipe [<user.text>] [over]:
                 (string))))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -9206,6 +9260,7 @@ swipe [<user.text>] [over]:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -9635,6 +9690,7 @@ from import: user.insert_between("from ", " import ")
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -10000,11 +10056,13 @@ level six: "###### "
         (string))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (string))
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -10499,6 +10557,7 @@ inner block dock comment: user.code_comment_documentation_block_inner()
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -10836,6 +10895,7 @@ named arg {user.code_parameter_name}: user.code_insert_named_argument(code_param
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -10849,11 +10909,13 @@ named arg {user.code_parameter_name}: user.code_insert_named_argument(code_param
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (string))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -11334,6 +11396,7 @@ close block comment:
           (argument_list)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -11341,6 +11404,7 @@ close block comment:
           (argument_list)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -11437,6 +11501,7 @@ close block comment:
           (argument_list)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -11445,6 +11510,7 @@ close block comment:
             (identifier))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -11475,6 +11541,7 @@ close block comment:
           (argument_list)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -11483,6 +11550,7 @@ close block comment:
             (identifier))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -13321,6 +13389,7 @@ block string:
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -14043,6 +14112,7 @@ include <user.code_libraries>:
           (argument_list)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -14151,9 +14221,11 @@ include <user.code_libraries>:
           (argument_list)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -14292,6 +14364,7 @@ include <user.code_libraries>:
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -14406,6 +14479,7 @@ state module: "module "
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -14668,16 +14742,19 @@ date: user.insert_between("DATE '", "'")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (string))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (string))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -14691,6 +14768,7 @@ date: user.insert_between("DATE '", "'")
         (string))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -14698,6 +14776,7 @@ date: user.insert_between("DATE '", "'")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (string))))
@@ -15287,6 +15366,7 @@ quote that:
         (string))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -15306,9 +15386,11 @@ quote that:
           (string_escape_sequence)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -15320,6 +15402,7 @@ quote that:
         (string))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -15334,9 +15417,11 @@ quote that:
           (string_escape_sequence)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -15354,6 +15439,7 @@ quote that:
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -15374,6 +15460,7 @@ quote that:
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -15391,6 +15478,7 @@ quote that:
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -15405,6 +15493,7 @@ quote that:
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -15422,6 +15511,7 @@ quote that:
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -15460,6 +15550,7 @@ quote that:
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -16139,6 +16230,7 @@ select next clip: user.select_next_occurrence(clip.text())
             (identifier))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -16161,6 +16253,7 @@ select next clip: user.select_next_occurrence(clip.text())
             (identifier))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -16200,6 +16293,7 @@ select next clip: user.select_next_occurrence(clip.text())
               (argument_list)))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -16222,6 +16316,7 @@ select next clip: user.select_next_occurrence(clip.text())
             (identifier))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -16243,6 +16338,7 @@ select next clip: user.select_next_occurrence(clip.text())
               (argument_list)))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -16265,6 +16361,7 @@ select next clip: user.select_next_occurrence(clip.text())
             (identifier))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -16286,6 +16383,7 @@ select next clip: user.select_next_occurrence(clip.text())
               (argument_list)))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -16308,6 +16406,7 @@ select next clip: user.select_next_occurrence(clip.text())
             (identifier))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -16329,6 +16428,7 @@ select next clip: user.select_next_occurrence(clip.text())
               (argument_list)))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -16388,6 +16488,7 @@ select next clip: user.select_next_occurrence(clip.text())
             (identifier))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -16414,6 +16515,7 @@ select next clip: user.select_next_occurrence(clip.text())
             (identifier))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -16440,6 +16542,7 @@ select next clip: user.select_next_occurrence(clip.text())
             (identifier))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -16462,6 +16565,7 @@ select next clip: user.select_next_occurrence(clip.text())
             (identifier))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -17746,6 +17850,7 @@ cut line:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -17755,6 +17860,7 @@ cut line:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -18133,6 +18239,7 @@ tab search <user.text>$:
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -18738,6 +18845,7 @@ show cache: browser.show_clear_cache()
           (argument_list)))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -19249,6 +19357,7 @@ find it <phrase>$:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19258,6 +19367,7 @@ find it <phrase>$:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19267,6 +19377,7 @@ find it <phrase>$:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19276,6 +19387,7 @@ find it <phrase>$:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19285,6 +19397,7 @@ find it <phrase>$:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19294,6 +19407,7 @@ find it <phrase>$:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19317,6 +19431,7 @@ find it <phrase>$:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (comment)
       (expression
@@ -19523,6 +19638,7 @@ accept: key(shift-f10 c c enter)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19532,6 +19648,7 @@ accept: key(shift-f10 c c enter)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19539,6 +19656,7 @@ accept: key(shift-f10 c c enter)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19546,6 +19664,7 @@ accept: key(shift-f10 c c enter)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19553,6 +19672,7 @@ accept: key(shift-f10 c c enter)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19562,6 +19682,7 @@ accept: key(shift-f10 c c enter)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19569,6 +19690,7 @@ accept: key(shift-f10 c c enter)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19576,6 +19698,7 @@ accept: key(shift-f10 c c enter)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -19677,6 +19800,7 @@ resume:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19689,6 +19813,7 @@ resume:
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -19747,6 +19872,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19756,6 +19882,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19765,6 +19892,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19774,6 +19902,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19783,6 +19912,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19792,6 +19922,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19801,6 +19932,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19810,6 +19942,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19819,6 +19952,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19828,6 +19962,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19837,6 +19972,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19846,6 +19982,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19855,6 +19992,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19864,6 +20002,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19873,6 +20012,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19882,6 +20022,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19891,6 +20032,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19900,6 +20042,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19909,6 +20052,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19918,6 +20062,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19927,6 +20072,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19936,6 +20082,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19945,6 +20092,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19954,6 +20102,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19963,6 +20112,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19970,6 +20120,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19981,6 +20132,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -19992,6 +20144,7 @@ drag [line] up: key('ctrl-cmd-up')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -20048,6 +20201,7 @@ hide others: app.window_hide_others()
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20055,6 +20209,7 @@ hide others: app.window_hide_others()
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20062,6 +20217,7 @@ hide others: app.window_hide_others()
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -20073,6 +20229,7 @@ hide others: app.window_hide_others()
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20083,6 +20240,7 @@ hide others: app.window_hide_others()
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20093,17 +20251,7 @@ hide others: app.window_hide_others()
     (block
       (expression
         (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20115,6 +20263,7 @@ hide others: app.window_hide_others()
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20126,6 +20275,19 @@ hide others: app.window_hide_others()
     (block
       (expression
         (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20136,6 +20298,7 @@ hide others: app.window_hide_others()
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20145,6 +20308,7 @@ hide others: app.window_hide_others()
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20154,6 +20318,7 @@ hide others: app.window_hide_others()
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20163,6 +20328,7 @@ hide others: app.window_hide_others()
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20172,6 +20338,7 @@ hide others: app.window_hide_others()
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20181,6 +20348,7 @@ hide others: app.window_hide_others()
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20190,6 +20358,7 @@ hide others: app.window_hide_others()
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20200,6 +20369,7 @@ hide others: app.window_hide_others()
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20363,6 +20533,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20372,16 +20543,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20392,6 +20554,18 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20404,6 +20578,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20413,25 +20588,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20442,6 +20599,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20451,6 +20609,18 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20460,6 +20630,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20469,6 +20640,17 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -20479,6 +20661,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20488,43 +20671,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20535,6 +20682,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20544,6 +20692,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20553,6 +20702,17 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20563,6 +20723,38 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20574,6 +20766,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20584,65 +20777,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20654,6 +20789,60 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20665,6 +20854,19 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20674,44 +20876,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20722,25 +20887,18 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
-          (implicit_string)))))
-  (comment)
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
       (seq
         (word)
+        (word)
         (word)))
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20750,6 +20908,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20759,17 +20918,29 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
     (rule
       (seq
         (word)
-        (word)
         (word)))
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20779,6 +20950,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20788,26 +20960,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20817,16 +20970,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -20838,6 +20982,27 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20848,6 +21013,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20858,6 +21024,17 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20868,6 +21045,19 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
+          (implicit_string)))))
+  (comment)
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20878,6 +21068,40 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20891,6 +21115,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20901,6 +21126,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20911,6 +21137,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20921,6 +21148,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20931,6 +21159,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20941,6 +21170,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20951,6 +21181,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20961,6 +21192,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20971,6 +21203,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -20981,28 +21214,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21014,6 +21226,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21025,6 +21238,31 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21034,6 +21272,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21046,6 +21285,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21055,6 +21295,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21064,6 +21305,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21073,6 +21315,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21082,78 +21325,86 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
-          (implicit_string)))))
-  (comment)
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
     (rule
       (seq
         (word)
+        (word)
         (word)))
     (block
       (expression
         (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (comment)
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21163,6 +21414,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21177,6 +21429,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21190,6 +21443,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21199,6 +21453,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21208,6 +21463,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -21219,6 +21475,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21229,6 +21486,7 @@ run git commit:                  key("ctrl-alt-m")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (comment)
@@ -21564,9 +21822,11 @@ mux pane numbers:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21577,9 +21837,11 @@ mux pane numbers:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21603,9 +21865,11 @@ mux pane numbers:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21617,9 +21881,11 @@ mux pane numbers:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21630,9 +21896,11 @@ mux pane numbers:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21643,9 +21911,11 @@ mux pane numbers:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21656,9 +21926,11 @@ mux pane numbers:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21669,9 +21941,11 @@ mux pane numbers:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -21683,9 +21957,11 @@ mux pane numbers:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21696,9 +21972,11 @@ mux pane numbers:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21709,9 +21987,11 @@ mux pane numbers:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21723,9 +22003,11 @@ mux pane numbers:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21736,9 +22018,11 @@ mux pane numbers:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -21750,9 +22034,11 @@ mux pane numbers:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -21829,6 +22115,7 @@ visual line mode: key("V")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21838,6 +22125,7 @@ visual line mode: key("V")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21847,6 +22135,7 @@ visual line mode: key("V")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21856,6 +22145,7 @@ visual line mode: key("V")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -21866,6 +22156,7 @@ visual line mode: key("V")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -22055,6 +22346,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (comment)
@@ -22075,6 +22367,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22090,6 +22383,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22102,6 +22396,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22114,6 +22409,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22123,6 +22419,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22136,6 +22433,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22146,6 +22444,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22153,6 +22452,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22162,6 +22462,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22174,6 +22475,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22183,6 +22485,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22192,6 +22495,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22201,6 +22505,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22212,6 +22517,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22221,6 +22527,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22230,6 +22537,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22242,6 +22550,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22254,6 +22563,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22263,6 +22573,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -22273,6 +22584,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22282,6 +22594,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22292,6 +22605,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22302,6 +22616,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22311,6 +22626,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22321,6 +22637,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -22331,6 +22648,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22340,6 +22658,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22350,6 +22669,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22361,6 +22681,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22372,6 +22693,7 @@ remove [link] attachment: key("ctrl-shift-p")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -22403,6 +22725,7 @@ dismiss all [notifications]: user.system_command('dunstctl close-all')
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22476,6 +22799,7 @@ find <user.text>:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22485,6 +22809,7 @@ find <user.text>:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22494,6 +22819,7 @@ find <user.text>:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22503,6 +22829,7 @@ find <user.text>:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22510,6 +22837,7 @@ find <user.text>:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -22522,6 +22850,7 @@ find <user.text>:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22531,6 +22860,7 @@ find <user.text>:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22543,6 +22873,7 @@ find <user.text>:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22552,6 +22883,7 @@ find <user.text>:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22563,6 +22895,7 @@ find <user.text>:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22572,6 +22905,7 @@ find <user.text>:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22585,6 +22919,7 @@ find <user.text>:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22598,6 +22933,7 @@ find <user.text>:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22605,6 +22941,7 @@ find <user.text>:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22615,6 +22952,7 @@ find <user.text>:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -22796,9 +23134,11 @@ clear screen: "shell clear\n"
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -22952,6 +23292,7 @@ clear screen: "shell clear\n"
           (argument_list)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -22971,6 +23312,7 @@ clear screen: "shell clear\n"
           (argument_list)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -23763,6 +24105,7 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -23780,6 +24123,7 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -23790,6 +24134,7 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (comment)
@@ -23804,12 +24149,15 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -23819,12 +24167,15 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -23834,12 +24185,15 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -23849,12 +24203,15 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -23864,12 +24221,15 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -23879,12 +24239,15 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (comment)
@@ -23897,6 +24260,7 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -23906,6 +24270,7 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (comment)
@@ -23926,9 +24291,11 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -23947,6 +24314,7 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -23957,6 +24325,7 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -23966,6 +24335,7 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -23975,26 +24345,12 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (comment)
   (comment)
   (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
   (comment)
   (comment)
   (comment)
@@ -24009,6 +24365,23 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
+          (implicit_string)))))
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24018,6 +24391,7 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -24031,6 +24405,7 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24040,6 +24415,7 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24049,54 +24425,8 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (comment)
-  (comment)
-  (comment)
   (comment)
   (comment)
   (comment)
@@ -24111,6 +24441,7 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24120,6 +24451,7 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24130,6 +24462,58 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24142,6 +24526,7 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (comment)
@@ -24154,6 +24539,7 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (comment)
@@ -24175,6 +24561,7 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24185,6 +24572,7 @@ copy line up: key(ctrl-alt-up)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -24318,6 +24706,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24327,6 +24716,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24336,6 +24726,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24345,6 +24736,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24354,6 +24746,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24363,6 +24756,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24372,6 +24766,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24381,7 +24776,21 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
+  (comment)
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (comment)
+  (comment)
   (comment)
   (command
     (rule
@@ -24391,18 +24800,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
-          (implicit_string)))))
-  (comment)
-  (comment)
-  (comment)
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24412,6 +24810,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -24425,6 +24824,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -24441,6 +24841,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -24451,6 +24852,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24460,7 +24862,81 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
+  (comment)
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (comment)
+  (comment)
   (comment)
   (command
     (rule
@@ -24470,6 +24946,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24479,6 +24956,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24488,72 +24966,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (comment)
-  (comment)
-  (comment)
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24564,6 +24977,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24574,6 +24988,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24583,6 +24998,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -24596,6 +25012,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24605,6 +25022,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24614,6 +25032,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24623,6 +25042,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24635,9 +25055,11 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -24657,9 +25079,11 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -24679,9 +25103,11 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -24698,6 +25124,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -24708,6 +25135,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24717,16 +25145,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24737,16 +25156,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
-          (implicit_string)))))
-  (comment)
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24757,15 +25167,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -24776,15 +25178,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24795,6 +25189,49 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (comment)
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24807,6 +25244,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24816,6 +25254,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24825,6 +25264,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -24834,6 +25274,7 @@ debug continue: key(f5)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -24961,6 +25402,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25001,6 +25443,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25017,6 +25460,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25033,6 +25477,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25047,6 +25492,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25061,6 +25507,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -25159,6 +25606,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -25174,6 +25622,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25184,6 +25633,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25204,6 +25654,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25218,6 +25669,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25230,6 +25682,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25240,6 +25693,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25252,6 +25706,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -25269,6 +25724,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25284,6 +25740,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25298,6 +25755,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25312,6 +25770,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25326,6 +25785,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25333,6 +25793,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25347,6 +25808,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25361,6 +25823,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25372,6 +25835,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -25387,6 +25851,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25396,6 +25861,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25406,6 +25872,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -25417,6 +25884,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25431,6 +25899,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -25446,6 +25915,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25460,6 +25930,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -25470,6 +25941,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25479,6 +25951,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25488,6 +25961,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25497,6 +25971,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -25519,6 +25994,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25528,6 +26004,7 @@ fullscreen toggle: key(shift-f)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -25598,6 +26075,7 @@ expand photo: key(o)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25607,6 +26085,7 @@ expand photo: key(o)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25616,6 +26095,7 @@ expand photo: key(o)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25625,6 +26105,7 @@ expand photo: key(o)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25635,6 +26116,7 @@ expand photo: key(o)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25780,6 +26262,7 @@ expand photo: key(o)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25789,6 +26272,7 @@ expand photo: key(o)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25799,6 +26283,7 @@ expand photo: key(o)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25806,6 +26291,7 @@ expand photo: key(o)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25815,6 +26301,7 @@ expand photo: key(o)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25824,6 +26311,7 @@ expand photo: key(o)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25835,6 +26323,7 @@ expand photo: key(o)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25844,6 +26333,7 @@ expand photo: key(o)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25851,6 +26341,7 @@ expand photo: key(o)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25860,6 +26351,7 @@ expand photo: key(o)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25869,6 +26361,7 @@ expand photo: key(o)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25878,6 +26371,7 @@ expand photo: key(o)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25887,6 +26381,7 @@ expand photo: key(o)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -25985,6 +26480,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -25996,6 +26492,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26009,6 +26506,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26023,6 +26521,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26034,6 +26533,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26044,6 +26544,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26054,6 +26555,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26067,6 +26569,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -26082,6 +26585,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26093,6 +26597,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26104,6 +26609,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26115,6 +26621,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26126,6 +26633,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -26138,6 +26646,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26155,6 +26664,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26166,6 +26676,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26182,6 +26693,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26198,6 +26710,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26213,6 +26726,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26230,6 +26744,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26243,6 +26758,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -26255,6 +26771,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26266,6 +26783,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26277,6 +26795,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26289,6 +26808,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26300,9 +26820,11 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26313,9 +26835,11 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26326,9 +26850,11 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26339,6 +26865,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26348,6 +26875,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -26361,6 +26889,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26373,6 +26902,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26389,6 +26919,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26398,6 +26929,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26415,6 +26947,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26432,6 +26965,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26447,6 +26981,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26454,6 +26989,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26469,6 +27005,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26481,6 +27018,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26492,6 +27030,7 @@ categorize [this] message: key(c)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -26601,6 +27140,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26611,6 +27151,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26620,6 +27161,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26629,6 +27171,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26640,6 +27183,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -26650,6 +27194,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26659,6 +27204,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26668,6 +27214,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (comment)
@@ -26684,9 +27231,11 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26701,9 +27250,11 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26718,9 +27269,11 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26735,9 +27288,11 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26752,9 +27307,11 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26769,9 +27326,11 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26786,9 +27345,11 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -26802,6 +27363,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26811,6 +27373,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26820,6 +27383,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26829,6 +27393,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26843,6 +27408,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26857,6 +27423,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26866,6 +27433,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26875,6 +27443,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -26885,9 +27454,11 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26900,9 +27471,11 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26917,6 +27490,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26928,6 +27502,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26939,6 +27514,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26951,6 +27527,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26961,6 +27538,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26971,6 +27549,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26981,6 +27560,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -26991,6 +27571,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -27005,6 +27586,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27020,6 +27602,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27032,6 +27615,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (comment)
@@ -27046,6 +27630,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27055,6 +27640,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27064,6 +27650,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27073,6 +27660,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -27083,6 +27671,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27092,6 +27681,7 @@ save contact: key(ctrl-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -27183,6 +27773,7 @@ edit page: key(e)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27195,6 +27786,7 @@ edit page: key(e)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27207,6 +27799,7 @@ edit page: key(e)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27219,6 +27812,7 @@ edit page: key(e)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27231,6 +27825,7 @@ edit page: key(e)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27243,6 +27838,7 @@ edit page: key(e)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27252,6 +27848,7 @@ edit page: key(e)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27264,6 +27861,7 @@ edit page: key(e)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27277,6 +27875,7 @@ edit page: key(e)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27292,6 +27891,7 @@ edit page: key(e)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27305,6 +27905,7 @@ edit page: key(e)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27315,6 +27916,7 @@ edit page: key(e)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27327,6 +27929,7 @@ edit page: key(e)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -27407,6 +28010,7 @@ edit page: key(e)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27625,6 +28229,7 @@ edit page: key(e)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27634,6 +28239,7 @@ edit page: key(e)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27643,6 +28249,7 @@ edit page: key(e)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27652,6 +28259,7 @@ edit page: key(e)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27661,17 +28269,7 @@ edit page: key(e)
     (block
       (expression
         (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (optional
-          (word))
-        (word)))
-    (block
-      (expression
-        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27683,6 +28281,19 @@ edit page: key(e)
     (block
       (expression
         (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (optional
+          (word))
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27692,6 +28303,7 @@ edit page: key(e)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -27701,36 +28313,40 @@ edit page: key(e)
     (block
       (expression
         (key_action
-          (implicit_string)))))
-  (comment)
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
     (rule
       (seq
         (word)
+        (word)
         (word)))
     (block
       (expression
         (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (comment)
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -28734,17 +29350,21 @@ new scratch (shell|window):
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (comment)
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (comment)
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -28765,17 +29385,21 @@ new scratch (shell|window):
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (comment)
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (comment)
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -29049,6 +29673,7 @@ new scratch (shell|window):
           (argument_list)))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -29094,6 +29719,7 @@ new scratch (shell|window):
           (argument_list)))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -29186,6 +29812,7 @@ dump function params: "r @rcx,@rdx,@r8,@r9\n"
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -29288,6 +29915,7 @@ dump function params: "r @rcx,@rdx,@r8,@r9\n"
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (comment)
@@ -29300,6 +29928,7 @@ dump function params: "r @rcx,@rdx,@r8,@r9\n"
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -29309,6 +29938,7 @@ dump function params: "r @rcx,@rdx,@r8,@r9\n"
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -29318,6 +29948,7 @@ dump function params: "r @rcx,@rdx,@r8,@r9\n"
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -29327,6 +29958,7 @@ dump function params: "r @rcx,@rdx,@r8,@r9\n"
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -29336,25 +29968,7 @@ dump function params: "r @rcx,@rdx,@r8,@r9\n"
     (block
       (expression
         (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -29365,6 +29979,28 @@ dump function params: "r @rcx,@rdx,@r8,@r9\n"
     (block
       (expression
         (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -29377,6 +30013,7 @@ dump function params: "r @rcx,@rdx,@r8,@r9\n"
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -29461,6 +30098,7 @@ window reevaluate: key("alt-shift-z")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -29470,6 +30108,7 @@ window reevaluate: key("alt-shift-z")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -29480,6 +30119,7 @@ window reevaluate: key("alt-shift-z")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -29489,6 +30129,7 @@ window reevaluate: key("alt-shift-z")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -29498,6 +30139,7 @@ window reevaluate: key("alt-shift-z")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -29508,6 +30150,7 @@ window reevaluate: key("alt-shift-z")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -29517,6 +30160,7 @@ window reevaluate: key("alt-shift-z")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -29526,6 +30170,7 @@ window reevaluate: key("alt-shift-z")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -29535,6 +30180,7 @@ window reevaluate: key("alt-shift-z")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -30176,6 +30822,7 @@ blacken: user.idea("action BLACKReformatCode")
             (string))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -30262,6 +30909,7 @@ blacken: user.idea("action BLACKReformatCode")
             (identifier))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -30291,6 +30939,7 @@ blacken: user.idea("action BLACKReformatCode")
             (string))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -30315,6 +30964,7 @@ blacken: user.idea("action BLACKReformatCode")
             (string))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -30338,6 +30988,7 @@ blacken: user.idea("action BLACKReformatCode")
             (string))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -30417,6 +31068,7 @@ blacken: user.idea("action BLACKReformatCode")
             (identifier))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -30645,6 +31297,7 @@ blacken: user.idea("action BLACKReformatCode")
             (string))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -30679,6 +31332,7 @@ blacken: user.idea("action BLACKReformatCode")
             (string))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -32245,6 +32899,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32254,6 +32909,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32263,6 +32919,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32275,6 +32932,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32284,6 +32942,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32293,6 +32952,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32302,6 +32962,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32314,6 +32975,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32325,6 +32987,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32334,6 +32997,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32343,6 +33007,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32350,6 +33015,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32357,15 +33023,19 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32375,6 +33045,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -32388,6 +33059,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32397,6 +33069,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32406,6 +33079,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32415,6 +33089,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32424,6 +33099,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32433,6 +33109,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32451,6 +33128,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32466,6 +33144,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32478,6 +33157,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32490,6 +33170,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32506,6 +33187,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32519,6 +33201,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -32534,6 +33217,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32546,6 +33230,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32555,6 +33240,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32564,6 +33250,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32574,15 +33261,19 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32594,6 +33285,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32606,6 +33298,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -32617,6 +33310,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32627,6 +33321,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32636,16 +33331,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32656,6 +33342,18 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32665,6 +33363,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32676,6 +33375,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32685,6 +33385,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32698,6 +33399,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32708,6 +33410,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32718,6 +33421,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32729,6 +33433,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32740,6 +33445,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32757,6 +33463,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32771,6 +33478,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32780,6 +33488,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32790,6 +33499,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32799,6 +33509,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32812,6 +33523,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32825,6 +33537,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32836,6 +33549,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32848,6 +33562,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32858,6 +33573,7 @@ leave team meeting: key(super-shift-h)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -32956,6 +33672,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32968,6 +33685,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32977,6 +33695,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32986,6 +33705,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -32995,6 +33715,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33007,6 +33728,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33018,6 +33740,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33027,6 +33750,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33036,6 +33760,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33043,6 +33768,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -33053,6 +33779,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33062,6 +33789,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33071,6 +33799,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33080,6 +33809,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33089,6 +33819,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33098,6 +33829,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33107,6 +33839,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33125,6 +33858,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33140,6 +33874,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33152,6 +33887,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33164,6 +33900,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33180,6 +33917,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33193,6 +33931,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -33208,6 +33947,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33220,6 +33960,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33227,6 +33968,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33236,6 +33978,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33247,6 +33990,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33259,6 +34003,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -33270,6 +34015,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33280,6 +34026,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33289,16 +34036,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (word)))
-    (block
-      (expression
-        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33309,6 +34047,18 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (word)
+        (word)))
+    (block
+      (expression
+        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33318,6 +34068,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33329,6 +34080,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33338,6 +34090,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33351,6 +34104,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33361,6 +34115,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33371,6 +34126,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33382,6 +34138,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33393,6 +34150,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33410,6 +34168,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33424,6 +34183,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33433,6 +34193,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33443,6 +34204,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33452,6 +34214,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33465,6 +34228,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33478,6 +34242,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33489,6 +34254,7 @@ go to suggested time: key(alt-shift-s)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -33591,6 +34357,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -33606,6 +34373,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -33619,6 +34387,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33632,6 +34401,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33647,6 +34417,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33661,6 +34432,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33673,6 +34445,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33692,6 +34465,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33704,6 +34478,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33717,6 +34492,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33732,6 +34508,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33749,6 +34526,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33761,6 +34539,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33779,6 +34558,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33793,6 +34573,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -33803,6 +34584,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33812,6 +34594,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33821,6 +34604,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -33837,6 +34621,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33849,6 +34634,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33878,6 +34664,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33895,6 +34682,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33910,6 +34698,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33917,6 +34706,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33927,6 +34717,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33937,6 +34728,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33949,6 +34741,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -33963,6 +34756,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33979,6 +34773,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -33991,6 +34786,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -34004,6 +34800,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34023,6 +34820,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34033,6 +34831,7 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -34051,6 +34850,7 @@ toggle right sidebar: key(ctrl-.)
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34069,6 +34869,7 @@ toggle right sidebar: key(ctrl-.)
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34089,6 +34890,7 @@ toggle right sidebar: key(ctrl-.)
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34107,6 +34909,7 @@ toggle right sidebar: key(ctrl-.)
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34127,6 +34930,7 @@ toggle right sidebar: key(ctrl-.)
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -34226,6 +35030,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -34241,6 +35046,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -34254,6 +35060,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34267,6 +35074,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34282,6 +35090,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34296,6 +35105,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34308,6 +35118,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34327,6 +35138,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34339,6 +35151,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34352,6 +35165,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34367,6 +35181,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34384,6 +35199,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34396,6 +35212,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34414,6 +35231,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34428,6 +35246,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34441,6 +35260,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -34451,6 +35271,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34460,6 +35281,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34469,6 +35291,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34485,6 +35308,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34500,6 +35324,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34512,6 +35337,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34521,6 +35347,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34530,6 +35357,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34548,6 +35376,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34565,6 +35394,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34580,6 +35410,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34587,6 +35418,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34597,6 +35429,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34607,6 +35440,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34619,6 +35453,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -34633,6 +35468,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34645,6 +35481,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34661,6 +35498,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34673,6 +35511,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -34686,6 +35525,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34705,6 +35545,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34715,6 +35556,7 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -34733,6 +35575,7 @@ toggle right sidebar: key(cmd-.)
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34751,6 +35594,7 @@ toggle right sidebar: key(cmd-.)
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34771,6 +35615,7 @@ toggle right sidebar: key(cmd-.)
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34789,6 +35634,7 @@ toggle right sidebar: key(cmd-.)
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -34809,6 +35655,7 @@ toggle right sidebar: key(cmd-.)
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -34971,6 +35818,7 @@ copy paste:
           (argument_list)))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -35080,6 +35928,7 @@ tag(): user.talon_python
             (identifier))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -35097,6 +35946,7 @@ tag(): user.talon_python
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -35126,6 +35976,7 @@ tag(): user.talon_python
             (identifier))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -35145,6 +35996,7 @@ tag(): user.talon_python
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -35164,6 +36016,7 @@ tag(): user.talon_python
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -35180,6 +36033,7 @@ tag(): user.talon_python
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -35196,6 +36050,7 @@ tag(): user.talon_python
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -35212,6 +36067,7 @@ tag(): user.talon_python
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -35231,6 +36087,7 @@ tag(): user.talon_python
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -35248,6 +36105,7 @@ tag(): user.talon_python
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -35265,6 +36123,7 @@ tag(): user.talon_python
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -35283,6 +36142,7 @@ tag(): user.talon_python
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -36157,9 +37017,11 @@ cube shell:
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -36593,6 +37455,7 @@ install local: user.vscode("workbench.extensions.action.installVSIX")
             (string))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -36837,6 +37700,7 @@ install local: user.vscode("workbench.extensions.action.installVSIX")
             (string))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -36907,6 +37771,7 @@ install local: user.vscode("workbench.extensions.action.installVSIX")
             (string))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -36921,6 +37786,7 @@ install local: user.vscode("workbench.extensions.action.installVSIX")
             (string))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -36935,6 +37801,7 @@ install local: user.vscode("workbench.extensions.action.installVSIX")
             (string))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -36949,6 +37816,7 @@ install local: user.vscode("workbench.extensions.action.installVSIX")
             (string))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -37280,6 +38148,7 @@ install local: user.vscode("workbench.extensions.action.installVSIX")
             (string))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -37290,6 +38159,7 @@ install local: user.vscode("workbench.extensions.action.installVSIX")
               (string)))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -37594,6 +38464,7 @@ install local: user.vscode("workbench.extensions.action.installVSIX")
             (string))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -37618,6 +38489,7 @@ install local: user.vscode("workbench.extensions.action.installVSIX")
             (string))))
       (expression
         (sleep_action
+          (identifier)
           (implicit_string)))
       (expression
         (action
@@ -37898,6 +38770,7 @@ install local: user.vscode("workbench.extensions.action.installVSIX")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -37907,6 +38780,7 @@ install local: user.vscode("workbench.extensions.action.installVSIX")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -38252,6 +39126,7 @@ install local: user.vscode("workbench.extensions.action.installVSIX")
             (string))))
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -38544,6 +39419,7 @@ toggle (mail | message) [pane]: key(f8)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -38559,6 +39435,7 @@ toggle (mail | message) [pane]: key(f8)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -38574,22 +39451,7 @@ toggle (mail | message) [pane]: key(f8)
     (block
       (expression
         (key_action
-          (implicit_string)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (optional
-          (choice
-            (word)
-            (word)))
-        (parenthesized_rule
-          (choice
-            (word)
-            (word)))))
-    (block
-      (expression
-        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -38606,6 +39468,24 @@ toggle (mail | message) [pane]: key(f8)
     (block
       (expression
         (key_action
+          (identifier)
+          (implicit_string)))))
+  (command
+    (rule
+      (seq
+        (word)
+        (optional
+          (choice
+            (word)
+            (word)))
+        (parenthesized_rule
+          (choice
+            (word)
+            (word)))))
+    (block
+      (expression
+        (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -38615,6 +39495,7 @@ toggle (mail | message) [pane]: key(f8)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -38629,6 +39510,7 @@ toggle (mail | message) [pane]: key(f8)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -38645,6 +39527,7 @@ toggle (mail | message) [pane]: key(f8)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -38660,6 +39543,7 @@ toggle (mail | message) [pane]: key(f8)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -38675,6 +39559,7 @@ toggle (mail | message) [pane]: key(f8)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -38690,6 +39575,7 @@ toggle (mail | message) [pane]: key(f8)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -38702,6 +39588,7 @@ toggle (mail | message) [pane]: key(f8)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -38714,6 +39601,7 @@ toggle (mail | message) [pane]: key(f8)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -38815,6 +39703,7 @@ toggle (mail | message) [pane]: key(f8)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -38827,6 +39716,7 @@ toggle (mail | message) [pane]: key(f8)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -38908,6 +39798,7 @@ contact down: key(down)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -38939,6 +39830,7 @@ contact down: key(down)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
@@ -38948,6 +39840,7 @@ contact down: key(down)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -39004,6 +39897,7 @@ toggle today: key(f11)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -39014,6 +39908,7 @@ toggle today: key(f11)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string))))))
 
 ================================================================================
@@ -39098,6 +39993,7 @@ link delete: user.thunderbird_mod("shift-k")
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -39223,6 +40119,7 @@ view month: user.thunderbird_calendar_view(4)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (comment)
   (command
@@ -39233,6 +40130,7 @@ view month: user.thunderbird_calendar_view(4)
     (block
       (expression
         (key_action
+          (identifier)
           (implicit_string)))))
   (command
     (rule
