@@ -107,7 +107,7 @@ module.exports = grammar({
 
     /* Commands */
 
-    command: ($) => seq($.rule, ":", $._suite),
+    command: ($) => seq(field("rule", $.rule), ":", field("script", $._suite)),
 
     _suite: ($) =>
       choice(
@@ -171,7 +171,7 @@ module.exports = grammar({
     assignment: ($) =>
       seq(field("left", $.identifier), "=", field("right", $._expression)),
 
-    expression: ($) => $._expression,
+    expression: ($) => field('expression', $._expression),
 
     _expression: ($) =>
       choice(
@@ -217,10 +217,10 @@ module.exports = grammar({
       prec(
         PREC.key,
         seq(
-            field("action_name", alias("key", $.identifier)),
-            "(",
-            field("arguments", alias(/[^\)]*/, $.implicit_string)),
-            ")"
+          field("action_name", alias("key", $.identifier)),
+          "(",
+          field("arguments", alias(/[^\)]*/, $.implicit_string)),
+          ")"
         )
       ),
 
@@ -228,10 +228,10 @@ module.exports = grammar({
       prec(
         PREC.sleep,
         seq(
-            field("action_name", alias("sleep", $.identifier)),
-            "(",
-            field("arguments", alias(/[^\)]*/, $.implicit_string)),
-            ")"
+          field("action_name", alias("sleep", $.identifier)),
+          "(",
+          field("arguments", alias(/[^\)]*/, $.implicit_string)),
+          ")"
         )
       ),
 
@@ -239,7 +239,9 @@ module.exports = grammar({
       prec(
         PREC.action,
         seq(
-            field("action_name", $.identifier), field("arguments", $.argument_list))
+          field("action_name", $.identifier),
+          field("arguments", $.argument_list)
+        )
       ),
 
     argument_list: ($) => seq("(", sep($._expression, ","), optional(","), ")"),

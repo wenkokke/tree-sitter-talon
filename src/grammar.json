@@ -335,16 +335,24 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "rule"
+          "type": "FIELD",
+          "name": "rule",
+          "content": {
+            "type": "SYMBOL",
+            "name": "rule"
+          }
         },
         {
           "type": "STRING",
           "value": ":"
         },
         {
-          "type": "SYMBOL",
-          "name": "_suite"
+          "type": "FIELD",
+          "name": "script",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_suite"
+          }
         }
       ]
     },
@@ -740,8 +748,12 @@
       ]
     },
     "expression": {
-      "type": "SYMBOL",
-      "name": "_expression"
+      "type": "FIELD",
+      "name": "expression",
+      "content": {
+        "type": "SYMBOL",
+        "name": "_expression"
+      }
     },
     "_expression": {
       "type": "CHOICE",
