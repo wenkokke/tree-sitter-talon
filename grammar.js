@@ -147,7 +147,7 @@ module.exports = grammar({
         $.parenthesized_rule
       ),
 
-    word: ($) => /[A-Za-z-]+/,
+    word: ($) => /[\p{Letter}\p{Number}-]+/,
 
     list: ($) => seq("{", field("list_name", $.identifier), "}"),
 

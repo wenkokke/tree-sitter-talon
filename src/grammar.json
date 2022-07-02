@@ -555,7 +555,7 @@
     },
     "word": {
       "type": "PATTERN",
-      "value": "[A-Za-z-]+"
+      "value": "[\\p{Letter}\\p{Number}-]+"
     },
     "list": {
       "type": "SEQ",

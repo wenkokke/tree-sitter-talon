@@ -13630,17 +13630,19 @@ state (int | integer | ant) 64: " int64 "
 --------------------------------------------------------------------------------
 
 (source_file
-  (ERROR
-    (seq
-      (word)
-      (parenthesized_rule
-        (choice
-          (word)
-          (word)
-          (word))))
-    (integer)
-    (UNEXPECTED 'i')
-    (integer)))
+  (command
+    (rule
+      (seq
+        (word)
+        (parenthesized_rule
+          (choice
+            (word)
+            (word)
+            (word)))
+        (word)))
+    (block
+      (expression
+        (string)))))
 
 ================================================================================
 Command lang/go/go.talon
