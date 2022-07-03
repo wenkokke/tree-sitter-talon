@@ -69,10 +69,6 @@
           "named": true
         },
         {
-          "type": "identifier",
-          "named": true
-        },
-        {
           "type": "integer",
           "named": true
         },
@@ -90,6 +86,10 @@
         },
         {
           "type": "string",
+          "named": true
+        },
+        {
+          "type": "variable",
           "named": true
         }
       ]
@@ -126,10 +126,6 @@
             "named": true
           },
           {
-            "type": "identifier",
-            "named": true
-          },
-          {
             "type": "integer",
             "named": true
           },
@@ -147,6 +143,10 @@
           },
           {
             "type": "string",
+            "named": true
+          },
+          {
+            "type": "variable",
             "named": true
           }
         ]
@@ -174,10 +174,6 @@
             "named": true
           },
           {
-            "type": "identifier",
-            "named": true
-          },
-          {
             "type": "integer",
             "named": true
           },
@@ -195,6 +191,10 @@
           },
           {
             "type": "string",
+            "named": true
+          },
+          {
+            "type": "variable",
             "named": true
           }
         ]
@@ -226,10 +226,6 @@
             "named": true
           },
           {
-            "type": "identifier",
-            "named": true
-          },
-          {
             "type": "integer",
             "named": true
           },
@@ -247,6 +243,10 @@
           },
           {
             "type": "string",
+            "named": true
+          },
+          {
+            "type": "variable",
             "named": true
           }
         ]
@@ -413,10 +413,6 @@
             "named": true
           },
           {
-            "type": "identifier",
-            "named": true
-          },
-          {
             "type": "integer",
             "named": true
           },
@@ -434,6 +430,10 @@
           },
           {
             "type": "string",
+            "named": true
+          },
+          {
+            "type": "variable",
             "named": true
           }
         ]
@@ -477,10 +477,6 @@
           "named": true
         },
         {
-          "type": "identifier",
-          "named": true
-        },
-        {
           "type": "integer",
           "named": true
         },
@@ -498,6 +494,10 @@
         },
         {
           "type": "string",
+          "named": true
+        },
+        {
+          "type": "variable",
           "named": true
         }
       ]
@@ -704,10 +704,6 @@
           "named": true
         },
         {
-          "type": "identifier",
-          "named": true
-        },
-        {
           "type": "integer",
           "named": true
         },
@@ -725,6 +721,10 @@
         },
         {
           "type": "string",
+          "named": true
+        },
+        {
+          "type": "variable",
           "named": true
         }
       ]
@@ -1054,6 +1054,21 @@
         },
         {
           "type": "string_escape_sequence",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "variable",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
           "named": true
         }
       ]

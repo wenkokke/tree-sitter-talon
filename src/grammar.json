@@ -760,7 +760,7 @@
         },
         {
           "type": "SYMBOL",
-          "name": "identifier"
+          "name": "variable"
         },
         {
           "type": "SYMBOL",
@@ -791,6 +791,10 @@
           "name": "parenthesized_expression"
         }
       ]
+    },
+    "variable": {
+      "type": "SYMBOL",
+      "name": "identifier"
     },
     "parenthesized_expression": {
       "type": "PREC",

@@ -369,7 +369,8 @@ go split <number>: user.split_number(number)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/talon_helpers.talon
@@ -538,7 +539,8 @@ talon copy name:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/talon_helpers.talon
@@ -569,7 +571,8 @@ talon copy executable:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/talon_helpers.talon
@@ -600,7 +603,8 @@ talon copy bundle:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/talon_helpers.talon
@@ -631,7 +635,8 @@ talon copy title:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/talon_helpers.talon
@@ -662,7 +667,8 @@ talon dump version:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/talon_helpers.talon
@@ -693,7 +699,8 @@ talon insert version:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/talon_helpers.talon
@@ -724,7 +731,8 @@ talon dump context:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/talon_helpers.talon
@@ -758,7 +766,8 @@ Command misc/talon_helpers.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/talon_helpers.talon
@@ -789,12 +798,14 @@ Command misc/talon_helpers.talon
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/talon_helpers.talon
@@ -822,7 +833,8 @@ Command misc/talon_helpers.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/talon_helpers.talon
@@ -880,7 +892,8 @@ Command misc/talon_helpers.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/talon_helpers.talon
@@ -909,7 +922,8 @@ Command misc/talon_helpers.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/talon_helpers.talon
@@ -990,7 +1004,8 @@ Command misc/talon_helpers.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/talon_helpers.talon
@@ -1019,7 +1034,8 @@ Command misc/talon_helpers.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/talon_helpers.talon
@@ -1087,7 +1103,8 @@ Command misc/talon_helpers.talon
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -1126,7 +1143,8 @@ Command misc/talon_helpers.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/talon_helpers.talon
@@ -1259,7 +1277,8 @@ channel <user.text>:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -1984,7 +2003,8 @@ go chapter <number>: user.chapter_jump(number)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/chapters.talon
@@ -2122,7 +2142,8 @@ focus <user.running_applications>: user.switcher_focus(running_applications)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/window_management.talon
@@ -2211,7 +2232,8 @@ launch <user.launch_applications>: user.switcher_launch(launch_applications)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/window_management.talon
@@ -2235,7 +2257,8 @@ snap <user.window_snap_position>: user.snap_window(window_snap_position)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/window_management.talon
@@ -2308,7 +2331,8 @@ snap screen <number>: user.move_window_to_screen(number)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/window_management.talon
@@ -2335,8 +2359,10 @@ snap <user.running_applications> <user.window_snap_position>:
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier)))))))
+            (variable
+              (identifier))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/window_management.talon
@@ -2365,8 +2391,10 @@ snap <user.running_applications> [screen] <number>:
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier)))))))
+            (variable
+              (identifier))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/microphone_selection.talon
@@ -2441,7 +2469,8 @@ Command misc/microphone_selection.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/media.talon
@@ -2510,7 +2539,8 @@ set volume <number>: user.media_set_volume(number)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/media.talon
@@ -2724,7 +2754,8 @@ phrase <user.text>$: user.insert_with_history(text)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/formatters.talon
@@ -2749,7 +2780,8 @@ phrase <user.text> over: user.insert_with_history(text)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/formatters.talon
@@ -2775,8 +2807,10 @@ Command misc/formatters.talon
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier)))))))
+            (variable
+              (identifier))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/formatters.talon
@@ -2802,8 +2836,10 @@ Command misc/formatters.talon
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier)))))))
+            (variable
+              (identifier))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/formatters.talon
@@ -2827,7 +2863,8 @@ Command misc/formatters.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/formatters.talon
@@ -2852,7 +2889,8 @@ Command misc/formatters.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/formatters.talon
@@ -2876,7 +2914,8 @@ Command misc/formatters.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/formatters.talon
@@ -2900,7 +2939,8 @@ word <user.word>: user.insert_with_history(user.word)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/formatters.talon
@@ -2972,7 +3012,8 @@ recent repeat <number_small>: user.insert_with_history(user.get_recent_phrase(nu
             (action
               (identifier)
               (argument_list
-                (identifier)))))))))
+                (variable
+                  (identifier))))))))))
 
 ================================================================================
 Command misc/formatters.talon
@@ -3000,7 +3041,8 @@ recent copy <number_small>: clip.set_text(user.get_recent_phrase(number_small))
             (action
               (identifier)
               (argument_list
-                (identifier)))))))))
+                (variable
+                  (identifier))))))))))
 
 ================================================================================
 Command misc/formatters.talon
@@ -3096,7 +3138,8 @@ nope that was <user.formatters>: user.formatters_reformat_last(formatters)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/websites_and_search_engines.talon
@@ -3120,7 +3163,8 @@ open {user.website}: user.open_url(website)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/websites_and_search_engines.talon
@@ -3147,8 +3191,10 @@ Command misc/websites_and_search_engines.talon
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier)))))))
+            (variable
+              (identifier))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/websites_and_search_engines.talon
@@ -3182,8 +3228,10 @@ Command misc/websites_and_search_engines.talon
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier)))))))
+            (variable
+              (identifier))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/help_scope_open.talon
@@ -3362,7 +3410,8 @@ Command misc/repeater.talon
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer))))))))
 
@@ -3389,7 +3438,8 @@ Command misc/repeater.talon
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer))))))))
 
@@ -3444,7 +3494,8 @@ repeat that <number_small> [times]: core.repeat_command(number_small)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/cancel.talon
@@ -5775,7 +5826,8 @@ copy to vocab [as <phrase>]$: user.add_selection_to_vocabulary(phrase or "")
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string))))))))
 
@@ -5809,7 +5861,8 @@ copy name to vocab [as <phrase>]$: user.add_selection_to_vocabulary(phrase or ""
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string))
             (string)))))))
@@ -5844,7 +5897,8 @@ copy noun to vocab [as <phrase>]$: user.add_selection_to_vocabulary(phrase or ""
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string))
             (string)))))))
@@ -5875,7 +5929,8 @@ copy to replacements as <phrase>$: user.add_selection_to_words_to_replace(phrase
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/vocabulary.talon
@@ -5904,7 +5959,8 @@ copy name to replacements as <phrase>$: user.add_selection_to_words_to_replace(p
         (action
           (identifier)
           (argument_list
-            (identifier)
+            (variable
+              (identifier))
             (string)))))))
 
 ================================================================================
@@ -5934,7 +5990,8 @@ copy noun to replacements as <phrase>$: user.add_selection_to_words_to_replace(p
         (action
           (identifier)
           (argument_list
-            (identifier)
+            (variable
+              (identifier))
             (string)))))))
 
 ================================================================================
@@ -5959,7 +6016,8 @@ desk <number_small>: user.desktop(number_small)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/desktops.talon
@@ -6051,7 +6109,8 @@ window move desk <number>: user.window_move_desktop(number)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/desktops.talon
@@ -6126,7 +6185,8 @@ customize {user.talon_settings_csv}:
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (sleep_action
           (identifier)
@@ -6158,7 +6218,8 @@ go <user.arrow_keys>: user.move_cursor(arrow_keys)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/keys.talon
@@ -6212,7 +6273,8 @@ Command misc/keys.talon
         (action
           (identifier)
           (argument_list
-            (identifier)
+            (variable
+              (identifier))
             (string)))))))
 
 ================================================================================
@@ -6397,7 +6459,8 @@ Command misc/screenshot.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/screenshot.talon
@@ -6522,7 +6585,8 @@ Command misc/screenshot.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/screenshot.talon
@@ -6691,7 +6755,8 @@ go tab <number>: user.tab_jump(number)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/tabs.talon
@@ -7044,7 +7109,8 @@ go page <number>: user.page_jump(number)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/pages.talon
@@ -7344,7 +7410,8 @@ help <number>$: user.help_select_index(number - 1)
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer))))))))
 
@@ -8500,7 +8567,8 @@ help search <user.text>$: user.help_search(text)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/help.talon
@@ -8526,7 +8594,8 @@ help context {user.help_contexts}$: user.help_selected_context(help_contexts)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command misc/help.talon
@@ -8765,7 +8834,8 @@ Command modes/language_modes.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command modes/language_modes.talon
@@ -8913,7 +8983,8 @@ Command modes/dictation_mode.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command modes/dictation_mode.talon
@@ -9101,7 +9172,8 @@ go up <number_small> (line|lines):
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer))))))))
 
@@ -9139,7 +9211,8 @@ go down <number_small> (line|lines):
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer))))))))
 
@@ -9177,7 +9250,8 @@ go left <number_small> (word|words):
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer))))))))
 
@@ -9215,7 +9289,8 @@ go right <number_small> (word|words):
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer))))))))
 
@@ -9299,7 +9374,8 @@ select left <number_small> (word|words):
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer))))))))
 
@@ -9337,7 +9413,8 @@ select right <number_small> (word|words):
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer))))))))
 
@@ -9375,7 +9452,8 @@ select left <number_small> (character|characters):
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer))))))))
 
@@ -9413,7 +9491,8 @@ select right <number_small> (character|characters):
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer))))))))
 
@@ -9452,7 +9531,8 @@ clear left <number_small> (word|words):
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer)))))
       (expression
@@ -9495,7 +9575,8 @@ clear right <number_small> (word|words):
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer)))))
       (expression
@@ -9538,7 +9619,8 @@ clear left <number_small> (character|characters):
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer)))))
       (expression
@@ -9581,7 +9663,8 @@ clear right <number_small> (character|characters):
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer)))))
       (expression
@@ -9612,7 +9695,8 @@ formatted <user.format_text>:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command modes/dictation_mode.talon
@@ -9640,7 +9724,8 @@ Command modes/dictation_mode.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command modes/dictation_mode.talon
@@ -9731,7 +9816,8 @@ spell that <user.letters>: auto_insert(letters)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command modes/dictation_mode.talon
@@ -9761,13 +9847,16 @@ spell that <user.formatters> <user.letters>:
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier))))
+            (variable
+              (identifier))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command modes/dictation_mode.talon
@@ -9794,7 +9883,8 @@ Command modes/dictation_mode.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command modes/dragon_modes.talon
@@ -10166,7 +10256,8 @@ emoji {user.emoji}: user.paste(emoji)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command emoji/emoji.talon
@@ -10190,7 +10281,8 @@ kaomoji {user.kaomoji}: user.paste(kaomoji)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command talon_draft_window/draft_window_open.talon
@@ -10251,7 +10343,8 @@ draft submit:
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (comment)
       (comment)
       (comment)
@@ -10313,13 +10406,15 @@ replace <user.draft_anchor> with <user.text>:
         (action
           (identifier)
           (argument_list
-            (identifier)
+            (variable
+              (identifier))
             (string))))
       (expression
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command talon_draft_window/draft_window.talon
@@ -10516,8 +10611,10 @@ Command talon_draft_window/draft_window.talon
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier)
+            (variable
+              (identifier))
+            (variable
+              (identifier))
             (integer))))
       (expression
         (key_action
@@ -10557,7 +10654,8 @@ Command talon_draft_window/draft_window.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command talon_draft_window/draft_window.talon
@@ -10590,14 +10688,17 @@ Command talon_draft_window/draft_window.talon
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier)
+            (variable
+              (identifier))
+            (variable
+              (identifier))
             (integer))))
       (expression
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command talon_draft_window/draft_global.talon
@@ -10667,7 +10768,8 @@ Command talon_draft_window/draft_global.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command talon_draft_window/draft_global.talon
@@ -10805,7 +10907,8 @@ Command talon_draft_window/draft_global.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command talon_draft_window/draft_global.talon
@@ -10847,7 +10950,8 @@ Command talon_draft_window/draft_global.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command lang/terraform/terraform.talon
@@ -10984,7 +11088,8 @@ state {user.terraform_module_block}:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command lang/terraform/terraform.talon
@@ -11009,7 +11114,8 @@ resource <user.text>:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command lang/terraform/terraform.talon
@@ -11036,7 +11142,8 @@ data [source] <user.text>:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command lang/terraform/terraform.talon
@@ -11064,7 +11171,8 @@ Command lang/terraform/terraform.talon
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -11443,7 +11551,8 @@ application [require] [{user.talon_apps}]:
       (assignment
         (identifier)
         (binary_operator
-          (identifier)
+          (variable
+            (identifier))
           (operator)
           (string)))
       (expression
@@ -11484,7 +11593,8 @@ mode require [{user.talon_modes}]:
       (assignment
         (identifier)
         (binary_operator
-          (identifier)
+          (variable
+            (identifier))
           (operator)
           (string)))
       (expression
@@ -11525,7 +11635,8 @@ tag require [{user.talon_tags}]:
       (assignment
         (identifier)
         (binary_operator
-          (identifier)
+          (variable
+            (identifier))
           (operator)
           (string)))
       (expression
@@ -11566,7 +11677,8 @@ tag set [{user.talon_tags}]:
       (assignment
         (identifier)
         (binary_operator
-          (identifier)
+          (variable
+            (identifier))
           (operator)
           (string)))
       (expression
@@ -11688,7 +11800,8 @@ funk {user.talon_actions}: user.code_insert_function(talon_actions, edit.selecte
         (action
           (identifier)
           (argument_list
-            (identifier)
+            (variable
+              (identifier))
             (action
               (identifier)
               (argument_list))))))))
@@ -11718,7 +11831,8 @@ funk cell <number>:
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer))
             (string)))))))
@@ -11747,7 +11861,8 @@ funk wrap <user.code_common_function>:
         (action
           (identifier)
           (argument_list
-            (identifier)
+            (variable
+              (identifier))
             (action
               (identifier)
               (argument_list))))))))
@@ -11777,7 +11892,8 @@ funk wrap <number>:
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer))
             (action
@@ -11919,14 +12035,16 @@ assign [<user.vimscript_scope>] (variable|var) [<user.text>] [over]:
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string)))))
       (expression
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command lang/vimscript/vimscript.talon
@@ -11962,14 +12080,16 @@ Command lang/vimscript/vimscript.talon
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string)))))
       (expression
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command lang/vimscript/vimscript.talon
@@ -12235,7 +12355,8 @@ Command lang/go/go.talon
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -12350,7 +12471,8 @@ function <user.text> [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string))))))
       (expression
         (action
@@ -12397,7 +12519,8 @@ method <user.text> [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string))))))
       (expression
         (sleep_action
@@ -12461,7 +12584,8 @@ variable [<user.text>] [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string))))))
       (comment)
       (expression
@@ -12505,7 +12629,8 @@ of type [<user.text>] [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -12651,7 +12776,8 @@ if <user.text> [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -12688,7 +12814,8 @@ spawn <user.text> [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -12747,7 +12874,8 @@ else if <user.text> [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -12809,7 +12937,8 @@ else <user.text> [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -12866,7 +12995,8 @@ while <user.text> [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -12923,7 +13053,8 @@ for <user.text> [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -12981,7 +13112,8 @@ range <user.text> [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -13038,7 +13170,8 @@ format <user.text> [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -13095,7 +13228,8 @@ switch <user.text> [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -13188,7 +13322,8 @@ constant <user.text> [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -13265,7 +13400,8 @@ case <user.text> [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -13322,7 +13458,8 @@ type <user.text> [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -13440,7 +13577,8 @@ Command lang/go/go.talon
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -13533,7 +13671,8 @@ interface <user.text> [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -13738,7 +13877,8 @@ field tag <user.text> [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string))))))
       (expression
         (action
@@ -13804,7 +13944,8 @@ return  <user.text> [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -13867,7 +14008,8 @@ map of <user.text> [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string))))))
       (expression
         (key_action
@@ -13949,7 +14091,8 @@ loggers [<user.text>] [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -13986,7 +14129,8 @@ length <user.text> [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -14023,7 +14167,8 @@ append <user.text> [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -14103,7 +14248,8 @@ loop over [<user.text>] [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -14140,7 +14286,8 @@ item <user.text> [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -14183,7 +14330,8 @@ value <user.text> [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -14222,7 +14370,8 @@ address of [<user.text>] [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -14261,7 +14410,8 @@ pointer to [<user.text>] [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -14304,7 +14454,8 @@ swipe [<user.text>] [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -15159,7 +15310,8 @@ import <user.code_libraries>:
         (action
           (identifier)
           (argument_list
-            (identifier)
+            (variable
+              (identifier))
             (string))))
       (expression
         (key_action
@@ -15311,7 +15463,8 @@ attribute [<user.text>]:
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string))
             (string))))
@@ -15348,7 +15501,8 @@ prop <user.text>:
         (action
           (identifier)
           (argument_list
-            (identifier)
+            (variable
+              (identifier))
             (string))))
       (expression
         (action
@@ -15389,7 +15543,8 @@ rule <user.text>:
         (action
           (identifier)
           (argument_list
-            (identifier)
+            (variable
+              (identifier))
             (string))))
       (expression
         (action
@@ -15501,7 +15656,8 @@ value <user.text>: user.insert_formatted(text, "DASH_SEPARATED")
         (action
           (identifier)
           (argument_list
-            (identifier)
+            (variable
+              (identifier))
             (string)))))))
 
 ================================================================================
@@ -15529,7 +15685,8 @@ variable <user.text>:
         (action
           (identifier)
           (argument_list
-            (identifier)
+            (variable
+              (identifier))
             (action
               (identifier)
               (argument_list
@@ -15607,7 +15764,8 @@ unit {user.css_unit}: insert(css_unit)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command lang/css/css.talon
@@ -16179,7 +16337,8 @@ state (struct | structure) <user.text>:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -16215,7 +16374,8 @@ state enum <user.text>:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -16697,7 +16857,8 @@ use <user.code_libraries>:
         (action
           (identifier)
           (argument_list
-            (identifier)
+            (variable
+              (identifier))
             (string))))
       (expression
         (key_action
@@ -16823,7 +16984,8 @@ is implemented trait {user.code_trait}: user.code_insert_trait_annotation(code_t
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command lang/rust/rust.talon
@@ -16870,7 +17032,8 @@ returns implemented trait {user.code_trait}: user.code_insert_return_trait(code_
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command lang/rust/rust.talon
@@ -16990,7 +17153,8 @@ macro {user.code_macros}:
         (action
           (identifier)
           (argument_list
-            (identifier)
+            (variable
+              (identifier))
             (string)))))))
 
 ================================================================================
@@ -17017,7 +17181,8 @@ macro wrap {user.code_macros}:
         (action
           (identifier)
           (argument_list
-            (identifier)
+            (variable
+              (identifier))
             (action
               (identifier)
               (argument_list))))))))
@@ -17366,7 +17531,8 @@ library <user.code_libraries>:
         (action
           (identifier)
           (argument_list
-            (identifier)
+            (variable
+              (identifier))
             (string))))
       (expression
         (key_action
@@ -17469,7 +17635,8 @@ Command lang/r/r.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command lang/r/r.talon
@@ -17494,7 +17661,8 @@ named arg {user.code_parameter_name}: user.code_insert_named_argument(code_param
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command lang/java/java.talon
@@ -17742,7 +17910,8 @@ boxed [type] {user.java_boxed_type}:
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string))))))))
 
@@ -17772,7 +17941,8 @@ generic [type] {user.java_generic_data_structure}:
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string))
             (string)))))))
@@ -17802,7 +17972,8 @@ type {user.code_type} array:
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -17833,7 +18004,8 @@ Command lang/java/java.talon
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string))))))))
 
@@ -18202,7 +18374,8 @@ var <phrase> [over]:
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -18301,7 +18474,8 @@ block comment <user.text>$:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command lang/tags/comment_block.talon
@@ -18397,7 +18571,8 @@ keyword (<user.code_keyword>+): user.code_keyword(code_keyword_list)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command lang/tags/functions_common.talon
@@ -18444,7 +18619,8 @@ funk <user.code_common_function>:
         (action
           (identifier)
           (argument_list
-            (identifier)
+            (variable
+              (identifier))
             (string)))))))
 
 ================================================================================
@@ -18472,7 +18648,8 @@ funk cell <number>:
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer))
             (string)))))))
@@ -18501,7 +18678,8 @@ funk wrap <user.code_common_function>:
         (action
           (identifier)
           (argument_list
-            (identifier)
+            (variable
+              (identifier))
             (action
               (identifier)
               (argument_list))))))))
@@ -18531,7 +18709,8 @@ funk wrap <number>:
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer))
             (action
@@ -18630,7 +18809,8 @@ comment <user.text>$:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command lang/tags/data_null.talon
@@ -19463,10 +19643,12 @@ Command lang/tags/functions.talon
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer))
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command lang/tags/functions.talon
@@ -19491,7 +19673,8 @@ is type <user.code_type>: user.code_insert_type_annotation(code_type)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command lang/tags/functions.talon
@@ -19517,7 +19700,8 @@ returns [type] <user.code_type>: user.code_insert_return_type(code_type)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command lang/tags/functions.talon
@@ -19541,7 +19725,8 @@ type <user.code_type>: insert(code_type)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command lang/tags/operators_assignment.talon
@@ -22563,7 +22748,8 @@ Command lang/c/c.talon
             (action
               (identifier)
               (argument_list
-                (identifier)
+                (variable
+                  (identifier))
                 (string)))))))))
 
 ================================================================================
@@ -22805,7 +22991,8 @@ include <user.code_libraries>:
         (action
           (identifier)
           (argument_list
-            (identifier)
+            (variable
+              (identifier))
             (string))))
       (expression
         (key_action
@@ -23208,7 +23395,8 @@ Command lang/ruby/ruby.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command lang/sql/sql.talon
@@ -24174,7 +24362,8 @@ word neck [<number_small>]: user.navigation_by_name("SELECT", "RIGHT", "DEFAULT"
             (string)
             (string)
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer))))))))
 
@@ -24207,7 +24396,8 @@ word pre [<number_small>]: user.navigation_by_name("SELECT", "LEFT", "DEFAULT", 
             (string)
             (string)
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer))))))))
 
@@ -24241,7 +24431,8 @@ small word neck [<number_small>]: user.navigation_by_name("SELECT", "RIGHT", "DE
             (string)
             (string)
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer))))))))
 
@@ -24275,7 +24466,8 @@ small word pre [<number_small>]: user.navigation_by_name("SELECT", "LEFT", "DEFA
             (string)
             (string)
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer))))))))
 
@@ -24309,7 +24501,8 @@ big word neck [<number_small>]: user.navigation_by_name("SELECT", "RIGHT", "DEFA
             (string)
             (string)
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer))))))))
 
@@ -24343,7 +24536,8 @@ big word pre [<number_small>]: user.navigation_by_name("SELECT", "LEFT", "DEFAUL
             (string)
             (string)
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer))))))))
 
@@ -25150,7 +25344,8 @@ phones <user.homophones_canonical>: user.homophones_show(homophones_canonical)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command text/homophones.talon
@@ -25197,7 +25392,8 @@ phones force <user.homophones_canonical>: user.homophones_force_show(homophones_
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command text/homophones.talon
@@ -25299,7 +25495,8 @@ phones [<user.ordinals>] word left:
       (assignment
         (identifier)
         (binary_operator
-          (identifier)
+          (variable
+            (identifier))
           (operator)
           (integer)))
       (expression
@@ -25307,7 +25504,8 @@ phones [<user.ordinals>] word left:
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer)))))
       (expression
@@ -25347,7 +25545,8 @@ phones [<user.ordinals>] word right:
       (assignment
         (identifier)
         (binary_operator
-          (identifier)
+          (variable
+            (identifier))
           (operator)
           (integer)))
       (expression
@@ -25355,7 +25554,8 @@ phones [<user.ordinals>] word right:
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer)))))
       (expression
@@ -25393,12 +25593,14 @@ choose <number_small>:
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -25432,7 +25634,8 @@ choose <user.formatters> <number_small>:
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -25440,8 +25643,10 @@ choose <user.formatters> <number_small>:
             (action
               (identifier)
               (argument_list
-                (identifier)
-                (identifier))))))
+                (variable
+                  (identifier))
+                (variable
+                  (identifier)))))))
       (expression
         (action
           (identifier)
@@ -25493,7 +25698,8 @@ hunt this <user.text>: user.find(text)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command text/find_and_replace.talon
@@ -25541,7 +25747,8 @@ hunt all <user.text>: user.find_everywhere(text)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command text/find_and_replace.talon
@@ -25678,7 +25885,8 @@ replace this [<user.text>]: user.replace(text or "")
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string))))))))
 
@@ -25728,7 +25936,8 @@ replace <user.text> all: user.replace_everywhere(text)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command text/find_and_replace.talon
@@ -25804,7 +26013,8 @@ clear last <user.text> [over]:
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (sleep_action
           (identifier)
@@ -25842,7 +26052,8 @@ clear next <user.text> [over]:
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (sleep_action
           (identifier)
@@ -25949,7 +26160,8 @@ comment last <user.text> [over]:
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (sleep_action
           (identifier)
@@ -26024,7 +26236,8 @@ comment next <user.text> [over]:
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (sleep_action
           (identifier)
@@ -26099,7 +26312,8 @@ go last <user.text> [over]:
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (sleep_action
           (identifier)
@@ -26173,7 +26387,8 @@ go next <user.text> [over]:
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -26240,7 +26455,8 @@ paste last <user.text> [over]:
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (sleep_action
           (identifier)
@@ -26283,7 +26499,8 @@ paste next <user.text> [over]:
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (sleep_action
           (identifier)
@@ -26325,7 +26542,8 @@ replace last <user.text> [over]:
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (sleep_action
           (identifier)
@@ -26363,7 +26581,8 @@ replace next <user.text> [over]:
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (sleep_action
           (identifier)
@@ -26398,7 +26617,8 @@ select last <user.text> [over]: user.select_previous_occurrence(text)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command text/find_and_replace.talon
@@ -26425,7 +26645,8 @@ select next <user.text> [over]: user.select_next_occurrence(text)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command text/find_and_replace.talon
@@ -26541,7 +26762,8 @@ go <number>: edit.jump_line(number)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command text/line_commands.talon
@@ -26568,7 +26790,8 @@ go <number> end:
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -26600,8 +26823,10 @@ comment [line] <number>:
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier))))
+            (variable
+              (identifier))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -26634,8 +26859,10 @@ comment <number> until <number>:
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier))))
+            (variable
+              (identifier))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -26668,13 +26895,16 @@ clear [line] <number>:
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier))))
+            (variable
+              (identifier))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -26707,8 +26937,10 @@ clear <number> until <number>:
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier))))
+            (variable
+              (identifier))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -26740,8 +26972,10 @@ copy [line] <number>:
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier))))
+            (variable
+              (identifier))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -26774,8 +27008,10 @@ copy <number> until <number>:
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier))))
+            (variable
+              (identifier))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -26807,8 +27043,10 @@ cut [line] <number>:
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier))))
+            (variable
+              (identifier))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -26843,8 +27081,10 @@ cut [line] <number> until <number>:
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier))))
+            (variable
+              (identifier))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -26880,8 +27120,10 @@ Command text/line_commands.talon
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier))))
+            (variable
+              (identifier))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -26915,8 +27157,10 @@ Command text/line_commands.talon
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier)))))))
+            (variable
+              (identifier))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command text/line_commands.talon
@@ -26947,8 +27191,10 @@ Command text/line_commands.talon
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier)))))))
+            (variable
+              (identifier))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command text/line_commands.talon
@@ -26998,7 +27244,8 @@ tab [line] <number>:
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -27031,8 +27278,10 @@ tab <number> until <number>:
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier))))
+            (variable
+              (identifier))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -27086,8 +27335,10 @@ retab [line] <number>:
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier))))
+            (variable
+              (identifier))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -27120,8 +27371,10 @@ retab <number> until <number>:
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier))))
+            (variable
+              (identifier))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -27202,8 +27455,10 @@ drag up [line] <number>:
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier))))
+            (variable
+              (identifier))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -27237,8 +27492,10 @@ drag up <number> until <number>:
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier))))
+            (variable
+              (identifier))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -27271,8 +27528,10 @@ drag down [line] <number>:
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier))))
+            (variable
+              (identifier))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -27306,8 +27565,10 @@ drag down <number> until <number>:
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier))))
+            (variable
+              (identifier))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -30164,7 +30425,8 @@ go to {user.website}: browser.go(website)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/generic_browser.talon
@@ -39528,7 +39790,8 @@ please [<user.text>]:
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string))))))))
 
@@ -40023,7 +40286,8 @@ file hunt [<user.text>]:
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string))))))))
 
@@ -41417,7 +41681,8 @@ file hunt [<user.text>]:
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string))))))))
 
@@ -41954,7 +42219,8 @@ go recent [<user.text>]:
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string))))))))
 
@@ -41994,7 +42260,8 @@ go type [<user.text>]:
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string))))))))
 
@@ -42034,7 +42301,8 @@ go member [<user.text>]:
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string))))))))
 
@@ -47969,7 +48237,8 @@ clear (break|break point) <number_small>:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/generic_debugger.talon
@@ -48055,7 +48324,8 @@ disable (break|break point) <number_small>:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/generic_debugger.talon
@@ -48141,7 +48411,8 @@ enable (break|break point) <number_small>:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/generic_debugger.talon
@@ -50572,7 +50843,8 @@ grab <number>: user.idea_grab(number)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/jetbrains/jetbrains.talon
@@ -50630,7 +50902,8 @@ Command apps/jetbrains/jetbrains.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/jetbrains/jetbrains.talon
@@ -50682,7 +50955,8 @@ refactor <user.text>:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/jetbrains/jetbrains.talon
@@ -51194,7 +51468,8 @@ find (everywhere | all) <user.text> [over]:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/jetbrains/jetbrains.talon
@@ -51335,7 +51610,8 @@ Command apps/jetbrains/jetbrains.talon
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (key_action
           (identifier)
@@ -51401,7 +51677,8 @@ surround [this] with <user.text> [over]:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/jetbrains/jetbrains.talon
@@ -51440,7 +51717,8 @@ insert generated <user.text> [over]:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/jetbrains/jetbrains.talon
@@ -51479,7 +51757,8 @@ insert template <user.text> [over]:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/jetbrains/jetbrains.talon
@@ -51613,7 +51892,8 @@ play recording <user.text> [over]:
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (sleep_action
           (identifier)
@@ -52064,7 +52344,8 @@ create sibling <user.text> [over]:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/jetbrains/jetbrains.talon
@@ -52126,7 +52407,8 @@ create file <user.text> [over]:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/jetbrains/jetbrains.talon
@@ -54065,8 +54347,10 @@ expand <number> until <number>:
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier))))
+            (variable
+              (identifier))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -54100,8 +54384,10 @@ collapse <number> until <number>:
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier))))
+            (variable
+              (identifier))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -54135,8 +54421,10 @@ paste <number> until <number>:
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier))))
+            (variable
+              (identifier))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -54170,8 +54458,10 @@ refactor <number> until <number>:
         (action
           (identifier)
           (argument_list
-            (identifier)
-            (identifier))))
+            (variable
+              (identifier))
+            (variable
+              (identifier)))))
       (expression
         (action
           (identifier)
@@ -54200,7 +54490,8 @@ clone <number>: user.line_clone(number)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/jetbrains/jetbrains.talon
@@ -54756,7 +55047,8 @@ snip {user.snippets}: user.snippet_insert(user.snippets)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/generic_snippets/generic_snippets.talon
@@ -54781,7 +55073,8 @@ snip hunt <user.text>: user.snippet_search(user.text)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/generic_snippets/generic_snippets.talon
@@ -59808,7 +60101,8 @@ katie [<user.text>]: user.terminal_change_directory(text or "")
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string))))))))
 
@@ -59929,7 +60223,8 @@ rerun [<user.text>]: user.terminal_rerun_search(text or "")
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string))))))))
 
@@ -60087,7 +60382,8 @@ Command apps/talon_repl.talon
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (key_action
           (identifier)
@@ -60158,7 +60454,8 @@ Command apps/talon_repl.talon
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (assignment
         (identifier)
         (string))
@@ -60169,7 +60466,8 @@ Command apps/talon_repl.talon
         (action
           (identifier)
           (argument_list
-            (identifier))))
+            (variable
+              (identifier)))))
       (expression
         (key_action
           (identifier)
@@ -60574,7 +60872,8 @@ go <user.system_path>: user.file_manager_open_directory(system_path)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/file_manager.talon
@@ -60674,14 +60973,16 @@ Command apps/file_manager.talon
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer)))))
       (expression
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/file_manager.talon
@@ -60707,7 +61008,8 @@ Command apps/file_manager.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/file_manager.talon
@@ -60737,7 +61039,8 @@ Command apps/file_manager.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/file_manager.talon
@@ -60767,14 +61070,16 @@ Command apps/file_manager.talon
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer)))))
       (expression
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/file_manager.talon
@@ -60805,14 +61110,16 @@ Command apps/file_manager.talon
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer)))))
       (expression
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/file_manager.talon
@@ -60843,14 +61150,16 @@ Command apps/file_manager.talon
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer)))))
       (expression
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/file_manager.talon
@@ -60876,7 +61185,8 @@ Command apps/file_manager.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/file_manager.talon
@@ -60906,7 +61216,8 @@ Command apps/file_manager.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/file_manager.talon
@@ -60932,7 +61243,8 @@ folder new <user.text>:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/file_manager.talon
@@ -62039,7 +62351,8 @@ cube {user.kubectl_action} [{user.kubectl_object}]:
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string))))))))
 
@@ -62257,7 +62570,8 @@ please [<user.text>]:
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string))))))))
 
@@ -62482,7 +62796,8 @@ symbol hunt [<user.text>]:
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string))))))))
 
@@ -62967,7 +63282,8 @@ file hunt [<user.text>]:
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string))))))))
 
@@ -63841,7 +64157,8 @@ go recent [<user.text>]:
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string)))))
       (expression
@@ -64470,7 +64787,8 @@ git checkout [<user.text>]:
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string))))))))
 
@@ -64511,7 +64829,8 @@ git commit [<user.text>]:
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (string))
             (string)))))))
@@ -65598,7 +65917,8 @@ terminal <number_small>: user.vscode_terminal(number_small)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/vscode/vscode.talon
@@ -67427,7 +67747,8 @@ view <number_small>: user.thunderbird_calendar_view(number_small)
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command apps/thunderbird/thunderbird_calendar.talon
@@ -67676,7 +67997,8 @@ Command mouse_grid/mouse_grid_open.talon
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command mouse_grid/mouse_grid_open.talon
@@ -67868,7 +68190,8 @@ grid <user.number_key>+:
         (action
           (identifier)
           (argument_list
-            (identifier)))))))
+            (variable
+              (identifier))))))))
 
 ================================================================================
 Command mouse_grid/mouse_grid_always.talon
@@ -67897,7 +68220,8 @@ grid screen [<number>]:
           (identifier)
           (argument_list
             (binary_operator
-              (identifier)
+              (variable
+                (identifier))
               (operator)
               (integer)))))
       (expression

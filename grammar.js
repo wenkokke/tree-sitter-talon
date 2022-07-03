@@ -171,12 +171,12 @@ module.exports = grammar({
     assignment: ($) =>
       seq(field("left", $.identifier), "=", field("right", $._expression)),
 
-    expression: ($) => field('expression', $._expression),
+    expression: ($) => field("expression", $._expression),
 
     _expression: ($) =>
       choice(
         $.binary_operator,
-        $.identifier,
+        $.variable,
         $.string,
         $.integer,
         $.float,
@@ -185,6 +185,8 @@ module.exports = grammar({
         $.action,
         $.parenthesized_expression
       ),
+
+    variable: ($) => $.identifier,
 
     parenthesized_expression: ($) =>
       prec(PREC.parenthesized_expression, seq("(", $._expression, ")")),
