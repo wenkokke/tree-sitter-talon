@@ -793,8 +793,12 @@
       ]
     },
     "variable": {
-      "type": "SYMBOL",
-      "name": "identifier"
+      "type": "FIELD",
+      "name": "variable_name",
+      "content": {
+        "type": "SYMBOL",
+        "name": "identifier"
+      }
     },
     "parenthesized_expression": {
       "type": "PREC",
@@ -1061,17 +1065,8 @@
         "type": "SEQ",
         "members": [
           {
-            "type": "FIELD",
-            "name": "action_name",
-            "content": {
-              "type": "ALIAS",
-              "content": {
-                "type": "STRING",
-                "value": "key"
-              },
-              "named": true,
-              "value": "identifier"
-            }
+            "type": "STRING",
+            "value": "key"
           },
           {
             "type": "STRING",
@@ -1104,17 +1099,8 @@
         "type": "SEQ",
         "members": [
           {
-            "type": "FIELD",
-            "name": "action_name",
-            "content": {
-              "type": "ALIAS",
-              "content": {
-                "type": "STRING",
-                "value": "sleep"
-              },
-              "named": true,
-              "value": "identifier"
-            }
+            "type": "STRING",
+            "value": "sleep"
           },
           {
             "type": "STRING",

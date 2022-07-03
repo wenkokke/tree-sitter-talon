@@ -186,7 +186,7 @@ module.exports = grammar({
         $.parenthesized_expression
       ),
 
-    variable: ($) => $.identifier,
+    variable: ($) => field("variable_name", $.identifier),
 
     parenthesized_expression: ($) =>
       prec(PREC.parenthesized_expression, seq("(", $._expression, ")")),
@@ -221,7 +221,7 @@ module.exports = grammar({
       prec(
         PREC.key,
         seq(
-          field("action_name", alias("key", $.identifier)),
+          "key",
           "(",
           field("arguments", alias(/[^\)]*/, $.implicit_string)),
           ")"
@@ -232,7 +232,7 @@ module.exports = grammar({
       prec(
         PREC.sleep,
         seq(
-          field("action_name", alias("sleep", $.identifier)),
+          "sleep",
           "(",
           field("arguments", alias(/[^\)]*/, $.implicit_string)),
           ")"

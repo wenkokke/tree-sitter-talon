@@ -507,16 +507,6 @@
     "type": "key_action",
     "named": true,
     "fields": {
-      "action_name": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "identifier",
-            "named": true
-          }
-        ]
-      },
       "arguments": {
         "multiple": false,
         "required": true,
@@ -991,16 +981,6 @@
     "type": "sleep_action",
     "named": true,
     "fields": {
-      "action_name": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "identifier",
-            "named": true
-          }
-        ]
-      },
       "arguments": {
         "multiple": false,
         "required": true,
@@ -1062,16 +1042,17 @@
   {
     "type": "variable",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "identifier",
-          "named": true
-        }
-      ]
+    "fields": {
+      "variable_name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
@@ -1163,6 +1144,10 @@
     "named": true
   },
   {
+    "type": "key",
+    "named": false
+  },
+  {
     "type": "not",
     "named": false
   },
@@ -1172,6 +1157,10 @@
   },
   {
     "type": "settings()",
+    "named": false
+  },
+  {
+    "type": "sleep",
     "named": false
   },
   {
