@@ -204,28 +204,8 @@
         "required": true,
         "types": [
           {
-            "type": "%",
-            "named": false
-          },
-          {
-            "type": "*",
-            "named": false
-          },
-          {
-            "type": "+",
-            "named": false
-          },
-          {
-            "type": "-",
-            "named": false
-          },
-          {
-            "type": "/",
-            "named": false
-          },
-          {
-            "type": "or",
-            "named": false
+            "type": "identifier",
+            "named": true
           }
         ]
       },
@@ -1084,10 +1064,6 @@
     "named": false
   },
   {
-    "type": "%",
-    "named": false
-  },
-  {
     "type": "(",
     "named": false
   },
@@ -1173,10 +1149,6 @@
   },
   {
     "type": "not",
-    "named": false
-  },
-  {
-    "type": "or",
     "named": false
   },
   {

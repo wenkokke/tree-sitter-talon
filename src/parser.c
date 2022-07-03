@@ -174,9 +174,9 @@ static const char * const ts_symbol_names[] = {
   [anon_sym_RPAREN] = ")",
   [anon_sym_SEMI] = ";",
   [anon_sym_EQ] = "=",
-  [anon_sym_SLASH] = "/",
-  [anon_sym_PERCENT] = "%",
-  [anon_sym_or] = "or",
+  [anon_sym_SLASH] = "identifier",
+  [anon_sym_PERCENT] = "identifier",
+  [anon_sym_or] = "identifier",
   [anon_sym_key] = "identifier",
   [aux_sym_key_action_token1] = "implicit_string",
   [anon_sym_sleep] = "identifier",
@@ -289,9 +289,9 @@ static const TSSymbol ts_symbol_map[] = {
   [anon_sym_RPAREN] = anon_sym_RPAREN,
   [anon_sym_SEMI] = anon_sym_SEMI,
   [anon_sym_EQ] = anon_sym_EQ,
-  [anon_sym_SLASH] = anon_sym_SLASH,
-  [anon_sym_PERCENT] = anon_sym_PERCENT,
-  [anon_sym_or] = anon_sym_or,
+  [anon_sym_SLASH] = sym_identifier,
+  [anon_sym_PERCENT] = sym_identifier,
+  [anon_sym_or] = sym_identifier,
   [anon_sym_key] = sym_identifier,
   [aux_sym_key_action_token1] = sym_implicit_string,
   [anon_sym_sleep] = sym_identifier,
@@ -311,9 +311,9 @@ static const TSSymbol ts_symbol_map[] = {
   [sym__string_start] = sym__string_start,
   [sym__string_content] = sym__string_content,
   [sym__string_end] = sym__string_start,
-  [sym__regex_start] = anon_sym_SLASH,
+  [sym__regex_start] = sym__regex_start,
   [sym__regex_content] = sym__regex_content,
-  [sym__regex_end] = anon_sym_SLASH,
+  [sym__regex_end] = sym__regex_start,
   [sym_source_file] = sym_source_file,
   [sym_context] = sym_context,
   [sym__optional_or] = sym__optional_or,
@@ -511,15 +511,15 @@ static const TSSymbolMetadata ts_symbol_metadata[] = {
   },
   [anon_sym_SLASH] = {
     .visible = true,
-    .named = false,
+    .named = true,
   },
   [anon_sym_PERCENT] = {
     .visible = true,
-    .named = false,
+    .named = true,
   },
   [anon_sym_or] = {
     .visible = true,
-    .named = false,
+    .named = true,
   },
   [anon_sym_key] = {
     .visible = true,
@@ -903,6 +903,9 @@ static const TSSymbol ts_alias_sequences[PRODUCTION_ID_COUNT][MAX_ALIAS_SEQUENCE
   [0] = {0},
   [3] = {
     [0] = sym_block,
+  },
+  [11] = {
+    [1] = sym_identifier,
   },
 };
 

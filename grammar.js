@@ -189,6 +189,7 @@ module.exports = grammar({
     parenthesized_expression: ($) =>
       prec(PREC.parenthesized_expression, seq("(", $._expression, ")")),
 
+
     binary_operator: ($) => {
       const table = [
         [prec.left, "+", PREC.plus],
@@ -205,7 +206,7 @@ module.exports = grammar({
             precedence,
             seq(
               field("left", $._expression),
-              field("operator", operator),
+              field("operator", alias(operator, $.identifier)),
               field("right", $._expression)
             )
           )
