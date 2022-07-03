@@ -153,7 +153,7 @@ module.exports = grammar({
 
     capture: ($) => seq("<", field("capture_name", $.identifier), ">"),
 
-    optional: ($) => seq("[", field("optional_name", $._optional_choice), "]"),
+    optional: ($) => seq("[", $._optional_choice, "]"),
 
     repeat: ($) => seq($._primary_rule, "*"),
 

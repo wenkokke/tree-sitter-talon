@@ -607,12 +607,8 @@
           "value": "["
         },
         {
-          "type": "FIELD",
-          "name": "optional_name",
-          "content": {
-            "type": "SYMBOL",
-            "name": "_optional_choice"
-          }
+          "type": "SYMBOL",
+          "name": "_optional_choice"
         },
         {
           "type": "STRING",
