@@ -3363,6 +3363,7 @@ Command misc/repeater.talon
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer))))))))
 
 ================================================================================
@@ -3389,6 +3390,7 @@ Command misc/repeater.talon
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer))))))))
 
 ================================================================================
@@ -5774,6 +5776,7 @@ copy to vocab [as <phrase>]$: user.add_selection_to_vocabulary(phrase or "")
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string))))))))
 
 ================================================================================
@@ -5807,6 +5810,7 @@ copy name to vocab [as <phrase>]$: user.add_selection_to_vocabulary(phrase or ""
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string))
             (string)))))))
 
@@ -5841,6 +5845,7 @@ copy noun to vocab [as <phrase>]$: user.add_selection_to_vocabulary(phrase or ""
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string))
             (string)))))))
 
@@ -7340,6 +7345,7 @@ help <number>$: user.help_select_index(number - 1)
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer))))))))
 
 ================================================================================
@@ -9096,6 +9102,7 @@ go up <number_small> (line|lines):
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer))))))))
 
 ================================================================================
@@ -9133,6 +9140,7 @@ go down <number_small> (line|lines):
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer))))))))
 
 ================================================================================
@@ -9170,6 +9178,7 @@ go left <number_small> (word|words):
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer))))))))
 
 ================================================================================
@@ -9207,6 +9216,7 @@ go right <number_small> (word|words):
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer))))))))
 
 ================================================================================
@@ -9290,6 +9300,7 @@ select left <number_small> (word|words):
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer))))))))
 
 ================================================================================
@@ -9327,6 +9338,7 @@ select right <number_small> (word|words):
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer))))))))
 
 ================================================================================
@@ -9364,6 +9376,7 @@ select left <number_small> (character|characters):
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer))))))))
 
 ================================================================================
@@ -9401,6 +9414,7 @@ select right <number_small> (character|characters):
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer))))))))
 
 ================================================================================
@@ -9439,6 +9453,7 @@ clear left <number_small> (word|words):
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer)))))
       (expression
         (action
@@ -9481,6 +9496,7 @@ clear right <number_small> (word|words):
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer)))))
       (expression
         (action
@@ -9523,6 +9539,7 @@ clear left <number_small> (character|characters):
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer)))))
       (expression
         (action
@@ -9565,6 +9582,7 @@ clear right <number_small> (character|characters):
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer)))))
       (expression
         (action
@@ -11426,6 +11444,7 @@ application [require] [{user.talon_apps}]:
         (identifier)
         (binary_operator
           (identifier)
+          (operator)
           (string)))
       (expression
         (action
@@ -11466,6 +11485,7 @@ mode require [{user.talon_modes}]:
         (identifier)
         (binary_operator
           (identifier)
+          (operator)
           (string)))
       (expression
         (action
@@ -11506,6 +11526,7 @@ tag require [{user.talon_tags}]:
         (identifier)
         (binary_operator
           (identifier)
+          (operator)
           (string)))
       (expression
         (action
@@ -11546,6 +11567,7 @@ tag set [{user.talon_tags}]:
         (identifier)
         (binary_operator
           (identifier)
+          (operator)
           (string)))
       (expression
         (action
@@ -11697,6 +11719,7 @@ funk cell <number>:
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer))
             (string)))))))
 
@@ -11755,6 +11778,7 @@ funk wrap <number>:
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer))
             (action
               (identifier)
@@ -11896,6 +11920,7 @@ assign [<user.vimscript_scope>] (variable|var) [<user.text>] [over]:
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string)))))
       (expression
         (action
@@ -11938,6 +11963,7 @@ Command lang/vimscript/vimscript.talon
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string)))))
       (expression
         (action
@@ -15286,6 +15312,7 @@ attribute [<user.text>]:
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string))
             (string))))
       (expression
@@ -17716,6 +17743,7 @@ boxed [type] {user.java_boxed_type}:
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string))))))))
 
 ================================================================================
@@ -17745,6 +17773,7 @@ generic [type] {user.java_generic_data_structure}:
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string))
             (string)))))))
 
@@ -17805,6 +17834,7 @@ Command lang/java/java.talon
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string))))))))
 
 ================================================================================
@@ -18443,6 +18473,7 @@ funk cell <number>:
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer))
             (string)))))))
 
@@ -18501,6 +18532,7 @@ funk wrap <number>:
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer))
             (action
               (identifier)
@@ -19432,6 +19464,7 @@ Command lang/tags/functions.talon
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer))
             (identifier)))))))
 
@@ -24142,6 +24175,7 @@ word neck [<number_small>]: user.navigation_by_name("SELECT", "RIGHT", "DEFAULT"
             (string)
             (binary_operator
               (identifier)
+              (operator)
               (integer))))))))
 
 ================================================================================
@@ -24174,6 +24208,7 @@ word pre [<number_small>]: user.navigation_by_name("SELECT", "LEFT", "DEFAULT", 
             (string)
             (binary_operator
               (identifier)
+              (operator)
               (integer))))))))
 
 ================================================================================
@@ -24207,6 +24242,7 @@ small word neck [<number_small>]: user.navigation_by_name("SELECT", "RIGHT", "DE
             (string)
             (binary_operator
               (identifier)
+              (operator)
               (integer))))))))
 
 ================================================================================
@@ -24240,6 +24276,7 @@ small word pre [<number_small>]: user.navigation_by_name("SELECT", "LEFT", "DEFA
             (string)
             (binary_operator
               (identifier)
+              (operator)
               (integer))))))))
 
 ================================================================================
@@ -24273,6 +24310,7 @@ big word neck [<number_small>]: user.navigation_by_name("SELECT", "RIGHT", "DEFA
             (string)
             (binary_operator
               (identifier)
+              (operator)
               (integer))))))))
 
 ================================================================================
@@ -24306,6 +24344,7 @@ big word pre [<number_small>]: user.navigation_by_name("SELECT", "LEFT", "DEFAUL
             (string)
             (binary_operator
               (identifier)
+              (operator)
               (integer))))))))
 
 ================================================================================
@@ -25261,6 +25300,7 @@ phones [<user.ordinals>] word left:
         (identifier)
         (binary_operator
           (identifier)
+          (operator)
           (integer)))
       (expression
         (action
@@ -25268,6 +25308,7 @@ phones [<user.ordinals>] word left:
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer)))))
       (expression
         (action
@@ -25307,6 +25348,7 @@ phones [<user.ordinals>] word right:
         (identifier)
         (binary_operator
           (identifier)
+          (operator)
           (integer)))
       (expression
         (action
@@ -25314,6 +25356,7 @@ phones [<user.ordinals>] word right:
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer)))))
       (expression
         (action
@@ -25636,6 +25679,7 @@ replace this [<user.text>]: user.replace(text or "")
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string))))))))
 
 ================================================================================
@@ -39485,6 +39529,7 @@ please [<user.text>]:
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string))))))))
 
 ================================================================================
@@ -39979,6 +40024,7 @@ file hunt [<user.text>]:
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string))))))))
 
 ================================================================================
@@ -41372,6 +41418,7 @@ file hunt [<user.text>]:
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string))))))))
 
 ================================================================================
@@ -41908,6 +41955,7 @@ go recent [<user.text>]:
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string))))))))
 
 ================================================================================
@@ -41947,6 +41995,7 @@ go type [<user.text>]:
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string))))))))
 
 ================================================================================
@@ -41986,6 +42035,7 @@ go member [<user.text>]:
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string))))))))
 
 ================================================================================
@@ -59759,6 +59809,7 @@ katie [<user.text>]: user.terminal_change_directory(text or "")
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string))))))))
 
 ================================================================================
@@ -59879,6 +59930,7 @@ rerun [<user.text>]: user.terminal_rerun_search(text or "")
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string))))))))
 
 ================================================================================
@@ -60623,6 +60675,7 @@ Command apps/file_manager.talon
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer)))))
       (expression
         (action
@@ -60715,6 +60768,7 @@ Command apps/file_manager.talon
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer)))))
       (expression
         (action
@@ -60752,6 +60806,7 @@ Command apps/file_manager.talon
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer)))))
       (expression
         (action
@@ -60789,6 +60844,7 @@ Command apps/file_manager.talon
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer)))))
       (expression
         (action
@@ -61984,6 +62040,7 @@ cube {user.kubectl_action} [{user.kubectl_object}]:
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string))))))))
 
 ================================================================================
@@ -62201,6 +62258,7 @@ please [<user.text>]:
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string))))))))
 
 ================================================================================
@@ -62425,6 +62483,7 @@ symbol hunt [<user.text>]:
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string))))))))
 
 ================================================================================
@@ -62909,6 +62968,7 @@ file hunt [<user.text>]:
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string))))))))
 
 ================================================================================
@@ -63782,6 +63842,7 @@ go recent [<user.text>]:
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string)))))
       (expression
         (sleep_action
@@ -64410,6 +64471,7 @@ git checkout [<user.text>]:
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string))))))))
 
 ================================================================================
@@ -64450,6 +64512,7 @@ git commit [<user.text>]:
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (string))
             (string)))))))
 
@@ -67835,6 +67898,7 @@ grid screen [<number>]:
           (argument_list
             (binary_operator
               (identifier)
+              (operator)
               (integer)))))
       (expression
         (action

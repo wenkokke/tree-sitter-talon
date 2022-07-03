@@ -813,6 +813,10 @@
         ]
       }
     },
+    "operator": {
+      "type": "PATTERN",
+      "value": "[\\p{Dash_Punctuation}\\p{Math_Symbol}]+"
+    },
     "binary_operator": {
       "type": "CHOICE",
       "members": [
@@ -840,7 +844,7 @@
                     "value": "+"
                   },
                   "named": true,
-                  "value": "identifier"
+                  "value": "operator"
                 }
               },
               {
@@ -878,7 +882,7 @@
                     "value": "-"
                   },
                   "named": true,
-                  "value": "identifier"
+                  "value": "operator"
                 }
               },
               {
@@ -916,7 +920,7 @@
                     "value": "*"
                   },
                   "named": true,
-                  "value": "identifier"
+                  "value": "operator"
                 }
               },
               {
@@ -954,7 +958,7 @@
                     "value": "/"
                   },
                   "named": true,
-                  "value": "identifier"
+                  "value": "operator"
                 }
               },
               {
@@ -992,7 +996,7 @@
                     "value": "%"
                   },
                   "named": true,
-                  "value": "identifier"
+                  "value": "operator"
                 }
               },
               {
@@ -1030,7 +1034,7 @@
                     "value": "or"
                   },
                   "named": true,
-                  "value": "identifier"
+                  "value": "operator"
                 }
               },
               {

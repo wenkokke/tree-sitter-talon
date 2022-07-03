@@ -204,7 +204,7 @@
         "required": true,
         "types": [
           {
-            "type": "identifier",
+            "type": "operator",
             "named": true
           }
         ]
@@ -1150,6 +1150,10 @@
   {
     "type": "not",
     "named": false
+  },
+  {
+    "type": "operator",
+    "named": true
   },
   {
     "type": "settings()",
