@@ -864,9 +864,9 @@ Command misc/talon_helpers.talon
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command misc/talon_helpers.talon
@@ -2731,9 +2731,9 @@ Command misc/abbreviate.talon
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command misc/formatters.talon
@@ -3739,9 +3739,9 @@ git branch <user.text>: "git branch {text}"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command misc/git.talon
@@ -3832,9 +3832,9 @@ git checkout <user.text>: "git checkout {text}"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command misc/git.talon
@@ -3993,9 +3993,9 @@ git commit message <user.text>: "git commit -m '{text}'"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content))))))
 
 ================================================================================
@@ -4273,9 +4273,9 @@ git fetch <user.text>: "git fetch {text}"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command misc/git.talon
@@ -4456,9 +4456,9 @@ git merge <user.text>:"git merge {text}"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command misc/git.talon
@@ -4617,9 +4617,9 @@ git pull <user.text>: "git pull {text} "
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content))))))
 
 ================================================================================
@@ -4712,9 +4712,9 @@ git push <user.text>: "git push {text} "
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content))))))
 
 ================================================================================
@@ -5374,9 +5374,9 @@ git switch [<user.text>]: "git switch {user.formatted_text(text or '', 'DASH_SEP
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command misc/git.talon
@@ -5475,9 +5475,9 @@ git (switch create | new branch) [<user.text>]:
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command misc/git.talon
@@ -6954,9 +6954,9 @@ Command misc/extensions.talon
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command misc/multiple_cursors.talon
@@ -10374,9 +10374,9 @@ emoticon {user.emoticon}: "{emoticon}"
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command emoji/emoji.talon
@@ -10545,9 +10545,9 @@ replace <user.draft_anchor> with <user.text>:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))
+              (string_content)
+              (string_content)))))
       (assignment
         (identifier)
         (action
@@ -10594,9 +10594,9 @@ Command talon_draft_window/draft_window.talon
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command talon_draft_window/draft_window.talon
@@ -10627,9 +10627,9 @@ Command talon_draft_window/draft_window.talon
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation))
+              (string_content)
+              (string_content))
             (integer)))))))
 
 ================================================================================
@@ -10659,9 +10659,9 @@ Command talon_draft_window/draft_window.talon
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command talon_draft_window/draft_window.talon
@@ -10696,13 +10696,13 @@ Command talon_draft_window/draft_window.talon
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation))
+              (string_content)
+              (string_content))
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command talon_draft_window/draft_window.talon
@@ -10733,9 +10733,9 @@ Command talon_draft_window/draft_window.talon
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation))
+              (string_content)
+              (string_content))
             (string)
             (integer))))
       (expression
@@ -10812,9 +10812,9 @@ Command talon_draft_window/draft_window.talon
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation))
+              (string_content)
+              (string_content))
             (string)
             (integer))))
       (expression
@@ -11366,9 +11366,9 @@ type {user.code_type}: insert("{code_type}")
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command lang/talon/talon.talon
@@ -11572,9 +11572,9 @@ setting {user.talon_settings}:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -11748,18 +11748,18 @@ application [require] [{user.talon_apps}]:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))
+              (string_content)
+              (string_content)))))
       (expression
         (action
           (identifier)
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command lang/talon/talon.talon
@@ -11798,18 +11798,18 @@ mode require [{user.talon_modes}]:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))
+              (string_content)
+              (string_content)))))
       (expression
         (action
           (identifier)
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command lang/talon/talon.talon
@@ -11848,18 +11848,18 @@ tag require [{user.talon_tags}]:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))
+              (string_content)
+              (string_content)))))
       (expression
         (action
           (identifier)
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command lang/talon/talon.talon
@@ -11898,18 +11898,18 @@ tag set [{user.talon_tags}]:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))
+              (string_content)
+              (string_content)))))
       (expression
         (action
           (identifier)
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command lang/talon/talon.talon
@@ -11931,11 +11931,11 @@ list {user.talon_lists}: "{{{talon_lists}}}"
     (block
       (expression
         (string
-          (escape_interpolation)
-          (not_interpolation)
           (string_content)
-          (escape_interpolation)
-          (not_interpolation))))))
+          (string_content)
+          (string_content)
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command lang/talon/talon.talon
@@ -11958,9 +11958,9 @@ capture {user.talon_captures}: "<{talon_captures}>"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content))))))
 
 ================================================================================
@@ -11984,9 +11984,9 @@ key <user.keys> over: "{keys}"
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command lang/talon/talon.talon
@@ -12009,9 +12009,9 @@ key <user.modifiers> over: "{modifiers}"
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command lang/talon/talon.talon
@@ -12355,9 +12355,9 @@ Command lang/vimscript/vimscript.talon
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -12692,7 +12692,7 @@ function (Annette | init) [over]: "func init() {\n"
       (expression
         (string
           (string_content)
-          (not_interpolation)
+          (string_content)
           (string_escape_sequence))))))
 
 ================================================================================
@@ -13206,7 +13206,7 @@ else <user.text> [over]:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)))))
+              (string_content)))))
       (expression
         (key_action
           (implicit_string)))
@@ -13840,7 +13840,7 @@ state (start | struct | struck):
           (argument_list
             (string
               (string_content)
-              (not_interpolation)))))
+              (string_content)))))
       (expression
         (key_action
           (implicit_string))))))
@@ -13877,7 +13877,7 @@ Command lang/go/go.talon
           (argument_list
             (string
               (string_content)
-              (not_interpolation)))))
+              (string_content)))))
       (expression
         (key_action
           (implicit_string)))
@@ -13915,8 +13915,8 @@ Command lang/go/go.talon
       (expression
         (string
           (string_content)
-          (not_interpolation)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content))))))
 
 ================================================================================
@@ -13944,7 +13944,7 @@ state interface:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)))))
+              (string_content)))))
       (expression
         (key_action
           (implicit_string))))))
@@ -13978,7 +13978,7 @@ interface <user.text> [over]:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)))))
+              (string_content)))))
       (expression
         (key_action
           (implicit_string)))
@@ -15023,9 +15023,9 @@ type {user.code_type}: "{code_type}"
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command lang/proto/proto.talon
@@ -15049,9 +15049,9 @@ repeated type {user.code_type}: "repeated {code_type}"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command lang/python/python.talon
@@ -15505,9 +15505,9 @@ raise {user.python_exception}: user.insert_between("raise {python_exception}(", 
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))
             (string
               (string_content))))))))
@@ -15533,9 +15533,9 @@ except {user.python_exception}: "except {python_exception}:"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content))))))
 
 ================================================================================
@@ -15586,9 +15586,9 @@ dock {user.python_docstring_fields}:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))
+              (string_content)
+              (string_content)))))
       (expression
         (action
           (identifier)
@@ -15623,9 +15623,9 @@ dock type {user.code_type}:
               (string_content))
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))
+              (string_content)
+              (string_content)))))
       (expression
         (action
           (identifier)
@@ -15634,9 +15634,9 @@ dock type {user.code_type}:
               (string_content))
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command lang/python/python.talon
@@ -15668,9 +15668,9 @@ dock returns type {user.code_type}:
               (string_content))
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))
+              (string_content)
+              (string_content)))))
       (expression
         (action
           (identifier)
@@ -15679,9 +15679,9 @@ dock returns type {user.code_type}:
               (string_content))
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command lang/python/python.talon
@@ -15896,9 +15896,9 @@ attribute [<user.text>]:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation))
+              (string_content)
+              (string_content))
             (string
               (string_content))))))))
 
@@ -15937,9 +15937,9 @@ prop <user.text>:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))
             (string
               (string_content)))))
@@ -15948,9 +15948,9 @@ prop <user.text>:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))
             (string
               (string_content))))))))
@@ -15990,18 +15990,18 @@ rule <user.text>:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))
       (expression
         (action
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -16028,12 +16028,12 @@ value <user.number_string> [{user.css_unit}]:
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content)
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command lang/css/css.talon
@@ -16062,16 +16062,16 @@ value <user.number_string> point <digit_string> [{user.css_unit}]:
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content)
+          (string_content)
+          (string_content)
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command lang/css/css.talon
@@ -16096,9 +16096,9 @@ Command lang/css/css.talon
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command lang/css/css.talon
@@ -16165,9 +16165,9 @@ variable <user.text>:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -16217,9 +16217,9 @@ at {user.css_at_rule}: "@{css_at_rule} "
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content))))))
 
 ================================================================================
@@ -16443,9 +16443,9 @@ Command lang/markdown/markdown.talon
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))
+          (string_content)
+          (string_content)))
       (expression
         (key_action
           (implicit_string)))
@@ -17599,9 +17599,9 @@ trait {user.code_trait}: insert("{code_trait}")
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command lang/rust/rust.talon
@@ -17628,9 +17628,9 @@ implemented trait {user.code_trait}: insert("impl {code_trait}")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command lang/rust/rust.talon
@@ -17657,9 +17657,9 @@ dynamic trait {user.code_trait}: insert("dyn {code_trait}")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command lang/rust/rust.talon
@@ -18873,7 +18873,7 @@ state try: "try {\n"
       (expression
         (string
           (string_content)
-          (not_interpolation)
+          (string_content)
           (string_escape_sequence))))))
 
 ================================================================================
@@ -18898,7 +18898,7 @@ state catch: "catch (\\Throwable $exception) {\n"
           (string_content)
           (string_escape_sequence)
           (string_content)
-          (not_interpolation)
+          (string_content)
           (string_escape_sequence))))))
 
 ================================================================================
@@ -21434,9 +21434,9 @@ state {user.scala_modifier}:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -21463,9 +21463,9 @@ state {user.scala_keyword}:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -21832,9 +21832,9 @@ arg <number_small>: "%{number_small}"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command lang/csharp/csharp.talon
@@ -22568,9 +22568,9 @@ dot {user.code_common_member_function}:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))
             (string
               (string_content))))))))
@@ -23107,10 +23107,10 @@ state type deaf struct:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
+              (string_content)
               (string_escape_sequence)
               (string_escape_sequence)
-              (not_interpolation)))))
+              (string_content)))))
       (expression
         (action
           (identifier)
@@ -23351,8 +23351,8 @@ push brackets:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
-              (not_interpolation)))))
+              (string_content)
+              (string_content)))))
       (expression
         (action
           (identifier)
@@ -23394,9 +23394,9 @@ Command lang/c/c.talon
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))
       (expression
         (action
@@ -23435,13 +23435,13 @@ Command lang/c/c.talon
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -23465,9 +23465,9 @@ cast to <user.c_cast>: "{c_cast}"
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command lang/c/c.talon
@@ -23491,9 +23491,9 @@ standard cast to <user.stdint_cast>: "{stdint_cast}"
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command lang/c/c.talon
@@ -23513,9 +23513,9 @@ Command lang/c/c.talon
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command lang/c/c.talon
@@ -23535,9 +23535,9 @@ Command lang/c/c.talon
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command lang/c/c.talon
@@ -23557,9 +23557,9 @@ Command lang/c/c.talon
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command lang/c/c.talon
@@ -23579,9 +23579,9 @@ Command lang/c/c.talon
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command lang/c/c.talon
@@ -23603,9 +23603,9 @@ standard <user.stdint_types>: "{stdint_types}"
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command lang/c/c.talon
@@ -25373,7 +25373,7 @@ Command text/symbols.talon
     (block
       (expression
         (string
-          (not_interpolation))))))
+          (string_content))))))
 
 ================================================================================
 Command text/symbols.talon
@@ -25400,7 +25400,7 @@ Command text/symbols.talon
     (block
       (expression
         (string
-          (not_interpolation))))))
+          (string_content))))))
 
 ================================================================================
 Command text/symbols.talon
@@ -25834,9 +25834,9 @@ angle that:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -25874,9 +25874,9 @@ Command text/symbols.talon
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -25911,11 +25911,11 @@ Command text/symbols.talon
           (identifier)
           (argument_list
             (string
-              (escape_interpolation)
-              (not_interpolation)
               (string_content)
-              (escape_interpolation)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content)
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command text/symbols.talon
@@ -25950,9 +25950,9 @@ Command text/symbols.talon
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -25985,9 +25985,9 @@ percent that:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -26020,9 +26020,9 @@ quote that:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -26060,9 +26060,9 @@ Command text/symbols.talon
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -26100,9 +26100,9 @@ Command text/symbols.talon
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -26123,9 +26123,9 @@ Command text/numbers.talon
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command text/homophones.talon
@@ -30122,9 +30122,9 @@ tab search <user.text>$:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))
+              (string_content)
+              (string_content)))))
       (expression
         (key_action
           (implicit_string))))))
@@ -32209,9 +32209,9 @@ Command apps/platforms/win/wsl/wsl.talon
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command apps/platforms/win/wsl/wsl.talon
@@ -32558,9 +32558,9 @@ find it <phrase>$:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_escape_sequence))))))))
 
 ================================================================================
@@ -32630,9 +32630,9 @@ Command apps/platforms/win/explorer/explorer.talon
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -36495,9 +36495,9 @@ task list <user.text>: "task list {text}\n"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_escape_sequence))))))
 
 ================================================================================
@@ -36545,9 +36545,9 @@ task list project <user.text>: "task list project:{text}\n"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_escape_sequence))))))
 
 ================================================================================
@@ -36593,9 +36593,9 @@ task add <user.text>: "task add {text}\n"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_escape_sequence))))))
 
 ================================================================================
@@ -36668,9 +36668,9 @@ task <number> edit$: "task {number} edit"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content))))))
 
 ================================================================================
@@ -36696,9 +36696,9 @@ task <number> done$: "task {number} done"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content))))))
 
 ================================================================================
@@ -36724,9 +36724,9 @@ task <number> delete$: "task {number} delete"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content))))))
 
 ================================================================================
@@ -38714,9 +38714,9 @@ find <user.text>:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command apps/gdb/gdb.talon
@@ -38767,9 +38767,9 @@ until <number>: "until {number}"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command apps/gdb/gdb.talon
@@ -38930,9 +38930,9 @@ print [variable] <user.text>: "p {text}"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command apps/gdb/gdb.talon
@@ -38979,9 +38979,9 @@ print hex [variable] <user.text>: "p/x {text}"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command apps/gdb/gdb.talon
@@ -39027,9 +39027,9 @@ hex dump <number> bytes: "x/{number}bx "
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content))))))
 
 ================================================================================
@@ -39059,9 +39059,9 @@ hex dump <number> (half|short) words: "x/{number}hx "
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content))))))
 
 ================================================================================
@@ -39091,9 +39091,9 @@ hex dump <number> (d|long) words: "x/{number}dx "
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content))))))
 
 ================================================================================
@@ -39120,9 +39120,9 @@ hex dump <number> quad words: "x/{number}gx "
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content))))))
 
 ================================================================================
@@ -39335,9 +39335,9 @@ enable display <number_small>: "enable display {number_small}\n"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_escape_sequence))))))
 
 ================================================================================
@@ -39362,9 +39362,9 @@ disable display <number_small>: "disable display {number_small}\n"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_escape_sequence))))))
 
 ================================================================================
@@ -39725,9 +39725,9 @@ inferior <number_small>$: "inferior {number_small}\n"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_escape_sequence))))))
 
 ================================================================================
@@ -39820,9 +39820,9 @@ resume [from] (inf|inferior) <number_small>$:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_escape_sequence)))))
       (expression
         (action
@@ -40059,9 +40059,9 @@ set list size <number_small>: "set listsize {number_small}\n"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_escape_sequence))))))
 
 ================================================================================
@@ -49266,9 +49266,9 @@ port <number_small>: user.system_command("i3-msg workspace number {number_small}
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command apps/i3wm/i3wm.talon
@@ -50031,9 +50031,9 @@ Command apps/i3wm/i3wm.talon
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command apps/i3wm/i3wm.talon
@@ -50418,9 +50418,9 @@ launch <user.text>:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command apps/i3wm/i3wm.talon
@@ -50570,9 +50570,9 @@ register <user.registers>:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command apps/windbg/windbg.talon
@@ -51030,9 +51030,9 @@ Command apps/windbg/windbg.talon
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command apps/amethyst/amethyst.talon
@@ -52624,9 +52624,9 @@ toggle mark <number>: user.idea("action ToggleBookmark{number}")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command apps/jetbrains/jetbrains.talon
@@ -52653,9 +52653,9 @@ go mark <number>: user.idea("action GotoBookmark{number}")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command apps/jetbrains/jetbrains.talon
@@ -55224,9 +55224,9 @@ clear last <user.text> [over]: user.idea("find prev {text}, action EditorBackSpa
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -55256,9 +55256,9 @@ clear next <user.text> [over]: user.idea("find next {text}, action EditorBackSpa
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -55288,9 +55288,9 @@ comment last <user.text> [over]: user.idea("find prev {text}, action CommentByLi
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -55320,9 +55320,9 @@ comment next <user.text> [over]: user.idea("find next {text}, action CommentByLi
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -55352,9 +55352,9 @@ go last <user.text> [over]: user.idea("find prev {text}, action EditorRight")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -55384,9 +55384,9 @@ go next <user.text> [over]: user.idea("find next {text}, action EditorRight")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -55416,9 +55416,9 @@ paste last <user.text> [over]: user.idea("find prev {text}, action EditorRight, 
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -55448,9 +55448,9 @@ paste next <user.text> [over]: user.idea("find next {text}, action EditorRight, 
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -55480,9 +55480,9 @@ refactor last <user.text> [over]: user.idea("find prev {text}, action Refactorin
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -55512,9 +55512,9 @@ refactor next <user.text> [over]: user.idea("find next {text}, action Refactorin
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -55544,9 +55544,9 @@ replace last <user.text> [over]: user.idea("find prev {text}, action EditorPaste
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -55576,9 +55576,9 @@ replace next <user.text> [over]: user.idea("find next {text}, action EditorPaste
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -55608,9 +55608,9 @@ select last <user.text> [over]: user.idea("find prev {text}")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command apps/jetbrains/jetbrains.talon
@@ -55639,9 +55639,9 @@ select next <user.text> [over]: user.idea("find next {text}")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 Command apps/jetbrains/jetbrains.talon
@@ -59253,9 +59253,9 @@ emote <user.text>: "{text}"
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command apps/slack/slack_win.talon
@@ -60414,9 +60414,9 @@ emote <user.text>: "{text}"
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 Command apps/slack/slack_mac.talon
@@ -60750,9 +60750,9 @@ go <user.system_path>: insert("cd \"{system_path}\"\n")
             (string
               (string_content)
               (string_escape_sequence)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_escape_sequence)
               (string_escape_sequence))))))))
 
@@ -60979,9 +60979,9 @@ Command apps/talon_repl.talon
         (identifier)
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content)))
       (expression
         (action
@@ -61021,9 +61021,9 @@ Command apps/talon_repl.talon
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))
       (expression
         (key_action
@@ -61068,9 +61068,9 @@ Command apps/talon_repl.talon
         (identifier)
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content)))
       (comment)
       (comment)
@@ -61114,9 +61114,9 @@ Command apps/talon_repl.talon
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))
       (expression
         (key_action
@@ -61151,9 +61151,9 @@ Command apps/talon_repl.talon
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))
       (expression
         (key_action
@@ -61281,9 +61281,9 @@ Command apps/talon_repl.talon
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))
       (expression
         (key_action
@@ -61382,9 +61382,9 @@ Command apps/talon_repl.talon
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))
       (expression
         (key_action
@@ -63021,9 +63021,9 @@ cube {user.kubectl_action} [{user.kubectl_object}]:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))
       (expression
         (action

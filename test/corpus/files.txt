@@ -527,9 +527,9 @@ talon (bug report|report bug): user.open_url('https://github.com/knausj85/knausj
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))))
+              (string_content)
+              (string_content)))))))
   (command
     (rule
       (start_anchor)
@@ -1590,9 +1590,9 @@ File knausj_talon/misc/abbreviate.talon
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 File knausj_talon/misc/formatters.talon
@@ -2381,9 +2381,9 @@ git commit highlighted:
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)))))
   (command
     (rule
       (seq
@@ -2426,9 +2426,9 @@ git commit highlighted:
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)))))
   (command
     (rule
       (seq
@@ -2504,9 +2504,9 @@ git commit highlighted:
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content)))))
   (command
     (rule
@@ -2640,9 +2640,9 @@ git commit highlighted:
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)))))
   (command
     (rule
       (seq
@@ -2727,9 +2727,9 @@ git commit highlighted:
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)))))
   (command
     (rule
       (seq
@@ -2804,9 +2804,9 @@ git commit highlighted:
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content)))))
   (command
     (rule
@@ -2851,9 +2851,9 @@ git commit highlighted:
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content)))))
   (command
     (rule
@@ -3163,9 +3163,9 @@ git commit highlighted:
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)))))
   (command
     (rule
       (seq
@@ -3215,9 +3215,9 @@ git commit highlighted:
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)))))
   (command
     (rule
       (seq
@@ -4158,9 +4158,9 @@ File knausj_talon/misc/extensions.talon
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 File knausj_talon/misc/multiple_cursors.talon
@@ -6750,9 +6750,9 @@ kaomoji {user.kaomoji}: user.paste(kaomoji)
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)))))
   (command
     (rule
       (seq
@@ -6923,9 +6923,9 @@ replace <user.draft_anchor> with <user.text>:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))
+              (string_content)
+              (string_content)))))
       (assignment
         (identifier)
         (action
@@ -6960,9 +6960,9 @@ replace <user.draft_anchor> with <user.text>:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))))
+              (string_content)
+              (string_content)))))))
   (comment)
   (command
     (rule
@@ -6981,9 +6981,9 @@ replace <user.draft_anchor> with <user.text>:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation))
+              (string_content)
+              (string_content))
             (integer))))))
   (comment)
   (command
@@ -7001,9 +7001,9 @@ replace <user.draft_anchor> with <user.text>:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))))
+              (string_content)
+              (string_content)))))))
   (comment)
   (command
     (rule
@@ -7026,13 +7026,13 @@ replace <user.draft_anchor> with <user.text>:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation))
+              (string_content)
+              (string_content))
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))))
+              (string_content)
+              (string_content)))))))
   (comment)
   (command
     (rule
@@ -7050,9 +7050,9 @@ replace <user.draft_anchor> with <user.text>:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation))
+              (string_content)
+              (string_content))
             (string)
             (integer))))
       (expression
@@ -7103,9 +7103,9 @@ replace <user.draft_anchor> with <user.text>:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation))
+              (string_content)
+              (string_content))
             (string)
             (integer))))
       (expression
@@ -7467,9 +7467,9 @@ type {user.code_type}: insert("{code_type}")
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 File knausj_talon/lang/talon/talon.talon
@@ -7607,9 +7607,9 @@ funk wrap <number>:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (comment)
   (command
@@ -7686,9 +7686,9 @@ funk wrap <number>:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))))
+              (string_content)
+              (string_content)))))))
   (command
     (rule
       (seq
@@ -7711,9 +7711,9 @@ funk wrap <number>:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))))
+              (string_content)
+              (string_content)))))))
   (command
     (rule
       (seq
@@ -7736,9 +7736,9 @@ funk wrap <number>:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))))
+              (string_content)
+              (string_content)))))))
   (command
     (rule
       (seq
@@ -7761,24 +7761,9 @@ funk wrap <number>:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))))
-  (comment)
-  (command
-    (rule
-      (seq
-        (word)
-        (list
-          (identifier))))
-    (block
-      (expression
-        (string
-          (escape_interpolation)
-          (not_interpolation)
-          (string_content)
-          (escape_interpolation)
-          (not_interpolation)))))
+              (string_content)
+              (string_content)))))))
   (comment)
   (command
     (rule
@@ -7790,9 +7775,24 @@ funk wrap <number>:
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
+          (string_content)))))
+  (comment)
+  (command
+    (rule
+      (seq
+        (word)
+        (list
+          (identifier))))
+    (block
+      (expression
+        (string
+          (string_content)
+          (string_content)
+          (string_content)
+          (string_content)
           (string_content)))))
   (comment)
   (command
@@ -7805,9 +7805,9 @@ funk wrap <number>:
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)))))
   (command
     (rule
       (seq
@@ -7818,9 +7818,9 @@ funk wrap <number>:
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)))))
   (comment)
   (command
     (rule
@@ -8063,9 +8063,9 @@ state continue: "continue"
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (comment)
   (command
@@ -8432,7 +8432,7 @@ swipe [<user.text>] [over]:
       (expression
         (string
           (string_content)
-          (not_interpolation)
+          (string_content)
           (string_escape_sequence)))))
   (command
     (rule
@@ -8723,7 +8723,7 @@ swipe [<user.text>] [over]:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)))))
+              (string_content)))))
       (expression
         (key_action
           (implicit_string)))
@@ -9075,7 +9075,7 @@ swipe [<user.text>] [over]:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)))))
+              (string_content)))))
       (expression
         (key_action
           (implicit_string)))))
@@ -9097,7 +9097,7 @@ swipe [<user.text>] [over]:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)))))
+              (string_content)))))
       (expression
         (key_action
           (implicit_string)))
@@ -9123,8 +9123,8 @@ swipe [<user.text>] [over]:
       (expression
         (string
           (string_content)
-          (not_interpolation)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content)))))
   (command
     (rule
@@ -9138,7 +9138,7 @@ swipe [<user.text>] [over]:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)))))
+              (string_content)))))
       (expression
         (key_action
           (implicit_string)))))
@@ -9157,7 +9157,7 @@ swipe [<user.text>] [over]:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)))))
+              (string_content)))))
       (expression
         (key_action
           (implicit_string)))
@@ -9774,9 +9774,9 @@ repeated type {user.code_type}: "repeated {code_type}"
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)))))
   (command
     (rule
       (seq
@@ -9788,9 +9788,9 @@ repeated type {user.code_type}: "repeated {code_type}"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 File knausj_talon/lang/python/python.talon
@@ -10008,9 +10008,9 @@ from import: user.insert_between("from ", " import ")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))
             (string
               (string_content)))))))
@@ -10024,9 +10024,9 @@ from import: user.insert_between("from ", " import ")
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content)))))
   (command
     (rule
@@ -10050,9 +10050,9 @@ from import: user.insert_between("from ", " import ")
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))
+              (string_content)
+              (string_content)))))
       (expression
         (action
           (identifier)
@@ -10073,9 +10073,9 @@ from import: user.insert_between("from ", " import ")
               (string_content))
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))))
+              (string_content)
+              (string_content)))))))
   (command
     (rule
       (seq
@@ -10093,9 +10093,9 @@ from import: user.insert_between("from ", " import ")
               (string_content))
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))))
+              (string_content)
+              (string_content)))))))
   (command
     (rule
       (seq
@@ -10242,9 +10242,9 @@ op important: " !important"
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation))
+              (string_content)
+              (string_content))
             (string
               (string_content)))))))
   (command
@@ -10268,9 +10268,9 @@ op important: " !important"
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))
             (string
               (string_content)))))))
@@ -10296,9 +10296,9 @@ op important: " !important"
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (command
     (rule
@@ -10312,12 +10312,12 @@ op important: " !important"
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)
+          (string_content)
+          (string_content)))))
   (command
     (rule
       (seq
@@ -10333,16 +10333,16 @@ op important: " !important"
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)
+          (string_content)
+          (string_content)
+          (string_content)
+          (string_content)))))
   (command
     (rule
       (seq
@@ -10355,9 +10355,9 @@ op important: " !important"
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)))))
   (command
     (rule
       (seq
@@ -10398,9 +10398,9 @@ op important: " !important"
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (command
     (rule
@@ -10426,9 +10426,9 @@ op important: " !important"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content)))))
   (command
     (rule
@@ -10554,9 +10554,9 @@ level six: "###### "
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))
+          (string_content)
+          (string_content)))
       (expression
         (key_action
           (implicit_string)))
@@ -11206,9 +11206,9 @@ inner block dock comment: user.code_comment_documentation_block_inner()
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))))
+              (string_content)
+              (string_content)))))))
   (command
     (rule
       (seq
@@ -11223,9 +11223,9 @@ inner block dock comment: user.code_comment_documentation_block_inner()
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))))
+              (string_content)
+              (string_content)))))))
   (command
     (rule
       (seq
@@ -11240,9 +11240,9 @@ inner block dock comment: user.code_comment_documentation_block_inner()
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))))
+              (string_content)
+              (string_content)))))))
   (comment)
   (command
     (rule
@@ -11855,7 +11855,7 @@ var <phrase> [over]:
       (expression
         (string
           (string_content)
-          (not_interpolation)
+          (string_content)
           (string_escape_sequence)))))
   (command
     (rule
@@ -11868,7 +11868,7 @@ var <phrase> [over]:
           (string_content)
           (string_escape_sequence)
           (string_content)
-          (not_interpolation)
+          (string_content)
           (string_escape_sequence)))))
   (command
     (rule
@@ -13937,9 +13937,9 @@ block string:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (command
     (rule
@@ -13953,9 +13953,9 @@ block string:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (command
     (rule
@@ -14147,9 +14147,9 @@ arg <number_small>: "%{number_small}"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 File knausj_talon/lang/csharp/csharp.talon
@@ -14472,9 +14472,9 @@ from import:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))
             (string
               (string_content)))))))
@@ -14794,10 +14794,10 @@ include <user.code_libraries>:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
+              (string_content)
               (string_escape_sequence)
               (string_escape_sequence)
-              (not_interpolation)))))
+              (string_content)))))
       (expression
         (action
           (identifier)
@@ -14916,8 +14916,8 @@ include <user.code_libraries>:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
-              (not_interpolation)))))
+              (string_content)
+              (string_content)))))
       (expression
         (action
           (identifier)
@@ -14947,9 +14947,9 @@ include <user.code_libraries>:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))
       (expression
         (action
@@ -14975,13 +14975,13 @@ include <user.code_libraries>:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (comment)
   (command
@@ -14994,9 +14994,9 @@ include <user.code_libraries>:
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)))))
   (command
     (rule
       (seq
@@ -15008,9 +15008,9 @@ include <user.code_libraries>:
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)))))
   (command
     (rule
       (capture
@@ -15018,9 +15018,9 @@ include <user.code_libraries>:
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)))))
   (command
     (rule
       (capture
@@ -15028,9 +15028,9 @@ include <user.code_libraries>:
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)))))
   (command
     (rule
       (capture
@@ -15038,9 +15038,9 @@ include <user.code_libraries>:
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)))))
   (command
     (rule
       (capture
@@ -15048,9 +15048,9 @@ include <user.code_libraries>:
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)))))
   (command
     (rule
       (seq
@@ -15060,9 +15060,9 @@ include <user.code_libraries>:
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)))))
   (command
     (rule
       (seq
@@ -16066,7 +16066,7 @@ quote that:
     (block
       (expression
         (string
-          (not_interpolation)))))
+          (string_content)))))
   (command
     (rule
       (parenthesized_rule
@@ -16081,7 +16081,7 @@ quote that:
     (block
       (expression
         (string
-          (not_interpolation)))))
+          (string_content)))))
   (command
     (rule
       (seq
@@ -16316,8 +16316,8 @@ quote that:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
-              (not_interpolation)))))
+              (string_content)
+              (string_content)))))
       (expression
         (key_action
           (implicit_string)))))
@@ -16411,9 +16411,9 @@ quote that:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (command
     (rule
@@ -16437,9 +16437,9 @@ quote that:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (command
     (rule
@@ -16460,11 +16460,11 @@ quote that:
           (identifier)
           (argument_list
             (string
-              (escape_interpolation)
-              (not_interpolation)
               (string_content)
-              (escape_interpolation)
-              (not_interpolation)))))))
+              (string_content)
+              (string_content)
+              (string_content)
+              (string_content)))))))
   (command
     (rule
       (seq
@@ -16485,9 +16485,9 @@ quote that:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (command
     (rule
@@ -16506,9 +16506,9 @@ quote that:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (command
     (rule
@@ -16527,9 +16527,9 @@ quote that:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (command
     (rule
@@ -16553,9 +16553,9 @@ quote that:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (command
     (rule
@@ -16579,9 +16579,9 @@ quote that:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content))))))))
 
 ================================================================================
@@ -16607,9 +16607,9 @@ not tag: user.mouse_grid_showing
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 File knausj_talon/text/homophones.talon
@@ -19181,9 +19181,9 @@ tab search <user.text>$:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))
+              (string_content)
+              (string_content)))))
       (expression
         (key_action
           (implicit_string))))))
@@ -20249,9 +20249,9 @@ tag(): user.kubectl
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))))
+              (string_content)
+              (string_content)))))))
   (command
     (rule
       (seq
@@ -20427,9 +20427,9 @@ find it <phrase>$:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_escape_sequence))))))))
 
 ================================================================================
@@ -20494,9 +20494,9 @@ go program files: user.file_manager_open_directory("%programfiles%")
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (command
     (rule
@@ -22487,9 +22487,9 @@ task <number> delete$: "task {number} delete"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_escape_sequence)))))
   (command
     (rule
@@ -22513,9 +22513,9 @@ task <number> delete$: "task {number} delete"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_escape_sequence)))))
   (comment)
   (command
@@ -22538,9 +22538,9 @@ task <number> delete$: "task {number} delete"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_escape_sequence)))))
   (command
     (rule
@@ -22578,9 +22578,9 @@ task <number> delete$: "task {number} delete"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content)))))
   (comment)
   (command
@@ -22595,9 +22595,9 @@ task <number> delete$: "task {number} delete"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content)))))
   (command
     (rule
@@ -22611,9 +22611,9 @@ task <number> delete$: "task {number} delete"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content))))))
 
 ================================================================================
@@ -23776,9 +23776,9 @@ find <user.text>:
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation))))))))
+              (string_content)
+              (string_content))))))))
 
 ================================================================================
 File knausj_talon/apps/gdb/gdb.talon
@@ -23919,9 +23919,9 @@ clear screen: "shell clear\n"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)))))
   (command
     (rule
       (seq
@@ -24006,9 +24006,9 @@ clear screen: "shell clear\n"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)))))
   (command
     (rule
       (seq
@@ -24031,9 +24031,9 @@ clear screen: "shell clear\n"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)))))
   (command
     (rule
       (seq
@@ -24058,9 +24058,9 @@ clear screen: "shell clear\n"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content)))))
   (command
     (rule
@@ -24078,9 +24078,9 @@ clear screen: "shell clear\n"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content)))))
   (command
     (rule
@@ -24098,9 +24098,9 @@ clear screen: "shell clear\n"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content)))))
   (command
     (rule
@@ -24115,9 +24115,9 @@ clear screen: "shell clear\n"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content)))))
   (comment)
   (command
@@ -24231,9 +24231,9 @@ clear screen: "shell clear\n"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_escape_sequence)))))
   (command
     (rule
@@ -24246,9 +24246,9 @@ clear screen: "shell clear\n"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_escape_sequence)))))
   (command
     (rule
@@ -24432,9 +24432,9 @@ clear screen: "shell clear\n"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_escape_sequence)))))
   (command
     (rule
@@ -24487,9 +24487,9 @@ clear screen: "shell clear\n"
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_escape_sequence)))))
       (expression
         (action
@@ -24621,9 +24621,9 @@ clear screen: "shell clear\n"
       (expression
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_escape_sequence)))))
   (comment)
   (command
@@ -29761,9 +29761,9 @@ new scratch (shell|window):
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))))
+              (string_content)
+              (string_content)))))))
   (command
     (rule
       (seq
@@ -30182,9 +30182,9 @@ new scratch (shell|window):
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))))
+              (string_content)
+              (string_content)))))))
   (command
     (rule
       (parenthesized_rule
@@ -30409,9 +30409,9 @@ new scratch (shell|window):
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))))
+              (string_content)
+              (string_content)))))))
   (command
     (rule
       (seq
@@ -30551,9 +30551,9 @@ dump function params: "r @rcx,@rdx,@r8,@r9\n"
           (identifier)
           (argument_list
             (string
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))))
+              (string_content)
+              (string_content)))))))
   (command
     (rule
       (seq
@@ -30773,9 +30773,9 @@ dump function params: "r @rcx,@rdx,@r8,@r9\n"
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation))))))
+          (string_content)
+          (string_content))))))
 
 ================================================================================
 File knausj_talon/apps/conemu.talon
@@ -31916,9 +31916,9 @@ blacken: user.idea("action BLACKReformatCode")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))))
+              (string_content)
+              (string_content)))))))
   (command
     (rule
       (seq
@@ -31933,9 +31933,9 @@ blacken: user.idea("action BLACKReformatCode")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))))
+              (string_content)
+              (string_content)))))))
   (comment)
   (command
     (rule
@@ -33319,9 +33319,9 @@ blacken: user.idea("action BLACKReformatCode")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (command
     (rule
@@ -33339,9 +33339,9 @@ blacken: user.idea("action BLACKReformatCode")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (command
     (rule
@@ -33359,9 +33359,9 @@ blacken: user.idea("action BLACKReformatCode")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (command
     (rule
@@ -33379,9 +33379,9 @@ blacken: user.idea("action BLACKReformatCode")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (command
     (rule
@@ -33399,9 +33399,9 @@ blacken: user.idea("action BLACKReformatCode")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (command
     (rule
@@ -33419,9 +33419,9 @@ blacken: user.idea("action BLACKReformatCode")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (command
     (rule
@@ -33439,9 +33439,9 @@ blacken: user.idea("action BLACKReformatCode")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (command
     (rule
@@ -33459,9 +33459,9 @@ blacken: user.idea("action BLACKReformatCode")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (command
     (rule
@@ -33479,9 +33479,9 @@ blacken: user.idea("action BLACKReformatCode")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (command
     (rule
@@ -33499,9 +33499,9 @@ blacken: user.idea("action BLACKReformatCode")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (command
     (rule
@@ -33519,9 +33519,9 @@ blacken: user.idea("action BLACKReformatCode")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (command
     (rule
@@ -33539,9 +33539,9 @@ blacken: user.idea("action BLACKReformatCode")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))))
   (command
     (rule
@@ -33559,9 +33559,9 @@ blacken: user.idea("action BLACKReformatCode")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))))
+              (string_content)
+              (string_content)))))))
   (command
     (rule
       (seq
@@ -33578,9 +33578,9 @@ blacken: user.idea("action BLACKReformatCode")
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)))))))
+              (string_content)
+              (string_content)))))))
   (command
     (rule
       (seq
@@ -35634,9 +35634,9 @@ toggle right sidebar: key(ctrl-.)
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)))))
   (command
     (rule
       (seq
@@ -36324,9 +36324,9 @@ toggle right sidebar: key(cmd-.)
     (block
       (expression
         (string
-          (not_interpolation)
           (string_content)
-          (not_interpolation)))))
+          (string_content)
+          (string_content)))))
   (command
     (rule
       (seq
@@ -36540,9 +36540,9 @@ copy paste:
             (string
               (string_content)
               (string_escape_sequence)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_escape_sequence)
               (string_escape_sequence)))))))
   (command
@@ -36718,9 +36718,9 @@ tag(): user.talon_python
         (identifier)
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content)))
       (expression
         (action
@@ -36746,9 +36746,9 @@ tag(): user.talon_python
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))
       (expression
         (key_action
@@ -36774,9 +36774,9 @@ tag(): user.talon_python
         (identifier)
         (string
           (string_content)
-          (not_interpolation)
           (string_content)
-          (not_interpolation)
+          (string_content)
+          (string_content)
           (string_content)))
       (comment)
       (comment)
@@ -36806,9 +36806,9 @@ tag(): user.talon_python
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))
       (expression
         (key_action
@@ -36830,9 +36830,9 @@ tag(): user.talon_python
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))
       (expression
         (key_action
@@ -36905,9 +36905,9 @@ tag(): user.talon_python
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))
       (expression
         (key_action
@@ -36964,9 +36964,9 @@ tag(): user.talon_python
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))
       (expression
         (key_action
@@ -37894,9 +37894,9 @@ cube shell:
           (argument_list
             (string
               (string_content)
-              (not_interpolation)
               (string_content)
-              (not_interpolation)
+              (string_content)
+              (string_content)
               (string_content)))))
       (expression
         (action
