@@ -18,7 +18,7 @@ module.exports = grammar({
     $._indent,
     $._dedent,
     $._string_start,
-    $._string_content,
+    $.string_content,
     $._string_end,
     $._regex_start,
     $._regex_content,
@@ -303,7 +303,7 @@ module.exports = grammar({
           choice(
             $._regex_content,
             $.regex_escape_sequence,
-            $._not_escapesequence
+            $.not_escapesequence
           )
         ),
         alias($._regex_end, "/")
@@ -348,11 +348,11 @@ module.exports = grammar({
         repeat(
           choice(
             $.interpolation,
-            $._escape_interpolation,
-            $._not_interpolation,
+            $.escape_interpolation,
+            $.not_interpolation,
             $.string_escape_sequence,
-            $._not_escapesequence,
-            $._string_content
+            $.not_escapesequence,
+            $.string_content
           )
         ),
         alias($._string_end, '"')
@@ -360,7 +360,7 @@ module.exports = grammar({
 
     interpolation: ($) => prec(1, seq("{", $._expression, "}")),
 
-    _escape_interpolation: ($) =>
+    escape_interpolation: ($) =>
       prec(1, choice(alias("{{", "{"), alias("}}", "}"))),
 
     string_escape_sequence: ($) =>
@@ -390,9 +390,9 @@ module.exports = grammar({
         )
       ),
 
-    _not_escapesequence: ($) => "\\",
+    not_escapesequence: ($) => "\\",
 
-    _not_interpolation: ($) => choice("{", "}"),
+    not_interpolation: ($) => choice("{", "}"),
   },
 });
 

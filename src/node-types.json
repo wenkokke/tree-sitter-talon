@@ -393,6 +393,11 @@
     }
   },
   {
+    "type": "escape_interpolation",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "expression",
     "named": true,
     "fields": {
@@ -575,6 +580,11 @@
         }
       ]
     }
+  },
+  {
+    "type": "not_interpolation",
+    "named": true,
+    "fields": {}
   },
   {
     "type": "number",
@@ -1029,7 +1039,23 @@
       "required": false,
       "types": [
         {
+          "type": "escape_interpolation",
+          "named": true
+        },
+        {
           "type": "interpolation",
+          "named": true
+        },
+        {
+          "type": "not_escapesequence",
+          "named": true
+        },
+        {
+          "type": "not_interpolation",
+          "named": true
+        },
+        {
+          "type": "string_content",
           "named": true
         },
         {
@@ -1152,6 +1178,10 @@
     "named": false
   },
   {
+    "type": "not_escapesequence",
+    "named": true
+  },
+  {
     "type": "operator",
     "named": true
   },
@@ -1165,6 +1195,10 @@
   },
   {
     "type": "start_anchor",
+    "named": true
+  },
+  {
+    "type": "string_content",
     "named": true
   },
   {

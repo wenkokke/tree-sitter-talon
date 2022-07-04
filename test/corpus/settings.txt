@@ -77,22 +77,28 @@ settings():
     (block
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string)))))
+        (string
+          (string_content))))))
 
 ================================================================================
 Settings lang/python/python.talon
@@ -113,22 +119,28 @@ settings():
     (block
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string)))))
+        (string
+          (string_content))))))
 
 ================================================================================
 Settings lang/css/css.talon
@@ -144,7 +156,8 @@ settings():
     (block
       (assignment
         (identifier)
-        (string)))))
+        (string
+          (string_content))))))
 
 ================================================================================
 Settings lang/rust/rust.talon
@@ -165,22 +178,28 @@ settings():
     (block
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string)))))
+        (string
+          (string_content))))))
 
 ================================================================================
 Settings lang/r/r.talon
@@ -201,22 +220,28 @@ settings():
     (block
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string)))))
+        (string
+          (string_content))))))
 
 ================================================================================
 Settings lang/java/java.talon
@@ -237,22 +262,28 @@ settings():
     (block
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string)))))
+        (string
+          (string_content))))))
 
 ================================================================================
 Settings lang/php/php.talon
@@ -273,22 +304,28 @@ settings():
     (block
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string)))))
+        (string
+          (string_content))))))
 
 ================================================================================
 Settings lang/scala/scala.talon
@@ -309,22 +346,28 @@ settings():
     (block
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string)))))
+        (string
+          (string_content))))))
 
 ================================================================================
 Settings lang/csharp/csharp.talon
@@ -345,22 +388,28 @@ settings():
     (block
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string)))))
+        (string
+          (string_content))))))
 
 ================================================================================
 Settings lang/javascript/javascript.talon
@@ -381,22 +430,28 @@ settings():
     (block
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string)))))
+        (string
+          (string_content))))))
 
 ================================================================================
 Settings lang/c/c.talon
@@ -419,22 +474,28 @@ settings():
     (block
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (comment)
       (comment))))
 
@@ -457,22 +518,28 @@ settings():
     (block
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string))
+        (string
+          (string_content)))
       (assignment
         (identifier)
-        (string)))))
+        (string
+          (string_content))))))
 
 ================================================================================
 Settings apps/evernote/mac.talon
