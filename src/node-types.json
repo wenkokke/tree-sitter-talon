@@ -266,6 +266,10 @@
           "named": true
         },
         {
+          "type": "docstring",
+          "named": true
+        },
+        {
           "type": "expression",
           "named": true
         }
@@ -1101,10 +1105,6 @@
     "named": false
   },
   {
-    "type": ";",
-    "named": false
-  },
-  {
     "type": "<",
     "named": false
   },
@@ -1130,6 +1130,10 @@
   },
   {
     "type": "comment",
+    "named": true
+  },
+  {
+    "type": "docstring",
     "named": true
   },
   {

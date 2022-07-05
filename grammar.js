@@ -103,20 +103,39 @@ module.exports = grammar({
 
     /* Settings */
 
-    settings: ($) => seq("settings()", ":", $._suite),
+    settings: ($) => seq("settings()", ":", $._statement_suite),
 
     /* Commands */
 
-    command: ($) => seq(field("rule", $.rule), ":", field("script", $._suite)),
+    command: ($) => seq(field("rule", $.rule), ":", field("script", $._statement_suite)),
 
-    _suite: ($) =>
+    /* Statements */
+
+    _statement_suite: ($) =>
       choice(
-        alias($._simple_statements, $.block),
+        alias($._simple_statement, $.block),
         seq($._indent, $.block),
         alias($._newline, $.block)
       ),
 
-    block: ($) => seq(repeat($._simple_statements), $._dedent),
+    block: ($) => seq(repeat($._simple_statement), $._dedent),
+
+    _simple_statement: ($) =>
+      seq(
+        choice(
+          $.docstring,
+          $.assignment,
+          $.expression,
+        ),
+        $._newline
+      ),
+
+    docstring: ($) => token(seq("###", /.*/)),
+
+    assignment: ($) =>
+      seq(field("left", $.identifier), "=", field("right", $._expression)),
+
+    expression: ($) => field("expression", $._expression),
 
     /* Rules */
 
@@ -162,16 +181,6 @@ module.exports = grammar({
     parenthesized_rule: ($) => seq("(", $._optional_choice, ")"),
 
     /* Expressions */
-
-    _simple_statements: ($) =>
-      seq(sep1($._simple_statement, ";"), optional(";"), $._newline),
-
-    _simple_statement: ($) => choice($.assignment, $.expression),
-
-    assignment: ($) =>
-      seq(field("left", $.identifier), "=", field("right", $._expression)),
-
-    expression: ($) => field("expression", $._expression),
 
     _expression: ($) =>
       choice(
