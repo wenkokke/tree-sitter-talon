@@ -47,9 +47,17 @@ module.exports = grammar({
 
     comment: ($) => token(seq("#", /.*/)),
 
+    docstring: ($) => token(seq("###", /.*/)),
+
     /* Context */
 
-    context: ($) => seq(optional($._optional_or), "-", $._newline),
+    context: ($) =>
+      seq(
+        repeat($.docstring),
+        optional($._optional_or),
+        "-",
+        $._newline
+        ),
 
     _optional_or: ($) => choice($.or, $._optional_and),
 
@@ -129,8 +137,6 @@ module.exports = grammar({
         ),
         $._newline
       ),
-
-    docstring: ($) => token(seq("###", /.*/)),
 
     assignment: ($) =>
       seq(field("left", $.identifier), "=", field("right", $._expression)),
