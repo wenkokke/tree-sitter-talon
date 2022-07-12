@@ -4,7 +4,7 @@
   "description": "Talon grammar for tree-sitter",
   "main": "bindings/node",
   "scripts": {
-    "preinstall": "tree-sitter generate && node-gyp build",
+    "preinstall": "tree-sitter generate",
     "test": "tree-sitter test && script/parse-examples",
     "test-wasm": "tree-sitter build-wasm && script/parse-examples wasm"
   },
