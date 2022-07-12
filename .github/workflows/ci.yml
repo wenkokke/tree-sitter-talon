@@ -24,6 +24,7 @@ jobs:
       - run: npm test
       - run: npm run test-examples
       - run: npm pack
+      - run: mv tree-sitter-talon-v*.tgz tree-sitter-talon.tgz
       - uses: actions/upload-artifact@v3
         with:
           name: NPM Package
@@ -44,7 +45,7 @@ jobs:
       - run: npm run build
       - run: npm run build-wasm
       # Cannot test WASM due to tree-sitter/tree-sitter#1802
-      - run: npm run test-examples-wasm
+      # - run: npm run test-examples-wasm
       - uses: actions/upload-artifact@v3
         with:
           name: WebAssembly
@@ -57,8 +58,6 @@ jobs:
     needs: [build, build-wasm]
     steps:
       - uses: actions/checkout@v3
-      - id: get_version
-        uses: battila7/get-version-action@v2
       - uses: actions/download-artifact@v3
         if: startsWith(github.ref, 'refs/tags/v')
         with:
@@ -69,10 +68,9 @@ jobs:
         with:
           name: WebAssembly
           path: build
-      - run: mv build/tree-sitter-talon.wasm build/tree-sitter-talon-${{ steps.get_version.outputs.version }}.wasm
       - uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/v')
         with:
           files: |
-            build/tree-sitter-talon-${{ steps.get_version.outputs.version }}.tgz
-            build/tree-sitter-talon-${{ steps.get_version.outputs.version }}.wasm
+            build/tree-sitter-talon.tgz
+            build/tree-sitter-talon.wasm
