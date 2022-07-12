@@ -21,6 +21,7 @@ jobs:
       - uses: actions/setup-node@v3
       - run: npm install
       - run: npm test
+      - run: npm test-examples
 
   build-wasm:
     name: Build WebAssembly
@@ -33,7 +34,7 @@ jobs:
         with:
           version: 3.1.14
           actions-cache-folder: 'emsdk-cache'
-      - run: npm exec tree-sitter build-wasm
+      - run: npm run build-wasm
       - uses: actions/upload-artifact@v3
         with:
           name: tree-sitter-talon.wasm
