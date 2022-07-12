@@ -1,6 +1,7 @@
 #!/usr/bin/env node --trace-warnings --unhandled-rejections=strict
 
 const fs = require('fs');
+const path = require('path');
 const Parser = require('web-tree-sitter');
 
 if (process.argv.length < 3) {
@@ -9,7 +10,8 @@ if (process.argv.length < 3) {
 }
 
 Parser.init().then(() => {
-  Parser.Language.load('tree-sitter-talon.wasm').then((Talon) => {
+  const tree_sitter_talon_wasm = path.resolve(__dirname, '..', 'tree-sitter-talon.wasm');
+  Parser.Language.load(tree_sitter_talon_wasm).then((Talon) => {
     const parser = new Parser;
     parser.setLanguage(Talon);
     for (let i = 2; i < process.argv.length - 1; i++) {

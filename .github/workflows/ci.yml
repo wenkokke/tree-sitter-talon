@@ -20,9 +20,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-      - run: |
-          npm install
-          npm exec tree-sitter generate
-          npm exec node-gyp build
-      - run: |
-          npm exec tree-sitter test
+      - run: npm install
+      - run: npm test
