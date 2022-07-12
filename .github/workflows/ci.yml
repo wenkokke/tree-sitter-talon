@@ -24,7 +24,7 @@ jobs:
       - run: npm test
       - run: npm run test-examples
       - run: npm pack
-      - run: mv tree-sitter-talon-v*.tgz tree-sitter-talon.tgz
+      - run: mv tree-sitter-talon-*.tgz tree-sitter-talon.tgz
       - uses: actions/upload-artifact@v3
         with:
           name: NPM Package
