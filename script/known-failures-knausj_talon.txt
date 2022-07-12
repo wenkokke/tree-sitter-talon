@@ -1,3 +1,2 @@
-examples/knausj_talon/lang/go/go.talon
 examples/knausj_talon/lang/tags/comment_block.talon
 examples/knausj_talon/lang/tags/comment_line.talon
