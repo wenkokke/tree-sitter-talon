@@ -1,6 +1,8 @@
 # tree-sitter-talon
 
-Talon file grammar for [tree-sitter].
+![GitHub package.json version](https://img.shields.io/github/package-json/v/wenkokke/tree-sitter-talon) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/wenkokke/tree-sitter-talon/CI) ![GitHub](https://img.shields.io/github/license/wenkokke/tree-sitter-talon)
+
+Unofficial Talon file grammar for [tree-sitter].
 
 References:
 - [Talon Community Wiki - .talon Files][talon-wiki]
