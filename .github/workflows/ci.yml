@@ -33,6 +33,7 @@ jobs:
         with:
           version: 3.1.14
           actions-cache-folder: 'emsdk-cache'
+      - run: npm install
       - run: npm run build-wasm
       # Cannot test WASM due to tree-sitter/tree-sitter#1802
       - run: npm run test-examples-wasm
