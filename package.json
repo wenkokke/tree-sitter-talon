@@ -4,7 +4,6 @@
   "description": "Talon grammar for tree-sitter",
   "main": "bindings/node",
   "scripts": {
-    "preinstall": "npm run build",
     "build": "tree-sitter generate",
     "test": "tree-sitter test",
     "test-examples": "script/parse-examples",
