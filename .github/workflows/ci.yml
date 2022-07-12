@@ -27,8 +27,8 @@ jobs:
       - run: mv tree-sitter-talon-*.tgz tree-sitter-talon.tgz
       - uses: actions/upload-artifact@v3
         with:
-          name: NPM Package
-          path: tree-sitter-talon-v*.tgz
+          name: tree-sitter-talon.tgz
+          path: tree-sitter-talon.tgz
           if-no-files-found: error
 
   build-wasm:
@@ -48,7 +48,7 @@ jobs:
       # - run: npm run test-examples-wasm
       - uses: actions/upload-artifact@v3
         with:
-          name: WebAssembly
+          name: tree-sitter-talon.wasm
           path: tree-sitter-talon.wasm
           if-no-files-found: error
 
@@ -61,12 +61,12 @@ jobs:
       - uses: actions/download-artifact@v3
         if: startsWith(github.ref, 'refs/tags/v')
         with:
-          name: NPM Package
+          name: tree-sitter-talon.tgz
           path: build
       - uses: actions/download-artifact@v3
         if: startsWith(github.ref, 'refs/tags/v')
         with:
-          name: WebAssembly
+          name: tree-sitter-talon.wasm
           path: build
       - uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/v')
