@@ -1004,17 +1004,24 @@
   {
     "type": "source_file",
     "named": true,
-    "fields": {},
+    "fields": {
+      "context": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "context",
+            "named": true
+          }
+        ]
+      }
+    },
     "children": {
       "multiple": true,
       "required": false,
       "types": [
         {
           "type": "command",
-          "named": true
-        },
-        {
-          "type": "context",
           "named": true
         },
         {

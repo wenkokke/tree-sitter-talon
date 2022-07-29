@@ -41,7 +41,7 @@ module.exports = grammar({
   rules: {
     source_file: ($) =>
       seq(
-        optional($.context),
+        field("context", optional($.context)),
         repeat(choice($.include_tag, $.settings, $.command))
       ),
 
