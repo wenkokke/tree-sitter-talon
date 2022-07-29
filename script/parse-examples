@@ -29,7 +29,7 @@ function clone_repo {
   popd >/dev/null
 }
 
-clone_repo knausj85 knausj_talon b26bf15ee1fb0b5feb6846d6e8077d8ee6cc9028
+clone_repo knausj85 knausj_talon 000015ed1bd4cb1109d7d6ddaaa4146821821d70
 clone_repo AndreasArvidsson andreas-talon 9e467003d32da694b1fdf74ef97543c9b3d2d613
 
 for name in knausj_talon andreas-talon; do

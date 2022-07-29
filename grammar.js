@@ -45,9 +45,14 @@ module.exports = grammar({
         repeat(choice($.include_tag, $.settings, $.command))
       ),
 
-    comment: ($) => token(seq("#", /.*/)),
+    comment: ($) => token(choice(
+      /(###)([^\S\r\n\u2028\u2029]*)/,
+      /(#|##|####+)([^#\r\n\u2028\u2029].*)?/
+    )),
 
-    docstring: ($) => token(seq("###", /.*/)),
+    docstring: ($) => token(
+      /(###)([^#\r\n\u2028\u2029].*)/
+    ),
 
     /* Context */
 

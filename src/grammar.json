@@ -41,15 +41,15 @@
     "comment": {
       "type": "TOKEN",
       "content": {
-        "type": "SEQ",
+        "type": "CHOICE",
         "members": [
           {
-            "type": "STRING",
-            "value": "#"
+            "type": "PATTERN",
+            "value": "(###)([^\\S\\r\\n\\u2028\\u2029]*)"
           },
           {
             "type": "PATTERN",
-            "value": ".*"
+            "value": "(#|##|####+)([^#\\r\\n\\u2028\\u2029].*)?"
           }
         ]
       }
@@ -57,17 +57,8 @@
     "docstring": {
       "type": "TOKEN",
       "content": {
-        "type": "SEQ",
-        "members": [
-          {
-            "type": "STRING",
-            "value": "###"
-          },
-          {
-            "type": "PATTERN",
-            "value": ".*"
-          }
-        ]
+        "type": "PATTERN",
+        "value": "(###)([^#\\r\\n\\u2028\\u2029].*)"
       }
     },
     "context": {
