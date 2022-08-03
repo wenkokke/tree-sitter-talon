@@ -8,7 +8,7 @@
     "build": "tree-sitter generate",
     "test": "tree-sitter test && script/parse-examples",
     "test-update": "npm run pretest && tree-sitter test --update",
-    "pretest-wasm": "npm run build",
+    "pretest-wasm": "npm run build-wasm",
     "build-wasm": "tree-sitter build-wasm",
     "test-wasm": "npm run pretest-wasm && script/parse-examples wasm"
   },
