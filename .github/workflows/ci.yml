@@ -44,7 +44,7 @@ jobs:
       - run: npm run build
       - run: npm run build-wasm
       # Cannot test WASM due to tree-sitter/tree-sitter#1802
-      - run: npm run test-wasm
+      # - run: npm run test-wasm
       - uses: actions/upload-artifact@v3
         with:
           name: tree-sitter-talon.wasm
