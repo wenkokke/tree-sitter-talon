@@ -45,20 +45,12 @@ module.exports = grammar({
         repeat(choice($.include_tag, $.settings, $.command))
       ),
 
-    comment: ($) => token(choice(
-      /(###)([^\S\r\n\u2028\u2029]*)/,
-      /(#|##|####+)([^#\r\n\u2028\u2029].*)?/
-    )),
-
-    docstring: ($) => token(
-      /(###)([^#\r\n\u2028\u2029].*)/
-    ),
+    comment: ($) => token(/#.*?/),
 
     /* Context */
 
     context: ($) =>
       seq(
-        repeat($.docstring),
         optional($._optional_or),
         "-",
         $._newline
@@ -136,7 +128,6 @@ module.exports = grammar({
     _simple_statement: ($) =>
       seq(
         choice(
-          $.docstring,
           $.assignment,
           $.expression,
         ),
