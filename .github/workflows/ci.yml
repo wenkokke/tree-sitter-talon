@@ -1,13 +1,6 @@
 name: CI
 
-on:
-  push:
-    branches:
-      - dev
-  pull_request:
-    types:
-      - opened
-      - synchronize
+on: [push]
       
 env:
   npm_config_yes: true
@@ -58,17 +51,17 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/download-artifact@v3
-        if: startsWith(github.ref, 'refs/tags/v')
+        if: startsWith(github.ref, 'refs/tags/')
         with:
           name: tree-sitter-talon.tgz
           path: build
       - uses: actions/download-artifact@v3
-        if: startsWith(github.ref, 'refs/tags/v')
+        if: startsWith(github.ref, 'refs/tags/')
         with:
           name: tree-sitter-talon.wasm
           path: build
       - uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/v')
+        if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
             build/tree-sitter-talon.tgz
