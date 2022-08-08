@@ -1,2 +1,1 @@
-examples/andreas-talon/misc/foot_switch/foot_switch.talon
 examples/andreas-talon/settings/settings_work_laptop.talon
