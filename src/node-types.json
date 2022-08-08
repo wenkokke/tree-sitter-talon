@@ -528,6 +528,32 @@
     }
   },
   {
+    "type": "key_binding",
+    "named": true,
+    "fields": {
+      "key": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "key_action",
+            "named": true
+          }
+        ]
+      },
+      "script": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "block",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
     "type": "list",
     "named": true,
     "fields": {
@@ -1022,6 +1048,10 @@
           "named": true
         },
         {
+          "type": "key_binding",
+          "named": true
+        },
+        {
           "type": "settings",
           "named": true
         }
@@ -1161,7 +1191,7 @@
     "named": true
   },
   {
-    "type": "key",
+    "type": "key(",
     "named": false
   },
   {
@@ -1177,7 +1207,7 @@
     "named": false
   },
   {
-    "type": "sleep",
+    "type": "sleep(",
     "named": false
   },
   {

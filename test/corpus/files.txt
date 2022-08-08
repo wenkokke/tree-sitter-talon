@@ -15992,7 +15992,7 @@ inside (quotes | string):
   insert("''")
   key(left)
 inside (double quotes | dubquotes):
-    insert('""')
+  insert('""')
   key(left)
 inside (graves | back ticks):
   insert("``")
@@ -16370,13 +16370,13 @@ quote that:
           (identifier)
           (argument_list
             (string
-              (string_content)))))))
+              (string_content)))))
+      (expression
+        (key_action
+          (implicit_string)))))
   (command
     (rule
       (seq
-        (word)
-        (parenthesized_rule
-          (word))
         (word)
         (parenthesized_rule
           (choice

@@ -42,7 +42,7 @@ module.exports = grammar({
     source_file: ($) =>
       seq(
         optional($.context),
-        repeat(choice($.include_tag, $.settings, $.command))
+        repeat(choice($.include_tag, $.settings, $.key_binding, $.command))
       ),
 
     comment: ($) => token(/#.*?/),
@@ -54,7 +54,7 @@ module.exports = grammar({
         optional($._optional_or),
         "-",
         $._newline
-        ),
+      ),
 
     _optional_or: ($) => choice($.or, $._optional_and),
 
@@ -101,16 +101,14 @@ module.exports = grammar({
         )
       ),
 
-    /* Tags */
+    /* Declarations */
 
     include_tag: ($) =>
       seq("tag()", ":", field("tag", $.identifier), $._newline),
 
-    /* Settings */
-
     settings: ($) => seq("settings()", ":", $._statement_suite),
 
-    /* Commands */
+    key_binding: ($) => seq(field("key", $.key_action), ":", field("script", $._statement_suite)),
 
     command: ($) => seq(field("rule", $.rule), ":", field("script", $._statement_suite)),
 
@@ -232,8 +230,7 @@ module.exports = grammar({
       prec(
         PREC.key,
         seq(
-          "key",
-          "(",
+          "key(",
           field("arguments", alias(/[^\)]*/, $.implicit_string)),
           ")"
         )
@@ -243,8 +240,7 @@ module.exports = grammar({
       prec(
         PREC.sleep,
         seq(
-          "sleep",
-          "(",
+          "sleep(",
           field("arguments", alias(/[^\)]*/, $.implicit_string)),
           ")"
         )
@@ -259,7 +255,7 @@ module.exports = grammar({
         )
       ),
 
-    argument_list: ($) => seq("(", sep($._expression, ","), optional(","), ")"),
+    argument_list: ($) => seq(token.immediate("("), sep($._expression, ","), optional(","), ")"),
 
     /* Identifiers */
 
