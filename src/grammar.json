@@ -45,36 +45,13 @@
     "comment": {
       "type": "TOKEN",
       "content": {
-        "type": "CHOICE",
-        "members": [
-          {
-            "type": "PATTERN",
-            "value": "(###)([^\\S\\r\\n\\u2028\\u2029]*)"
-          },
-          {
-            "type": "PATTERN",
-            "value": "(#|##|####+)([^#\\r\\n\\u2028\\u2029].*)?"
-          }
-        ]
-      }
-    },
-    "docstring": {
-      "type": "TOKEN",
-      "content": {
         "type": "PATTERN",
-        "value": "(###)([^#\\r\\n\\u2028\\u2029].*)"
+        "value": "#.*?"
       }
     },
     "context": {
       "type": "SEQ",
       "members": [
-        {
-          "type": "REPEAT",
-          "content": {
-            "type": "SYMBOL",
-            "name": "docstring"
-          }
-        },
         {
           "type": "CHOICE",
           "members": [
@@ -457,10 +434,6 @@
         {
           "type": "CHOICE",
           "members": [
-            {
-              "type": "SYMBOL",
-              "name": "docstring"
-            },
             {
               "type": "SYMBOL",
               "name": "assignment"
