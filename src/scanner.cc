@@ -102,6 +102,7 @@ namespace
     void deserialize(const char *buffer, unsigned length)
     {
       delimiter_stack.clear();
+      previous_indent_length = 0;
 
       if (length > 0)
       {
