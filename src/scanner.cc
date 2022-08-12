@@ -175,31 +175,44 @@ namespace
       bool found_end_of_line = false;
       uint32_t indent_length = 0;
       int32_t first_comment_indent_length = -1;
+
+      // loop until we find the next content character
       for (;;)
       {
         if (lexer->lookahead == '\n')
-        {
+        { // newline
           found_end_of_line = true;
           indent_length = 0;
           skip(lexer);
         }
         else if (lexer->lookahead == ' ')
-        {
+        { // space
           indent_length++;
           skip(lexer);
         }
-        else if (lexer->lookahead == '\r')
-        {
-          indent_length = 0;
-          skip(lexer);
-        }
         else if (lexer->lookahead == '\t')
-        {
+        { // tab - treat as 8 spaces
           indent_length += 8;
           skip(lexer);
         }
+        else if (lexer->lookahead == '\r')
+        { // carriage return - reset indent
+          indent_length = 0;
+          skip(lexer);
+        }
+        else if (lexer->lookahead == '\f')
+        { // form feed - reset indent
+          indent_length = 0;
+          skip(lexer);
+        }
+        else if (lexer->lookahead == 0)
+        { // end of file
+          indent_length = 0;
+          found_end_of_line = true;
+          break;
+        }
         else if (lexer->lookahead == '#')
-        {
+        { // comment
           if (first_comment_indent_length == -1)
           {
             first_comment_indent_length = (int32_t)indent_length;
@@ -211,35 +224,8 @@ namespace
           skip(lexer);
           indent_length = 0;
         }
-        else if (lexer->lookahead == '\\')
-        {
-          skip(lexer);
-          if (lexer->lookahead == '\r')
-          {
-            skip(lexer);
-          }
-          if (lexer->lookahead == '\n')
-          {
-            skip(lexer);
-          }
-          else
-          {
-            return false;
-          }
-        }
-        else if (lexer->lookahead == '\f')
-        {
-          indent_length = 0;
-          skip(lexer);
-        }
-        else if (lexer->lookahead == 0)
-        {
-          indent_length = 0;
-          found_end_of_line = true;
-          break;
-        }
         else
-        {
+        { // any content character
           break;
         }
       }
