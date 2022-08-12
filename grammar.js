@@ -20,9 +20,6 @@ module.exports = grammar({
     $._string_start,
     $.string_content,
     $._string_end,
-    $._regex_start,
-    $._regex_content,
-    $._regex_end,
 
     // Mark comments as external tokens so that the external scanner is always
     // invoked, even if no external token is expected. This allows for better
@@ -294,50 +291,6 @@ module.exports = grammar({
         )
       );
     },
-
-    /* Regular Expression */
-
-    regex: ($) =>
-      seq(
-        alias($._regex_start, "/"),
-        repeat(
-          choice(
-            $._regex_content,
-            $.regex_escape_sequence,
-            $._not_escapesequence
-          )
-        ),
-        alias($._regex_end, "/")
-      ),
-
-    regex_escape_sequence: ($) =>
-      choice(
-        token(
-          prec(
-            2,
-            seq(
-              "\\",
-              choice(
-                "^",
-                "$",
-                ".",
-                "|",
-                "?",
-                "*",
-                "+",
-                "(",
-                ")",
-                "[",
-                "]",
-                "{",
-                "}",
-                "/"
-              )
-            )
-          )
-        ),
-        alias($.string_escape_sequence, $.regex_escape_sequence)
-      ),
 
     /* Strings */
 

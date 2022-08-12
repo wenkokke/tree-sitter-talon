@@ -802,21 +802,6 @@
     }
   },
   {
-    "type": "regex_escape_sequence",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": false,
-      "types": [
-        {
-          "type": "regex_escape_sequence",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
     "type": "repeat",
     "named": true,
     "fields": {},
@@ -1120,10 +1105,6 @@
   },
   {
     "type": "-",
-    "named": false
-  },
-  {
-    "type": "/",
     "named": false
   },
   {
