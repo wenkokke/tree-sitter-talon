@@ -8,7 +8,7 @@ for talon in `find examples -name '*.talon'`; do
   for rule in `awk -F: "$awk_script" "$talon"`; do
     if [[ "$rule" != "tag()" && "$rule" != "settings()" ]]; then
       rule_number=$((rule_number+1))
-      header_title="Rule ${talon#examples/knausj_talon/}:$rule_number"
+      header_title="Rule ${talon#examples/}:$rule_number"
       header_bar=`echo "$header_title" | sed 's/./=/g'`
       echo $header_bar
       echo $header_title

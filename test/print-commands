@@ -2,7 +2,7 @@
 
 for talon in `find examples -name '*.talon'`; do
   has_no_context=`awk 'BEGIN{has_no_context=1} /^-$/{has_no_context=0} END{print has_no_context}' "$talon"`
-  header_title="Command ${talon#examples/knausj_talon/}"
+  header_title="Command ${talon#examples/}"
   header_bar=`echo "$header_title" | sed 's/./=/g'`
   sep="\n\n---\n\n$header_bar\n$header_title\n$header_bar\n\n"
   echo "$header_bar"
