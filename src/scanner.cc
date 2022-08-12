@@ -28,8 +28,7 @@ namespace
     enum
     {
       SingleQuote = 1 << 0,
-      DoubleQuote = 1 << 1,
-      BackQuote = 1 << 2
+      DoubleQuote = 1 << 1
     };
 
     Delimiter() : flags(0) {}
@@ -40,8 +39,6 @@ namespace
         return '\'';
       if (flags & DoubleQuote)
         return '"';
-      if (flags & BackQuote)
-        return '`';
       return 0;
     }
 
@@ -54,9 +51,6 @@ namespace
         break;
       case '"':
         flags |= DoubleQuote;
-        break;
-      case '`':
-        flags |= BackQuote;
         break;
       default:
         assert(false);
@@ -287,13 +281,7 @@ namespace
       {
         Delimiter delimiter;
 
-        if (lexer->lookahead == '`')
-        {
-          delimiter.set_end_character('`');
-          advance(lexer);
-          lexer->mark_end(lexer);
-        }
-        else if (lexer->lookahead == '\'')
+        if (lexer->lookahead == '\'')
         {
           delimiter.set_end_character('\'');
           advance(lexer);
