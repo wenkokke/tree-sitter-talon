@@ -293,6 +293,8 @@ module.exports = grammar({
 
     /* Strings */
 
+    // TODO: move to scanner to strip leading & trailing whitespace
+
     implicit_string: ($) => token(/.*/),
 
     string: ($) =>
