@@ -30,12 +30,6 @@ module.exports = grammar({
     // structure by returning dedent tokens whenever a dedent occurs, even
     // if no dedent is expected.
     $.comment,
-
-    // Allow the external scanner to check for the validity of closing brackets
-    // so that it can avoid returning dedent tokens between brackets.
-    "]",
-    ")",
-    "}",
   ],
 
   rules: {

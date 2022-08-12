@@ -1959,18 +1959,6 @@
     {
       "type": "SYMBOL",
       "name": "comment"
-    },
-    {
-      "type": "STRING",
-      "value": "]"
-    },
-    {
-      "type": "STRING",
-      "value": ")"
-    },
-    {
-      "type": "STRING",
-      "value": "}"
     }
   ],
   "inline": [],

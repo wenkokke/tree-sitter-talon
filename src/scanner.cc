@@ -23,10 +23,7 @@ namespace
     REGEX_START,
     REGEX_CONTENT,
     REGEX_END,
-    COMMENT,
-    CLOSE_PAREN,
-    CLOSE_BRACKET,
-    CLOSE_BRACE,
+    COMMENT
   };
 
   struct Delimiter
@@ -137,7 +134,6 @@ namespace
     bool scan(TSLexer *lexer, const bool *valid_symbols)
     {
       bool error_recovery_mode = (valid_symbols[STRING_CONTENT] || valid_symbols[REGEX_CONTENT]) && valid_symbols[INDENT];
-      bool within_brackets = valid_symbols[CLOSE_BRACE] || valid_symbols[CLOSE_PAREN] || valid_symbols[CLOSE_BRACKET];
 
       if (valid_symbols[STRING_CONTENT] && !delimiter_stack.empty() && !error_recovery_mode)
       {
@@ -303,7 +299,7 @@ namespace
         }
 
         if (
-            (valid_symbols[DEDENT] || (!valid_symbols[NEWLINE] && !within_brackets)) &&
+            valid_symbols[DEDENT] &&
             previous_indent_length > 0 &&
             indent_length == 0 &&
 
