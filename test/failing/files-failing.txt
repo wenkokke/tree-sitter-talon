@@ -1,6 +1,5 @@
-
 ================================================================================
-1. File andreas-talon/settings/settings_work_laptop.talon
+1. File andreas-talon/settings/settings_work_laptop.talon (failing)
 ================================================================================
 
 hostname: EliteBook
@@ -11,21 +10,12 @@ settings():
 --------------------------------------------------------------------------------
 
 (source_file
-  (command
-    (rule
-      (word))
-    (block
-      (expression
-        (variable
-          (identifier)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (parenthesized_rule
-          (MISSING word))))
+  (context
+        (match
+          (implicit_string)))
+  (settings
     (block
       (assignment
         (identifier)
-        (float)))))
+        (string
+          (string_content))))

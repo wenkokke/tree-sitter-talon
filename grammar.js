@@ -91,7 +91,7 @@ module.exports = grammar({
                 "app.bundle",
                 "title",
                 "code.language",
-                "language"
+                "language",
               ),
               $.identifier
             )

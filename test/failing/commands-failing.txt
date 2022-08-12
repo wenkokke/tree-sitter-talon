@@ -1,8 +1,8 @@
 ================================================================================
-389. Command andreas-talon/langs/html/html.talon
+389. Command andreas-talon/langs/html/html.talon (failing)
 ================================================================================
 
-
+-
 tag {user.code_tag}:
     "<{code_tag}>"
     user.code_push_tag_name(code_tag)
@@ -11,6 +11,7 @@ tag {user.code_tag}:
 --------------------------------------------------------------------------------
 
 (source_file
+  (context)
   (command
     (rule
       (seq
@@ -33,10 +34,10 @@ tag {user.code_tag}:
               (identifier))))))))
 
 ================================================================================
-390. Command andreas-talon/langs/html/html.talon
+390. Command andreas-talon/langs/html/html.talon (failing)
 ================================================================================
 
-
+-
 tag <user.text>:
     "<{text}>"
     user.code_push_tag_name(text)
@@ -45,6 +46,7 @@ tag <user.text>:
 --------------------------------------------------------------------------------
 
 (source_file
+  (context)
   (command
     (rule
       (seq

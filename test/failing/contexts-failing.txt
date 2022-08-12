@@ -1,19 +1,14 @@
 ================================================================================
-1. Context andreas-talon/settings/settings_work_laptop.talon
+1. Context andreas-talon/settings/settings_work_laptop.talon (failing)
 ================================================================================
 
 hostname: EliteBook
 -
 
+
 --------------------------------------------------------------------------------
 
 (source_file
-  (command
-    (rule
-      (word))
-    (block
-      (expression
-        (variable
-          (identifier)))))
-  (ERROR
-    (word)))
+  (context
+    (match
+      (implicit_string))))
