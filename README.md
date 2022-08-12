@@ -1,6 +1,6 @@
 # tree-sitter-talon
 
-![GitHub package.json version](https://img.shields.io/github/package-json/v/wenkokke/tree-sitter-talon) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/wenkokke/tree-sitter-talon/CI) ![GitHub](https://img.shields.io/github/license/wenkokke/tree-sitter-talon)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/wenkokke/tree-sitter-talon) ![npm](https://img.shields.io/npm/v/tree-sitter-talon) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/wenkokke/tree-sitter-talon/CI) ![GitHub](https://img.shields.io/github/license/wenkokke/tree-sitter-talon)
 
 Unofficial Talon file grammar for [tree-sitter].
 
