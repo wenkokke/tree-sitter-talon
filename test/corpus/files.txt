@@ -1,5 +1,5 @@
 ================================================================================
-File knausj_talon/misc/splits.talon
+1. File knausj_talon/misc/splits.talon
 ================================================================================
 
 tag: user.splits
@@ -190,7 +190,7 @@ go split <number>: user.split_number(number)
               (identifier))))))))
 
 ================================================================================
-File knausj_talon/misc/talon_helpers.talon
+2. File knausj_talon/misc/talon_helpers.talon
 ================================================================================
 
 talon check updates: menu.check_for_updates()
@@ -713,7 +713,7 @@ talon (bug report|report bug): user.open_url('https://github.com/knausj85/knausj
               (string_content))))))))
 
 ================================================================================
-File knausj_talon/misc/messaging.talon
+3. File knausj_talon/misc/messaging.talon
 ================================================================================
 
 tag: user.messaging
@@ -899,7 +899,7 @@ upload file: user.messaging_upload_file()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/misc/standard.talon
+4. File knausj_talon/misc/standard.talon
 ================================================================================
 
 #(jay son | jason ): "json"
@@ -1100,7 +1100,7 @@ slap: edit.line_insert_down()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/misc/chapters.talon
+5. File knausj_talon/misc/chapters.talon
 ================================================================================
 
 tag: user.chapters
@@ -1164,7 +1164,7 @@ go chapter final: user.chapter_final()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/misc/window_management.talon
+6. File knausj_talon/misc/window_management.talon
 ================================================================================
 
 window (new|open): app.window_open()
@@ -1378,7 +1378,7 @@ snap <user.running_applications> [screen] <number>:
               (identifier))))))))
 
 ================================================================================
-File knausj_talon/misc/microphone_selection.talon
+7. File knausj_talon/misc/microphone_selection.talon
 ================================================================================
 
 ^microphone show$: user.microphone_selection_toggle()
@@ -1430,7 +1430,7 @@ File knausj_talon/misc/microphone_selection.talon
               (identifier))))))))
 
 ================================================================================
-File knausj_talon/misc/media.talon
+8. File knausj_talon/misc/media.talon
 ================================================================================
 
 volume up: key(volup)
@@ -1525,7 +1525,7 @@ media (play | pause): user.play_pause()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/misc/macro.talon
+9. File knausj_talon/misc/macro.talon
 ================================================================================
 
 macro record: user.macro_record()
@@ -1567,7 +1567,7 @@ macro play: user.macro_play()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/misc/abbreviate.talon
+10. File knausj_talon/misc/abbreviate.talon
 ================================================================================
 
 -
@@ -1595,7 +1595,7 @@ File knausj_talon/misc/abbreviate.talon
           (string_content))))))
 
 ================================================================================
-File knausj_talon/misc/formatters.talon
+11. File knausj_talon/misc/formatters.talon
 ================================================================================
 
 #provide both anchored and unachored commands via 'over'
@@ -1840,7 +1840,7 @@ nope that was <user.formatters>: user.formatters_reformat_last(formatters)
               (identifier))))))))
 
 ================================================================================
-File knausj_talon/misc/websites_and_search_engines.talon
+12. File knausj_talon/misc/websites_and_search_engines.talon
 ================================================================================
 
 open {user.website}: user.open_url(website)
@@ -1908,7 +1908,7 @@ open {user.website}: user.open_url(website)
               (identifier))))))))
 
 ================================================================================
-File knausj_talon/misc/help_scope_open.talon
+13. File knausj_talon/misc/help_scope_open.talon
 ================================================================================
 
 mode: user.help_scope
@@ -1939,7 +1939,7 @@ scope (hide | close)$:   user.help_scope_toggle()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/misc/git_add_patch.talon
+14. File knausj_talon/misc/git_add_patch.talon
 ================================================================================
 
 tag: terminal
@@ -2029,7 +2029,7 @@ air:
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/misc/repeater.talon
+15. File knausj_talon/misc/repeater.talon
 ================================================================================
 
 # -1 because we are repeating, so the initial command counts as one
@@ -2104,7 +2104,7 @@ repeat that <number_small> [times]: core.repeat_command(number_small)
               (identifier))))))))
 
 ================================================================================
-File knausj_talon/misc/cancel.talon
+16. File knausj_talon/misc/cancel.talon
 ================================================================================
 
 # allows you to prevent a command executing by ending it with "cancel cancel"
@@ -2148,7 +2148,7 @@ ignore [<phrase>]$: app.notify("Command ignored")
               (string_content))))))))
 
 ================================================================================
-File knausj_talon/misc/git.talon
+17. File knausj_talon/misc/git.talon
 ================================================================================
 
 tag: terminal
@@ -3398,7 +3398,7 @@ git commit highlighted:
               (string_escape_sequence))))))))
 
 ================================================================================
-File knausj_talon/misc/history.talon
+18. File knausj_talon/misc/history.talon
 ================================================================================
 
 command history: user.history_toggle()
@@ -3466,7 +3466,7 @@ command history more: user.history_more()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/misc/vocabulary.talon
+19. File knausj_talon/misc/vocabulary.talon
 ================================================================================
 
 mode: command
@@ -3629,7 +3629,7 @@ copy noun to replacements as <phrase>$: user.add_selection_to_words_to_replace(p
               (string_content))))))))
 
 ================================================================================
-File knausj_talon/misc/desktops.talon
+20. File knausj_talon/misc/desktops.talon
 ================================================================================
 
 desk <number_small>: user.desktop(number_small)
@@ -3727,7 +3727,7 @@ window move desk right: user.window_move_desktop_right()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/misc/edit_settings.talon
+21. File knausj_talon/misc/edit_settings.talon
 ================================================================================
 
 customize {user.talon_settings_csv}:
@@ -3760,7 +3760,7 @@ customize {user.talon_settings_csv}:
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/misc/keys.talon
+22. File knausj_talon/misc/keys.talon
 ================================================================================
 
 go <user.arrow_keys>: user.move_cursor(arrow_keys)
@@ -3882,7 +3882,7 @@ press <user.keys>: key(keys)
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/misc/screenshot.talon
+23. File knausj_talon/misc/screenshot.talon
 ================================================================================
 
 ^grab screen$:                       user.screenshot()
@@ -4006,7 +4006,7 @@ File knausj_talon/misc/screenshot.talon
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/misc/tabs.talon
+24. File knausj_talon/misc/tabs.talon
 ================================================================================
 
 tag: user.tabs
@@ -4123,7 +4123,7 @@ tab duplicate: user.tab_duplicate()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/misc/screens.talon
+25. File knausj_talon/misc/screens.talon
 ================================================================================
 
 screen numbers:   user.screens_show_numbering()
@@ -4143,7 +4143,7 @@ screen numbers:   user.screens_show_numbering()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/misc/extensions.talon
+26. File knausj_talon/misc/extensions.talon
 ================================================================================
 
 {user.file_extension}: "{file_extension}"
@@ -4163,7 +4163,7 @@ File knausj_talon/misc/extensions.talon
           (string_content))))))
 
 ================================================================================
-File knausj_talon/misc/multiple_cursors.talon
+27. File knausj_talon/misc/multiple_cursors.talon
 ================================================================================
 
 tag: user.multiple_cursors
@@ -4277,7 +4277,7 @@ cursor lines: user.multi_cursor_add_to_line_ends()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/misc/pages.talon
+28. File knausj_talon/misc/pages.talon
 ================================================================================
 
 tag: user.pages
@@ -4341,7 +4341,7 @@ go page final: user.page_final()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/misc/datetimeinsert.talon
+29. File knausj_talon/misc/datetimeinsert.talon
 ================================================================================
 
 date insert:
@@ -4459,7 +4459,7 @@ timestamp insert UTC high resolution:
                   (string_content))))))))))
 
 ================================================================================
-File knausj_talon/misc/help_open.talon
+30. File knausj_talon/misc/help_open.talon
 ================================================================================
 
 mode: user.help
@@ -4552,7 +4552,7 @@ help close$: user.help_hide()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/misc/mouse.talon
+31. File knausj_talon/misc/mouse.talon
 ================================================================================
 
 control mouse: user.mouse_toggle_control_mouse()
@@ -5254,7 +5254,7 @@ curse no:
               (string_content))))))))
 
 ================================================================================
-File knausj_talon/misc/help.talon
+32. File knausj_talon/misc/help.talon
 ================================================================================
 
 help alphabet: user.help_list("user.letter")
@@ -5472,7 +5472,7 @@ help scope$: user.help_scope_toggle()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/misc/mouse_cursor.talon
+33. File knausj_talon/misc/mouse_cursor.talon
 ================================================================================
 
 tag: user.mouse_cursor_commands_enable
@@ -5509,7 +5509,7 @@ curse no: user.mouse_hide_cursor()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/draft_editor/draft_editor.talon
+34. File knausj_talon/draft_editor/draft_editor.talon
 ================================================================================
 
 user.draft_editor_running: True
@@ -5628,7 +5628,7 @@ draft submit:
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/draft_editor/draft_editor_open.talon
+35. File knausj_talon/draft_editor/draft_editor_open.talon
 ================================================================================
 
 tag: user.draft_editor_active
@@ -5671,7 +5671,7 @@ draft discard:   user.draft_editor_discard()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/modes/language_modes.talon
+36. File knausj_talon/modes/language_modes.talon
 ================================================================================
 
 ^force {user.language_mode}$: user.code_set_language_mode(language_mode)
@@ -5741,7 +5741,7 @@ disable debug mode:
               (string_content))))))))
 
 ================================================================================
-File knausj_talon/modes/dictation_mode.talon
+37. File knausj_talon/modes/dictation_mode.talon
 ================================================================================
 
 mode: dictation
@@ -6408,7 +6408,7 @@ spell that <user.formatters> <user.letters>:
               (identifier))))))))
 
 ================================================================================
-File knausj_talon/modes/dragon_modes.talon
+38. File knausj_talon/modes/dragon_modes.talon
 ================================================================================
 
 #defines modes specific to Dragon.
@@ -6456,7 +6456,7 @@ talon mode: user.talon_mode()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/modes/sleep_mode.talon
+39. File knausj_talon/modes/sleep_mode.talon
 ================================================================================
 
 mode: sleep
@@ -6486,7 +6486,7 @@ settings():
         (integer)))))
 
 ================================================================================
-File knausj_talon/modes/modes.talon
+40. File knausj_talon/modes/modes.talon
 ================================================================================
 
 not mode: sleep
@@ -6574,7 +6574,7 @@ not mode: sleep
               (string_content))))))))
 
 ================================================================================
-File knausj_talon/modes/wake_up.talon
+41. File knausj_talon/modes/wake_up.talon
 ================================================================================
 
 #defines the commands that sleep/wake Talon
@@ -6691,7 +6691,7 @@ mode: all
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/modes/sleep_mode_wav2letter.talon
+42. File knausj_talon/modes/sleep_mode_wav2letter.talon
 ================================================================================
 
 mode: sleep
@@ -6725,7 +6725,7 @@ speech.engine: wav2letter
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/emoji/emoji.talon
+43. File knausj_talon/emoji/emoji.talon
 ================================================================================
 
 tag: user.emoji
@@ -6781,7 +6781,7 @@ kaomoji {user.kaomoji}: user.paste(kaomoji)
               (identifier))))))))
 
 ================================================================================
-File knausj_talon/talon_draft_window/draft_window_open.talon
+44. File knausj_talon/talon_draft_window/draft_window_open.talon
 ================================================================================
 
 # These are available when the draft window is open, but not necessarily focussed
@@ -6841,7 +6841,7 @@ draft submit:
       (comment))))
 
 ================================================================================
-File knausj_talon/talon_draft_window/draft_window.talon
+45. File knausj_talon/talon_draft_window/draft_window.talon
 ================================================================================
 
 # These are active when we have focus on the draft window
@@ -7146,7 +7146,7 @@ replace <user.draft_anchor> with <user.text>:
               (identifier))))))))
 
 ================================================================================
-File knausj_talon/talon_draft_window/draft_global.talon
+46. File knausj_talon/talon_draft_window/draft_global.talon
 ================================================================================
 
 # These are available globally (in command mode)
@@ -7343,7 +7343,7 @@ mode: command
               (identifier))))))))
 
 ================================================================================
-File knausj_talon/lang/terraform/terraform.talon
+47. File knausj_talon/lang/terraform/terraform.talon
 ================================================================================
 
 tag: user.terraform
@@ -7472,7 +7472,7 @@ type {user.code_type}: insert("{code_type}")
               (string_content))))))))
 
 ================================================================================
-File knausj_talon/lang/talon/talon.talon
+48. File knausj_talon/lang/talon/talon.talon
 ================================================================================
 
 tag: user.talon
@@ -7895,7 +7895,7 @@ funk wrap <number>:
               (argument_list))))))))
 
 ================================================================================
-File knausj_talon/lang/vimscript/vimscript.talon
+49. File knausj_talon/lang/vimscript/vimscript.talon
 ================================================================================
 
 tag: user.vimscript
@@ -8128,7 +8128,7 @@ state continue: "continue"
           (string_content))))))
 
 ================================================================================
-File knausj_talon/lang/go/go.talon
+50. File knausj_talon/lang/go/go.talon
 ================================================================================
 
 tag: user.go
@@ -9655,7 +9655,7 @@ swipe [<user.text>] [over]:
                   (string_content))))))))))
 
 ================================================================================
-File knausj_talon/lang/proto/proto.talon
+51. File knausj_talon/lang/proto/proto.talon
 ================================================================================
 
 tag: user.protobuf
@@ -9793,7 +9793,7 @@ repeated type {user.code_type}: "repeated {code_type}"
           (string_content))))))
 
 ================================================================================
-File knausj_talon/lang/python/python.talon
+52. File knausj_talon/lang/python/python.talon
 ================================================================================
 
 tag: user.python
@@ -10139,7 +10139,7 @@ from import: user.insert_between("from ", " import ")
               (string_content))))))))
 
 ================================================================================
-File knausj_talon/lang/css/css.talon
+53. File knausj_talon/lang/css/css.talon
 ================================================================================
 
 tag: user.css
@@ -10465,7 +10465,7 @@ op important: " !important"
           (string_content))))))
 
 ================================================================================
-File knausj_talon/lang/markdown/markdown.talon
+54. File knausj_talon/lang/markdown/markdown.talon
 ================================================================================
 
 tag: user.markdown
@@ -10568,7 +10568,7 @@ level six: "###### "
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/lang/typescript/typescript.talon
+55. File knausj_talon/lang/typescript/typescript.talon
 ================================================================================
 
 tag: user.typescript
@@ -10586,7 +10586,7 @@ tag(): user.javascript
     (identifier)))
 
 ================================================================================
-File knausj_talon/lang/typescript/typescriptreact.talon
+56. File knausj_talon/lang/typescript/typescriptreact.talon
 ================================================================================
 
 tag: user.typescriptreact
@@ -10607,7 +10607,7 @@ tag(): user.javascriptreact
     (identifier)))
 
 ================================================================================
-File knausj_talon/lang/rust/rust.talon
+57. File knausj_talon/lang/rust/rust.talon
 ================================================================================
 
 tag: user.rust
@@ -11312,7 +11312,7 @@ inner block dock comment: user.code_comment_documentation_block_inner()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/lang/r/r.talon
+58. File knausj_talon/lang/r/r.talon
 ================================================================================
 
 tag: user.r
@@ -11518,7 +11518,7 @@ named arg {user.code_parameter_name}: user.code_insert_named_argument(code_param
               (identifier))))))))
 
 ================================================================================
-File knausj_talon/lang/java/java.talon
+59. File knausj_talon/lang/java/java.talon
 ================================================================================
 
 tag: user.java
@@ -11728,7 +11728,7 @@ op new:
               (string_content))))))))
 
 ================================================================================
-File knausj_talon/lang/php/php.talon
+60. File knausj_talon/lang/php/php.talon
 ================================================================================
 
 tag: user.php
@@ -11898,7 +11898,7 @@ var <phrase> [over]:
                   (string_content))))))))))
 
 ================================================================================
-File knausj_talon/lang/tags/comment_block.talon
+61. File knausj_talon/lang/tags/comment_block.talon
 ================================================================================
 
 tag: user.code_comment_block
@@ -12172,7 +12172,7 @@ close block comment:
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/lang/tags/comment_documentation.talon
+62. File knausj_talon/lang/tags/comment_documentation.talon
 ================================================================================
 
 tag: user.code_comment_documentation
@@ -12198,7 +12198,7 @@ dock comment: user.code_comment_documentation()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/lang/tags/keywords.talon
+63. File knausj_talon/lang/tags/keywords.talon
 ================================================================================
 
 tag: user.code_keywords
@@ -12229,7 +12229,7 @@ keyword (<user.code_keyword>+): user.code_keyword(code_keyword_list)
               (identifier))))))))
 
 ================================================================================
-File knausj_talon/lang/tags/functions_common.talon
+64. File knausj_talon/lang/tags/functions_common.talon
 ================================================================================
 
 tag: user.code_functions_common
@@ -12332,7 +12332,7 @@ funk wrap <number>:
               (argument_list))))))))
 
 ================================================================================
-File knausj_talon/lang/tags/comment_line.talon
+65. File knausj_talon/lang/tags/comment_line.talon
 ================================================================================
 
 tag: user.code_comment_line
@@ -12535,7 +12535,7 @@ comment <user.text>$:
               (identifier))))))))
 
 ================================================================================
-File knausj_talon/lang/tags/data_null.talon
+66. File knausj_talon/lang/tags/data_null.talon
 ================================================================================
 
 tag: user.code_data_null
@@ -12595,7 +12595,7 @@ is (none|null): user.code_insert_is_null()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/lang/tags/object_oriented.talon
+67. File knausj_talon/lang/tags/object_oriented.talon
 ================================================================================
 
 tag: user.code_object_oriented
@@ -12654,7 +12654,7 @@ state class:
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/lang/tags/data_bool.talon
+68. File knausj_talon/lang/tags/data_bool.talon
 ================================================================================
 
 tag: user.code_data_bool
@@ -12691,7 +12691,7 @@ state false: user.code_insert_false()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/lang/tags/library_gui_open.talon
+69. File knausj_talon/lang/tags/library_gui_open.talon
 ================================================================================
 
 tag: user.code_libraries_gui_showing
@@ -12724,7 +12724,7 @@ toggle libraries close: user.code_toggle_libraries()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/lang/tags/operators_lambda.talon
+70. File knausj_talon/lang/tags/operators_lambda.talon
 ================================================================================
 
 tag: user.code_operators_lambda
@@ -12768,7 +12768,7 @@ op lambda: user.code_operator_lambda()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/lang/tags/operators_array.talon
+71. File knausj_talon/lang/tags/operators_array.talon
 ================================================================================
 
 tag: user.code_operators_array
@@ -12797,7 +12797,7 @@ op subscript: user.code_operator_subscript()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/lang/tags/operators_math.talon
+72. File knausj_talon/lang/tags/operators_math.talon
 ================================================================================
 
 tag: user.code_operators_math
@@ -13084,7 +13084,7 @@ op mod: user.code_operator_modulo()
           (string_content))))))
 
 ================================================================================
-File knausj_talon/lang/tags/libraries.talon
+73. File knausj_talon/lang/tags/libraries.talon
 ================================================================================
 
 tag: user.code_libraries
@@ -13110,7 +13110,7 @@ state import: user.code_import()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/lang/tags/functions_common_gui_active.talon
+74. File knausj_talon/lang/tags/functions_common_gui_active.talon
 ================================================================================
 
 tag: user.code_functions_common_gui_active
@@ -13138,7 +13138,7 @@ toggle funk: user.code_toggle_functions()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/lang/tags/functions.talon
+75. File knausj_talon/lang/tags/functions.talon
 ================================================================================
 
 tag: user.code_functions
@@ -13259,7 +13259,7 @@ type <user.code_type>: insert(code_type)
               (identifier))))))))
 
 ================================================================================
-File knausj_talon/lang/tags/operators_assignment.talon
+76. File knausj_talon/lang/tags/operators_assignment.talon
 ================================================================================
 
 tag: user.code_operators_assignment
@@ -13452,7 +13452,7 @@ op mod equals: user.code_operator_modulo_assignment()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/lang/tags/imperative.talon
+77. File knausj_talon/lang/tags/imperative.talon
 ================================================================================
 
 tag: user.code_imperative
@@ -13632,7 +13632,7 @@ state next: user.code_next()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/lang/tags/operators_bitwise.talon
+78. File knausj_talon/lang/tags/operators_bitwise.talon
 ================================================================================
 
 tag: user.code_operators_bitwise
@@ -13743,7 +13743,7 @@ tag: user.code_operators_bitwise
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/lang/tags/libraries_gui.talon
+79. File knausj_talon/lang/tags/libraries_gui.talon
 ================================================================================
 
 tag: user.code_libraries_gui
@@ -13769,7 +13769,7 @@ tag: user.code_libraries_gui
   (comment))
 
 ================================================================================
-File knausj_talon/lang/tags/operators_pointer.talon
+80. File knausj_talon/lang/tags/operators_pointer.talon
 ================================================================================
 
 tag: user.code_operators_pointer
@@ -13820,7 +13820,7 @@ op arrow: user.code_operator_structure_dereference()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/lang/scala/scala.talon
+81. File knausj_talon/lang/scala/scala.talon
 ================================================================================
 
 tag: user.scala
@@ -14023,7 +14023,7 @@ block string:
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/lang/batch/batch.talon
+82. File knausj_talon/lang/batch/batch.talon
 ================================================================================
 
 tag: user.batch
@@ -14152,7 +14152,7 @@ arg <number_small>: "%{number_small}"
           (string_content))))))
 
 ================================================================================
-File knausj_talon/lang/csharp/csharp.talon
+83. File knausj_talon/lang/csharp/csharp.talon
 ================================================================================
 
 tag: user.csharp
@@ -14247,7 +14247,7 @@ settings():
           (string_content))))))
 
 ================================================================================
-File knausj_talon/lang/javascript/javascript.talon
+84. File knausj_talon/lang/javascript/javascript.talon
 ================================================================================
 
 tag: user.javascript
@@ -14539,7 +14539,7 @@ from import:
               (string_content))))))))
 
 ================================================================================
-File knausj_talon/lang/javascript/javascriptreact.talon
+85. File knausj_talon/lang/javascript/javascriptreact.talon
 ================================================================================
 
 tag: user.javascriptreact
@@ -14557,7 +14557,7 @@ tag(): user.javascript
     (identifier)))
 
 ================================================================================
-File knausj_talon/lang/c/c.talon
+86. File knausj_talon/lang/c/c.talon
 ================================================================================
 
 tag: user.c
@@ -15106,7 +15106,7 @@ include <user.code_libraries>:
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/lang/ruby/ruby.talon
+87. File knausj_talon/lang/ruby/ruby.talon
 ================================================================================
 
 tag: user.ruby
@@ -15295,7 +15295,7 @@ state module: "module "
               (identifier))))))))
 
 ================================================================================
-File knausj_talon/lang/sql/sql.talon
+88. File knausj_talon/lang/sql/sql.talon
 ================================================================================
 
 tag: user.sql
@@ -15574,7 +15574,7 @@ date: user.insert_between("DATE '", "'")
               (string_content))))))))
 
 ================================================================================
-File knausj_talon/text/text_navigation.talon
+89. File knausj_talon/text/text_navigation.talon
 ================================================================================
 
 ## (2021-03-09) This syntax is experimental and may change. See below for an explanation.
@@ -15942,7 +15942,7 @@ big word pre [<number_small>]: user.navigation_by_name("SELECT", "LEFT", "DEFAUL
               (integer))))))))
 
 ================================================================================
-File knausj_talon/text/symbols.talon
+90. File knausj_talon/text/symbols.talon
 ================================================================================
 
 question [mark]: "?"
@@ -16585,7 +16585,7 @@ quote that:
               (string_content))))))))
 
 ================================================================================
-File knausj_talon/text/numbers.talon
+91. File knausj_talon/text/numbers.talon
 ================================================================================
 
 not tag: user.mouse_grid_showing
@@ -16612,7 +16612,7 @@ not tag: user.mouse_grid_showing
           (string_content))))))
 
 ================================================================================
-File knausj_talon/text/homophones.talon
+92. File knausj_talon/text/homophones.talon
 ================================================================================
 
 phones <user.homophones_canonical>: user.homophones_show(homophones_canonical)
@@ -16778,7 +16778,7 @@ phones [<user.ordinals>] word right:
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/text/homophones_open.talon
+93. File knausj_talon/text/homophones_open.talon
 ================================================================================
 
 mode: user.homophones
@@ -16856,7 +16856,7 @@ choose <user.formatters> <number_small>:
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/text/find_and_replace.talon
+94. File knausj_talon/text/find_and_replace.talon
 ================================================================================
 
 tag: user.find_and_replace
@@ -17535,7 +17535,7 @@ select next clip: user.select_next_occurrence(clip.text())
               (argument_list))))))))
 
 ================================================================================
-File knausj_talon/text/line_commands.talon
+95. File knausj_talon/text/line_commands.talon
 ================================================================================
 
 tag: user.line_commands
@@ -18192,7 +18192,7 @@ go camel right: user.camel_right()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/text/generic_editor.talon
+96. File knausj_talon/text/generic_editor.talon
 ================================================================================
 
 find it:
@@ -19120,7 +19120,7 @@ cut line:
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/apps/firefox/firefox.talon
+97. File knausj_talon/apps/firefox/firefox.talon
 ================================================================================
 
 app: firefox
@@ -19189,7 +19189,7 @@ tab search <user.text>$:
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/apps/anaconda/anaconda.talon
+98. File knausj_talon/apps/anaconda/anaconda.talon
 ================================================================================
 
 tag: terminal
@@ -19556,7 +19556,7 @@ anaconda verify:      "conda verify "
           (string_content))))))
 
 ================================================================================
-File knausj_talon/apps/kindle/kindle.talon
+99. File knausj_talon/apps/kindle/kindle.talon
 ================================================================================
 
 app: kindle
@@ -19576,7 +19576,7 @@ tag(): user.pages
     (identifier)))
 
 ================================================================================
-File knausj_talon/apps/terraform/terraform.talon
+100. File knausj_talon/apps/terraform/terraform.talon
 ================================================================================
 
 tag: terminal
@@ -19714,7 +19714,7 @@ terraform validate: "terraform validate\n"
           (string_escape_sequence))))))
 
 ================================================================================
-File knausj_talon/apps/generic_browser.talon
+101. File knausj_talon/apps/generic_browser.talon
 ================================================================================
 
 tag: browser
@@ -20103,7 +20103,7 @@ show cache: browser.show_clear_cache()
   (comment))
 
 ================================================================================
-File knausj_talon/apps/calibre/calibre_viewer.talon
+102. File knausj_talon/apps/calibre/calibre_viewer.talon
 ================================================================================
 
 app: calibre_viewer
@@ -20126,7 +20126,7 @@ tag(): user.chapters
     (identifier)))
 
 ================================================================================
-File knausj_talon/apps/okular/okular.talon
+103. File knausj_talon/apps/okular/okular.talon
 ================================================================================
 
 app: okular
@@ -20146,7 +20146,7 @@ tag(): user.pages
     (identifier)))
 
 ================================================================================
-File knausj_talon/apps/platforms/win/wsl/wsl.talon
+104. File knausj_talon/apps/platforms/win/wsl/wsl.talon
 ================================================================================
 
 # NOTE: to use these commands you will need to activate the tag below in whatever contexts you
@@ -20282,7 +20282,7 @@ tag(): user.kubectl
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/apps/platforms/win/windows_terminal/windows_terminal.talon
+105. File knausj_talon/apps/platforms/win/windows_terminal/windows_terminal.talon
 ================================================================================
 
 app: windows_terminal
@@ -20433,7 +20433,7 @@ find it <phrase>$:
               (string_escape_sequence))))))))
 
 ================================================================================
-File knausj_talon/apps/platforms/win/sumatrapdf/sumatrapdf.talon
+106. File knausj_talon/apps/platforms/win/sumatrapdf/sumatrapdf.talon
 ================================================================================
 
 app: sumatrapdf
@@ -20456,7 +20456,7 @@ tag(): user.tabs
     (identifier)))
 
 ================================================================================
-File knausj_talon/apps/platforms/win/explorer/explorer.talon
+107. File knausj_talon/apps/platforms/win/explorer/explorer.talon
 ================================================================================
 
 app: windows_explorer
@@ -20526,7 +20526,7 @@ go program files: user.file_manager_open_directory("%programfiles%")
               (string_content))))))))
 
 ================================================================================
-File knausj_talon/apps/platforms/win/powershell/power_shell.talon
+108. File knausj_talon/apps/platforms/win/powershell/power_shell.talon
 ================================================================================
 
 os: windows
@@ -20580,7 +20580,7 @@ tag(): user.anaconda
   (comment))
 
 ================================================================================
-File knausj_talon/apps/platforms/win/nitro_reader/nitro_reader_5.talon
+109. File knausj_talon/apps/platforms/win/nitro_reader/nitro_reader_5.talon
 ================================================================================
 
 app: nitro_reader_five
@@ -20603,7 +20603,7 @@ tag(): user.tabs
     (identifier)))
 
 ================================================================================
-File knausj_talon/apps/platforms/win/outlook/outlook.talon
+110. File knausj_talon/apps/platforms/win/outlook/outlook.talon
 ================================================================================
 
 os: windows
@@ -20691,7 +20691,7 @@ accept: key(shift-f10 c c enter)
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/apps/platforms/mac/iterm/iterm.talon
+111. File knausj_talon/apps/platforms/mac/iterm/iterm.talon
 ================================================================================
 
 os: mac
@@ -20730,7 +20730,7 @@ tag(): user.tabs
     (identifier)))
 
 ================================================================================
-File knausj_talon/apps/platforms/mac/terminal/apple_terminal.talon
+112. File knausj_talon/apps/platforms/mac/terminal/apple_terminal.talon
 ================================================================================
 
 app: apple_terminal
@@ -20805,7 +20805,7 @@ resume:
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/apps/platforms/mac/notes/notes.talon
+113. File knausj_talon/apps/platforms/mac/notes/notes.talon
 ================================================================================
 
 os: mac
@@ -21108,7 +21108,7 @@ drag [line] up: key('ctrl-cmd-up')
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/apps/platforms/mac/finder/finder.talon
+114. File knausj_talon/apps/platforms/mac/finder/finder.talon
 ================================================================================
 
 os: mac
@@ -21326,7 +21326,7 @@ hide others: app.window_hide_others()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/apps/platforms/mac/rstudio.talon
+115. File knausj_talon/apps/platforms/mac/rstudio.talon
 ================================================================================
 
 os: mac
@@ -22363,7 +22363,7 @@ run git commit:                  key("ctrl-alt-m")
   (comment))
 
 ================================================================================
-File knausj_talon/apps/platforms/linux/taskwarrior.talon
+116. File knausj_talon/apps/platforms/linux/taskwarrior.talon
 ================================================================================
 
 os: linux
@@ -22617,7 +22617,7 @@ task <number> delete$: "task {number} delete"
           (string_content))))))
 
 ================================================================================
-File knausj_talon/apps/platforms/linux/tmux.talon
+117. File knausj_talon/apps/platforms/linux/tmux.talon
 ================================================================================
 
 os: linux
@@ -22909,7 +22909,7 @@ mux pane numbers:
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/apps/platforms/linux/atril/atril.talon
+118. File knausj_talon/apps/platforms/linux/atril/atril.talon
 ================================================================================
 
 app: atril
@@ -22929,7 +22929,7 @@ tag(): user.pages
     (identifier)))
 
 ================================================================================
-File knausj_talon/apps/platforms/linux/termite.talon
+119. File knausj_talon/apps/platforms/linux/termite.talon
 ================================================================================
 
 app: termite
@@ -23022,7 +23022,7 @@ visual line mode: key("V")
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/apps/platforms/linux/gnome-terminal/gnome-terminal.talon
+120. File knausj_talon/apps/platforms/linux/gnome-terminal/gnome-terminal.talon
 ================================================================================
 
 app: gnome_terminal
@@ -23054,7 +23054,7 @@ tag(): user.kubectl
     (identifier)))
 
 ================================================================================
-File knausj_talon/apps/platforms/linux/nautilus/nautilus.talon
+121. File knausj_talon/apps/platforms/linux/nautilus/nautilus.talon
 ================================================================================
 
 app: nautilus
@@ -23077,7 +23077,7 @@ tag(): user.file_manager
     (identifier)))
 
 ================================================================================
-File knausj_talon/apps/platforms/linux/kde-konsole/kde-konsole.talon
+122. File knausj_talon/apps/platforms/linux/kde-konsole/kde-konsole.talon
 ================================================================================
 
 os: linux
@@ -23128,7 +23128,7 @@ tag(): user.tabs
   (comment))
 
 ================================================================================
-File knausj_talon/apps/platforms/linux/evince/evince.talon
+123. File knausj_talon/apps/platforms/linux/evince/evince.talon
 ================================================================================
 
 app: evince
@@ -23148,7 +23148,7 @@ tag(): user.pages
     (identifier)))
 
 ================================================================================
-File knausj_talon/apps/platforms/linux/signal.talon
+124. File knausj_talon/apps/platforms/linux/signal.talon
 ================================================================================
 
 app: signal
@@ -23528,7 +23528,7 @@ remove [link] attachment: key("ctrl-shift-p")
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/apps/platforms/linux/dunst.talon
+125. File knausj_talon/apps/platforms/linux/dunst.talon
 ================================================================================
 
 os: linux
@@ -23589,7 +23589,7 @@ dismiss all [notifications]: user.system_command('dunstctl close-all')
   (comment))
 
 ================================================================================
-File knausj_talon/apps/platforms/linux/keepassx.talon
+126. File knausj_talon/apps/platforms/linux/keepassx.talon
 ================================================================================
 
 app: keepass
@@ -23781,7 +23781,7 @@ find <user.text>:
               (string_content))))))))
 
 ================================================================================
-File knausj_talon/apps/gdb/gdb.talon
+127. File knausj_talon/apps/gdb/gdb.talon
 ================================================================================
 
 os: linux
@@ -24638,7 +24638,7 @@ clear screen: "shell clear\n"
           (string_escape_sequence))))))
 
 ================================================================================
-File knausj_talon/apps/discord/discord.talon
+128. File knausj_talon/apps/discord/discord.talon
 ================================================================================
 
 app: discord
@@ -24834,7 +24834,7 @@ decline call: user.discord_decline_call()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/apps/eclipse/eclipse.talon
+129. File knausj_talon/apps/eclipse/eclipse.talon
 ================================================================================
 
 #custom eclipse commands go here
@@ -25445,7 +25445,7 @@ copy line up: key(ctrl-alt-up)
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/apps/visualstudio/visual_studio.talon
+130. File knausj_talon/apps/visualstudio/visual_studio.talon
 ================================================================================
 
 os: windows
@@ -26102,7 +26102,7 @@ debug continue: key(f5)
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/apps/evernote/mac.talon
+131. File knausj_talon/apps/evernote/mac.talon
 ================================================================================
 
 app: evernote
@@ -26131,7 +26131,7 @@ settings():
         (float)))))
 
 ================================================================================
-File knausj_talon/apps/web/github.talon
+132. File knausj_talon/apps/web/github.talon
 ================================================================================
 
 # https://help.github.com/en/github/getting-started-with-github/keyboard-shortcuts
@@ -26806,7 +26806,7 @@ fullscreen toggle: key(shift-f)
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/apps/web/twitter.talon
+133. File knausj_talon/apps/web/twitter.talon
 ================================================================================
 
 tag: browser
@@ -27177,7 +27177,7 @@ expand photo: key(o)
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/apps/web/outlook.talon
+134. File knausj_talon/apps/web/outlook.talon
 ================================================================================
 
 # https://support.office.com/en-us/article/keyboard-shortcuts-for-outlook-3cdeb221-7ae5-4c1d-8c1d-9e63216c1efd#PickTab=Web
@@ -27782,7 +27782,7 @@ categorize [this] message: key(c)
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/apps/web/protonmail.talon
+135. File knausj_talon/apps/web/protonmail.talon
 ================================================================================
 
 tag: browser
@@ -28382,7 +28382,7 @@ save contact: key(ctrl-s)
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/apps/web/gitlab.talon
+136. File knausj_talon/apps/web/gitlab.talon
 ================================================================================
 
 # Shortcuts taken from: https://docs.gitlab.com/ee/user/shortcuts.html
@@ -29038,7 +29038,7 @@ edit page: key(e)
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/apps/generic_debugger.talon
+137. File knausj_talon/apps/generic_debugger.talon
 ================================================================================
 
 tag: debugger
@@ -29637,7 +29637,7 @@ clear line: user.debugger_clear_line()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/apps/i3wm/i3wm.talon
+138. File knausj_talon/apps/i3wm/i3wm.talon
 ================================================================================
 
 # NOTE: If you want to use i3wm you must enable the tag settings.talon. ex: `tag(): user.i3wm`
@@ -30466,7 +30466,7 @@ new scratch (shell|window):
               (string_content))))))))
 
 ================================================================================
-File knausj_talon/apps/windbg/windbg.talon
+139. File knausj_talon/apps/windbg/windbg.talon
 ================================================================================
 
 # XXX - trigger alt-1 to hit command window for necessary commands?
@@ -30778,7 +30778,7 @@ dump function params: "r @rcx,@rdx,@r8,@r9\n"
           (string_content))))))
 
 ================================================================================
-File knausj_talon/apps/conemu.talon
+140. File knausj_talon/apps/conemu.talon
 ================================================================================
 
 os: windows
@@ -30805,7 +30805,7 @@ tag(): user.git
     (identifier)))
 
 ================================================================================
-File knausj_talon/apps/amethyst/amethyst.talon
+141. File knausj_talon/apps/amethyst/amethyst.talon
 ================================================================================
 
 user.running: amethyst
@@ -30913,7 +30913,7 @@ window reevaluate: key("alt-shift-z")
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/apps/jetbrains/jetbrains.talon
+142. File knausj_talon/apps/jetbrains/jetbrains.talon
 ================================================================================
 
 # Requires https://plugins.jetbrains.com/plugin/10504-voice-code-idea
@@ -33638,7 +33638,7 @@ blacken: user.idea("action BLACKReformatCode")
               (string_content))))))))
 
 ================================================================================
-File knausj_talon/apps/adobe/adobe_acrobat_reader_dc.talon
+143. File knausj_talon/apps/adobe/adobe_acrobat_reader_dc.talon
 ================================================================================
 
 app: adobe_acrobat_reader_dc
@@ -33661,7 +33661,7 @@ tag(): user.pages
     (identifier)))
 
 ================================================================================
-File knausj_talon/apps/generic_snippets/generic_snippets.talon
+144. File knausj_talon/apps/generic_snippets/generic_snippets.talon
 ================================================================================
 
 tag: user.snippets
@@ -33739,7 +33739,7 @@ snip show: user.snippet_toggle()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/apps/generic_snippets/generic_snippets_open.talon
+145. File knausj_talon/apps/generic_snippets/generic_snippets_open.talon
 ================================================================================
 
 tag: user.snippets_showing
@@ -33765,7 +33765,7 @@ snip close: user.snippet_hide()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/apps/teams/teams_mac.talon
+146. File knausj_talon/apps/teams/teams_mac.talon
 ================================================================================
 
 os: mac
@@ -34480,7 +34480,7 @@ leave team meeting: key(super-shift-h)
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/apps/teams/teams.talon
+147. File knausj_talon/apps/teams/teams.talon
 ================================================================================
 
 app: microsoft_teams
@@ -35111,7 +35111,7 @@ go to suggested time: key(alt-shift-s)
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/apps/slack/slack_win.talon
+148. File knausj_talon/apps/slack/slack_win.talon
 ================================================================================
 
 os: windows
@@ -35758,7 +35758,7 @@ toggle right sidebar: key(ctrl-.)
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/apps/slack/slack_mac.talon
+149. File knausj_talon/apps/slack/slack_mac.talon
 ================================================================================
 
 os: mac
@@ -36448,7 +36448,7 @@ toggle right sidebar: key(cmd-.)
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/apps/generic_terminal/generic_terminal.talon
+150. File knausj_talon/apps/generic_terminal/generic_terminal.talon
 ================================================================================
 
 tag: terminal
@@ -36622,7 +36622,7 @@ copy paste:
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/apps/talon_repl.talon
+151. File knausj_talon/apps/talon_repl.talon
 ================================================================================
 
 win.title:/repl/
@@ -36973,7 +36973,7 @@ tag(): user.talon_python
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/apps/file_manager.talon
+152. File knausj_talon/apps/file_manager.talon
 ================================================================================
 
 tag: user.file_manager
@@ -37362,7 +37362,7 @@ file last: user.file_manager_previous_file_page()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/apps/kubectl/kubectl.talon
+153. File knausj_talon/apps/kubectl/kubectl.talon
 ================================================================================
 
 tag: terminal
@@ -37935,7 +37935,7 @@ cube shell:
               (string_content))))))))
 
 ================================================================================
-File knausj_talon/apps/vscode/vscode.talon
+154. File knausj_talon/apps/vscode/vscode.talon
 ================================================================================
 
 #custom vscode commands go here
@@ -40310,7 +40310,7 @@ install local: user.vscode("workbench.extensions.action.installVSIX")
               (string_content))))))))
 
 ================================================================================
-File knausj_talon/apps/thunderbird/thunderbird.talon
+155. File knausj_talon/apps/thunderbird/thunderbird.talon
 ================================================================================
 
 app: thunderbird
@@ -40428,7 +40428,7 @@ dev tools: user.thunderbird_mod("shift-i")
               (string_content))))))))
 
 ================================================================================
-File knausj_talon/apps/thunderbird/thunderbird_inbox.talon
+156. File knausj_talon/apps/thunderbird/thunderbird_inbox.talon
 ================================================================================
 
 app: thunderbird_inbox
@@ -40802,7 +40802,7 @@ toggle (mail | message) [pane]: key(f8)
               (string_content))))))))
 
 ================================================================================
-File knausj_talon/apps/thunderbird/thunderbird_contacts.talon
+157. File knausj_talon/apps/thunderbird/thunderbird_contacts.talon
 ================================================================================
 
 app: thunderbird_contacts
@@ -40899,7 +40899,7 @@ contact down: key(down)
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/apps/thunderbird/thunderbird_tasks.talon
+158. File knausj_talon/apps/thunderbird/thunderbird_tasks.talon
 ================================================================================
 
 app: thunderbird_tasks
@@ -40967,7 +40967,7 @@ toggle today: key(f11)
           (implicit_string))))))
 
 ================================================================================
-File knausj_talon/apps/thunderbird/thunderbird_composer.talon
+159. File knausj_talon/apps/thunderbird/thunderbird_composer.talon
 ================================================================================
 
 app: thunderbird_composer
@@ -41123,7 +41123,7 @@ link delete: user.thunderbird_mod("shift-k")
               (string_content))))))))
 
 ================================================================================
-File knausj_talon/apps/thunderbird/thunderbird_calendar.talon
+160. File knausj_talon/apps/thunderbird/thunderbird_calendar.talon
 ================================================================================
 
 app: thunderbird_calendar
@@ -41255,7 +41255,7 @@ view month: user.thunderbird_calendar_view(4)
             (integer)))))))
 
 ================================================================================
-File knausj_talon/apps/1password/1password_global.talon
+161. File knausj_talon/apps/1password/1password_global.talon
 ================================================================================
 
 #todo: tags
@@ -41290,7 +41290,7 @@ password show: user.password_show()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/apps/1password/1password.talon
+162. File knausj_talon/apps/1password/1password.talon
 ================================================================================
 
 app: one_password
@@ -41349,7 +41349,7 @@ password delete: user.password_delete()
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/mouse_grid/mouse_grid_open.talon
+163. File knausj_talon/mouse_grid/mouse_grid_open.talon
 ================================================================================
 
 tag: user.mouse_grid_showing
@@ -41415,7 +41415,7 @@ grid back:
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/mouse_grid/mouse_grid.talon
+164. File knausj_talon/mouse_grid/mouse_grid.talon
 ================================================================================
 
 tag: user.mouse_grid_enabled
@@ -41455,7 +41455,7 @@ M grid:
           (argument_list))))))
 
 ================================================================================
-File knausj_talon/mouse_grid/mouse_grid_always.talon
+165. File knausj_talon/mouse_grid/mouse_grid_always.talon
 ================================================================================
 
 mouse grid:
