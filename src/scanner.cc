@@ -84,6 +84,7 @@ namespace
     {
       size_t i = 0;
 
+      // serialize the delimiter_stack
       size_t delimiter_count = delimiter_stack.size();
       if (delimiter_count > UINT8_MAX)
         delimiter_count = UINT8_MAX;
@@ -95,14 +96,8 @@ namespace
       }
       i += delimiter_count;
 
-      vector<uint16_t>::iterator
-          iter = indent_length_stack.begin() + 1,
-          end = indent_length_stack.end();
-
-      for (; iter != end && i < TREE_SITTER_SERIALIZATION_BUFFER_SIZE; ++iter)
-      {
-        buffer[i++] = *iter;
-      }
+      // serialize the previous_indent_length
+      buffer[i++] = previous_indent_length;
 
       return i;
     }
@@ -110,13 +105,12 @@ namespace
     void deserialize(const char *buffer, unsigned length)
     {
       delimiter_stack.clear();
-      indent_length_stack.clear();
-      indent_length_stack.push_back(0);
 
       if (length > 0)
       {
         size_t i = 0;
 
+        // deserialize (delimiter_count, *delimiter_stack)
         size_t delimiter_count = (uint8_t)buffer[i++];
         delimiter_stack.resize(delimiter_count);
         if (delimiter_count > 0)
@@ -125,10 +119,8 @@ namespace
         }
         i += delimiter_count;
 
-        for (; i < length; i++)
-        {
-          indent_length_stack.push_back(buffer[i]);
-        }
+        // deserialize previous_indent_length
+        previous_indent_length = buffer[i++];
       }
     }
 
@@ -300,31 +292,28 @@ namespace
 
       if (found_end_of_line)
       {
-        if (!indent_length_stack.empty())
+        if (
+            valid_symbols[INDENT] &&
+            previous_indent_length == 0 &&
+            indent_length > 0)
         {
-          uint16_t current_indent_length = indent_length_stack.back();
+          previous_indent_length = indent_length;
+          lexer->result_symbol = INDENT;
+          return true;
+        }
 
-          if (
-              valid_symbols[INDENT] &&
-              indent_length > current_indent_length)
-          {
-            indent_length_stack.push_back(indent_length);
-            lexer->result_symbol = INDENT;
-            return true;
-          }
+        if (
+            (valid_symbols[DEDENT] || (!valid_symbols[NEWLINE] && !within_brackets)) &&
+            previous_indent_length > 0 &&
+            indent_length == 0 &&
 
-          if (
-              (valid_symbols[DEDENT] || (!valid_symbols[NEWLINE] && !within_brackets)) &&
-              indent_length < current_indent_length &&
-
-              // Wait to create a dedent token until we've consumed any comments
-              // whose indentation matches the current block.
-              first_comment_indent_length < (int32_t)current_indent_length)
-          {
-            indent_length_stack.pop_back();
-            lexer->result_symbol = DEDENT;
-            return true;
-          }
+            // Wait to create a dedent token until we've consumed any comments
+            // whose indentation matches the current block.
+            first_comment_indent_length < (int32_t)previous_indent_length)
+        {
+          previous_indent_length = indent_length;
+          lexer->result_symbol = DEDENT;
+          return true;
         }
 
         if (valid_symbols[NEWLINE] && !error_recovery_mode)
@@ -379,7 +368,7 @@ namespace
       return false;
     }
 
-    vector<uint16_t> indent_length_stack;
+    uint16_t previous_indent_length;
     vector<Delimiter> delimiter_stack;
   };
 
