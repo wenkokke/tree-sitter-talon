@@ -1,5 +1,5 @@
 ================================================================================
-Settings examples/andreas-talon/misc/abort/abort.talon
+1. Settings examples/andreas-talon/misc/abort/abort.talon
 ================================================================================
 
 settings():
@@ -16,7 +16,7 @@ settings():
           (string_content))))))
 
 ================================================================================
-Settings examples/andreas-talon/misc/sleep/sleep.talon
+2. Settings examples/andreas-talon/misc/sleep/sleep.talon
 ================================================================================
 
 settings():
@@ -33,7 +33,7 @@ settings():
           (string_content))))))
 
 ================================================================================
-Settings examples/andreas-talon/misc/sleep/sleep_mode.talon
+3. Settings examples/andreas-talon/misc/sleep/sleep_mode.talon
 ================================================================================
 
 settings():
@@ -49,7 +49,7 @@ settings():
         (integer)))))
 
 ================================================================================
-Settings examples/andreas-talon/settings/settings.talon
+4. Settings examples/andreas-talon/settings/settings.talon
 ================================================================================
 
 settings():
@@ -73,7 +73,7 @@ settings():
         (integer)))))
 
 ================================================================================
-Settings examples/andreas-talon/settings/settings_work_laptop.talon
+5. Settings examples/andreas-talon/settings/settings_work_laptop.talon
 ================================================================================
 
 settings():
@@ -89,7 +89,7 @@ settings():
         (float)))))
 
 ================================================================================
-Settings examples/andreas-talon/apps/vscode/vscode.talon
+6. Settings examples/andreas-talon/apps/vscode/vscode.talon
 ================================================================================
 
 settings():

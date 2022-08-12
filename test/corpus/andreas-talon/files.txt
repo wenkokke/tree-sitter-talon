@@ -1,5 +1,5 @@
 ================================================================================
-File andreas-talon/misc/tabs/tabs.talon
+1. File andreas-talon/misc/tabs/tabs.talon
 ================================================================================
 
 tag: user.tabs
@@ -296,7 +296,7 @@ tab final close:
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/misc/abort/abort.talon
+2. File andreas-talon/misc/abort/abort.talon
 ================================================================================
 
 mode: command
@@ -335,7 +335,7 @@ cancel$:   skip()
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/misc/screenshot/screenshot.talon
+3. File andreas-talon/misc/screenshot/screenshot.talon
 ================================================================================
 
 capture screen:                       user.screenshot()
@@ -432,7 +432,7 @@ capture window clip:                  user.screenshot_window_clipboard()
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/misc/numbers/numbers.talon
+4. File andreas-talon/misc/numbers/numbers.talon
 ================================================================================
 
 # numb fifty five point two -> 55.2
@@ -453,7 +453,7 @@ File andreas-talon/misc/numbers/numbers.talon
           (string_content))))))
 
 ================================================================================
-File andreas-talon/misc/search_engine.talon
+5. File andreas-talon/misc/search_engine.talon
 ================================================================================
 
 search for <user.text>$:
@@ -503,7 +503,7 @@ search for (this | dis):
               (identifier))))))))
 
 ================================================================================
-File andreas-talon/misc/scroll/scroll.talon
+6. File andreas-talon/misc/scroll/scroll.talon
 ================================================================================
 
 tag: user.scroll
@@ -689,7 +689,7 @@ flow speed down:            user.scroll_speed_decrease()
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/misc/modes/dictation_mode.talon
+7. File andreas-talon/misc/modes/dictation_mode.talon
 ================================================================================
 
 mode: dictation
@@ -833,7 +833,7 @@ new block:
               (string))))))))
 
 ================================================================================
-File andreas-talon/misc/modes/command_mode.talon
+8. File andreas-talon/misc/modes/command_mode.talon
 ================================================================================
 
 # Switch to dictation mode and insert a phrase
@@ -912,7 +912,7 @@ command mode:             skip()
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/misc/delimiters/delimiters.talon
+9. File andreas-talon/misc/delimiters/delimiters.talon
 ================================================================================
 
 # ----- Matching delimiter pairs -----
@@ -957,7 +957,7 @@ File andreas-talon/misc/delimiters/delimiters.talon
               (identifier))))))))
 
 ================================================================================
-File andreas-talon/misc/lorem_ipsum/lorem_ipsum.talon
+10. File andreas-talon/misc/lorem_ipsum/lorem_ipsum.talon
 ================================================================================
 
 lorem ipsum$:                  user.lorem_ipsum(30)
@@ -994,7 +994,7 @@ lorem ipsum <number_small>$:   user.lorem_ipsum(number_small)
               (identifier))))))))
 
 ================================================================================
-File andreas-talon/misc/sleep/sleep.talon
+11. File andreas-talon/misc/sleep/sleep.talon
 ================================================================================
 
 mode: command
@@ -1070,7 +1070,7 @@ drowse [<phrase>]$:   user.talon_sleep()
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/misc/sleep/sleep_mode.talon
+12. File andreas-talon/misc/sleep/sleep_mode.talon
 ================================================================================
 
 mode: sleep
@@ -1132,7 +1132,7 @@ settings():
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/misc/operating_system/linux.talon
+13. File andreas-talon/misc/operating_system/linux.talon
 ================================================================================
 
 os: linux
@@ -1165,7 +1165,7 @@ show desktop:   key(super-ctrl-d)
           (implicit_string))))))
 
 ================================================================================
-File andreas-talon/misc/operating_system/windows.talon
+14. File andreas-talon/misc/operating_system/windows.talon
 ================================================================================
 
 os: windows
@@ -1304,7 +1304,7 @@ pop app [<user.text>]$:
           (implicit_string))))))
 
 ================================================================================
-File andreas-talon/misc/operating_system/operating_system.talon
+15. File andreas-talon/misc/operating_system/operating_system.talon
 ================================================================================
 
 open settings:       app.preferences()
@@ -1431,7 +1431,7 @@ open browser {user.webpage}:
               (identifier))))))))
 
 ================================================================================
-File andreas-talon/misc/navigation/navigation.talon
+16. File andreas-talon/misc/navigation/navigation.talon
 ================================================================================
 
 tag: user.navigation
@@ -1468,7 +1468,7 @@ go forward:   user.go_forward()
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/misc/editor.talon
+17. File andreas-talon/misc/editor.talon
 ================================================================================
 
 # ----- Navigation -----
@@ -2183,7 +2183,7 @@ clear line:               user.clear_line()
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/misc/extensions/extensions.talon
+18. File andreas-talon/misc/extensions/extensions.talon
 ================================================================================
 
 <user.extension>:   "{extension}"
@@ -2213,7 +2213,7 @@ File andreas-talon/misc/extensions/extensions.talon
           (string_content))))))
 
 ================================================================================
-File andreas-talon/misc/mouse/zoom_mouse.talon
+19. File andreas-talon/misc/mouse/zoom_mouse.talon
 ================================================================================
 
 tag: user.zoom_mouse
@@ -2240,7 +2240,7 @@ tag: user.zoom_mouse
               (identifier))))))))
 
 ================================================================================
-File andreas-talon/misc/mouse/mouse.talon
+20. File andreas-talon/misc/mouse/mouse.talon
 ================================================================================
 
 # Buttons
@@ -2545,7 +2545,7 @@ mouse copy position:
               (string_content))))))))
 
 ================================================================================
-File andreas-talon/misc/editor_not_vscode.talon
+21. File andreas-talon/misc/editor_not_vscode.talon
 ================================================================================
 
 not app: vscode
@@ -3010,7 +3010,7 @@ phones this:             user.homophones_cycle_selected()
               (identifier))))))))
 
 ================================================================================
-File andreas-talon/misc/foot_switch/foot_switch.talon
+22. File andreas-talon/misc/foot_switch/foot_switch.talon
 ================================================================================
 
 # Top button
@@ -3117,7 +3117,7 @@ scroll reverse:       user.foot_switch_scroll_reverse()
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/misc/audio_video.talon
+23. File andreas-talon/misc/audio_video.talon
 ================================================================================
 
 tag: user.av
@@ -3141,7 +3141,7 @@ mute:   user.mute_microphone()
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/misc/command_history/command_history.talon
+24. File andreas-talon/misc/command_history/command_history.talon
 ================================================================================
 
 command history:                  user.command_history_toggle()
@@ -3226,7 +3226,7 @@ subtitles (show | hide):          user.toggle_subtitles()
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/misc/zoom/zoom.talon
+25. File andreas-talon/misc/zoom/zoom.talon
 ================================================================================
 
 tag: user.zoom
@@ -3282,7 +3282,7 @@ tag: user.zoom
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/misc/clipboard_manager/clipboard_manager.talon
+26. File andreas-talon/misc/clipboard_manager/clipboard_manager.talon
 ================================================================================
 
 clippy:   user.clipboard_manager_toggle()
@@ -3346,7 +3346,7 @@ paste special <number_small> [and <number_small>]*:
             (integer)))))))
 
 ================================================================================
-File andreas-talon/misc/clipboard_manager/clipboard_manager_open.talon
+27. File andreas-talon/misc/clipboard_manager/clipboard_manager_open.talon
 ================================================================================
 
 mode: user.clipboard_manager
@@ -3469,7 +3469,7 @@ clippy copy <number_small> [and <number_small>]*:
               (identifier))))))))
 
 ================================================================================
-File andreas-talon/misc/window_management/window_management.talon
+28. File andreas-talon/misc/window_management/window_management.talon
 ================================================================================
 
 focus {user.running_application}:
@@ -3719,7 +3719,7 @@ screen numbers:             user.screens_show_numbering()
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/misc/window_management/window_focus_open.talon
+29. File andreas-talon/misc/window_management/window_focus_open.talon
 ================================================================================
 
 mode: user.focus
@@ -3766,7 +3766,7 @@ mode: user.focus
               (integer))))))))
 
 ================================================================================
-File andreas-talon/misc/global.talon
+30. File andreas-talon/misc/global.talon
 ================================================================================
 
 then:   skip()
@@ -3861,7 +3861,7 @@ pick <user.letters>:
           (implicit_string))))))
 
 ================================================================================
-File andreas-talon/misc/talon_helpers/talon_helpers.talon
+31. File andreas-talon/misc/talon_helpers/talon_helpers.talon
 ================================================================================
 
 talon print context:
@@ -4326,7 +4326,7 @@ talon restart:                     user.talon_restart()
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/misc/keys/keys.talon
+32. File andreas-talon/misc/keys/keys.talon
 ================================================================================
 
 # Letters [A-Z]
@@ -4475,7 +4475,7 @@ push {user.key_symbol}:
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/misc/find/find.talon
+33. File andreas-talon/misc/find/find.talon
 ================================================================================
 
 tag: user.find
@@ -4831,7 +4831,7 @@ pop file <user.text> [<user.extension>]$:
           (implicit_string))))))
 
 ================================================================================
-File andreas-talon/misc/emoticons/emoticons.talon
+34. File andreas-talon/misc/emoticons/emoticons.talon
 ================================================================================
 
 face {user.emoticon}:   " {emoticon}"
@@ -4853,7 +4853,7 @@ face {user.emoticon}:   " {emoticon}"
           (string_content))))))
 
 ================================================================================
-File andreas-talon/misc/repeater/repeater.talon
+35. File andreas-talon/misc/repeater/repeater.talon
 ================================================================================
 
 <user.repeater_phrase>:                 core.repeat_command(repeater_phrase)
@@ -4923,7 +4923,7 @@ repeat phrase <user.repeater_phrase>:   core.repeat_partial_phrase(repeater_phra
               (integer))))))))
 
 ================================================================================
-File andreas-talon/misc/help/help_commands_open.talon
+36. File andreas-talon/misc/help/help_commands_open.talon
 ================================================================================
 
 mode: user.help_commands
@@ -4999,7 +4999,7 @@ help return:           user.help_return()
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/misc/help/help_scope_open.talon
+37. File andreas-talon/misc/help/help_scope_open.talon
 ================================================================================
 
 mode: user.help_scope
@@ -5027,7 +5027,7 @@ mode: user.help_scope
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/misc/help/help_alphabet_open.talon
+38. File andreas-talon/misc/help/help_alphabet_open.talon
 ================================================================================
 
 mode: user.help_alphabet
@@ -5055,7 +5055,7 @@ mode: user.help_alphabet
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/misc/help/help_search_open.talon
+39. File andreas-talon/misc/help/help_search_open.talon
 ================================================================================
 
 mode: user.help_search
@@ -5083,7 +5083,7 @@ mode: user.help_search
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/misc/help/help_formatters_open.talon
+40. File andreas-talon/misc/help/help_formatters_open.talon
 ================================================================================
 
 mode: user.help_formatters
@@ -5114,7 +5114,7 @@ mode: user.help_formatters
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/misc/help/help.talon
+41. File andreas-talon/misc/help/help.talon
 ================================================================================
 
 ^help active$:                         user.help_active_toggle()
@@ -5260,7 +5260,7 @@ File andreas-talon/misc/help/help.talon
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/misc/language_mode/language_mode.talon
+42. File andreas-talon/misc/language_mode/language_mode.talon
 ================================================================================
 
 ^force see sharp$:        user.code_set_language_mode("csharp")
@@ -5433,7 +5433,7 @@ File andreas-talon/misc/language_mode/language_mode.talon
               (string_content))))))))
 
 ================================================================================
-File andreas-talon/misc/media/media.talon
+43. File andreas-talon/misc/media/media.talon
 ================================================================================
 
 volume up:              user.volume_up()
@@ -5585,7 +5585,7 @@ use {user.playback_microphone_pair}:
               (identifier))))))))
 
 ================================================================================
-File andreas-talon/settings/settings.talon
+44. File andreas-talon/settings/settings.talon
 ================================================================================
 
 settings():
@@ -5682,39 +5682,9 @@ settings():
         (identifier)
         (integer)))))
 
-================================================================================
-File andreas-talon/settings/settings_work_laptop.talon
-================================================================================
-
-hostname: EliteBook
--
-
-settings():
-    imgui.scale = 1.3
---------------------------------------------------------------------------------
-
-(source_file
-  (command
-    (rule
-      (word))
-    (block
-      (expression
-        (variable
-          (identifier)))))
-  (command
-    (rule
-      (seq
-        (word)
-        (word)
-        (parenthesized_rule
-          (MISSING word))))
-    (block
-      (assignment
-        (identifier)
-        (float)))))
 
 ================================================================================
-File andreas-talon/langs/talon/talon.talon
+45. File andreas-talon/langs/talon/talon.talon
 ================================================================================
 
 tag: user.talon
@@ -5863,7 +5833,7 @@ make key:
               (string_content))))))))
 
 ================================================================================
-File andreas-talon/langs/python/python.talon
+46. File andreas-talon/langs/python/python.talon
 ================================================================================
 
 tag: user.python
@@ -5903,7 +5873,7 @@ tag(): user.comments
           (string_content))))))
 
 ================================================================================
-File andreas-talon/langs/java/java.talon
+47. File andreas-talon/langs/java/java.talon
 ================================================================================
 
 tag: user.java
@@ -5988,7 +5958,7 @@ new <user.text>:
               (string_content))))))))
 
 ================================================================================
-File andreas-talon/langs/html/html.talon
+48. File andreas-talon/langs/html/html.talon
 ================================================================================
 
 tag: user.html
@@ -6198,7 +6168,7 @@ make blank:                       "&nbsp;"
           (string_content))))))
 
 ================================================================================
-File andreas-talon/langs/tags/operators.talon
+49. File andreas-talon/langs/tags/operators.talon
 ================================================================================
 
 tag: user.operators
@@ -6527,7 +6497,7 @@ op or:                         user.op_or()
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/langs/tags/comments.talon
+50. File andreas-talon/langs/tags/comments.talon
 ================================================================================
 
 tag: user.comments
@@ -6645,7 +6615,7 @@ make dock string:     user.comments_insert_docstring()
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/langs/tags/generic_language.talon
+51. File andreas-talon/langs/tags/generic_language.talon
 ================================================================================
 
 tag: user.generic_language
@@ -7251,7 +7221,7 @@ call {user.code_function}:    user.code_call_function(code_function)
               (identifier))))))))
 
 ================================================================================
-File andreas-talon/langs/json/json.talon
+52. File andreas-talon/langs/json/json.talon
 ================================================================================
 
 tag: user.json
@@ -7289,7 +7259,7 @@ make false:   "false"
           (string_content))))))
 
 ================================================================================
-File andreas-talon/langs/javascript/typescript.talon
+53. File andreas-talon/langs/javascript/typescript.talon
 ================================================================================
 
 tag: user.typescript
@@ -7306,7 +7276,7 @@ tag(): user.javascript
     (identifier)))
 
 ================================================================================
-File andreas-talon/langs/javascript/javascript.talon
+54. File andreas-talon/langs/javascript/javascript.talon
 ================================================================================
 
 tag: user.javascript
@@ -7391,7 +7361,7 @@ make arrow function <user.text>:
               (string_content))))))))
 
 ================================================================================
-File andreas-talon/langs/javascript/typescriptreact.talon
+55. File andreas-talon/langs/javascript/typescriptreact.talon
 ================================================================================
 
 tag: user.typescriptreact
@@ -7411,7 +7381,7 @@ tag(): user.javascriptreact
     (identifier)))
 
 ================================================================================
-File andreas-talon/langs/javascript/javascriptreact.talon
+56. File andreas-talon/langs/javascript/javascriptreact.talon
 ================================================================================
 
 tag: user.javascriptreact
@@ -7431,7 +7401,7 @@ tag(): user.html
     (identifier)))
 
 ================================================================================
-File andreas-talon/text/text.talon
+57. File andreas-talon/text/text.talon
 ================================================================================
 
 # Formatted code phrase: "camel hello there" -> helloThere
@@ -7704,7 +7674,7 @@ ship <user.letters> [over]:
               (identifier))))))))
 
 ================================================================================
-File andreas-talon/text/homophones/homophones.talon
+58. File andreas-talon/text/homophones/homophones.talon
 ================================================================================
 
 phones pick this:
@@ -7763,7 +7733,7 @@ phones word:
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/text/homophones/homophones_open.talon
+59. File andreas-talon/text/homophones/homophones_open.talon
 ================================================================================
 
 mode: user.homophones
@@ -7803,7 +7773,7 @@ choose <number_small>:   user.homophones_select(number_small)
               (identifier))))))))
 
 ================================================================================
-File andreas-talon/apps/repl.talon
+60. File andreas-talon/apps/repl.talon
 ================================================================================
 
 title: Talon - REPL
@@ -7829,7 +7799,7 @@ events tail:    "events.tail('/^((?!win|browser).)*$/')\n"
           (string_escape_sequence))))))
 
 ================================================================================
-File andreas-talon/apps/discord/discord.talon
+61. File andreas-talon/apps/discord/discord.talon
 ================================================================================
 
 app: discord
@@ -7964,7 +7934,7 @@ go call:            key(ctrl-shift-alt-v)
           (implicit_string))))))
 
 ================================================================================
-File andreas-talon/apps/web/mattermost.talon
+62. File andreas-talon/apps/web/mattermost.talon
 ================================================================================
 
 app: mattermost
@@ -8095,7 +8065,7 @@ make meet external:
           (implicit_string))))))
 
 ================================================================================
-File andreas-talon/apps/web/youtube.talon
+63. File andreas-talon/apps/web/youtube.talon
 ================================================================================
 
 tag: browser
@@ -8224,7 +8194,7 @@ seek right:                 key(l)
           (implicit_string))))))
 
 ================================================================================
-File andreas-talon/apps/web/slack.talon
+64. File andreas-talon/apps/web/slack.talon
 ================================================================================
 
 app: slack
@@ -8503,7 +8473,7 @@ format quote:                key(ctrl-shift-9)
           (implicit_string))))))
 
 ================================================================================
-File andreas-talon/apps/maven/maven.talon
+65. File andreas-talon/apps/maven/maven.talon
 ================================================================================
 
 tag: user.maven
@@ -8598,7 +8568,7 @@ maven deploy:             "mvn clean install -P deploy\n"
           (string_escape_sequence))))))
 
 ================================================================================
-File andreas-talon/apps/terminal/windows_terminal.talon
+66. File andreas-talon/apps/terminal/windows_terminal.talon
 ================================================================================
 
 app: windows_terminal
@@ -8759,7 +8729,7 @@ please <user.text>$:
           (string_content))))))
 
 ================================================================================
-File andreas-talon/apps/terminal/bash.talon
+67. File andreas-talon/apps/terminal/bash.talon
 ================================================================================
 
 tag: user.bash
@@ -9340,7 +9310,7 @@ revert:                        key(alt-r)
   (comment))
 
 ================================================================================
-File andreas-talon/apps/terminal/terminal.talon
+68. File andreas-talon/apps/terminal/terminal.talon
 ================================================================================
 
 tag: terminal
@@ -9395,7 +9365,7 @@ vscode package:
           (string_escape_sequence))))))
 
 ================================================================================
-File andreas-talon/apps/kodi/kodi.talon
+69. File andreas-talon/apps/kodi/kodi.talon
 ================================================================================
 
 os: windows
@@ -9457,7 +9427,7 @@ menu:             key(m)
           (implicit_string))))))
 
 ================================================================================
-File andreas-talon/apps/yarn/yarn.talon
+70. File andreas-talon/apps/yarn/yarn.talon
 ================================================================================
 
 tag: user.yarn
@@ -9503,7 +9473,7 @@ yarn compile:   "yarn compile\n"
           (string_escape_sequence))))))
 
 ================================================================================
-File andreas-talon/apps/browser/browser.talon
+71. File andreas-talon/apps/browser/browser.talon
 ================================================================================
 
 tag: browser
@@ -9734,7 +9704,7 @@ fullscreen:                 key(f)
           (implicit_string))))))
 
 ================================================================================
-File andreas-talon/apps/browser/firefox.talon
+72. File andreas-talon/apps/browser/firefox.talon
 ================================================================================
 
 app: firefox
@@ -10117,7 +10087,7 @@ copy video:
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/apps/file_manager/file_manager_win.talon
+73. File andreas-talon/apps/file_manager/file_manager_win.talon
 ================================================================================
 
 os: windows
@@ -10155,7 +10125,7 @@ go <user.letter> colon:   user.file_manager_open_directory("{letter}:")
               (string_content))))))))
 
 ================================================================================
-File andreas-talon/apps/file_manager/windows_explorer.talon
+74. File andreas-talon/apps/file_manager/windows_explorer.talon
 ================================================================================
 
 app: windows_explorer
@@ -10255,7 +10225,7 @@ pop <user.text>$:
           (implicit_string))))))
 
 ================================================================================
-File andreas-talon/apps/file_manager/file_manager.talon
+75. File andreas-talon/apps/file_manager/file_manager.talon
 ================================================================================
 
 tag: user.file_manager
@@ -10407,7 +10377,7 @@ terminal here:             user.file_manager_terminal_here()
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/apps/windows_task_switching.talon
+76. File andreas-talon/apps/windows_task_switching.talon
 ================================================================================
 
 os: windows
@@ -10439,7 +10409,7 @@ close:   key(ctrl-w)
           (implicit_string))))))
 
 ================================================================================
-File andreas-talon/apps/vscode/draft_editor.talon
+77. File andreas-talon/apps/vscode/draft_editor.talon
 ================================================================================
 
 not app: vscode
@@ -10551,7 +10521,7 @@ draft submit:
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/apps/vscode/vscode_take_word.talon
+78. File andreas-talon/apps/vscode/vscode_take_word.talon
 ================================================================================
 
 app: vscode
@@ -10739,7 +10709,7 @@ clear <user.cursorless_target> <user.repeater_phrase_all>:
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/apps/vscode/vscode.talon
+79. File andreas-talon/apps/vscode/vscode.talon
 ================================================================================
 
 app: vscode
@@ -13062,7 +13032,7 @@ please [<user.text>]$:
           (string_content))))))
 
 ================================================================================
-File andreas-talon/apps/vscode/draft_editor_active.talon
+80. File andreas-talon/apps/vscode/draft_editor_active.talon
 ================================================================================
 
 tag: user.draft_editor_active
@@ -13099,7 +13069,7 @@ draft discard:   user.draft_editor_discard()
           (argument_list))))))
 
 ================================================================================
-File andreas-talon/apps/vscode/vscode_notebook.talon
+81. File andreas-talon/apps/vscode/vscode_notebook.talon
 ================================================================================
 
 tag: user.vscode_notebook
@@ -13611,7 +13581,7 @@ unfold every output:   user.vscode("notebook.cell.expandAllCellOutputs")
               (string_content))))))))
 
 ================================================================================
-File andreas-talon/apps/vscode/vscode_bashbook.talon
+82. File andreas-talon/apps/vscode/vscode_bashbook.talon
 ================================================================================
 
 app: vscode
@@ -13741,7 +13711,7 @@ open output:         user.vscode("bashbook.cell.openOutputInNewFile")
               (string_content))))))))
 
 ================================================================================
-File andreas-talon/apps/npm/npm.talon
+83. File andreas-talon/apps/npm/npm.talon
 ================================================================================
 
 tag: user.npm
@@ -13930,7 +13900,7 @@ npm run start local:    "npm run startLocal "
           (string_content))))))
 
 ================================================================================
-File andreas-talon/apps/notepad/notepad.talon
+84. File andreas-talon/apps/notepad/notepad.talon
 ================================================================================
 
 app: notepad
@@ -13948,7 +13918,7 @@ tag(): user.find
     (identifier)))
 
 ================================================================================
-File andreas-talon/apps/git/git.talon
+85. File andreas-talon/apps/git/git.talon
 ================================================================================
 
 tag: user.git

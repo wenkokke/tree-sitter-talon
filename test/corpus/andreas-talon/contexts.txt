@@ -1,5 +1,5 @@
 ================================================================================
-Context andreas-talon/misc/tabs/tabs.talon
+1. Context andreas-talon/misc/tabs/tabs.talon
 ================================================================================
 
 tag: user.tabs
@@ -14,7 +14,7 @@ tag: user.tabs
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/misc/abort/abort.talon
+2. Context andreas-talon/misc/abort/abort.talon
 ================================================================================
 
 mode: command
@@ -34,7 +34,7 @@ mode: dictation
         (implicit_string)))))
 
 ================================================================================
-Context andreas-talon/misc/scroll/scroll.talon
+3. Context andreas-talon/misc/scroll/scroll.talon
 ================================================================================
 
 tag: user.scroll
@@ -49,7 +49,7 @@ tag: user.scroll
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/misc/modes/dictation_mode.talon
+4. Context andreas-talon/misc/modes/dictation_mode.talon
 ================================================================================
 
 mode: dictation
@@ -77,7 +77,7 @@ experiment: anchor-file
         (implicit_string)))))
 
 ================================================================================
-Context andreas-talon/misc/sleep/sleep.talon
+5. Context andreas-talon/misc/sleep/sleep.talon
 ================================================================================
 
 mode: command
@@ -105,7 +105,7 @@ language: sv_SE
         (implicit_string)))))
 
 ================================================================================
-Context andreas-talon/misc/sleep/sleep_mode.talon
+6. Context andreas-talon/misc/sleep/sleep_mode.talon
 ================================================================================
 
 mode: sleep
@@ -120,7 +120,7 @@ mode: sleep
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/misc/operating_system/linux.talon
+7. Context andreas-talon/misc/operating_system/linux.talon
 ================================================================================
 
 os: linux
@@ -135,7 +135,7 @@ os: linux
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/misc/operating_system/windows.talon
+8. Context andreas-talon/misc/operating_system/windows.talon
 ================================================================================
 
 os: windows
@@ -150,7 +150,7 @@ os: windows
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/misc/navigation/navigation.talon
+9. Context andreas-talon/misc/navigation/navigation.talon
 ================================================================================
 
 tag: user.navigation
@@ -165,7 +165,7 @@ tag: user.navigation
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/misc/mouse/zoom_mouse.talon
+10. Context andreas-talon/misc/mouse/zoom_mouse.talon
 ================================================================================
 
 tag: user.zoom_mouse
@@ -180,7 +180,7 @@ tag: user.zoom_mouse
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/misc/editor_not_vscode.talon
+11. Context andreas-talon/misc/editor_not_vscode.talon
 ================================================================================
 
 not app: vscode
@@ -196,7 +196,7 @@ not app: vscode
         (implicit_string)))))
 
 ================================================================================
-Context andreas-talon/misc/audio_video.talon
+12. Context andreas-talon/misc/audio_video.talon
 ================================================================================
 
 tag: user.av
@@ -211,7 +211,7 @@ tag: user.av
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/misc/zoom/zoom.talon
+13. Context andreas-talon/misc/zoom/zoom.talon
 ================================================================================
 
 tag: user.zoom
@@ -226,7 +226,7 @@ tag: user.zoom
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/misc/clipboard_manager/clipboard_manager_open.talon
+14. Context andreas-talon/misc/clipboard_manager/clipboard_manager_open.talon
 ================================================================================
 
 mode: user.clipboard_manager
@@ -241,7 +241,7 @@ mode: user.clipboard_manager
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/misc/window_management/window_focus_open.talon
+15. Context andreas-talon/misc/window_management/window_focus_open.talon
 ================================================================================
 
 mode: user.focus
@@ -256,7 +256,7 @@ mode: user.focus
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/misc/find/find.talon
+16. Context andreas-talon/misc/find/find.talon
 ================================================================================
 
 tag: user.find
@@ -271,7 +271,7 @@ tag: user.find
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/misc/help/help_commands_open.talon
+17. Context andreas-talon/misc/help/help_commands_open.talon
 ================================================================================
 
 mode: user.help_commands
@@ -286,7 +286,7 @@ mode: user.help_commands
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/misc/help/help_scope_open.talon
+18. Context andreas-talon/misc/help/help_scope_open.talon
 ================================================================================
 
 mode: user.help_scope
@@ -301,7 +301,7 @@ mode: user.help_scope
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/misc/help/help_alphabet_open.talon
+19. Context andreas-talon/misc/help/help_alphabet_open.talon
 ================================================================================
 
 mode: user.help_alphabet
@@ -316,7 +316,7 @@ mode: user.help_alphabet
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/misc/help/help_search_open.talon
+20. Context andreas-talon/misc/help/help_search_open.talon
 ================================================================================
 
 mode: user.help_search
@@ -331,7 +331,7 @@ mode: user.help_search
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/misc/help/help_formatters_open.talon
+21. Context andreas-talon/misc/help/help_formatters_open.talon
 ================================================================================
 
 mode: user.help_formatters
@@ -346,27 +346,7 @@ mode: user.help_formatters
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/settings/settings_work_laptop.talon
-================================================================================
-
-hostname: EliteBook
--
-
---------------------------------------------------------------------------------
-
-(source_file
-  (command
-    (rule
-      (word))
-    (block
-      (expression
-        (variable
-          (identifier)))))
-  (ERROR
-    (word)))
-
-================================================================================
-Context andreas-talon/langs/talon/talon.talon
+22. Context andreas-talon/langs/talon/talon.talon
 ================================================================================
 
 tag: user.talon
@@ -381,7 +361,7 @@ tag: user.talon
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/langs/python/python.talon
+23. Context andreas-talon/langs/python/python.talon
 ================================================================================
 
 tag: user.python
@@ -396,7 +376,7 @@ tag: user.python
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/langs/java/java.talon
+24. Context andreas-talon/langs/java/java.talon
 ================================================================================
 
 tag: user.java
@@ -411,7 +391,7 @@ tag: user.java
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/langs/html/html.talon
+25. Context andreas-talon/langs/html/html.talon
 ================================================================================
 
 tag: user.html
@@ -426,7 +406,7 @@ tag: user.html
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/langs/tags/operators.talon
+26. Context andreas-talon/langs/tags/operators.talon
 ================================================================================
 
 tag: user.operators
@@ -441,7 +421,7 @@ tag: user.operators
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/langs/tags/comments.talon
+27. Context andreas-talon/langs/tags/comments.talon
 ================================================================================
 
 tag: user.comments
@@ -456,7 +436,7 @@ tag: user.comments
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/langs/tags/generic_language.talon
+28. Context andreas-talon/langs/tags/generic_language.talon
 ================================================================================
 
 tag: user.generic_language
@@ -471,7 +451,7 @@ tag: user.generic_language
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/langs/json/json.talon
+29. Context andreas-talon/langs/json/json.talon
 ================================================================================
 
 tag: user.json
@@ -486,7 +466,7 @@ tag: user.json
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/langs/javascript/typescript.talon
+30. Context andreas-talon/langs/javascript/typescript.talon
 ================================================================================
 
 tag: user.typescript
@@ -501,7 +481,7 @@ tag: user.typescript
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/langs/javascript/javascript.talon
+31. Context andreas-talon/langs/javascript/javascript.talon
 ================================================================================
 
 tag: user.javascript
@@ -516,7 +496,7 @@ tag: user.javascript
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/langs/javascript/typescriptreact.talon
+32. Context andreas-talon/langs/javascript/typescriptreact.talon
 ================================================================================
 
 tag: user.typescriptreact
@@ -531,7 +511,7 @@ tag: user.typescriptreact
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/langs/javascript/javascriptreact.talon
+33. Context andreas-talon/langs/javascript/javascriptreact.talon
 ================================================================================
 
 tag: user.javascriptreact
@@ -546,7 +526,7 @@ tag: user.javascriptreact
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/text/homophones/homophones_open.talon
+34. Context andreas-talon/text/homophones/homophones_open.talon
 ================================================================================
 
 mode: user.homophones
@@ -561,7 +541,7 @@ mode: user.homophones
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/apps/repl.talon
+35. Context andreas-talon/apps/repl.talon
 ================================================================================
 
 title: Talon - REPL
@@ -576,7 +556,7 @@ title: Talon - REPL
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/apps/discord/discord.talon
+36. Context andreas-talon/apps/discord/discord.talon
 ================================================================================
 
 app: discord
@@ -591,7 +571,7 @@ app: discord
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/apps/web/mattermost.talon
+37. Context andreas-talon/apps/web/mattermost.talon
 ================================================================================
 
 app: mattermost
@@ -606,7 +586,7 @@ app: mattermost
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/apps/web/youtube.talon
+38. Context andreas-talon/apps/web/youtube.talon
 ================================================================================
 
 tag: browser
@@ -626,7 +606,7 @@ and title: /YouTube| - YouTube$/
         (implicit_string)))))
 
 ================================================================================
-Context andreas-talon/apps/web/slack.talon
+39. Context andreas-talon/apps/web/slack.talon
 ================================================================================
 
 app: slack
@@ -641,7 +621,7 @@ app: slack
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/apps/maven/maven.talon
+40. Context andreas-talon/apps/maven/maven.talon
 ================================================================================
 
 tag: user.maven
@@ -656,7 +636,7 @@ tag: user.maven
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/apps/terminal/windows_terminal.talon
+41. Context andreas-talon/apps/terminal/windows_terminal.talon
 ================================================================================
 
 app: windows_terminal
@@ -671,7 +651,7 @@ app: windows_terminal
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/apps/terminal/bash.talon
+42. Context andreas-talon/apps/terminal/bash.talon
 ================================================================================
 
 tag: user.bash
@@ -686,7 +666,7 @@ tag: user.bash
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/apps/terminal/terminal.talon
+43. Context andreas-talon/apps/terminal/terminal.talon
 ================================================================================
 
 tag: terminal
@@ -701,7 +681,7 @@ tag: terminal
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/apps/kodi/kodi.talon
+44. Context andreas-talon/apps/kodi/kodi.talon
 ================================================================================
 
 os: windows
@@ -721,7 +701,7 @@ and app.exe: kodi.exe
         (implicit_string)))))
 
 ================================================================================
-Context andreas-talon/apps/yarn/yarn.talon
+45. Context andreas-talon/apps/yarn/yarn.talon
 ================================================================================
 
 tag: user.yarn
@@ -736,7 +716,7 @@ tag: user.yarn
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/apps/browser/browser.talon
+46. Context andreas-talon/apps/browser/browser.talon
 ================================================================================
 
 tag: browser
@@ -751,7 +731,7 @@ tag: browser
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/apps/browser/firefox.talon
+47. Context andreas-talon/apps/browser/firefox.talon
 ================================================================================
 
 app: firefox
@@ -766,7 +746,7 @@ app: firefox
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/apps/file_manager/file_manager_win.talon
+48. Context andreas-talon/apps/file_manager/file_manager_win.talon
 ================================================================================
 
 os: windows
@@ -786,7 +766,7 @@ and tag: user.file_manager
         (implicit_string)))))
 
 ================================================================================
-Context andreas-talon/apps/file_manager/windows_explorer.talon
+49. Context andreas-talon/apps/file_manager/windows_explorer.talon
 ================================================================================
 
 app: windows_explorer
@@ -806,7 +786,7 @@ app: windows_file_browser
         (implicit_string)))))
 
 ================================================================================
-Context andreas-talon/apps/file_manager/file_manager.talon
+50. Context andreas-talon/apps/file_manager/file_manager.talon
 ================================================================================
 
 tag: user.file_manager
@@ -821,7 +801,7 @@ tag: user.file_manager
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/apps/windows_task_switching.talon
+51. Context andreas-talon/apps/windows_task_switching.talon
 ================================================================================
 
 os: windows
@@ -845,7 +825,7 @@ title: Task Switching
         (implicit_string)))))
 
 ================================================================================
-Context andreas-talon/apps/vscode/draft_editor.talon
+52. Context andreas-talon/apps/vscode/draft_editor.talon
 ================================================================================
 
 not app: vscode
@@ -861,7 +841,7 @@ not app: vscode
         (implicit_string)))))
 
 ================================================================================
-Context andreas-talon/apps/vscode/vscode_take_word.talon
+53. Context andreas-talon/apps/vscode/vscode_take_word.talon
 ================================================================================
 
 app: vscode
@@ -876,7 +856,7 @@ app: vscode
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/apps/vscode/vscode.talon
+54. Context andreas-talon/apps/vscode/vscode.talon
 ================================================================================
 
 app: vscode
@@ -891,7 +871,7 @@ app: vscode
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/apps/vscode/draft_editor_active.talon
+55. Context andreas-talon/apps/vscode/draft_editor_active.talon
 ================================================================================
 
 tag: user.draft_editor_active
@@ -906,7 +886,7 @@ tag: user.draft_editor_active
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/apps/vscode/vscode_notebook.talon
+56. Context andreas-talon/apps/vscode/vscode_notebook.talon
 ================================================================================
 
 tag: user.vscode_notebook
@@ -921,7 +901,7 @@ tag: user.vscode_notebook
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/apps/vscode/vscode_bashbook.talon
+57. Context andreas-talon/apps/vscode/vscode_bashbook.talon
 ================================================================================
 
 app: vscode
@@ -941,7 +921,7 @@ win.file_ext: .bashbook
         (implicit_string)))))
 
 ================================================================================
-Context andreas-talon/apps/npm/npm.talon
+58. Context andreas-talon/apps/npm/npm.talon
 ================================================================================
 
 tag: user.npm
@@ -956,7 +936,7 @@ tag: user.npm
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/apps/notepad/notepad.talon
+59. Context andreas-talon/apps/notepad/notepad.talon
 ================================================================================
 
 app: notepad
@@ -971,7 +951,7 @@ app: notepad
       (implicit_string))))
 
 ================================================================================
-Context andreas-talon/apps/git/git.talon
+60. Context andreas-talon/apps/git/git.talon
 ================================================================================
 
 tag: user.git
