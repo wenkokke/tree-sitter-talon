@@ -1,0 +1,105 @@
+================================================================================
+Settings examples/andreas-talon/misc/abort/abort.talon
+================================================================================
+
+settings():
+    user.abort_word = "cancel"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (settings
+    (block
+      (assignment
+        (identifier)
+        (string
+          (string_content))))))
+
+================================================================================
+Settings examples/andreas-talon/misc/sleep/sleep.talon
+================================================================================
+
+settings():
+    user.sleep_word = "drowse"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (settings
+    (block
+      (assignment
+        (identifier)
+        (string
+          (string_content))))))
+
+================================================================================
+Settings examples/andreas-talon/misc/sleep/sleep_mode.talon
+================================================================================
+
+settings():
+    speech.timeout = 0
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (settings
+    (block
+      (assignment
+        (identifier)
+        (integer)))))
+
+================================================================================
+Settings examples/andreas-talon/settings/settings.talon
+================================================================================
+
+settings():
+    # Speech timeout
+    speech.timeout = 0.400
+    # Record speech
+    speech.record_all = 0
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (settings
+    (comment)
+    (block
+      (assignment
+        (identifier)
+        (float))
+      (comment)
+      (assignment
+        (identifier)
+        (integer)))))
+
+================================================================================
+Settings examples/andreas-talon/settings/settings_work_laptop.talon
+================================================================================
+
+settings():
+    imgui.scale = 1.3
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (settings
+    (block
+      (assignment
+        (identifier)
+        (float)))))
+
+================================================================================
+Settings examples/andreas-talon/apps/vscode/vscode.talon
+================================================================================
+
+settings():
+    user.scroll_step = 0.025
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (settings
+    (block
+      (assignment
+        (identifier)
+        (float)))))
