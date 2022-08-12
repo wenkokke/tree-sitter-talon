@@ -216,49 +216,61 @@
             "type": "FIELD",
             "name": "key",
             "content": {
-              "type": "CHOICE",
-              "members": [
-                {
-                  "type": "STRING",
-                  "value": "os:"
-                },
-                {
-                  "type": "STRING",
-                  "value": "tag:"
-                },
-                {
-                  "type": "STRING",
-                  "value": "mode:"
-                },
-                {
-                  "type": "STRING",
-                  "value": "app:"
-                },
-                {
-                  "type": "STRING",
-                  "value": "app.name:"
-                },
-                {
-                  "type": "STRING",
-                  "value": "app.exe:"
-                },
-                {
-                  "type": "STRING",
-                  "value": "app.bundle:"
-                },
-                {
-                  "type": "STRING",
-                  "value": "title:"
-                },
-                {
-                  "type": "STRING",
-                  "value": "code.language:"
-                },
-                {
-                  "type": "STRING",
-                  "value": "language:"
-                }
-              ]
+              "type": "ALIAS",
+              "content": {
+                "type": "CHOICE",
+                "members": [
+                  {
+                    "type": "STRING",
+                    "value": "os"
+                  },
+                  {
+                    "type": "STRING",
+                    "value": "tag"
+                  },
+                  {
+                    "type": "STRING",
+                    "value": "mode"
+                  },
+                  {
+                    "type": "STRING",
+                    "value": "app"
+                  },
+                  {
+                    "type": "STRING",
+                    "value": "app.name"
+                  },
+                  {
+                    "type": "STRING",
+                    "value": "app.exe"
+                  },
+                  {
+                    "type": "STRING",
+                    "value": "app.bundle"
+                  },
+                  {
+                    "type": "STRING",
+                    "value": "title"
+                  },
+                  {
+                    "type": "STRING",
+                    "value": "code.language"
+                  },
+                  {
+                    "type": "STRING",
+                    "value": "language"
+                  }
+                ]
+              },
+              "named": true,
+              "value": "identifier"
+            }
+          },
+          {
+            "type": "IMMEDIATE_TOKEN",
+            "content": {
+              "type": "STRING",
+              "value": ":"
             }
           },
           {

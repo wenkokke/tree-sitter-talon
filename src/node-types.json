@@ -570,48 +570,8 @@
         "required": true,
         "types": [
           {
-            "type": "app.bundle:",
-            "named": false
-          },
-          {
-            "type": "app.exe:",
-            "named": false
-          },
-          {
-            "type": "app.name:",
-            "named": false
-          },
-          {
-            "type": "app:",
-            "named": false
-          },
-          {
-            "type": "code.language:",
-            "named": false
-          },
-          {
             "type": "identifier",
             "named": true
-          },
-          {
-            "type": "language:",
-            "named": false
-          },
-          {
-            "type": "mode:",
-            "named": false
-          },
-          {
-            "type": "os:",
-            "named": false
-          },
-          {
-            "type": "tag:",
-            "named": false
-          },
-          {
-            "type": "title:",
-            "named": false
           }
         ]
       },
@@ -1195,26 +1155,6 @@
     "named": false
   },
   {
-    "type": "app.bundle:",
-    "named": false
-  },
-  {
-    "type": "app.exe:",
-    "named": false
-  },
-  {
-    "type": "app.name:",
-    "named": false
-  },
-  {
-    "type": "app:",
-    "named": false
-  },
-  {
-    "type": "code.language:",
-    "named": false
-  },
-  {
     "type": "comment",
     "named": true
   },
@@ -1243,24 +1183,12 @@
     "named": false
   },
   {
-    "type": "language:",
-    "named": false
-  },
-  {
-    "type": "mode:",
-    "named": false
-  },
-  {
     "type": "not",
     "named": false
   },
   {
     "type": "operator",
     "named": true
-  },
-  {
-    "type": "os:",
-    "named": false
   },
   {
     "type": "settings()",
@@ -1280,14 +1208,6 @@
   },
   {
     "type": "tag()",
-    "named": false
-  },
-  {
-    "type": "tag:",
-    "named": false
-  },
-  {
-    "type": "title:",
     "named": false
   },
   {
