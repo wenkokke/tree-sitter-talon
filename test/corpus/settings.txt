@@ -1,5 +1,5 @@
 ================================================================================
-1. Settings settings.talon
+1. Settings knausj_talon/settings.talon
 ================================================================================
 
 settings():
@@ -17,7 +17,7 @@ settings():
         (float)))))
 
 ================================================================================
-2. Settings modes/sleep_mode.talon
+2. Settings knausj_talon/modes/sleep_mode.talon
 ================================================================================
 
 settings():
@@ -41,7 +41,7 @@ settings():
         (integer)))))
 
 ================================================================================
-3. Settings talon_draft_window/draft_window.talon
+3. Settings knausj_talon/talon_draft_window/draft_window.talon
 ================================================================================
 
 settings():
@@ -59,7 +59,7 @@ settings():
         (integer)))))
 
 ================================================================================
-4. Settings lang/vimscript/vimscript.talon
+4. Settings knausj_talon/lang/vimscript/vimscript.talon
 ================================================================================
 
 settings():
@@ -101,7 +101,7 @@ settings():
           (string_content))))))
 
 ================================================================================
-5. Settings lang/python/python.talon
+5. Settings knausj_talon/lang/python/python.talon
 ================================================================================
 
 settings():
@@ -143,7 +143,7 @@ settings():
           (string_content))))))
 
 ================================================================================
-6. Settings lang/css/css.talon
+6. Settings knausj_talon/lang/css/css.talon
 ================================================================================
 
 settings():
@@ -160,7 +160,7 @@ settings():
           (string_content))))))
 
 ================================================================================
-7. Settings lang/rust/rust.talon
+7. Settings knausj_talon/lang/rust/rust.talon
 ================================================================================
 
 settings():
@@ -202,7 +202,7 @@ settings():
           (string_content))))))
 
 ================================================================================
-8. Settings lang/r/r.talon
+8. Settings knausj_talon/lang/r/r.talon
 ================================================================================
 
 settings():
@@ -244,7 +244,7 @@ settings():
           (string_content))))))
 
 ================================================================================
-9. Settings lang/java/java.talon
+9. Settings knausj_talon/lang/java/java.talon
 ================================================================================
 
 settings():
@@ -286,7 +286,7 @@ settings():
           (string_content))))))
 
 ================================================================================
-10. Settings lang/php/php.talon
+0. Settings knausj_talon/lang/php/php.talon
 ================================================================================
 
 settings():
@@ -328,7 +328,7 @@ settings():
           (string_content))))))
 
 ================================================================================
-11. Settings lang/scala/scala.talon
+1. Settings knausj_talon/lang/scala/scala.talon
 ================================================================================
 
 settings():
@@ -370,7 +370,7 @@ settings():
           (string_content))))))
 
 ================================================================================
-12. Settings lang/csharp/csharp.talon
+2. Settings knausj_talon/lang/csharp/csharp.talon
 ================================================================================
 
 settings():
@@ -412,7 +412,7 @@ settings():
           (string_content))))))
 
 ================================================================================
-13. Settings lang/javascript/javascript.talon
+3. Settings knausj_talon/lang/javascript/javascript.talon
 ================================================================================
 
 settings():
@@ -454,7 +454,7 @@ settings():
           (string_content))))))
 
 ================================================================================
-14. Settings lang/c/c.talon
+4. Settings knausj_talon/lang/c/c.talon
 ================================================================================
 
 settings():
@@ -500,7 +500,7 @@ settings():
       (comment))))
 
 ================================================================================
-15. Settings lang/ruby/ruby.talon
+5. Settings knausj_talon/lang/ruby/ruby.talon
 ================================================================================
 
 settings():
@@ -542,7 +542,7 @@ settings():
           (string_content))))))
 
 ================================================================================
-16. Settings apps/evernote/mac.talon
+6. Settings knausj_talon/apps/evernote/mac.talon
 ================================================================================
 
 settings():

@@ -1,5 +1,5 @@
 ================================================================================
-1. Context settings.talon
+1. Context knausj_talon/settings.talon
 ================================================================================
 
 -
@@ -10,7 +10,7 @@
   (context))
 
 ================================================================================
-2. Context misc/splits.talon
+2. Context knausj_talon/misc/splits.talon
 ================================================================================
 
 tag: user.splits
@@ -25,7 +25,7 @@ tag: user.splits
       (implicit_string))))
 
 ================================================================================
-3. Context misc/messaging.talon
+3. Context knausj_talon/misc/messaging.talon
 ================================================================================
 
 tag: user.messaging
@@ -40,7 +40,7 @@ tag: user.messaging
       (implicit_string))))
 
 ================================================================================
-4. Context misc/chapters.talon
+4. Context knausj_talon/misc/chapters.talon
 ================================================================================
 
 tag: user.chapters
@@ -55,7 +55,7 @@ tag: user.chapters
       (implicit_string))))
 
 ================================================================================
-5. Context misc/abbreviate.talon
+5. Context knausj_talon/misc/abbreviate.talon
 ================================================================================
 
 -
@@ -66,7 +66,7 @@ tag: user.chapters
   (context))
 
 ================================================================================
-6. Context misc/help_scope_open.talon
+6. Context knausj_talon/misc/help_scope_open.talon
 ================================================================================
 
 mode: user.help_scope
@@ -81,7 +81,7 @@ mode: user.help_scope
       (implicit_string))))
 
 ================================================================================
-7. Context misc/git_add_patch.talon
+7. Context knausj_talon/misc/git_add_patch.talon
 ================================================================================
 
 tag: terminal
@@ -106,7 +106,7 @@ title: /git add .*\-p/
         (implicit_string)))))
 
 ================================================================================
-8. Context misc/git.talon
+8. Context knausj_talon/misc/git.talon
 ================================================================================
 
 tag: terminal
@@ -126,7 +126,7 @@ and tag: user.git
         (implicit_string)))))
 
 ================================================================================
-9. Context misc/tabs.talon
+9. Context knausj_talon/misc/tabs.talon
 ================================================================================
 
 tag: user.tabs
@@ -141,7 +141,7 @@ tag: user.tabs
       (implicit_string))))
 
 ================================================================================
-10. Context misc/multiple_cursors.talon
+0. Context knausj_talon/misc/multiple_cursors.talon
 ================================================================================
 
 tag: user.multiple_cursors
@@ -156,7 +156,7 @@ tag: user.multiple_cursors
       (implicit_string))))
 
 ================================================================================
-11. Context misc/pages.talon
+1. Context knausj_talon/misc/pages.talon
 ================================================================================
 
 tag: user.pages
@@ -171,7 +171,7 @@ tag: user.pages
       (implicit_string))))
 
 ================================================================================
-12. Context misc/help_open.talon
+2. Context knausj_talon/misc/help_open.talon
 ================================================================================
 
 mode: user.help
@@ -186,7 +186,7 @@ mode: user.help
       (implicit_string))))
 
 ================================================================================
-13. Context misc/mouse_cursor.talon
+3. Context knausj_talon/misc/mouse_cursor.talon
 ================================================================================
 
 tag: user.mouse_cursor_commands_enable
@@ -201,7 +201,7 @@ tag: user.mouse_cursor_commands_enable
       (implicit_string))))
 
 ================================================================================
-14. Context draft_editor/draft_editor.talon
+4. Context knausj_talon/draft_editor/draft_editor.talon
 ================================================================================
 
 user.draft_editor_running: True
@@ -222,7 +222,7 @@ not tag: user.draft_editor_app_focused
           (implicit_string))))))
 
 ================================================================================
-15. Context draft_editor/draft_editor_open.talon
+5. Context knausj_talon/draft_editor/draft_editor_open.talon
 ================================================================================
 
 tag: user.draft_editor_active
@@ -242,7 +242,7 @@ and tag: user.draft_editor_app_focused
         (implicit_string)))))
 
 ================================================================================
-16. Context modes/dictation_mode.talon
+6. Context knausj_talon/modes/dictation_mode.talon
 ================================================================================
 
 mode: dictation
@@ -257,7 +257,7 @@ mode: dictation
       (implicit_string))))
 
 ================================================================================
-17. Context modes/dragon_modes.talon
+7. Context knausj_talon/modes/dragon_modes.talon
 ================================================================================
 
 #defines modes specific to Dragon.
@@ -279,7 +279,7 @@ mode: all
         (implicit_string)))))
 
 ================================================================================
-18. Context modes/sleep_mode.talon
+8. Context knausj_talon/modes/sleep_mode.talon
 ================================================================================
 
 mode: sleep
@@ -294,7 +294,7 @@ mode: sleep
       (implicit_string))))
 
 ================================================================================
-19. Context modes/modes.talon
+9. Context knausj_talon/modes/modes.talon
 ================================================================================
 
 not mode: sleep
@@ -310,7 +310,7 @@ not mode: sleep
         (implicit_string)))))
 
 ================================================================================
-20. Context modes/wake_up.talon
+0. Context knausj_talon/modes/wake_up.talon
 ================================================================================
 
 #defines the commands that sleep/wake Talon
@@ -327,7 +327,7 @@ mode: all
       (implicit_string))))
 
 ================================================================================
-21. Context modes/sleep_mode_wav2letter.talon
+1. Context knausj_talon/modes/sleep_mode_wav2letter.talon
 ================================================================================
 
 mode: sleep
@@ -347,7 +347,7 @@ speech.engine: wav2letter
         (implicit_string)))))
 
 ================================================================================
-22. Context emoji/emoji.talon
+2. Context knausj_talon/emoji/emoji.talon
 ================================================================================
 
 tag: user.emoji
@@ -362,7 +362,7 @@ tag: user.emoji
       (implicit_string))))
 
 ================================================================================
-23. Context talon_draft_window/draft_window_open.talon
+3. Context knausj_talon/talon_draft_window/draft_window_open.talon
 ================================================================================
 
 # These are available when the draft window is open, but not necessarily focussed
@@ -379,7 +379,7 @@ tag: user.draft_window_showing
       (implicit_string))))
 
 ================================================================================
-24. Context talon_draft_window/draft_window.talon
+4. Context knausj_talon/talon_draft_window/draft_window.talon
 ================================================================================
 
 # These are active when we have focus on the draft window
@@ -396,7 +396,7 @@ title:Talon Draft
       (implicit_string))))
 
 ================================================================================
-25. Context talon_draft_window/draft_global.talon
+5. Context knausj_talon/talon_draft_window/draft_global.talon
 ================================================================================
 
 # These are available globally (in command mode)
@@ -413,7 +413,7 @@ mode: command
       (implicit_string))))
 
 ================================================================================
-26. Context lang/terraform/terraform.talon
+6. Context knausj_talon/lang/terraform/terraform.talon
 ================================================================================
 
 tag: user.terraform
@@ -428,7 +428,7 @@ tag: user.terraform
       (implicit_string))))
 
 ================================================================================
-27. Context lang/talon/talon.talon
+7. Context knausj_talon/lang/talon/talon.talon
 ================================================================================
 
 tag: user.talon
@@ -443,7 +443,7 @@ tag: user.talon
       (implicit_string))))
 
 ================================================================================
-28. Context lang/vimscript/vimscript.talon
+8. Context knausj_talon/lang/vimscript/vimscript.talon
 ================================================================================
 
 tag: user.vimscript
@@ -458,7 +458,7 @@ tag: user.vimscript
       (implicit_string))))
 
 ================================================================================
-29. Context lang/go/go.talon
+9. Context knausj_talon/lang/go/go.talon
 ================================================================================
 
 tag: user.go
@@ -473,7 +473,7 @@ tag: user.go
       (implicit_string))))
 
 ================================================================================
-30. Context lang/proto/proto.talon
+0. Context knausj_talon/lang/proto/proto.talon
 ================================================================================
 
 tag: user.protobuf
@@ -488,7 +488,7 @@ tag: user.protobuf
       (implicit_string))))
 
 ================================================================================
-31. Context lang/python/python.talon
+1. Context knausj_talon/lang/python/python.talon
 ================================================================================
 
 tag: user.python
@@ -503,7 +503,7 @@ tag: user.python
       (implicit_string))))
 
 ================================================================================
-32. Context lang/css/css.talon
+2. Context knausj_talon/lang/css/css.talon
 ================================================================================
 
 tag: user.css
@@ -518,7 +518,7 @@ tag: user.css
       (implicit_string))))
 
 ================================================================================
-33. Context lang/markdown/markdown.talon
+3. Context knausj_talon/lang/markdown/markdown.talon
 ================================================================================
 
 tag: user.markdown
@@ -533,7 +533,7 @@ tag: user.markdown
       (implicit_string))))
 
 ================================================================================
-34. Context lang/typescript/typescript.talon
+4. Context knausj_talon/lang/typescript/typescript.talon
 ================================================================================
 
 tag: user.typescript
@@ -548,7 +548,7 @@ tag: user.typescript
       (implicit_string))))
 
 ================================================================================
-35. Context lang/typescript/typescriptreact.talon
+5. Context knausj_talon/lang/typescript/typescriptreact.talon
 ================================================================================
 
 tag: user.typescriptreact
@@ -563,7 +563,7 @@ tag: user.typescriptreact
       (implicit_string))))
 
 ================================================================================
-36. Context lang/rust/rust.talon
+6. Context knausj_talon/lang/rust/rust.talon
 ================================================================================
 
 tag: user.rust
@@ -578,7 +578,7 @@ tag: user.rust
       (implicit_string))))
 
 ================================================================================
-37. Context lang/r/r.talon
+7. Context knausj_talon/lang/r/r.talon
 ================================================================================
 
 tag: user.r
@@ -593,7 +593,7 @@ tag: user.r
       (implicit_string))))
 
 ================================================================================
-38. Context lang/java/java.talon
+8. Context knausj_talon/lang/java/java.talon
 ================================================================================
 
 tag: user.java
@@ -608,7 +608,7 @@ tag: user.java
       (implicit_string))))
 
 ================================================================================
-39. Context lang/php/php.talon
+9. Context knausj_talon/lang/php/php.talon
 ================================================================================
 
 tag: user.php
@@ -623,7 +623,7 @@ tag: user.php
       (implicit_string))))
 
 ================================================================================
-40. Context lang/tags/comment_block.talon
+0. Context knausj_talon/lang/tags/comment_block.talon
 ================================================================================
 
 tag: user.code_comment_block
@@ -638,7 +638,7 @@ tag: user.code_comment_block
       (implicit_string))))
 
 ================================================================================
-41. Context lang/tags/comment_documentation.talon
+1. Context knausj_talon/lang/tags/comment_documentation.talon
 ================================================================================
 
 tag: user.code_comment_documentation
@@ -653,7 +653,7 @@ tag: user.code_comment_documentation
       (implicit_string))))
 
 ================================================================================
-42. Context lang/tags/keywords.talon
+2. Context knausj_talon/lang/tags/keywords.talon
 ================================================================================
 
 tag: user.code_keywords
@@ -668,7 +668,7 @@ tag: user.code_keywords
       (implicit_string))))
 
 ================================================================================
-43. Context lang/tags/functions_common.talon
+3. Context knausj_talon/lang/tags/functions_common.talon
 ================================================================================
 
 tag: user.code_functions_common
@@ -683,7 +683,7 @@ tag: user.code_functions_common
       (implicit_string))))
 
 ================================================================================
-44. Context lang/tags/comment_line.talon
+4. Context knausj_talon/lang/tags/comment_line.talon
 ================================================================================
 
 tag: user.code_comment_line
@@ -698,7 +698,7 @@ tag: user.code_comment_line
       (implicit_string))))
 
 ================================================================================
-45. Context lang/tags/data_null.talon
+5. Context knausj_talon/lang/tags/data_null.talon
 ================================================================================
 
 tag: user.code_data_null
@@ -713,7 +713,7 @@ tag: user.code_data_null
       (implicit_string))))
 
 ================================================================================
-46. Context lang/tags/object_oriented.talon
+6. Context knausj_talon/lang/tags/object_oriented.talon
 ================================================================================
 
 tag: user.code_object_oriented
@@ -728,7 +728,7 @@ tag: user.code_object_oriented
       (implicit_string))))
 
 ================================================================================
-47. Context lang/tags/data_bool.talon
+7. Context knausj_talon/lang/tags/data_bool.talon
 ================================================================================
 
 tag: user.code_data_bool
@@ -743,7 +743,7 @@ tag: user.code_data_bool
       (implicit_string))))
 
 ================================================================================
-48. Context lang/tags/library_gui_open.talon
+8. Context knausj_talon/lang/tags/library_gui_open.talon
 ================================================================================
 
 tag: user.code_libraries_gui_showing
@@ -758,7 +758,7 @@ tag: user.code_libraries_gui_showing
       (implicit_string))))
 
 ================================================================================
-49. Context lang/tags/operators_lambda.talon
+9. Context knausj_talon/lang/tags/operators_lambda.talon
 ================================================================================
 
 tag: user.code_operators_lambda
@@ -773,7 +773,7 @@ tag: user.code_operators_lambda
       (implicit_string))))
 
 ================================================================================
-50. Context lang/tags/operators_array.talon
+0. Context knausj_talon/lang/tags/operators_array.talon
 ================================================================================
 
 tag: user.code_operators_array
@@ -788,7 +788,7 @@ tag: user.code_operators_array
       (implicit_string))))
 
 ================================================================================
-51. Context lang/tags/operators_math.talon
+1. Context knausj_talon/lang/tags/operators_math.talon
 ================================================================================
 
 tag: user.code_operators_math
@@ -803,7 +803,7 @@ tag: user.code_operators_math
       (implicit_string))))
 
 ================================================================================
-52. Context lang/tags/libraries.talon
+2. Context knausj_talon/lang/tags/libraries.talon
 ================================================================================
 
 tag: user.code_libraries
@@ -818,7 +818,7 @@ tag: user.code_libraries
       (implicit_string))))
 
 ================================================================================
-53. Context lang/tags/functions_common_gui_active.talon
+3. Context knausj_talon/lang/tags/functions_common_gui_active.talon
 ================================================================================
 
 tag: user.code_functions_common_gui_active
@@ -833,7 +833,7 @@ tag: user.code_functions_common_gui_active
       (implicit_string))))
 
 ================================================================================
-54. Context lang/tags/functions.talon
+4. Context knausj_talon/lang/tags/functions.talon
 ================================================================================
 
 tag: user.code_functions
@@ -848,7 +848,7 @@ tag: user.code_functions
       (implicit_string))))
 
 ================================================================================
-55. Context lang/tags/operators_assignment.talon
+5. Context knausj_talon/lang/tags/operators_assignment.talon
 ================================================================================
 
 tag: user.code_operators_assignment
@@ -863,7 +863,7 @@ tag: user.code_operators_assignment
       (implicit_string))))
 
 ================================================================================
-56. Context lang/tags/imperative.talon
+6. Context knausj_talon/lang/tags/imperative.talon
 ================================================================================
 
 tag: user.code_imperative
@@ -878,7 +878,7 @@ tag: user.code_imperative
       (implicit_string))))
 
 ================================================================================
-57. Context lang/tags/operators_bitwise.talon
+7. Context knausj_talon/lang/tags/operators_bitwise.talon
 ================================================================================
 
 tag: user.code_operators_bitwise
@@ -893,7 +893,7 @@ tag: user.code_operators_bitwise
       (implicit_string))))
 
 ================================================================================
-58. Context lang/tags/libraries_gui.talon
+8. Context knausj_talon/lang/tags/libraries_gui.talon
 ================================================================================
 
 tag: user.code_libraries_gui
@@ -908,7 +908,7 @@ tag: user.code_libraries_gui
       (implicit_string))))
 
 ================================================================================
-59. Context lang/tags/operators_pointer.talon
+9. Context knausj_talon/lang/tags/operators_pointer.talon
 ================================================================================
 
 tag: user.code_operators_pointer
@@ -923,7 +923,7 @@ tag: user.code_operators_pointer
       (implicit_string))))
 
 ================================================================================
-60. Context lang/scala/scala.talon
+0. Context knausj_talon/lang/scala/scala.talon
 ================================================================================
 
 tag: user.scala
@@ -938,7 +938,7 @@ tag: user.scala
       (implicit_string))))
 
 ================================================================================
-61. Context lang/batch/batch.talon
+1. Context knausj_talon/lang/batch/batch.talon
 ================================================================================
 
 tag: user.batch
@@ -953,7 +953,7 @@ tag: user.batch
       (implicit_string))))
 
 ================================================================================
-62. Context lang/csharp/csharp.talon
+2. Context knausj_talon/lang/csharp/csharp.talon
 ================================================================================
 
 tag: user.csharp
@@ -968,7 +968,7 @@ tag: user.csharp
       (implicit_string))))
 
 ================================================================================
-63. Context lang/javascript/javascript.talon
+3. Context knausj_talon/lang/javascript/javascript.talon
 ================================================================================
 
 tag: user.javascript
@@ -983,7 +983,7 @@ tag: user.javascript
       (implicit_string))))
 
 ================================================================================
-64. Context lang/javascript/javascriptreact.talon
+4. Context knausj_talon/lang/javascript/javascriptreact.talon
 ================================================================================
 
 tag: user.javascriptreact
@@ -998,7 +998,7 @@ tag: user.javascriptreact
       (implicit_string))))
 
 ================================================================================
-65. Context lang/c/c.talon
+5. Context knausj_talon/lang/c/c.talon
 ================================================================================
 
 tag: user.c
@@ -1013,7 +1013,7 @@ tag: user.c
       (implicit_string))))
 
 ================================================================================
-66. Context lang/ruby/ruby.talon
+6. Context knausj_talon/lang/ruby/ruby.talon
 ================================================================================
 
 tag: user.ruby
@@ -1028,7 +1028,7 @@ tag: user.ruby
       (implicit_string))))
 
 ================================================================================
-67. Context lang/sql/sql.talon
+7. Context knausj_talon/lang/sql/sql.talon
 ================================================================================
 
 tag: user.sql
@@ -1043,7 +1043,7 @@ tag: user.sql
       (implicit_string))))
 
 ================================================================================
-68. Context text/numbers.talon
+8. Context knausj_talon/text/numbers.talon
 ================================================================================
 
 not tag: user.mouse_grid_showing
@@ -1059,7 +1059,7 @@ not tag: user.mouse_grid_showing
         (implicit_string)))))
 
 ================================================================================
-69. Context text/homophones_open.talon
+9. Context knausj_talon/text/homophones_open.talon
 ================================================================================
 
 mode: user.homophones
@@ -1074,7 +1074,7 @@ mode: user.homophones
       (implicit_string))))
 
 ================================================================================
-70. Context text/find_and_replace.talon
+0. Context knausj_talon/text/find_and_replace.talon
 ================================================================================
 
 tag: user.find_and_replace
@@ -1089,7 +1089,7 @@ tag: user.find_and_replace
       (implicit_string))))
 
 ================================================================================
-71. Context text/line_commands.talon
+1. Context knausj_talon/text/line_commands.talon
 ================================================================================
 
 tag: user.line_commands
@@ -1104,7 +1104,7 @@ tag: user.line_commands
       (implicit_string))))
 
 ================================================================================
-72. Context apps/firefox/firefox.talon
+2. Context knausj_talon/apps/firefox/firefox.talon
 ================================================================================
 
 app: firefox
@@ -1119,7 +1119,7 @@ app: firefox
       (implicit_string))))
 
 ================================================================================
-73. Context apps/anaconda/anaconda.talon
+3. Context knausj_talon/apps/anaconda/anaconda.talon
 ================================================================================
 
 tag: terminal
@@ -1139,7 +1139,7 @@ and tag: user.anaconda
         (implicit_string)))))
 
 ================================================================================
-74. Context apps/kindle/kindle.talon
+4. Context knausj_talon/apps/kindle/kindle.talon
 ================================================================================
 
 app: kindle
@@ -1154,7 +1154,7 @@ app: kindle
       (implicit_string))))
 
 ================================================================================
-75. Context apps/terraform/terraform.talon
+5. Context knausj_talon/apps/terraform/terraform.talon
 ================================================================================
 
 tag: terminal
@@ -1174,7 +1174,7 @@ and tag: user.terraform_client
         (implicit_string)))))
 
 ================================================================================
-76. Context apps/generic_browser.talon
+6. Context knausj_talon/apps/generic_browser.talon
 ================================================================================
 
 tag: browser
@@ -1189,7 +1189,7 @@ tag: browser
       (implicit_string))))
 
 ================================================================================
-77. Context apps/calibre/calibre_viewer.talon
+7. Context knausj_talon/apps/calibre/calibre_viewer.talon
 ================================================================================
 
 app: calibre_viewer
@@ -1204,7 +1204,7 @@ app: calibre_viewer
       (implicit_string))))
 
 ================================================================================
-78. Context apps/okular/okular.talon
+8. Context knausj_talon/apps/okular/okular.talon
 ================================================================================
 
 app: okular
@@ -1219,7 +1219,7 @@ app: okular
       (implicit_string))))
 
 ================================================================================
-79. Context apps/platforms/win/wsl/wsl.talon
+9. Context knausj_talon/apps/platforms/win/wsl/wsl.talon
 ================================================================================
 
 # NOTE: to use these commands you will need to activate the tag below in whatever contexts you
@@ -1288,7 +1288,7 @@ tag: user.wsl
       (implicit_string))))
 
 ================================================================================
-80. Context apps/platforms/win/windows_terminal/windows_terminal.talon
+0. Context knausj_talon/apps/platforms/win/windows_terminal/windows_terminal.talon
 ================================================================================
 
 app: windows_terminal
@@ -1303,7 +1303,7 @@ app: windows_terminal
       (implicit_string))))
 
 ================================================================================
-81. Context apps/platforms/win/sumatrapdf/sumatrapdf.talon
+1. Context knausj_talon/apps/platforms/win/sumatrapdf/sumatrapdf.talon
 ================================================================================
 
 app: sumatrapdf
@@ -1318,7 +1318,7 @@ app: sumatrapdf
       (implicit_string))))
 
 ================================================================================
-82. Context apps/platforms/win/explorer/explorer.talon
+2. Context knausj_talon/apps/platforms/win/explorer/explorer.talon
 ================================================================================
 
 app: windows_explorer
@@ -1338,7 +1338,7 @@ app: windows_file_browser
         (implicit_string)))))
 
 ================================================================================
-83. Context apps/platforms/win/powershell/power_shell.talon
+3. Context knausj_talon/apps/platforms/win/powershell/power_shell.talon
 ================================================================================
 
 os: windows
@@ -1368,7 +1368,7 @@ and app.exe: powershell.exe
           (implicit_string))))))
 
 ================================================================================
-84. Context apps/platforms/win/nitro_reader/nitro_reader_5.talon
+4. Context knausj_talon/apps/platforms/win/nitro_reader/nitro_reader_5.talon
 ================================================================================
 
 app: nitro_reader_five
@@ -1383,7 +1383,7 @@ app: nitro_reader_five
       (implicit_string))))
 
 ================================================================================
-85. Context apps/platforms/win/outlook/outlook.talon
+5. Context knausj_talon/apps/platforms/win/outlook/outlook.talon
 ================================================================================
 
 os: windows
@@ -1403,7 +1403,7 @@ and app: Outlook
         (implicit_string)))))
 
 ================================================================================
-86. Context apps/platforms/mac/iterm/iterm.talon
+6. Context knausj_talon/apps/platforms/mac/iterm/iterm.talon
 ================================================================================
 
 os: mac
@@ -1423,7 +1423,7 @@ app: iterm2
         (implicit_string)))))
 
 ================================================================================
-87. Context apps/platforms/mac/terminal/apple_terminal.talon
+7. Context knausj_talon/apps/platforms/mac/terminal/apple_terminal.talon
 ================================================================================
 
 app: apple_terminal
@@ -1438,7 +1438,7 @@ app: apple_terminal
       (implicit_string))))
 
 ================================================================================
-88. Context apps/platforms/mac/notes/notes.talon
+8. Context knausj_talon/apps/platforms/mac/notes/notes.talon
 ================================================================================
 
 os: mac
@@ -1458,7 +1458,7 @@ and app: notes
         (implicit_string)))))
 
 ================================================================================
-89. Context apps/platforms/mac/finder/finder.talon
+9. Context knausj_talon/apps/platforms/mac/finder/finder.talon
 ================================================================================
 
 os: mac
@@ -1478,7 +1478,7 @@ app: finder
         (implicit_string)))))
 
 ================================================================================
-90. Context apps/platforms/mac/rstudio.talon
+0. Context knausj_talon/apps/platforms/mac/rstudio.talon
 ================================================================================
 
 os: mac
@@ -1498,7 +1498,7 @@ app: RStudio
         (implicit_string)))))
 
 ================================================================================
-91. Context apps/platforms/linux/taskwarrior.talon
+1. Context knausj_talon/apps/platforms/linux/taskwarrior.talon
 ================================================================================
 
 os: linux
@@ -1523,7 +1523,7 @@ and tag: user.taskwarrior
           (implicit_string))))))
 
 ================================================================================
-92. Context apps/platforms/linux/tmux.talon
+2. Context knausj_talon/apps/platforms/linux/tmux.talon
 ================================================================================
 
 os: linux
@@ -1543,7 +1543,7 @@ tag: user.tmux
         (implicit_string)))))
 
 ================================================================================
-93. Context apps/platforms/linux/atril/atril.talon
+3. Context knausj_talon/apps/platforms/linux/atril/atril.talon
 ================================================================================
 
 app: atril
@@ -1558,7 +1558,7 @@ app: atril
       (implicit_string))))
 
 ================================================================================
-94. Context apps/platforms/linux/termite.talon
+4. Context knausj_talon/apps/platforms/linux/termite.talon
 ================================================================================
 
 app: termite
@@ -1579,7 +1579,7 @@ and not win.title: /VIM/
           (implicit_string))))))
 
 ================================================================================
-95. Context apps/platforms/linux/gnome-terminal/gnome-terminal.talon
+5. Context knausj_talon/apps/platforms/linux/gnome-terminal/gnome-terminal.talon
 ================================================================================
 
 app: gnome_terminal
@@ -1594,7 +1594,7 @@ app: gnome_terminal
       (implicit_string))))
 
 ================================================================================
-96. Context apps/platforms/linux/nautilus/nautilus.talon
+6. Context knausj_talon/apps/platforms/linux/nautilus/nautilus.talon
 ================================================================================
 
 app: nautilus
@@ -1609,7 +1609,7 @@ app: nautilus
       (implicit_string))))
 
 ================================================================================
-97. Context apps/platforms/linux/kde-konsole/kde-konsole.talon
+7. Context knausj_talon/apps/platforms/linux/kde-konsole/kde-konsole.talon
 ================================================================================
 
 os: linux
@@ -1629,7 +1629,7 @@ and app.name: konsole
         (implicit_string)))))
 
 ================================================================================
-98. Context apps/platforms/linux/evince/evince.talon
+8. Context knausj_talon/apps/platforms/linux/evince/evince.talon
 ================================================================================
 
 app: evince
@@ -1644,7 +1644,7 @@ app: evince
       (implicit_string))))
 
 ================================================================================
-99. Context apps/platforms/linux/signal.talon
+9. Context knausj_talon/apps/platforms/linux/signal.talon
 ================================================================================
 
 app: signal
@@ -1659,7 +1659,7 @@ app: signal
       (implicit_string))))
 
 ================================================================================
-100. Context apps/platforms/linux/dunst.talon
+0. Context knausj_talon/apps/platforms/linux/dunst.talon
 ================================================================================
 
 os: linux
@@ -1674,7 +1674,7 @@ os: linux
       (implicit_string))))
 
 ================================================================================
-101. Context apps/platforms/linux/keepassx.talon
+1. Context knausj_talon/apps/platforms/linux/keepassx.talon
 ================================================================================
 
 app: keepass
@@ -1689,7 +1689,7 @@ app: keepass
       (implicit_string))))
 
 ================================================================================
-102. Context apps/gdb/gdb.talon
+2. Context knausj_talon/apps/gdb/gdb.talon
 ================================================================================
 
 os: linux
@@ -1717,7 +1717,7 @@ mode: user.gdb
         (implicit_string)))))
 
 ================================================================================
-103. Context apps/discord/discord.talon
+3. Context knausj_talon/apps/discord/discord.talon
 ================================================================================
 
 app: discord
@@ -1732,7 +1732,7 @@ app: discord
       (implicit_string))))
 
 ================================================================================
-104. Context apps/eclipse/eclipse.talon
+4. Context knausj_talon/apps/eclipse/eclipse.talon
 ================================================================================
 
 #custom eclipse commands go here
@@ -1749,7 +1749,7 @@ app: eclipse
       (implicit_string))))
 
 ================================================================================
-105. Context apps/visualstudio/visual_studio.talon
+5. Context knausj_talon/apps/visualstudio/visual_studio.talon
 ================================================================================
 
 os: windows
@@ -1769,7 +1769,7 @@ app: visual_studio
         (implicit_string)))))
 
 ================================================================================
-106. Context apps/evernote/mac.talon
+6. Context knausj_talon/apps/evernote/mac.talon
 ================================================================================
 
 app: evernote
@@ -1789,7 +1789,7 @@ os: mac
         (implicit_string)))))
 
 ================================================================================
-107. Context apps/web/github.talon
+7. Context knausj_talon/apps/web/github.talon
 ================================================================================
 
 # https://help.github.com/en/github/getting-started-with-github/keyboard-shortcuts
@@ -1811,7 +1811,7 @@ browser.host: github.com
         (implicit_string)))))
 
 ================================================================================
-108. Context apps/web/twitter.talon
+8. Context knausj_talon/apps/web/twitter.talon
 ================================================================================
 
 tag: browser
@@ -1833,7 +1833,7 @@ browser.host: twitter.com
     (comment)))
 
 ================================================================================
-109. Context apps/web/outlook.talon
+9. Context knausj_talon/apps/web/outlook.talon
 ================================================================================
 
 # https://support.office.com/en-us/article/keyboard-shortcuts-for-outlook-3cdeb221-7ae5-4c1d-8c1d-9e63216c1efd#PickTab=Web
@@ -1864,7 +1864,7 @@ win.title: /Outlook/
         (implicit_string)))))
 
 ================================================================================
-110. Context apps/web/protonmail.talon
+0. Context knausj_talon/apps/web/protonmail.talon
 ================================================================================
 
 tag: browser
@@ -1884,7 +1884,7 @@ win.title: /ProtonMail/
         (implicit_string)))))
 
 ================================================================================
-111. Context apps/web/gitlab.talon
+1. Context knausj_talon/apps/web/gitlab.talon
 ================================================================================
 
 # Shortcuts taken from: https://docs.gitlab.com/ee/user/shortcuts.html
@@ -1911,7 +1911,7 @@ browser.host: /gitlab\.com/
     (comment)))
 
 ================================================================================
-112. Context apps/generic_debugger.talon
+2. Context knausj_talon/apps/generic_debugger.talon
 ================================================================================
 
 tag: debugger
@@ -1926,7 +1926,7 @@ tag: debugger
       (implicit_string))))
 
 ================================================================================
-113. Context apps/i3wm/i3wm.talon
+3. Context knausj_talon/apps/i3wm/i3wm.talon
 ================================================================================
 
 # NOTE: If you want to use i3wm you must enable the tag settings.talon. ex: `tag(): user.i3wm`
@@ -1948,7 +1948,7 @@ tag: user.i3wm
         (implicit_string)))))
 
 ================================================================================
-114. Context apps/windbg/windbg.talon
+4. Context knausj_talon/apps/windbg/windbg.talon
 ================================================================================
 
 # XXX - trigger alt-1 to hit command window for necessary commands?
@@ -1970,7 +1970,7 @@ mode: user.windbg
       (implicit_string))))
 
 ================================================================================
-115. Context apps/amethyst/amethyst.talon
+5. Context knausj_talon/apps/amethyst/amethyst.talon
 ================================================================================
 
 user.running: amethyst
@@ -1985,7 +1985,7 @@ user.running: amethyst
       (implicit_string))))
 
 ================================================================================
-116. Context apps/jetbrains/jetbrains.talon
+6. Context knausj_talon/apps/jetbrains/jetbrains.talon
 ================================================================================
 
 # Requires https://plugins.jetbrains.com/plugin/10504-voice-code-idea
@@ -2002,7 +2002,7 @@ app: jetbrains
       (implicit_string))))
 
 ================================================================================
-117. Context apps/adobe/adobe_acrobat_reader_dc.talon
+7. Context knausj_talon/apps/adobe/adobe_acrobat_reader_dc.talon
 ================================================================================
 
 app: adobe_acrobat_reader_dc
@@ -2017,7 +2017,7 @@ app: adobe_acrobat_reader_dc
       (implicit_string))))
 
 ================================================================================
-118. Context apps/generic_snippets/generic_snippets.talon
+8. Context knausj_talon/apps/generic_snippets/generic_snippets.talon
 ================================================================================
 
 tag: user.snippets
@@ -2032,7 +2032,7 @@ tag: user.snippets
       (implicit_string))))
 
 ================================================================================
-119. Context apps/generic_snippets/generic_snippets_open.talon
+9. Context knausj_talon/apps/generic_snippets/generic_snippets_open.talon
 ================================================================================
 
 tag: user.snippets_showing
@@ -2047,7 +2047,7 @@ tag: user.snippets_showing
       (implicit_string))))
 
 ================================================================================
-120. Context apps/teams/teams_mac.talon
+0. Context knausj_talon/apps/teams/teams_mac.talon
 ================================================================================
 
 os: mac
@@ -2068,7 +2068,7 @@ app: com.microsoft.teams
         (implicit_string)))))
 
 ================================================================================
-121. Context apps/teams/teams.talon
+1. Context knausj_talon/apps/teams/teams.talon
 ================================================================================
 
 app: microsoft_teams
@@ -2093,7 +2093,7 @@ os: linux
         (implicit_string)))))
 
 ================================================================================
-122. Context apps/slack/slack_win.talon
+2. Context knausj_talon/apps/slack/slack_win.talon
 ================================================================================
 
 os: windows
@@ -2119,7 +2119,7 @@ app: slack
     (comment)))
 
 ================================================================================
-123. Context apps/slack/slack_mac.talon
+3. Context knausj_talon/apps/slack/slack_mac.talon
 ================================================================================
 
 os: mac
@@ -2139,7 +2139,7 @@ app: slack
         (implicit_string)))))
 
 ================================================================================
-124. Context apps/generic_terminal/generic_terminal.talon
+4. Context knausj_talon/apps/generic_terminal/generic_terminal.talon
 ================================================================================
 
 tag: terminal
@@ -2154,7 +2154,7 @@ tag: terminal
       (implicit_string))))
 
 ================================================================================
-125. Context apps/talon_repl.talon
+5. Context knausj_talon/apps/talon_repl.talon
 ================================================================================
 
 win.title:/repl/
@@ -2174,7 +2174,7 @@ win.title:/Talon - REPL/
         (implicit_string)))))
 
 ================================================================================
-126. Context apps/file_manager.talon
+6. Context knausj_talon/apps/file_manager.talon
 ================================================================================
 
 tag: user.file_manager
@@ -2189,7 +2189,7 @@ tag: user.file_manager
       (implicit_string))))
 
 ================================================================================
-127. Context apps/kubectl/kubectl.talon
+7. Context knausj_talon/apps/kubectl/kubectl.talon
 ================================================================================
 
 tag: terminal
@@ -2209,7 +2209,7 @@ and tag: user.kubectl
         (implicit_string)))))
 
 ================================================================================
-128. Context apps/vscode/vscode.talon
+8. Context knausj_talon/apps/vscode/vscode.talon
 ================================================================================
 
 #custom vscode commands go here
@@ -2226,7 +2226,7 @@ app: vscode
       (implicit_string))))
 
 ================================================================================
-129. Context apps/thunderbird/thunderbird.talon
+9. Context knausj_talon/apps/thunderbird/thunderbird.talon
 ================================================================================
 
 app: thunderbird
@@ -2253,7 +2253,7 @@ and not app: thunderbird_composer
             (implicit_string)))))))
 
 ================================================================================
-130. Context apps/thunderbird/thunderbird_inbox.talon
+0. Context knausj_talon/apps/thunderbird/thunderbird_inbox.talon
 ================================================================================
 
 app: thunderbird_inbox
@@ -2268,7 +2268,7 @@ app: thunderbird_inbox
       (implicit_string))))
 
 ================================================================================
-131. Context apps/thunderbird/thunderbird_contacts.talon
+1. Context knausj_talon/apps/thunderbird/thunderbird_contacts.talon
 ================================================================================
 
 app: thunderbird_contacts
@@ -2283,7 +2283,7 @@ app: thunderbird_contacts
       (implicit_string))))
 
 ================================================================================
-132. Context apps/thunderbird/thunderbird_tasks.talon
+2. Context knausj_talon/apps/thunderbird/thunderbird_tasks.talon
 ================================================================================
 
 app: thunderbird_tasks
@@ -2298,7 +2298,7 @@ app: thunderbird_tasks
       (implicit_string))))
 
 ================================================================================
-133. Context apps/thunderbird/thunderbird_composer.talon
+3. Context knausj_talon/apps/thunderbird/thunderbird_composer.talon
 ================================================================================
 
 app: thunderbird_composer
@@ -2313,7 +2313,7 @@ app: thunderbird_composer
       (implicit_string))))
 
 ================================================================================
-134. Context apps/thunderbird/thunderbird_calendar.talon
+4. Context knausj_talon/apps/thunderbird/thunderbird_calendar.talon
 ================================================================================
 
 app: thunderbird_calendar
@@ -2328,7 +2328,7 @@ app: thunderbird_calendar
       (implicit_string))))
 
 ================================================================================
-135. Context apps/1password/1password_global.talon
+5. Context knausj_talon/apps/1password/1password_global.talon
 ================================================================================
 
 #todo: tags
@@ -2341,7 +2341,7 @@ app: thunderbird_calendar
   (context))
 
 ================================================================================
-136. Context apps/1password/1password.talon
+6. Context knausj_talon/apps/1password/1password.talon
 ================================================================================
 
 app: one_password
@@ -2356,7 +2356,7 @@ app: one_password
       (implicit_string))))
 
 ================================================================================
-137. Context mouse_grid/mouse_grid_open.talon
+7. Context knausj_talon/mouse_grid/mouse_grid_open.talon
 ================================================================================
 
 tag: user.mouse_grid_showing
@@ -2371,7 +2371,7 @@ tag: user.mouse_grid_showing
       (implicit_string))))
 
 ================================================================================
-138. Context mouse_grid/mouse_grid.talon
+8. Context knausj_talon/mouse_grid/mouse_grid.talon
 ================================================================================
 
 tag: user.mouse_grid_enabled
