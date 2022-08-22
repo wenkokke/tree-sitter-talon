@@ -958,3 +958,19 @@ tag: user.git
     (match
       (identifier)
       (implicit_string))))
+
+================================================================================
+61. Context andreas-talon/settings/settings_work_laptop.talon (failing)
+================================================================================
+
+hostname: EliteBook
+-
+
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches
+    (match
+      (identifier)
+      (implicit_string))))

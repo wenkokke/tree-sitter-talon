@@ -24844,3 +24844,73 @@ git numstat week:           user.git_numstat("1 week")
           (argument_list
             (string
               (string_content))))))))
+
+================================================================================
+389. Command andreas-talon/langs/html/html.talon (failing)
+================================================================================
+
+-
+tag {user.code_tag}:
+    "<{code_tag}>"
+    user.code_push_tag_name(code_tag)
+
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches)
+  (command_declaration
+    (rule
+      (seq
+        (word)
+        (list
+          (identifier))))
+    (block
+      (expression_statement
+        (string
+          (string_content)
+          (string_content)
+          (string_content)
+          (string_content)
+          (string_content)))
+      (expression_statement
+        (action
+          (identifier)
+          (argument_list
+            (variable
+              (identifier))))))))
+
+================================================================================
+390. Command andreas-talon/langs/html/html.talon (failing)
+================================================================================
+
+-
+tag <user.text>:
+    "<{text}>"
+    user.code_push_tag_name(text)
+
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches)
+  (command_declaration
+    (rule
+      (seq
+        (word)
+        (capture
+          (identifier))))
+    (block
+      (expression_statement
+        (string
+          (string_content)
+          (string_content)
+          (string_content)
+          (string_content)
+          (string_content)))
+      (expression_statement
+        (action
+          (identifier)
+          (argument_list
+            (variable
+              (identifier))))))))
