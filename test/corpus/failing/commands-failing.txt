@@ -11,22 +11,22 @@ tag {user.code_tag}:
 --------------------------------------------------------------------------------
 
 (source_file
-  (context)
-  (command
+  (matches)
+  (command_declaration
     (rule
       (seq
         (word)
         (list
           (identifier))))
     (block
-      (expression
+      (expression_statement
         (string
           (string_content)
           (string_content)
           (string_content)
           (string_content)
           (string_content)))
-      (expression
+      (expression_statement
         (action
           (identifier)
           (argument_list
@@ -46,22 +46,22 @@ tag <user.text>:
 --------------------------------------------------------------------------------
 
 (source_file
-  (context)
-  (command
+  (matches)
+  (command_declaration
     (rule
       (seq
         (word)
         (capture
           (identifier))))
     (block
-      (expression
+      (expression_statement
         (string
           (string_content)
           (string_content)
           (string_content)
           (string_content)
           (string_content)))
-      (expression
+      (expression_statement
         (action
           (identifier)
           (argument_list

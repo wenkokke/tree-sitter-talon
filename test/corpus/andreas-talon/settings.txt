@@ -8,9 +8,10 @@ settings():
 --------------------------------------------------------------------------------
 
 (source_file
-  (settings
+  (matches)
+  (settings_declaration
     (block
-      (assignment
+      (assignment_statement
         (identifier)
         (string
           (string_content))))))
@@ -25,9 +26,10 @@ settings():
 --------------------------------------------------------------------------------
 
 (source_file
-  (settings
+  (matches)
+  (settings_declaration
     (block
-      (assignment
+      (assignment_statement
         (identifier)
         (string
           (string_content))))))
@@ -42,9 +44,10 @@ settings():
 --------------------------------------------------------------------------------
 
 (source_file
-  (settings
+  (matches)
+  (settings_declaration
     (block
-      (assignment
+      (assignment_statement
         (identifier)
         (integer)))))
 
@@ -61,14 +64,15 @@ settings():
 --------------------------------------------------------------------------------
 
 (source_file
-  (settings
+  (matches)
+  (settings_declaration
     (comment)
     (block
-      (assignment
+      (assignment_statement
         (identifier)
         (float))
       (comment)
-      (assignment
+      (assignment_statement
         (identifier)
         (integer)))))
 
@@ -82,9 +86,10 @@ settings():
 --------------------------------------------------------------------------------
 
 (source_file
-  (settings
+  (matches)
+  (settings_declaration
     (block
-      (assignment
+      (assignment_statement
         (identifier)
         (float)))))
 
@@ -98,8 +103,9 @@ settings():
 --------------------------------------------------------------------------------
 
 (source_file
-  (settings
+  (matches)
+  (settings_declaration
     (block
-      (assignment
+      (assignment_statement
         (identifier)
         (float)))))

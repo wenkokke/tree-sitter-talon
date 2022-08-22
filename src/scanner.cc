@@ -12,15 +12,25 @@ namespace
   using std::memcpy;
   using std::vector;
 
+  enum MatchState
+  {
+    LINE_START,
+    LINE_CONTENT,
+    DASH_FOUND,
+  };
+
   enum TokenType
   {
+    MATCHES_START,
+    MATCHES_END,
+    MATCHES_EMPTY,
     NEWLINE,
     INDENT,
     DEDENT,
     STRING_START,
     STRING_CONTENT,
     STRING_END,
-    COMMENT
+    COMMENT,
   };
 
   struct Delimiter
@@ -113,6 +123,52 @@ namespace
       }
     }
 
+    inline bool is_whitespace(int32_t lookahead)
+    {
+      return lookahead == ' ' || lookahead == '\t' || lookahead == '\r' || lookahead == '\f';
+    }
+
+    inline int skip_whitespace(TSLexer *lexer)
+    {
+      int indent_length = 0;
+      for (;;)
+      {
+        if (lexer->lookahead == ' ')
+        { // space
+          indent_length++;
+          skip(lexer);
+        }
+        else if (lexer->lookahead == '\t')
+        { // tab - treat as 8 spaces
+          indent_length += 8;
+          skip(lexer);
+        }
+        else if (lexer->lookahead == '\r')
+        { // carriage return - reset indent
+          indent_length = 0;
+          skip(lexer);
+        }
+        else if (lexer->lookahead == '\f')
+        { // form feed - reset indent
+          indent_length = 0;
+          skip(lexer);
+        }
+        else
+        {
+          return indent_length;
+        }
+      }
+    }
+
+    void advance_line(TSLexer *lexer, bool skip)
+    {
+      while (lexer->lookahead && lexer->lookahead != '\n')
+      {
+        lexer->advance(lexer, skip);
+      }
+      lexer->advance(lexer, true);
+    }
+
     void advance(TSLexer *lexer)
     {
       lexer->advance(lexer, false);
@@ -123,11 +179,90 @@ namespace
       lexer->advance(lexer, true);
     }
 
+    inline bool find_match_end(TSLexer *lexer, bool skip_any)
+    {
+
+      // Search for "-\n" at the start of the file or line.
+      MatchState match_state = LINE_START;
+      while (lexer->lookahead)
+      {
+        // Found a dash at the start of a file or line.
+        if (lexer->lookahead == '-' && match_state == LINE_START)
+        {
+          match_state = DASH_FOUND;
+          advance(lexer);
+        }
+        // Found the end of the line.
+        else if (lexer->lookahead == '\n')
+        {
+          if (match_state == DASH_FOUND)
+          {
+            return true;
+          }
+          else
+          {
+            match_state = LINE_START;
+            skip(lexer);
+          }
+        }
+        // Found the end of the file.
+        else if (lexer->lookahead == 0)
+        {
+          if (match_state == DASH_FOUND)
+          {
+            return true;
+          }
+          else
+          {
+            return false;
+          }
+        }
+        // Found any other character.
+        else
+        {
+          if (skip_any)
+          {
+            match_state = LINE_CONTENT;
+            skip(lexer);
+          }
+          else
+          {
+            return false;
+          }
+        }
+      }
+      return false;
+    }
+
     bool scan(TSLexer *lexer, const bool *valid_symbols)
     {
-      bool error_recovery_mode = valid_symbols[STRING_CONTENT] && valid_symbols[INDENT];
-
-      if (valid_symbols[STRING_CONTENT] && !delimiter_stack.empty() && !error_recovery_mode)
+      // Check for match context.
+      if (valid_symbols[MATCHES_START] && valid_symbols[MATCHES_EMPTY])
+      {
+        // Don't consume input.
+        lexer->mark_end(lexer);
+        if (find_match_end(lexer, true))
+        {
+          lexer->result_symbol = MATCHES_START;
+          return true;
+        }
+        else
+        {
+          lexer->result_symbol = MATCHES_EMPTY;
+          return true;
+        }
+      }
+      else if (valid_symbols[MATCHES_END])
+      {
+        if (find_match_end(lexer, false))
+        {
+          lexer->mark_end(lexer);
+          lexer->result_symbol = MATCHES_END;
+          return true;
+        }
+      }
+      // Check for string content.
+      else if (valid_symbols[STRING_CONTENT] && !delimiter_stack.empty())
       {
         Delimiter delimiter = delimiter_stack.back();
         int32_t end_character = delimiter.end_character();
@@ -154,7 +289,7 @@ namespace
             }
             else
             {
-              lexer->advance(lexer, false);
+              advance(lexer);
               delimiter_stack.pop_back();
               lexer->result_symbol = STRING_END;
             }
@@ -217,11 +352,7 @@ namespace
           {
             first_comment_indent_length = (int32_t)indent_length;
           }
-          while (lexer->lookahead && lexer->lookahead != '\n')
-          {
-            skip(lexer);
-          }
-          skip(lexer);
+          advance_line(lexer, true);
           indent_length = 0;
         }
         else
@@ -256,7 +387,7 @@ namespace
           return true;
         }
 
-        if (valid_symbols[NEWLINE] && !error_recovery_mode)
+        if (valid_symbols[NEWLINE])
         {
           lexer->result_symbol = NEWLINE;
           return true;

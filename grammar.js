@@ -11,121 +11,131 @@ const PREC = {
 module.exports = grammar({
   name: "talon",
 
-  extras: ($) => [$.comment, /[\s\f\uFEFF\u2060\u200B]|\\\r?\n/],
+  extras: ($) => [
+    $.comment,
+    /[\s\f\uFEFF\u2060\u200B]|\\\r?\n/,
+  ],
+
+  supertypes: ($) => [
+    $.declaration,
+    $.expression,
+    $.number,
+    $.statement,
+  ],
 
   externals: ($) => [
+    $._matches_start,
+    $._matches_end,
+    $._matches_empty,
     $._newline,
     $._indent,
     $._dedent,
     $._string_start,
     $.string_content,
     $._string_end,
-
-    // Mark comments as external tokens so that the external scanner is always
-    // invoked, even if no external token is expected. This allows for better
-    // error recovery, because the external scanner can maintain the overall
-    // structure by returning dedent tokens whenever a dedent occurs, even
-    // if no dedent is expected.
     $.comment,
   ],
 
   rules: {
     source_file: ($) =>
       seq(
-        optional($.context),
-        repeat(choice($.include_tag, $.settings, $.key_binding, $.command))
+        $.matches,
+        repeat($.declaration),
       ),
 
     comment: ($) => token(/#.*?/),
 
     /* Context */
 
-    context: ($) =>
-      seq(
-        optional($._optional_or),
-        "-",
-        $._newline
+    matches: ($) =>
+      choice(
+        seq(
+          $._matches_start,
+          repeat($.match),
+          $._matches_end,
+        ),
+        $._matches_empty,
       ),
 
-    _optional_or: ($) => choice($.or, $._optional_and),
-
-    or: ($) => repeat2($._optional_and),
-
-    _optional_and: ($) => choice($.and, $._optional_not),
-
-    and: ($) => seq($._optional_not, "and", $._optional_and),
-
-    _optional_not: ($) => choice($.not, $.match),
-
-    not: ($) => seq("not", $.match),
+    match_modifier: ($) => choice("and", "not"),
 
     match: ($) =>
-      seq(choice($._prioritized_match, $._generic_match), $._newline),
-
-    _generic_match: ($) =>
-      seq(field("key", $.identifier), ":", field("pattern", $.implicit_string)),
-
-    _prioritized_match: ($) =>
-      prec(
-        1,
-        seq(
-          field(
-            "key",
-            alias(
-              choice(
-                "os",
-                "tag",
-                "mode",
-                "app",
-                "app.name",
-                "app.exe",
-                "app.bundle",
-                "title",
-                "code.language",
-                "language",
-              ),
-              $.identifier
-            )
-          ),
-          token.immediate(":"),
-          field("pattern", $.implicit_string)
-        )
+      seq(
+        field("modifier", repeat($.match_modifier)),
+        field("key", $.identifier),
+        ":",
+        field("pattern", $.implicit_string),
+        $._newline
       ),
 
     /* Declarations */
 
-    include_tag: ($) =>
-      seq("tag()", ":", field("tag", $.identifier), $._newline),
+    declaration: ($) =>
+      choice(
+        $.command_declaration,
+        $.tag_import_declaration,
+        $.key_binding_declaration,
+        $.settings_declaration,
+      ),
 
-    settings: ($) => seq("settings()", ":", $._statement_suite),
+    command_declaration: ($) =>
+      seq(
+        field("rule", $.rule),
+        ":",
+        field("script", $._statements),
+      ),
 
-    key_binding: ($) => seq(field("key", $.key_action), ":", field("script", $._statement_suite)),
+    tag_import_declaration: ($) =>
+      seq(
+        "tag()",
+        ":",
+        field("tag", $.identifier),
+        $._newline,
+      ),
 
-    command: ($) => seq(field("rule", $.rule), ":", field("script", $._statement_suite)),
+    key_binding_declaration: ($) =>
+      seq(
+        field("key", $.key_action),
+        ":",
+        field("script", $._statements),
+      ),
+
+    settings_declaration: ($) =>
+      seq(
+        "settings()",
+        ":",
+        $._statements
+      ),
 
     /* Statements */
 
-    _statement_suite: ($) =>
+    _statements: ($) =>
       choice(
-        alias($._simple_statement, $.block),
+        alias($.statement, $.block),
         seq($._indent, $.block)
       ),
 
-    block: ($) => seq(repeat($._simple_statement), $._dedent),
+    block: ($) => seq(repeat($.statement), $._dedent),
 
-    _simple_statement: ($) =>
-      seq(
-        choice(
-          $.assignment,
-          $.expression,
-        ),
-        $._newline
+    statement: ($) =>
+      choice(
+        $.assignment_statement,
+        $.expression_statement,
       ),
 
-    assignment: ($) =>
-      seq(field("left", $.identifier), "=", field("right", $._expression)),
+    assignment_statement: ($) =>
+      seq(
+        field("left", $.identifier),
+        "=",
+        field("right", $.expression),
+        $._newline,
+      ),
 
-    expression: ($) => field("expression", $._expression),
+    expression_statement: ($) =>
+      seq(
+        field("expression", $.expression),
+        $._newline,
+      ),
 
     /* Rules */
 
@@ -172,7 +182,7 @@ module.exports = grammar({
 
     /* Expressions */
 
-    _expression: ($) =>
+    expression: ($) =>
       choice(
         $.binary_operator,
         $.variable,
@@ -188,7 +198,7 @@ module.exports = grammar({
     variable: ($) => field("variable_name", $.identifier),
 
     parenthesized_expression: ($) =>
-      prec(PREC.parenthesized_expression, seq("(", $._expression, ")")),
+      prec(PREC.parenthesized_expression, seq("(", $.expression, ")")),
 
     operator: ($) => /[\p{Dash_Punctuation}\p{Math_Symbol}]+/,
 
@@ -207,9 +217,9 @@ module.exports = grammar({
           fn(
             precedence,
             seq(
-              field("left", $._expression),
+              field("left", $.expression),
               field("operator", alias(operator, $.operator)),
-              field("right", $._expression)
+              field("right", $.expression)
             )
           )
         )
@@ -245,7 +255,7 @@ module.exports = grammar({
         )
       ),
 
-    argument_list: ($) => seq(token.immediate("("), sep($._expression, ","), optional(","), ")"),
+    argument_list: ($) => seq(token.immediate("("), sep($.expression, ","), optional(","), ")"),
 
     /* Identifiers */
 
@@ -311,7 +321,7 @@ module.exports = grammar({
         alias($._string_end, '"')
       ),
 
-    interpolation: ($) => prec(1, seq("{", $._expression, "}")),
+    interpolation: ($) => prec(1, seq("{", $.expression, "}")),
 
     _escape_interpolation: ($) =>
       prec(1, choice(alias("{{", "{"), alias("}}", "}"))),

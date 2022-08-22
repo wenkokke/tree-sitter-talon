@@ -1,14 +1,21 @@
 ================================================================================
-1. Context andreas-talon/settings/settings_work_laptop.talon (failing)
+1. File andreas-talon/settings/settings_work_laptop.talon (failing)
 ================================================================================
 
 hostname: EliteBook
 -
 
-
+settings():
+    imgui.scale = 1.3
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
-      (implicit_string))))
+      (identifier)
+      (implicit_string)))
+  (settings_declaration
+    (block
+      (assignment_statement
+        (identifier)
+        (float)))))

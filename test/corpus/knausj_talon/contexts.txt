@@ -7,7 +7,7 @@
 --------------------------------------------------------------------------------
 
 (source_file
-  (context))
+  (matches))
 
 ================================================================================
 2. Context knausj_talon/misc/splits.talon
@@ -19,7 +19,7 @@ tag: user.splits
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -34,7 +34,7 @@ tag: user.messaging
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -49,7 +49,7 @@ tag: user.chapters
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -63,7 +63,7 @@ tag: user.chapters
 --------------------------------------------------------------------------------
 
 (source_file
-  (context))
+  (matches))
 
 ================================================================================
 6. Context knausj_talon/misc/help_scope_open.talon
@@ -75,7 +75,7 @@ mode: user.help_scope
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -92,18 +92,17 @@ title: /git add .*\-p/
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (and
-        (match
-          (identifier)
-          (implicit_string))
-        (match
-          (identifier)
-          (implicit_string)))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (match_modifier)
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 8. Context knausj_talon/misc/git.talon
@@ -116,14 +115,14 @@ and tag: user.git
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (and
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (match_modifier)
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 9. Context knausj_talon/misc/tabs.talon
@@ -135,7 +134,7 @@ tag: user.tabs
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -150,7 +149,7 @@ tag: user.multiple_cursors
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -165,7 +164,7 @@ tag: user.pages
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -180,7 +179,7 @@ mode: user.help
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -195,7 +194,7 @@ tag: user.mouse_cursor_commands_enable
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -211,15 +210,14 @@ not tag: user.draft_editor_app_focused
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (not
-        (match
-          (identifier)
-          (implicit_string))))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (match_modifier)
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 5. Context knausj_talon/draft_editor/draft_editor_open.talon
@@ -232,14 +230,14 @@ and tag: user.draft_editor_app_focused
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (and
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (match_modifier)
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 6. Context knausj_talon/modes/dictation_mode.talon
@@ -251,7 +249,7 @@ mode: dictation
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -268,15 +266,14 @@ mode: all
 --------------------------------------------------------------------------------
 
 (source_file
-  (comment)
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (comment)
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 8. Context knausj_talon/modes/sleep_mode.talon
@@ -288,7 +285,7 @@ mode: sleep
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -303,11 +300,11 @@ not mode: sleep
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (not
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (match_modifier)
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 0. Context knausj_talon/modes/wake_up.talon
@@ -320,8 +317,8 @@ mode: all
 --------------------------------------------------------------------------------
 
 (source_file
-  (comment)
-  (context
+  (matches
+    (comment)
     (match
       (identifier)
       (implicit_string))))
@@ -337,14 +334,13 @@ speech.engine: wav2letter
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 2. Context knausj_talon/emoji/emoji.talon
@@ -356,7 +352,7 @@ tag: user.emoji
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -372,8 +368,8 @@ tag: user.draft_window_showing
 --------------------------------------------------------------------------------
 
 (source_file
-  (comment)
-  (context
+  (matches
+    (comment)
     (match
       (identifier)
       (implicit_string))))
@@ -389,8 +385,8 @@ title:Talon Draft
 --------------------------------------------------------------------------------
 
 (source_file
-  (comment)
-  (context
+  (matches
+    (comment)
     (match
       (identifier)
       (implicit_string))))
@@ -406,8 +402,8 @@ mode: command
 --------------------------------------------------------------------------------
 
 (source_file
-  (comment)
-  (context
+  (matches
+    (comment)
     (match
       (identifier)
       (implicit_string))))
@@ -422,7 +418,7 @@ tag: user.terraform
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -437,7 +433,7 @@ tag: user.talon
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -452,7 +448,7 @@ tag: user.vimscript
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -467,7 +463,7 @@ tag: user.go
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -482,7 +478,7 @@ tag: user.protobuf
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -497,7 +493,7 @@ tag: user.python
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -512,7 +508,7 @@ tag: user.css
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -527,7 +523,7 @@ tag: user.markdown
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -542,7 +538,7 @@ tag: user.typescript
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -557,7 +553,7 @@ tag: user.typescriptreact
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -572,7 +568,7 @@ tag: user.rust
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -587,7 +583,7 @@ tag: user.r
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -602,7 +598,7 @@ tag: user.java
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -617,7 +613,7 @@ tag: user.php
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -632,7 +628,7 @@ tag: user.code_comment_block
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -647,7 +643,7 @@ tag: user.code_comment_documentation
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -662,7 +658,7 @@ tag: user.code_keywords
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -677,7 +673,7 @@ tag: user.code_functions_common
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -692,7 +688,7 @@ tag: user.code_comment_line
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -707,7 +703,7 @@ tag: user.code_data_null
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -722,7 +718,7 @@ tag: user.code_object_oriented
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -737,7 +733,7 @@ tag: user.code_data_bool
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -752,7 +748,7 @@ tag: user.code_libraries_gui_showing
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -767,7 +763,7 @@ tag: user.code_operators_lambda
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -782,7 +778,7 @@ tag: user.code_operators_array
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -797,7 +793,7 @@ tag: user.code_operators_math
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -812,7 +808,7 @@ tag: user.code_libraries
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -827,7 +823,7 @@ tag: user.code_functions_common_gui_active
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -842,7 +838,7 @@ tag: user.code_functions
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -857,7 +853,7 @@ tag: user.code_operators_assignment
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -872,7 +868,7 @@ tag: user.code_imperative
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -887,7 +883,7 @@ tag: user.code_operators_bitwise
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -902,7 +898,7 @@ tag: user.code_libraries_gui
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -917,7 +913,7 @@ tag: user.code_operators_pointer
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -932,7 +928,7 @@ tag: user.scala
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -947,7 +943,7 @@ tag: user.batch
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -962,7 +958,7 @@ tag: user.csharp
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -977,7 +973,7 @@ tag: user.javascript
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -992,7 +988,7 @@ tag: user.javascriptreact
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1007,7 +1003,7 @@ tag: user.c
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1022,7 +1018,7 @@ tag: user.ruby
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1037,7 +1033,7 @@ tag: user.sql
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1052,11 +1048,11 @@ not tag: user.mouse_grid_showing
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (not
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (match_modifier)
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 9. Context knausj_talon/text/homophones_open.talon
@@ -1068,7 +1064,7 @@ mode: user.homophones
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1083,7 +1079,7 @@ tag: user.find_and_replace
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1098,7 +1094,7 @@ tag: user.line_commands
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1113,7 +1109,7 @@ app: firefox
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1129,14 +1125,14 @@ and tag: user.anaconda
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (and
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (match_modifier)
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 4. Context knausj_talon/apps/kindle/kindle.talon
@@ -1148,7 +1144,7 @@ app: kindle
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1164,14 +1160,14 @@ and tag: user.terraform_client
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (and
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (match_modifier)
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 6. Context knausj_talon/apps/generic_browser.talon
@@ -1183,7 +1179,7 @@ tag: browser
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1198,7 +1194,7 @@ app: calibre_viewer
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1213,7 +1209,7 @@ app: okular
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1255,34 +1251,34 @@ tag: user.wsl
 --------------------------------------------------------------------------------
 
 (source_file
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (comment)
-  (context
+  (matches
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
     (match
       (identifier)
       (implicit_string))))
@@ -1297,7 +1293,7 @@ app: windows_terminal
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1312,7 +1308,7 @@ app: sumatrapdf
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1328,14 +1324,13 @@ app: windows_file_browser
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 3. Context knausj_talon/apps/platforms/win/powershell/power_shell.talon
@@ -1350,22 +1345,21 @@ and app.exe: powershell.exe
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (and
-        (match
-          (identifier)
-          (implicit_string))
-        (match
-          (identifier)
-          (implicit_string)))
-      (and
-        (match
-          (identifier)
-          (implicit_string))
-        (match
-          (identifier)
-          (implicit_string))))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (match_modifier)
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (match_modifier)
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 4. Context knausj_talon/apps/platforms/win/nitro_reader/nitro_reader_5.talon
@@ -1377,7 +1371,7 @@ app: nitro_reader_five
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1393,14 +1387,14 @@ and app: Outlook
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (and
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (match_modifier)
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 6. Context knausj_talon/apps/platforms/mac/iterm/iterm.talon
@@ -1413,14 +1407,13 @@ app: iterm2
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 7. Context knausj_talon/apps/platforms/mac/terminal/apple_terminal.talon
@@ -1432,7 +1425,7 @@ app: apple_terminal
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1448,14 +1441,14 @@ and app: notes
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (and
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (match_modifier)
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 9. Context knausj_talon/apps/platforms/mac/finder/finder.talon
@@ -1468,14 +1461,13 @@ app: finder
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 0. Context knausj_talon/apps/platforms/mac/rstudio.talon
@@ -1488,14 +1480,13 @@ app: RStudio
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 1. Context knausj_talon/apps/platforms/linux/taskwarrior.talon
@@ -1509,18 +1500,17 @@ and tag: user.taskwarrior
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (and
-        (match
-          (identifier)
-          (implicit_string))
-        (match
-          (identifier)
-          (implicit_string))))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (match_modifier)
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 2. Context knausj_talon/apps/platforms/linux/tmux.talon
@@ -1533,14 +1523,13 @@ tag: user.tmux
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 3. Context knausj_talon/apps/platforms/linux/atril/atril.talon
@@ -1552,7 +1541,7 @@ app: atril
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1568,15 +1557,15 @@ and not win.title: /VIM/
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (and
-      (match
-        (identifier)
-        (implicit_string))
-      (not
-        (match
-          (identifier)
-          (implicit_string))))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (match_modifier)
+      (match_modifier)
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 5. Context knausj_talon/apps/platforms/linux/gnome-terminal/gnome-terminal.talon
@@ -1588,7 +1577,7 @@ app: gnome_terminal
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1603,7 +1592,7 @@ app: nautilus
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1619,14 +1608,14 @@ and app.name: konsole
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (and
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (match_modifier)
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 8. Context knausj_talon/apps/platforms/linux/evince/evince.talon
@@ -1638,7 +1627,7 @@ app: evince
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1653,7 +1642,7 @@ app: signal
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1668,7 +1657,7 @@ os: linux
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1683,7 +1672,7 @@ app: keepass
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1702,19 +1691,18 @@ mode: user.gdb
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (comment)
-      (comment)
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (comment)
+    (comment)
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 3. Context knausj_talon/apps/discord/discord.talon
@@ -1726,7 +1714,7 @@ app: discord
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1742,8 +1730,8 @@ app: eclipse
 --------------------------------------------------------------------------------
 
 (source_file
-  (comment)
-  (context
+  (matches
+    (comment)
     (match
       (identifier)
       (implicit_string))))
@@ -1759,14 +1747,13 @@ app: visual_studio
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 6. Context knausj_talon/apps/evernote/mac.talon
@@ -1779,14 +1766,13 @@ os: mac
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 7. Context knausj_talon/apps/web/github.talon
@@ -1800,15 +1786,14 @@ browser.host: github.com
 --------------------------------------------------------------------------------
 
 (source_file
-  (comment)
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (comment)
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 8. Context knausj_talon/apps/web/twitter.talon
@@ -1822,14 +1807,13 @@ browser.host: twitter.com
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))
     (comment)))
 
 ================================================================================
@@ -1848,20 +1832,19 @@ win.title: /Outlook/
 --------------------------------------------------------------------------------
 
 (source_file
-  (comment)
-  (comment)
-  (comment)
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (comment)
+    (comment)
+    (comment)
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 0. Context knausj_talon/apps/web/protonmail.talon
@@ -1874,14 +1857,13 @@ win.title: /ProtonMail/
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 1. Context knausj_talon/apps/web/gitlab.talon
@@ -1898,16 +1880,15 @@ browser.host: /gitlab\.com/
 --------------------------------------------------------------------------------
 
 (source_file
-  (comment)
-  (comment)
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))
+  (matches
+    (comment)
+    (comment)
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))
     (comment)))
 
 ================================================================================
@@ -1920,7 +1901,7 @@ tag: debugger
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1937,15 +1918,14 @@ tag: user.i3wm
 --------------------------------------------------------------------------------
 
 (source_file
-  (comment)
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (comment)
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 4. Context knausj_talon/apps/windbg/windbg.talon
@@ -1961,10 +1941,10 @@ mode: user.windbg
 --------------------------------------------------------------------------------
 
 (source_file
-  (comment)
-  (comment)
-  (comment)
-  (context
+  (matches
+    (comment)
+    (comment)
+    (comment)
     (match
       (identifier)
       (implicit_string))))
@@ -1979,7 +1959,7 @@ user.running: amethyst
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -1995,8 +1975,8 @@ app: jetbrains
 --------------------------------------------------------------------------------
 
 (source_file
-  (comment)
-  (context
+  (matches
+    (comment)
     (match
       (identifier)
       (implicit_string))))
@@ -2011,7 +1991,7 @@ app: adobe_acrobat_reader_dc
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -2026,7 +2006,7 @@ tag: user.snippets
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -2041,7 +2021,7 @@ tag: user.snippets_showing
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -2058,14 +2038,13 @@ app: com.microsoft.teams
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 1. Context knausj_talon/apps/teams/teams.talon
@@ -2080,17 +2059,16 @@ os: linux
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 2. Context knausj_talon/apps/slack/slack_win.talon
@@ -2105,17 +2083,16 @@ app: slack
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))
     (comment)))
 
 ================================================================================
@@ -2129,14 +2106,13 @@ app: slack
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 4. Context knausj_talon/apps/generic_terminal/generic_terminal.talon
@@ -2148,7 +2124,7 @@ tag: terminal
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -2164,14 +2140,13 @@ win.title:/Talon - REPL/
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 6. Context knausj_talon/apps/file_manager.talon
@@ -2183,7 +2158,7 @@ tag: user.file_manager
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -2199,14 +2174,14 @@ and tag: user.kubectl
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (and
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (match_modifier)
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 8. Context knausj_talon/apps/vscode/vscode.talon
@@ -2219,8 +2194,8 @@ app: vscode
 --------------------------------------------------------------------------------
 
 (source_file
-  (comment)
-  (context
+  (matches
+    (comment)
     (match
       (identifier)
       (implicit_string))))
@@ -2237,20 +2212,20 @@ and not app: thunderbird_composer
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (and
-      (match
-        (identifier)
-        (implicit_string))
-      (and
-        (not
-          (match
-            (identifier)
-            (implicit_string)))
-        (not
-          (match
-            (identifier)
-            (implicit_string)))))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (match_modifier)
+      (match_modifier)
+      (identifier)
+      (implicit_string))
+    (match
+      (match_modifier)
+      (match_modifier)
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 0. Context knausj_talon/apps/thunderbird/thunderbird_inbox.talon
@@ -2262,7 +2237,7 @@ app: thunderbird_inbox
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -2277,7 +2252,7 @@ app: thunderbird_contacts
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -2292,7 +2267,7 @@ app: thunderbird_tasks
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -2307,7 +2282,7 @@ app: thunderbird_composer
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -2322,7 +2297,7 @@ app: thunderbird_calendar
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -2337,8 +2312,8 @@ app: thunderbird_calendar
 --------------------------------------------------------------------------------
 
 (source_file
-  (comment)
-  (context))
+  (matches
+    (comment)))
 
 ================================================================================
 6. Context knausj_talon/apps/1password/1password.talon
@@ -2350,7 +2325,7 @@ app: one_password
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -2365,7 +2340,7 @@ tag: user.mouse_grid_showing
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -2380,7 +2355,7 @@ tag: user.mouse_grid_enabled
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))

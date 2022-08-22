@@ -8,7 +8,7 @@ tag: user.tabs
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -24,14 +24,13 @@ mode: dictation
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 3. Context andreas-talon/misc/scroll/scroll.talon
@@ -43,7 +42,7 @@ tag: user.scroll
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -61,20 +60,19 @@ experiment: anchor-file
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 5. Context andreas-talon/misc/sleep/sleep.talon
@@ -89,20 +87,19 @@ language: sv_SE
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 6. Context andreas-talon/misc/sleep/sleep_mode.talon
@@ -114,7 +111,7 @@ mode: sleep
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -129,7 +126,7 @@ os: linux
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -144,7 +141,7 @@ os: windows
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -159,7 +156,7 @@ tag: user.navigation
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -174,7 +171,7 @@ tag: user.zoom_mouse
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -189,11 +186,11 @@ not app: vscode
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (not
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (match_modifier)
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 12. Context andreas-talon/misc/audio_video.talon
@@ -205,7 +202,7 @@ tag: user.av
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -220,7 +217,7 @@ tag: user.zoom
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -235,7 +232,7 @@ mode: user.clipboard_manager
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -250,7 +247,7 @@ mode: user.focus
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -265,7 +262,7 @@ tag: user.find
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -280,7 +277,7 @@ mode: user.help_commands
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -295,7 +292,7 @@ mode: user.help_scope
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -310,7 +307,7 @@ mode: user.help_alphabet
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -325,7 +322,7 @@ mode: user.help_search
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -340,7 +337,7 @@ mode: user.help_formatters
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -355,7 +352,7 @@ tag: user.talon
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -370,7 +367,7 @@ tag: user.python
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -385,7 +382,7 @@ tag: user.java
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -400,7 +397,7 @@ tag: user.html
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -415,7 +412,7 @@ tag: user.operators
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -430,7 +427,7 @@ tag: user.comments
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -445,7 +442,7 @@ tag: user.generic_language
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -460,7 +457,7 @@ tag: user.json
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -475,7 +472,7 @@ tag: user.typescript
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -490,7 +487,7 @@ tag: user.javascript
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -505,7 +502,7 @@ tag: user.typescriptreact
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -520,7 +517,7 @@ tag: user.javascriptreact
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -535,7 +532,7 @@ mode: user.homophones
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -550,7 +547,7 @@ title: Talon - REPL
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -565,7 +562,7 @@ app: discord
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -580,7 +577,7 @@ app: mattermost
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -596,14 +593,14 @@ and title: /YouTube| - YouTube$/
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (and
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (match_modifier)
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 39. Context andreas-talon/apps/web/slack.talon
@@ -615,7 +612,7 @@ app: slack
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -630,7 +627,7 @@ tag: user.maven
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -645,7 +642,7 @@ app: windows_terminal
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -660,7 +657,7 @@ tag: user.bash
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -675,7 +672,7 @@ tag: terminal
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -691,14 +688,14 @@ and app.exe: kodi.exe
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (and
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (match_modifier)
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 45. Context andreas-talon/apps/yarn/yarn.talon
@@ -710,7 +707,7 @@ tag: user.yarn
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -725,7 +722,7 @@ tag: browser
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -740,7 +737,7 @@ app: firefox
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -756,14 +753,14 @@ and tag: user.file_manager
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (and
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (match_modifier)
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 49. Context andreas-talon/apps/file_manager/windows_explorer.talon
@@ -776,14 +773,13 @@ app: windows_file_browser
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 50. Context andreas-talon/apps/file_manager/file_manager.talon
@@ -795,7 +791,7 @@ tag: user.file_manager
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -812,17 +808,16 @@ title: Task Switching
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 52. Context andreas-talon/apps/vscode/draft_editor.talon
@@ -834,11 +829,11 @@ not app: vscode
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (not
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (match_modifier)
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 53. Context andreas-talon/apps/vscode/vscode_take_word.talon
@@ -850,7 +845,7 @@ app: vscode
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -865,7 +860,7 @@ app: vscode
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -880,7 +875,7 @@ tag: user.draft_editor_active
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -895,7 +890,7 @@ tag: user.vscode_notebook
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -911,14 +906,13 @@ win.file_ext: .bashbook
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
-    (or
-      (match
-        (identifier)
-        (implicit_string))
-      (match
-        (identifier)
-        (implicit_string)))))
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string))))
 
 ================================================================================
 58. Context andreas-talon/apps/npm/npm.talon
@@ -930,7 +924,7 @@ tag: user.npm
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -945,7 +939,7 @@ app: notepad
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
@@ -960,7 +954,7 @@ tag: user.git
 --------------------------------------------------------------------------------
 
 (source_file
-  (context
+  (matches
     (match
       (identifier)
       (implicit_string))))
