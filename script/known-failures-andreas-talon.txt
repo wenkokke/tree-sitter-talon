@@ -1,1 +1,0 @@
-examples/andreas-talon/settings/settings_work_laptop.talon
