@@ -121,3 +121,30 @@ command palette: key(cmd-shift-p)
       (expression_statement
         (key_action
           (implicit_string))))))
+
+================================================================================
+Basic: conemu
+================================================================================
+
+os: windows
+app.exe: ConEmu64.exe
+
+-
+
+tag(): terminal
+tag(): user.git
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches
+    (match
+      (identifier)
+      (implicit_string))
+    (match
+      (identifier)
+      (implicit_string)))
+  (tag_import_declaration
+    (identifier))
+  (tag_import_declaration
+    (identifier)))

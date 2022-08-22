@@ -196,39 +196,41 @@ namespace
         else if (lexer->lookahead == '\n')
         {
           if (match_state == DASH_FOUND)
-          {
+          { // ... *after* a dash
             return true;
           }
           else
-          {
+          { // ... *not after* a dash.
             match_state = LINE_START;
             skip(lexer);
           }
         }
         // Found the end of the file.
-        else if (lexer->lookahead == 0)
+        else if (lexer->lookahead == 0 && match_state == DASH_FOUND)
         {
           if (match_state == DASH_FOUND)
-          {
+          { // ... *after* a dash
             return true;
           }
           else
-          {
+          { // ... *not after* a dash.
             return false;
           }
         }
+        // Found some whitespace after the '-'.
+        else if (is_whitespace(lexer->lookahead) && match_state == DASH_FOUND)
+        {
+          skip(lexer);
+        }
         // Found any other character.
+        else if (skip_any)
+        {
+          match_state = LINE_CONTENT;
+          skip(lexer);
+        }
         else
         {
-          if (skip_any)
-          {
-            match_state = LINE_CONTENT;
-            skip(lexer);
-          }
-          else
-          {
-            return false;
-          }
+          return false;
         }
       }
       return false;
@@ -241,13 +243,15 @@ namespace
       {
         // Don't consume input.
         lexer->mark_end(lexer);
+
+        // Search for MATCHES_END.
         if (find_match_end(lexer, true))
-        {
+        { // If MATCHES_END was found, return MATCHES_START.
           lexer->result_symbol = MATCHES_START;
           return true;
         }
         else
-        {
+        { // Otherwise, return MATCHES_EMPTY.
           lexer->result_symbol = MATCHES_EMPTY;
           return true;
         }
