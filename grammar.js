@@ -37,7 +37,7 @@ module.exports = grammar({
     source_file: ($) =>
       seq(
         $.matches,
-        repeat($.declaration),
+        optional($.declarations),
       ),
 
     comment: ($) => token(/#.*?/),
@@ -66,6 +66,8 @@ module.exports = grammar({
       ),
 
     /* Declarations */
+
+    declarations: ($) => repeat1($.declaration),
 
     declaration: ($) =>
       choice(

@@ -303,6 +303,21 @@
     }
   },
   {
+    "type": "declarations",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "declaration",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "expression_statement",
     "named": true,
     "fields": {
@@ -795,7 +810,7 @@
       "required": true,
       "types": [
         {
-          "type": "declaration",
+          "type": "declarations",
           "named": true
         },
         {

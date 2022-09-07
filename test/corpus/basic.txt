@@ -94,13 +94,14 @@ air: "a"
 
 (source_file
   (matches)
-  (command_declaration
-    (rule
-      (word))
-    (block
-      (expression_statement
-        (string
-          (string_content))))))
+  (declarations
+    (command_declaration
+      (rule
+        (word))
+      (block
+        (expression_statement
+          (string
+            (string_content)))))))
 
 ================================================================================
 Basic: empty match context and one command
@@ -112,15 +113,16 @@ command palette: key(cmd-shift-p)
 
 (source_file
   (matches)
-  (command_declaration
-    (rule
-      (seq
-        (word)
-        (word)))
-    (block
-      (expression_statement
-        (key_action
-          (implicit_string))))))
+  (declarations
+    (command_declaration
+      (rule
+        (seq
+          (word)
+          (word)))
+      (block
+        (expression_statement
+          (key_action
+            (implicit_string)))))))
 
 ================================================================================
 Basic: conemu
@@ -144,7 +146,8 @@ tag(): user.git
     (match
       (identifier)
       (implicit_string)))
-  (tag_import_declaration
-    (identifier))
-  (tag_import_declaration
-    (identifier)))
+  (declarations
+    (tag_import_declaration
+      (identifier))
+    (tag_import_declaration
+      (identifier))))

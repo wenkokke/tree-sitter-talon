@@ -14,11 +14,13 @@ settings():
     (match
       (identifier)
       (implicit_string)))
-  (settings_declaration
-    (block
-      (assignment_statement
-        (identifier)
-        (float)))))
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (float))))))
+
 ================================================================================
 1. Settings examples/andreas-talon/misc/abort/abort.talon
 ================================================================================
@@ -30,12 +32,13 @@ settings():
 
 (source_file
   (matches)
-  (settings_declaration
-    (block
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content))))))
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
 
 ================================================================================
 2. Settings examples/andreas-talon/misc/sleep/sleep.talon
@@ -48,12 +51,13 @@ settings():
 
 (source_file
   (matches)
-  (settings_declaration
-    (block
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content))))))
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
 
 ================================================================================
 3. Settings examples/andreas-talon/misc/sleep/sleep_mode.talon
@@ -66,11 +70,12 @@ settings():
 
 (source_file
   (matches)
-  (settings_declaration
-    (block
-      (assignment_statement
-        (identifier)
-        (integer)))))
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (integer))))))
 
 ================================================================================
 4. Settings examples/andreas-talon/settings/settings.talon
@@ -86,16 +91,17 @@ settings():
 
 (source_file
   (matches)
-  (settings_declaration
-    (comment)
-    (block
-      (assignment_statement
-        (identifier)
-        (float))
+  (declarations
+    (settings_declaration
       (comment)
-      (assignment_statement
-        (identifier)
-        (integer)))))
+      (block
+        (assignment_statement
+          (identifier)
+          (float))
+        (comment)
+        (assignment_statement
+          (identifier)
+          (integer))))))
 
 ================================================================================
 5. Settings examples/andreas-talon/settings/settings_work_laptop.talon
@@ -108,11 +114,12 @@ settings():
 
 (source_file
   (matches)
-  (settings_declaration
-    (block
-      (assignment_statement
-        (identifier)
-        (float)))))
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (float))))))
 
 ================================================================================
 6. Settings examples/andreas-talon/apps/vscode/vscode.talon
@@ -125,8 +132,9 @@ settings():
 
 (source_file
   (matches)
-  (settings_declaration
-    (block
-      (assignment_statement
-        (identifier)
-        (float)))))
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (float))))))

@@ -9,11 +9,16 @@
           "name": "matches"
         },
         {
-          "type": "REPEAT",
-          "content": {
-            "type": "SYMBOL",
-            "name": "declaration"
-          }
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "declarations"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
         }
       ]
     },
@@ -105,6 +110,13 @@
           "name": "_newline"
         }
       ]
+    },
+    "declarations": {
+      "type": "REPEAT1",
+      "content": {
+        "type": "SYMBOL",
+        "name": "declaration"
+      }
     },
     "declaration": {
       "type": "CHOICE",
@@ -903,7 +915,7 @@
           "name": "arguments",
           "content": {
             "type": "SYMBOL",
-            "name": "_implicit_string_argument_list"
+            "name": "_implicit_string_argument"
           }
         },
         {
@@ -924,7 +936,7 @@
           "name": "arguments",
           "content": {
             "type": "SYMBOL",
-            "name": "_implicit_string_argument_list"
+            "name": "_implicit_string_argument"
           }
         },
         {
@@ -933,7 +945,7 @@
         }
       ]
     },
-    "_implicit_string_argument_list": {
+    "_implicit_string_argument": {
       "type": "ALIAS",
       "content": {
         "type": "PATTERN",

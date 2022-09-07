@@ -10,12 +10,13 @@ settings():
 
 (source_file
   (matches)
-  (settings_declaration
-    (comment)
-    (block
-      (assignment_statement
-        (identifier)
-        (float)))))
+  (declarations
+    (settings_declaration
+      (comment)
+      (block
+        (assignment_statement
+          (identifier)
+          (float))))))
 
 ================================================================================
 2. Settings knausj_talon/modes/sleep_mode.talon
@@ -31,16 +32,17 @@ settings():
 
 (source_file
   (matches)
-  (settings_declaration
-    (comment)
-    (block
-      (assignment_statement
-        (identifier)
-        (integer))
+  (declarations
+    (settings_declaration
       (comment)
-      (assignment_statement
-        (identifier)
-        (integer)))))
+      (block
+        (assignment_statement
+          (identifier)
+          (integer))
+        (comment)
+        (assignment_statement
+          (identifier)
+          (integer))))))
 
 ================================================================================
 3. Settings knausj_talon/talon_draft_window/draft_window.talon
@@ -54,12 +56,13 @@ settings():
 
 (source_file
   (matches)
-  (settings_declaration
-    (comment)
-    (block
-      (assignment_statement
-        (identifier)
-        (integer)))))
+  (declarations
+    (settings_declaration
+      (comment)
+      (block
+        (assignment_statement
+          (identifier)
+          (integer))))))
 
 ================================================================================
 4. Settings knausj_talon/lang/vimscript/vimscript.talon
@@ -77,32 +80,33 @@ settings():
 
 (source_file
   (matches)
-  (settings_declaration
-    (block
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content))))))
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
 
 ================================================================================
 5. Settings knausj_talon/lang/python/python.talon
@@ -120,32 +124,33 @@ settings():
 
 (source_file
   (matches)
-  (settings_declaration
-    (block
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content))))))
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
 
 ================================================================================
 6. Settings knausj_talon/lang/css/css.talon
@@ -158,12 +163,13 @@ settings():
 
 (source_file
   (matches)
-  (settings_declaration
-    (block
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content))))))
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
 
 ================================================================================
 7. Settings knausj_talon/lang/rust/rust.talon
@@ -181,32 +187,33 @@ settings():
 
 (source_file
   (matches)
-  (settings_declaration
-    (block
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content))))))
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
 
 ================================================================================
 8. Settings knausj_talon/lang/r/r.talon
@@ -224,32 +231,33 @@ settings():
 
 (source_file
   (matches)
-  (settings_declaration
-    (block
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content))))))
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
 
 ================================================================================
 9. Settings knausj_talon/lang/java/java.talon
@@ -267,32 +275,33 @@ settings():
 
 (source_file
   (matches)
-  (settings_declaration
-    (block
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content))))))
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
 
 ================================================================================
 0. Settings knausj_talon/lang/php/php.talon
@@ -310,32 +319,33 @@ settings():
 
 (source_file
   (matches)
-  (settings_declaration
-    (block
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content))))))
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
 
 ================================================================================
 1. Settings knausj_talon/lang/scala/scala.talon
@@ -353,32 +363,33 @@ settings():
 
 (source_file
   (matches)
-  (settings_declaration
-    (block
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content))))))
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
 
 ================================================================================
 2. Settings knausj_talon/lang/csharp/csharp.talon
@@ -396,32 +407,33 @@ settings():
 
 (source_file
   (matches)
-  (settings_declaration
-    (block
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content))))))
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
 
 ================================================================================
 3. Settings knausj_talon/lang/javascript/javascript.talon
@@ -439,32 +451,33 @@ settings():
 
 (source_file
   (matches)
-  (settings_declaration
-    (block
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content))))))
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
 
 ================================================================================
 4. Settings knausj_talon/lang/c/c.talon
@@ -484,34 +497,35 @@ settings():
 
 (source_file
   (matches)
-  (settings_declaration
-    (block
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (comment)
-      (comment))))
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (comment)
+        (comment)))))
 
 ================================================================================
 5. Settings knausj_talon/lang/ruby/ruby.talon
@@ -529,32 +543,33 @@ settings():
 
 (source_file
   (matches)
-  (settings_declaration
-    (block
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content)))
-      (assignment_statement
-        (identifier)
-        (string
-          (string_content))))))
+  (declarations
+    (settings_declaration
+      (block
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))
+        (assignment_statement
+          (identifier)
+          (string
+            (string_content)))))))
 
 ================================================================================
 6. Settings knausj_talon/apps/evernote/mac.talon
@@ -568,9 +583,10 @@ settings():
 
 (source_file
   (matches)
-  (settings_declaration
-    (comment)
-    (block
-      (assignment_statement
-        (identifier)
-        (float)))))
+  (declarations
+    (settings_declaration
+      (comment)
+      (block
+        (assignment_statement
+          (identifier)
+          (float))))))
