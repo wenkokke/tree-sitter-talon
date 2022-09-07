@@ -902,13 +902,8 @@
           "type": "FIELD",
           "name": "arguments",
           "content": {
-            "type": "ALIAS",
-            "content": {
-              "type": "PATTERN",
-              "value": "[^\\)]*"
-            },
-            "named": true,
-            "value": "implicit_string"
+            "type": "SYMBOL",
+            "name": "_implicit_string_argument_list"
           }
         },
         {
@@ -928,13 +923,8 @@
           "type": "FIELD",
           "name": "arguments",
           "content": {
-            "type": "ALIAS",
-            "content": {
-              "type": "PATTERN",
-              "value": "[^\\)]*"
-            },
-            "named": true,
-            "value": "implicit_string"
+            "type": "SYMBOL",
+            "name": "_implicit_string_argument_list"
           }
         },
         {
@@ -942,6 +932,15 @@
           "value": ")"
         }
       ]
+    },
+    "_implicit_string_argument_list": {
+      "type": "ALIAS",
+      "content": {
+        "type": "PATTERN",
+        "value": "[^\\)]*"
+      },
+      "named": true,
+      "value": "implicit_string"
     },
     "action": {
       "type": "SEQ",

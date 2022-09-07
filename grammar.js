@@ -226,16 +226,19 @@ module.exports = grammar({
     key_action: ($) =>
       seq(
         "key(",
-        field("arguments", alias(/[^\)]*/, $.implicit_string)),
+        field("arguments", $._implicit_string_argument),
         ")"
       ),
 
     sleep_action: ($) =>
       seq(
         "sleep(",
-        field("arguments", alias(/[^\)]*/, $.implicit_string)),
+        field("arguments", $._implicit_string_argument),
         ")"
       ),
+
+    _implicit_string_argument: ($) =>
+      alias(/[^\)]*/, $.implicit_string),
 
     action: ($) =>
       seq(
