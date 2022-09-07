@@ -61,7 +61,7 @@ module.exports = grammar({
 
     match: ($) =>
       seq(
-        field("modifier", repeat($.match_modifier)),
+        field("modifiers", repeat($.match_modifier)),
         field("left", $.identifier),
         ":",
         field("right", $.implicit_string),
