@@ -405,7 +405,7 @@
           }
         ]
       },
-      "modifier": {
+      "modifiers": {
         "multiple": true,
         "required": false,
         "types": [
@@ -748,6 +748,16 @@
     "type": "settings_declaration",
     "named": true,
     "fields": {
+      "left": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "settings()",
+            "named": false
+          }
+        ]
+      },
       "right": {
         "multiple": false,
         "required": true,
@@ -827,6 +837,16 @@
     "type": "tag_import_declaration",
     "named": true,
     "fields": {
+      "left": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "tag()",
+            "named": false
+          }
+        ]
+      },
       "right": {
         "multiple": false,
         "required": true,

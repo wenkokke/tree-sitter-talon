@@ -71,7 +71,7 @@
       "members": [
         {
           "type": "FIELD",
-          "name": "modifier",
+          "name": "modifiers",
           "content": {
             "type": "REPEAT",
             "content": {
@@ -156,8 +156,12 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "STRING",
-          "value": "tag()"
+          "type": "FIELD",
+          "name": "left",
+          "content": {
+            "type": "STRING",
+            "value": "tag()"
+          }
         },
         {
           "type": "STRING",
@@ -206,8 +210,12 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "STRING",
-          "value": "settings()"
+          "type": "FIELD",
+          "name": "left",
+          "content": {
+            "type": "STRING",
+            "value": "settings()"
+          }
         },
         {
           "type": "STRING",

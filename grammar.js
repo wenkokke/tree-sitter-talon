@@ -87,7 +87,7 @@ module.exports = grammar({
 
     tag_import_declaration: ($) =>
       seq(
-        "tag()",
+        field("left", "tag()"),
         ":",
         field("right", $.identifier),
         $._newline,
@@ -102,7 +102,7 @@ module.exports = grammar({
 
     settings_declaration: ($) =>
       seq(
-        "settings()",
+        field("left", "settings()"),
         ":",
         field("right", $._statements),
       ),
