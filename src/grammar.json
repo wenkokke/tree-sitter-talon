@@ -892,89 +892,77 @@
       ]
     },
     "key_action": {
-      "type": "PREC",
-      "value": 25,
-      "content": {
-        "type": "SEQ",
-        "members": [
-          {
-            "type": "STRING",
-            "value": "key("
-          },
-          {
-            "type": "FIELD",
-            "name": "arguments",
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "key("
+        },
+        {
+          "type": "FIELD",
+          "name": "arguments",
+          "content": {
+            "type": "ALIAS",
             "content": {
-              "type": "ALIAS",
-              "content": {
-                "type": "PATTERN",
-                "value": "[^\\)]*"
-              },
-              "named": true,
-              "value": "implicit_string"
-            }
-          },
-          {
-            "type": "STRING",
-            "value": ")"
+              "type": "PATTERN",
+              "value": "[^\\)]*"
+            },
+            "named": true,
+            "value": "implicit_string"
           }
-        ]
-      }
+        },
+        {
+          "type": "STRING",
+          "value": ")"
+        }
+      ]
     },
     "sleep_action": {
-      "type": "PREC",
-      "value": 25,
-      "content": {
-        "type": "SEQ",
-        "members": [
-          {
-            "type": "STRING",
-            "value": "sleep("
-          },
-          {
-            "type": "FIELD",
-            "name": "arguments",
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "sleep("
+        },
+        {
+          "type": "FIELD",
+          "name": "arguments",
+          "content": {
+            "type": "ALIAS",
             "content": {
-              "type": "ALIAS",
-              "content": {
-                "type": "PATTERN",
-                "value": "[^\\)]*"
-              },
-              "named": true,
-              "value": "implicit_string"
-            }
-          },
-          {
-            "type": "STRING",
-            "value": ")"
+              "type": "PATTERN",
+              "value": "[^\\)]*"
+            },
+            "named": true,
+            "value": "implicit_string"
           }
-        ]
-      }
+        },
+        {
+          "type": "STRING",
+          "value": ")"
+        }
+      ]
     },
     "action": {
-      "type": "PREC",
-      "value": 22,
-      "content": {
-        "type": "SEQ",
-        "members": [
-          {
-            "type": "FIELD",
-            "name": "action_name",
-            "content": {
-              "type": "SYMBOL",
-              "name": "identifier"
-            }
-          },
-          {
-            "type": "FIELD",
-            "name": "arguments",
-            "content": {
-              "type": "SYMBOL",
-              "name": "argument_list"
-            }
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "FIELD",
+          "name": "action_name",
+          "content": {
+            "type": "SYMBOL",
+            "name": "identifier"
           }
-        ]
-      }
+        },
+        {
+          "type": "FIELD",
+          "name": "arguments",
+          "content": {
+            "type": "SYMBOL",
+            "name": "argument_list"
+          }
+        }
+      ]
     },
     "argument_list": {
       "type": "SEQ",

@@ -3,9 +3,6 @@ const PREC = {
   or: 10,
   plus: 18,
   times: 19,
-  action: 22,
-  key: 25,
-  sleep: 25,
 };
 
 module.exports = grammar({
@@ -227,32 +224,23 @@ module.exports = grammar({
     },
 
     key_action: ($) =>
-      prec(
-        PREC.key,
-        seq(
-          "key(",
-          field("arguments", alias(/[^\)]*/, $.implicit_string)),
-          ")"
-        )
+      seq(
+        "key(",
+        field("arguments", alias(/[^\)]*/, $.implicit_string)),
+        ")"
       ),
 
     sleep_action: ($) =>
-      prec(
-        PREC.sleep,
-        seq(
-          "sleep(",
-          field("arguments", alias(/[^\)]*/, $.implicit_string)),
-          ")"
-        )
+      seq(
+        "sleep(",
+        field("arguments", alias(/[^\)]*/, $.implicit_string)),
+        ")"
       ),
 
     action: ($) =>
-      prec(
-        PREC.action,
-        seq(
-          field("action_name", $.identifier),
-          field("arguments", $.argument_list)
-        )
+      seq(
+        field("action_name", $.identifier),
+        field("arguments", $.argument_list)
       ),
 
     argument_list: ($) => seq(token.immediate("("), sep($.expression, ","), optional(","), ")"),
