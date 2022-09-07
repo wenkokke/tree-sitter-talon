@@ -82,7 +82,7 @@
         },
         {
           "type": "FIELD",
-          "name": "key",
+          "name": "left",
           "content": {
             "type": "SYMBOL",
             "name": "identifier"
@@ -94,7 +94,7 @@
         },
         {
           "type": "FIELD",
-          "name": "pattern",
+          "name": "right",
           "content": {
             "type": "SYMBOL",
             "name": "implicit_string"
@@ -132,7 +132,7 @@
       "members": [
         {
           "type": "FIELD",
-          "name": "rule",
+          "name": "left",
           "content": {
             "type": "SYMBOL",
             "name": "rule"
@@ -144,7 +144,7 @@
         },
         {
           "type": "FIELD",
-          "name": "script",
+          "name": "right",
           "content": {
             "type": "SYMBOL",
             "name": "_statements"
@@ -165,7 +165,7 @@
         },
         {
           "type": "FIELD",
-          "name": "tag",
+          "name": "right",
           "content": {
             "type": "SYMBOL",
             "name": "identifier"
@@ -182,7 +182,7 @@
       "members": [
         {
           "type": "FIELD",
-          "name": "key",
+          "name": "left",
           "content": {
             "type": "SYMBOL",
             "name": "key_action"
@@ -194,7 +194,7 @@
         },
         {
           "type": "FIELD",
-          "name": "script",
+          "name": "right",
           "content": {
             "type": "SYMBOL",
             "name": "_statements"
@@ -214,8 +214,12 @@
           "value": ":"
         },
         {
-          "type": "SYMBOL",
-          "name": "_statements"
+          "type": "FIELD",
+          "name": "right",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_statements"
+          }
         }
       ]
     },

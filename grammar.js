@@ -62,9 +62,9 @@ module.exports = grammar({
     match: ($) =>
       seq(
         field("modifier", repeat($.match_modifier)),
-        field("key", $.identifier),
+        field("left", $.identifier),
         ":",
-        field("pattern", $.implicit_string),
+        field("right", $.implicit_string),
         $._newline
       ),
 
@@ -80,31 +80,31 @@ module.exports = grammar({
 
     command_declaration: ($) =>
       seq(
-        field("rule", $.rule),
+        field("left", $.rule),
         ":",
-        field("script", $._statements),
+        field("right", $._statements),
       ),
 
     tag_import_declaration: ($) =>
       seq(
         "tag()",
         ":",
-        field("tag", $.identifier),
+        field("right", $.identifier),
         $._newline,
       ),
 
     key_binding_declaration: ($) =>
       seq(
-        field("key", $.key_action),
+        field("left", $.key_action),
         ":",
-        field("script", $._statements),
+        field("right", $._statements),
       ),
 
     settings_declaration: ($) =>
       seq(
         "settings()",
         ":",
-        $._statements
+        field("right", $._statements),
       ),
 
     /* Statements */

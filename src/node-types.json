@@ -280,7 +280,7 @@
     "type": "command_declaration",
     "named": true,
     "fields": {
-      "rule": {
+      "left": {
         "multiple": false,
         "required": true,
         "types": [
@@ -290,7 +290,7 @@
           }
         ]
       },
-      "script": {
+      "right": {
         "multiple": false,
         "required": true,
         "types": [
@@ -353,7 +353,7 @@
     "type": "key_binding_declaration",
     "named": true,
     "fields": {
-      "key": {
+      "left": {
         "multiple": false,
         "required": true,
         "types": [
@@ -363,7 +363,7 @@
           }
         ]
       },
-      "script": {
+      "right": {
         "multiple": false,
         "required": true,
         "types": [
@@ -395,7 +395,7 @@
     "type": "match",
     "named": true,
     "fields": {
-      "key": {
+      "left": {
         "multiple": false,
         "required": true,
         "types": [
@@ -415,7 +415,7 @@
           }
         ]
       },
-      "pattern": {
+      "right": {
         "multiple": false,
         "required": true,
         "types": [
@@ -747,16 +747,17 @@
   {
     "type": "settings_declaration",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "block",
-          "named": true
-        }
-      ]
+    "fields": {
+      "right": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "block",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
@@ -826,7 +827,7 @@
     "type": "tag_import_declaration",
     "named": true,
     "fields": {
-      "tag": {
+      "right": {
         "multiple": false,
         "required": true,
         "types": [
