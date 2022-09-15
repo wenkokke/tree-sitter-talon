@@ -185,6 +185,7 @@ module.exports = grammar({
     expression: ($) =>
       choice(
         $.binary_operator,
+        $.unary_operator,
         $.variable,
         $.string,
         $.integer,
@@ -240,6 +241,7 @@ module.exports = grammar({
               field("right", $.expression)
             )
           )
+        )
       );
     },
 
