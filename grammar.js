@@ -3,6 +3,7 @@ const PREC = {
   or: 10,
   plus: 18,
   times: 19,
+  negate: 20,
 };
 
 module.exports = grammar({
@@ -222,6 +223,23 @@ module.exports = grammar({
             )
           )
         )
+      );
+    },
+    
+    unary_operator: $ => {
+      const table = [
+        [prec, "-", PREC.negate],
+      ];
+      
+      return choice(
+        ...table.map(([fn, operator, precedence]) =>
+          fn(
+            precedence,
+            seq(
+              field("operator", alias(operator, $.operator)),
+              field("right", $.expression)
+            )
+          )
       );
     },
 
