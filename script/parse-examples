@@ -31,7 +31,8 @@ function clone_repo {
 
 clone_repo knausj85 knausj_talon 000015ed1bd4cb1109d7d6ddaaa4146821821d70
 clone_repo AndreasArvidsson andreas-talon 9e467003d32da694b1fdf74ef97543c9b3d2d613
+clone_repo phillco talon-axkit ea39bb16d037c3ddcd5acc1666f20b2f80b9a931
 
-for name in knausj_talon andreas-talon; do
+for name in knausj_talon andreas-talon talon-axkit; do
   script/parse-example "$name" "$mode"
 done

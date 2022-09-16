@@ -1,0 +1,488 @@
+================================================================================
+1. File talon-axkit/menu.talon
+================================================================================
+
+os: mac
+-
+^talon copy menu select: user.copy_menu_select()
+^talon copy menu key: user.copy_menu_key()
+^talon copy menu key pie: user.copy_menu_key_python()
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches
+    (match
+      (identifier)
+      (implicit_string)))
+  (declarations
+    (command_declaration
+      (rule
+        (start_anchor)
+        (seq
+          (word)
+          (word)
+          (word)
+          (word)))
+      (block
+        (expression_statement
+          (action
+            (identifier)
+            (argument_list)))))
+    (command_declaration
+      (rule
+        (start_anchor)
+        (seq
+          (word)
+          (word)
+          (word)
+          (word)))
+      (block
+        (expression_statement
+          (action
+            (identifier)
+            (argument_list)))))
+    (command_declaration
+      (rule
+        (start_anchor)
+        (seq
+          (word)
+          (word)
+          (word)
+          (word)
+          (word)))
+      (block
+        (expression_statement
+          (action
+            (identifier)
+            (argument_list)))))))
+
+================================================================================
+2. File talon-axkit/notification.talon
+================================================================================
+
+os: mac
+-
+^(note | notification) <number_small> {user.notification_actions}$:
+	user.notification_action(number_small - 1, notification_actions)
+
+^(note | notification) <number_small> actions$:
+	user.notification_show_actions(number_small - 1)
+
+^(note | notification) actions$:
+	user.notification_show_actions(-1)
+
+^(note | notification) {user.notification_actions} <number_small>$:
+	user.notification_action(number_small - 1, notification_actions)
+
+^(note | notification) {user.notification_actions} {user.notification_apps}$:
+	user.notification_app_action(notification_apps, notification_actions)
+
+^(note | notification) {user.notification_apps} {user.notification_actions}$:
+	user.notification_app_action(notification_apps, notification_actions)
+
+^(note | notification) update$:
+	user.notifications_update()
+
+^(note | notification) center$:
+	user.notification_center()
+	user.notifications_update()
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches
+    (match
+      (identifier)
+      (implicit_string)))
+  (declarations
+    (command_declaration
+      (rule
+        (start_anchor)
+        (seq
+          (parenthesized_rule
+            (choice
+              (word)
+              (word)))
+          (capture
+            (identifier))
+          (list
+            (identifier)))
+        (end_anchor))
+      (block
+        (expression_statement
+          (action
+            (identifier)
+            (argument_list
+              (binary_operator
+                (variable
+                  (identifier))
+                (operator)
+                (integer))
+              (variable
+                (identifier)))))))
+    (command_declaration
+      (rule
+        (start_anchor)
+        (seq
+          (parenthesized_rule
+            (choice
+              (word)
+              (word)))
+          (capture
+            (identifier))
+          (word))
+        (end_anchor))
+      (block
+        (expression_statement
+          (action
+            (identifier)
+            (argument_list
+              (binary_operator
+                (variable
+                  (identifier))
+                (operator)
+                (integer)))))))
+    (command_declaration
+      (rule
+        (start_anchor)
+        (seq
+          (parenthesized_rule
+            (choice
+              (word)
+              (word)))
+          (word))
+        (end_anchor))
+      (block
+        (expression_statement
+          (action
+            (identifier)
+            (argument_list
+              (unary_operator
+                (operator)
+                (integer)))))))
+    (command_declaration
+      (rule
+        (start_anchor)
+        (seq
+          (parenthesized_rule
+            (choice
+              (word)
+              (word)))
+          (list
+            (identifier))
+          (capture
+            (identifier)))
+        (end_anchor))
+      (block
+        (expression_statement
+          (action
+            (identifier)
+            (argument_list
+              (binary_operator
+                (variable
+                  (identifier))
+                (operator)
+                (integer))
+              (variable
+                (identifier)))))))
+    (command_declaration
+      (rule
+        (start_anchor)
+        (seq
+          (parenthesized_rule
+            (choice
+              (word)
+              (word)))
+          (list
+            (identifier))
+          (list
+            (identifier)))
+        (end_anchor))
+      (block
+        (expression_statement
+          (action
+            (identifier)
+            (argument_list
+              (variable
+                (identifier))
+              (variable
+                (identifier)))))))
+    (command_declaration
+      (rule
+        (start_anchor)
+        (seq
+          (parenthesized_rule
+            (choice
+              (word)
+              (word)))
+          (list
+            (identifier))
+          (list
+            (identifier)))
+        (end_anchor))
+      (block
+        (expression_statement
+          (action
+            (identifier)
+            (argument_list
+              (variable
+                (identifier))
+              (variable
+                (identifier)))))))
+    (command_declaration
+      (rule
+        (start_anchor)
+        (seq
+          (parenthesized_rule
+            (choice
+              (word)
+              (word)))
+          (word))
+        (end_anchor))
+      (block
+        (expression_statement
+          (action
+            (identifier)
+            (argument_list)))))
+    (command_declaration
+      (rule
+        (start_anchor)
+        (seq
+          (parenthesized_rule
+            (choice
+              (word)
+              (word)))
+          (word))
+        (end_anchor))
+      (block
+        (expression_statement
+          (action
+            (identifier)
+            (argument_list)))
+        (expression_statement
+          (action
+            (identifier)
+            (argument_list)))))))
+
+================================================================================
+3. File talon-axkit/window_action.talon
+================================================================================
+
+os: mac
+-
+
+{user.window_actions} window: user.action_windows(user.window_actions, 1, 0)
+{user.window_actions} other windows: user.action_windows(user.window_actions, 0, 1)
+{user.window_actions} [all] windows: user.action_windows(user.window_actions, 1, 1)
+{user.window_actions} all <user.running_applications> windows: user.action_windows(user.window_actions, 1, 1, user.running_applications)
+{user.window_actions} other <user.running_applications> windows: user.action_windows(user.window_actions, 0, 1, user.running_applications)
+
+fullscreen enter: user.action_windows("fullscreen", 1, 0)
+fullscreen exit: key(cmd-ctrl-f)
+  
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches
+    (match
+      (identifier)
+      (implicit_string)))
+  (declarations
+    (command_declaration
+      (rule
+        (seq
+          (list
+            (identifier))
+          (word)))
+      (block
+        (expression_statement
+          (action
+            (identifier)
+            (argument_list
+              (variable
+                (identifier))
+              (integer)
+              (integer))))))
+    (command_declaration
+      (rule
+        (seq
+          (list
+            (identifier))
+          (word)
+          (word)))
+      (block
+        (expression_statement
+          (action
+            (identifier)
+            (argument_list
+              (variable
+                (identifier))
+              (integer)
+              (integer))))))
+    (command_declaration
+      (rule
+        (seq
+          (list
+            (identifier))
+          (optional
+            (word))
+          (word)))
+      (block
+        (expression_statement
+          (action
+            (identifier)
+            (argument_list
+              (variable
+                (identifier))
+              (integer)
+              (integer))))))
+    (command_declaration
+      (rule
+        (seq
+          (list
+            (identifier))
+          (word)
+          (capture
+            (identifier))
+          (word)))
+      (block
+        (expression_statement
+          (action
+            (identifier)
+            (argument_list
+              (variable
+                (identifier))
+              (integer)
+              (integer)
+              (variable
+                (identifier)))))))
+    (command_declaration
+      (rule
+        (seq
+          (list
+            (identifier))
+          (word)
+          (capture
+            (identifier))
+          (word)))
+      (block
+        (expression_statement
+          (action
+            (identifier)
+            (argument_list
+              (variable
+                (identifier))
+              (integer)
+              (integer)
+              (variable
+                (identifier)))))))
+    (command_declaration
+      (rule
+        (seq
+          (word)
+          (word)))
+      (block
+        (expression_statement
+          (action
+            (identifier)
+            (argument_list
+              (string
+                (string_content))
+              (integer)
+              (integer))))))
+    (command_declaration
+      (rule
+        (seq
+          (word)
+          (word)))
+      (block
+        (expression_statement
+          (key_action
+            (implicit_string)))))))
+
+================================================================================
+4. File talon-axkit/window_doc.talon
+================================================================================
+
+os: mac
+-
+
+document open: user.open_current_doc()
+document open in <user.launch_applications>: user.open_current_doc_in_app(user.launch_applications)
+document open in <user.running_applications>: user.open_current_doc_in_app(user.running_applications)
+document (reveal|show): user.reveal_current_doc()
+document copy path: user.copy_current_doc_path()
+  
+--------------------------------------------------------------------------------
+
+(source_file
+  (matches
+    (match
+      (identifier)
+      (implicit_string)))
+  (declarations
+    (command_declaration
+      (rule
+        (seq
+          (word)
+          (word)))
+      (block
+        (expression_statement
+          (action
+            (identifier)
+            (argument_list)))))
+    (command_declaration
+      (rule
+        (seq
+          (word)
+          (word)
+          (word)
+          (capture
+            (identifier))))
+      (block
+        (expression_statement
+          (action
+            (identifier)
+            (argument_list
+              (variable
+                (identifier)))))))
+    (command_declaration
+      (rule
+        (seq
+          (word)
+          (word)
+          (word)
+          (capture
+            (identifier))))
+      (block
+        (expression_statement
+          (action
+            (identifier)
+            (argument_list
+              (variable
+                (identifier)))))))
+    (command_declaration
+      (rule
+        (seq
+          (word)
+          (parenthesized_rule
+            (choice
+              (word)
+              (word)))))
+      (block
+        (expression_statement
+          (action
+            (identifier)
+            (argument_list)))))
+    (command_declaration
+      (rule
+        (seq
+          (word)
+          (word)
+          (word)))
+      (block
+        (expression_statement
+          (action
+            (identifier)
+            (argument_list)))))))
