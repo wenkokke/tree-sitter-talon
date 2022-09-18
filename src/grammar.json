@@ -492,7 +492,7 @@
     },
     "word": {
       "type": "PATTERN",
-      "value": "[\\p{Letter}\\p{Number}-]+"
+      "value": "[\\p{Letter}\\p{Number}][\\p{Letter}\\p{Number}-]*"
     },
     "list": {
       "type": "SEQ",
@@ -602,6 +602,10 @@
         {
           "type": "SYMBOL",
           "name": "binary_operator"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "unary_operator"
         },
         {
           "type": "SYMBOL",
@@ -903,6 +907,41 @@
         }
       ]
     },
+    "unary_operator": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "PREC",
+          "value": 20,
+          "content": {
+            "type": "SEQ",
+            "members": [
+              {
+                "type": "FIELD",
+                "name": "operator",
+                "content": {
+                  "type": "ALIAS",
+                  "content": {
+                    "type": "STRING",
+                    "value": "-"
+                  },
+                  "named": true,
+                  "value": "operator"
+                }
+              },
+              {
+                "type": "FIELD",
+                "name": "right",
+                "content": {
+                  "type": "SYMBOL",
+                  "name": "expression"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
     "key_action": {
       "type": "SEQ",
       "members": [
@@ -1038,7 +1077,7 @@
     },
     "identifier": {
       "type": "PATTERN",
-      "value": "([A-Za-z][A-Za-z0-9_]*)(\\.[A-Za-z][A-Za-z0-9_]*)*"
+      "value": "([A-Za-z_][A-Za-z0-9_]*)(\\.[A-Za-z_][A-Za-z0-9_]*)*"
     },
     "value": {
       "type": "CHOICE",

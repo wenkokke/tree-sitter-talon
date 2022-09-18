@@ -3,7 +3,7 @@
 ================================================================================
 
 os: mac
--
+--
 ^talon copy menu select: user.copy_menu_select()
 ^talon copy menu key: user.copy_menu_key()
 ^talon copy menu key pie: user.copy_menu_key_python()
@@ -62,7 +62,7 @@ os: mac
 ================================================================================
 
 os: mac
--
+--
 ^(note | notification) <number_small> {user.notification_actions}$:
 	user.notification_action(number_small - 1, notification_actions)
 
@@ -270,7 +270,7 @@ os: mac
 ================================================================================
 
 os: mac
--
+--
 
 {user.window_actions} window: user.action_windows(user.window_actions, 1, 0)
 {user.window_actions} other windows: user.action_windows(user.window_actions, 0, 1)
@@ -406,7 +406,7 @@ fullscreen exit: key(cmd-ctrl-f)
 ================================================================================
 
 os: mac
--
+--
 
 document open: user.open_current_doc()
 document open in <user.launch_applications>: user.open_current_doc_in_app(user.launch_applications)

@@ -16,7 +16,8 @@ namespace
   {
     LINE_START,
     LINE_CONTENT,
-    DASH_FOUND,
+    DASHES,
+    AFTER_DASHES,
   };
 
   enum TokenType
@@ -187,39 +188,50 @@ namespace
       while (lexer->lookahead)
       {
         // Found a dash at the start of a file or line.
-        if (lexer->lookahead == '-' && match_state == LINE_START)
+        if (lexer->lookahead == '-')
         {
-          match_state = DASH_FOUND;
-          advance(lexer);
+          if (match_state == LINE_START || match_state == DASHES)
+          {
+            match_state = DASHES;
+            advance(lexer);
+          }
+          else
+          { // If AFTER_DASHES, set match_state to LINE_CONTENT,
+            // e.g., "-- -- --" is not a valid separator.
+            match_state = LINE_CONTENT;
+            skip(lexer);
+          }
         }
         // Found the end of the line.
         else if (lexer->lookahead == '\n')
         {
-          if (match_state == DASH_FOUND)
-          { // ... *after* a dash
+          if (match_state == DASHES || match_state == AFTER_DASHES)
+          { // ... *after* dashes
             return true;
           }
           else
-          { // ... *not after* a dash.
+          { // ... *not after* dashes.
             match_state = LINE_START;
             skip(lexer);
           }
         }
         // Found the end of the file.
-        else if (lexer->lookahead == 0 && match_state == DASH_FOUND)
+        else if (lexer->lookahead == 0)
         {
-          if (match_state == DASH_FOUND)
-          { // ... *after* a dash
+          if (match_state == DASHES || match_state == AFTER_DASHES)
+          { // ... *after* dashes
             return true;
           }
           else
-          { // ... *not after* a dash.
+          { // ... *not after* dashes.
             return false;
           }
         }
         // Found some whitespace after the '-'.
-        else if (is_whitespace(lexer->lookahead) && match_state == DASH_FOUND)
-        {
+        else if (is_whitespace(lexer->lookahead) && (match_state == DASHES || match_state == AFTER_DASHES))
+        { // If DASHES, set match_state to AFTER_DASHES, to distinguish between,
+          // e.g., "--   " (valid) and "-- -- --" (not valid).
+          match_state = AFTER_DASHES;
           skip(lexer);
         }
         // Found any other character.
