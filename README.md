@@ -10,6 +10,8 @@ References:
 Tested with:
 - [knausj_talon]
 - [andreas-talon]
+- [talon-axkit]
+- [nriley's knausj_talon]
 
 If you would like to include your Talon user directory as part of the tests, please submit a pull request adding the relevant information to [`script/parse-examples`](script/parse-examples#L32-L37) and this file.
 
@@ -17,3 +19,5 @@ If you would like to include your Talon user directory as part of the tests, ple
 [talon-wiki]: https://talon.wiki/unofficial_talon_docs/#talon-files
 [knausj_talon]: https://github.com/knausj85/knausj_talon
 [andreas-talon]: https://github.com/AndreasArvidsson/andreas-talon
+[talon-axkit]: https://github.com/phillco/talon-axkit
+[nriley's knausj_talon]: https://github.com/nriley/knausj_talon
