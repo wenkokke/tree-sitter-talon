@@ -11,24 +11,26 @@ mode=${1:-native}
 # Change directory to project root.
 cd "$(dirname "$0")/.."
 
-example_repos=()
+example_paths=()
 
 # Clone a GitHub repository to the examples directory
 # clone_repo OWNER NAME SHA
 function clone_repo {
-  owner=$1
-  name=$2
-  sha=$3
+  repo_owner=$1
+  repo_name=$2
+  repo_ref=$3
+  repo_slug="${repo_owner}/${repo_name}"
 
-  path=examples/${owner}_${name}
-  example_repos+=(${owner}_${name})
+  example_slug="${repo_owner}-${repo_name}"
+  example_path="examples/${example_slug}"
+  example_paths+=(${example_path})
   if [ ! -d "$path" ]; then
-    git clone "https://github.com/$owner/$name" "$path" --quiet
+    git clone "https://github.com/${repo_slug}" "${example_path}" --quiet
   fi
 
-  pushd "$path" >/dev/null
+  pushd "${example_path}" >/dev/null
   git fetch --quiet
-  git reset --hard $sha --quiet
+  git reset --hard "${repo_ref}" --quiet
   popd >/dev/null
 }
 
@@ -37,6 +39,6 @@ clone_repo AndreasArvidsson andreas-talon 9e467003d32da694b1fdf74ef97543c9b3d2d6
 clone_repo phillco talon-axkit ea39bb16d037c3ddcd5acc1666f20b2f80b9a931
 clone_repo nriley knausj_talon 5081c1af53be6692b8e6377172a9970ebda7dfb4
 
-for repo in ${example_repos[@]}; do
-  script/parse-example "$repo" "$mode"
+for example_path in ${example_paths[@]}; do
+  script/parse-example "${example_path}" "${mode}"
 done
