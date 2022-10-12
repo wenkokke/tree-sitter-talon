@@ -11,7 +11,7 @@ mode=${1:-native}
 # Change directory to project root.
 cd "$(dirname "$0")/.."
 
-example_paths=()
+example_slugs=()
 
 # Clone a GitHub repository to the examples directory
 # clone_repo OWNER NAME SHA
@@ -23,7 +23,7 @@ function clone_repo {
 
   example_slug="${repo_owner}-${repo_name}"
   example_path="examples/${example_slug}"
-  example_paths+=(${example_path})
+  example_paths+=(${example_slug})
   if [ ! -d "$path" ]; then
     git clone "https://github.com/${repo_slug}" "${example_path}" --quiet
   fi
@@ -39,6 +39,6 @@ clone_repo AndreasArvidsson andreas-talon 9e467003d32da694b1fdf74ef97543c9b3d2d6
 clone_repo phillco talon-axkit ea39bb16d037c3ddcd5acc1666f20b2f80b9a931
 clone_repo nriley knausj_talon 5081c1af53be6692b8e6377172a9970ebda7dfb4
 
-for example_path in ${example_paths[@]}; do
-  script/parse-example "${example_path}" "${mode}"
+for example_slug in ${example_slugs[@]}; do
+  script/parse-example "${example_slug}" "${mode}"
 done
