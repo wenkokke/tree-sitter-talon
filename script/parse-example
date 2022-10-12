@@ -9,18 +9,18 @@ set -e
 cd "$(dirname "$0")/.."
 
 # Get the repository name
-name=$1
-repo=examples/$name
+example_slug=$1
+example_path="examples/${example_slug}"
 
 # Parse examples in 'native' or 'wasm' mode.
 mode=${2:-native}
 
-if [ -f "script/known-failures-$name.txt" ]; then
-  known_failures=$(cat "script/known-failures-$name.txt")
+if [ -f "script/known-failures-${example_slug}.txt" ]; then
+  known_failures=$(cat "script/known-failures-${example_slug}.txt")
 fi
 examples_to_parse=$(
-  for example in $(find "$repo" -name '*.talon'); do
-    if [[ ! $known_failures == *$example* ]]; then
+  for example in $(find "${example_path}" -name '*.talon'); do
+    if [[ ! ${known_failures} == *$example* ]]; then
       echo $example
     fi
   done
