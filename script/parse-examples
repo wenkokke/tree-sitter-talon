@@ -19,18 +19,18 @@ function clone_repo {
   repo_owner=$1
   repo_name=$2
   repo_ref=$3
-  repo_slug="${repo_owner}/${repo_name}"
+  repo_slug="$repo_owner/$repo_name"
 
-  example_slug="${repo_owner}-${repo_name}"
-  example_path="examples/${example_slug}"
-  example_paths+=(${example_slug})
-  if [ ! -d "$path" ]; then
-    git clone "https://github.com/${repo_slug}" "${example_path}" --quiet
+  example_slug="$repo_owner-$repo_name"
+  example_path="examples/$example_slug"
+  example_slugs+=($example_slug)
+  if [ ! -d "$example_path" ]; then
+    git clone "https://github.com/$repo_slug" "$example_path" --quiet
   fi
 
-  pushd "${example_path}" >/dev/null
+  pushd "$example_path" >/dev/null
   git fetch --quiet
-  git reset --hard "${repo_ref}" --quiet
+  git reset --hard "$repo_ref" --quiet
   popd >/dev/null
 }
 
@@ -40,5 +40,5 @@ clone_repo phillco talon-axkit ea39bb16d037c3ddcd5acc1666f20b2f80b9a931
 clone_repo nriley knausj_talon 5081c1af53be6692b8e6377172a9970ebda7dfb4
 
 for example_slug in ${example_slugs[@]}; do
-  script/parse-example "${example_slug}" "${mode}"
+  script/parse-example "$example_slug" "$mode"
 done

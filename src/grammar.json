@@ -492,7 +492,7 @@
     },
     "word": {
       "type": "PATTERN",
-      "value": "[\\p{Letter}\\p{Number}][\\p{Letter}\\p{Number}-]*"
+      "value": "[\\p{Letter}\\p{Number}][\\p{Letter}\\p{Number}\\-']*"
     },
     "list": {
       "type": "SEQ",

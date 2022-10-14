@@ -166,7 +166,7 @@ module.exports = grammar({
         $.parenthesized_rule
       ),
 
-    word: ($) => /[\p{Letter}\p{Number}][\p{Letter}\p{Number}-']*/,
+    word: ($) => /[\p{Letter}\p{Number}][\p{Letter}\p{Number}\-']*/,
 
     list: ($) => seq("{", field("list_name", $.identifier), "}"),
 
@@ -226,12 +226,12 @@ module.exports = grammar({
         )
       );
     },
-    
+
     unary_operator: $ => {
       const table = [
         [prec, "-", PREC.negate],
       ];
-      
+
       return choice(
         ...table.map(([fn, operator, precedence]) =>
           fn(
