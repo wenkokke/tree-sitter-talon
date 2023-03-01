@@ -87,7 +87,7 @@ module.exports = grammar({
 
     tag_import_declaration: ($) =>
       seq(
-        field("left", "tag()"),
+        field("left", $._tag_binding),
         ":",
         field("right", $.identifier),
         $._newline,
@@ -95,46 +95,16 @@ module.exports = grammar({
 
     key_binding_declaration: ($) =>
       seq(
-        field("left", $.key_action),
+        field("left", $._key_binding),
         ":",
         field("right", $._statements),
       ),
 
     settings_declaration: ($) =>
       seq(
-        field("left", "settings()"),
+        field("left", $._settings_binding),
         ":",
         field("right", $._statements),
-      ),
-
-    /* Statements */
-
-    _statements: ($) =>
-      choice(
-        alias($.statement, $.block),
-        seq($._indent, $.block)
-      ),
-
-    block: ($) => seq(repeat($.statement), $._dedent),
-
-    statement: ($) =>
-      choice(
-        $.assignment_statement,
-        $.expression_statement,
-      ),
-
-    assignment_statement: ($) =>
-      seq(
-        field("left", $.identifier),
-        "=",
-        field("right", $.expression),
-        $._newline,
-      ),
-
-    expression_statement: ($) =>
-      seq(
-        field("expression", $.expression),
-        $._newline,
       ),
 
     /* Rules */
@@ -149,6 +119,7 @@ module.exports = grammar({
       seq(optional($.start_anchor), $._optional_seq, optional($.end_anchor)),
 
     start_anchor: ($) => "^",
+
     end_anchor: ($) => "$",
 
     _optional_seq: ($) => choice($._primary_rule, $.seq),
@@ -179,6 +150,90 @@ module.exports = grammar({
     repeat1: ($) => seq($._primary_rule, "+"),
 
     parenthesized_rule: ($) => seq("(", $._optional_choice, ")"),
+
+    /* Bindings */
+
+    // Deprecated in Talon 0.2 and removed in Talon 0.3
+    _action_binding: ($) =>
+      seq(
+        "action(",
+        field("arguments", $._implicit_string_argument),
+        ")"
+      ),
+
+    _app_binding: ($) =>
+      seq(
+        "app(",
+        field("arguments", $._implicit_string_argument),
+        ")"
+      ),
+
+    _face_binding: ($) =>
+      seq(
+        "face(",
+        field("arguments", $._implicit_string_argument),
+        ")"
+      ),
+
+    _gamepad_binding: ($) =>
+      seq(
+        "gamepad(",
+        field("arguments", $._implicit_string_argument),
+        ")"
+      ),
+
+    _noise_binding: ($) =>
+      seq(
+        "noise(",
+        field("arguments", $._implicit_string_argument),
+        ")"
+      ),
+
+    _parrot_binding: ($) =>
+      seq(
+        "parrot(",
+        field("arguments", $._implicit_string_argument),
+        ")"
+      ),
+
+    _key_binding: ($) =>
+      $.key_action,
+
+    _settings_binding: ($) =>
+      "settings()",
+
+    _tag_binding: ($) =>
+      "tag()",
+
+    /* Statements */
+
+    _statements: ($) =>
+      choice(
+        alias($.statement, $.block),
+        seq($._indent, $.block)
+      ),
+
+    block: ($) => seq(repeat($.statement), $._dedent),
+
+    statement: ($) =>
+      choice(
+        $.assignment_statement,
+        $.expression_statement,
+      ),
+
+    assignment_statement: ($) =>
+      seq(
+        field("left", $.identifier),
+        "=",
+        field("right", $.expression),
+        $._newline,
+      ),
+
+    expression_statement: ($) =>
+      seq(
+        field("expression", $.expression),
+        $._newline,
+      ),
 
     /* Expressions */
 
