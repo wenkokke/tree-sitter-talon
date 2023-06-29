@@ -371,7 +371,7 @@ module.exports = grammar({
 
     /* Strings */
 
-    implicit_string: ($) => token(/.*/),
+    implicit_string: ($) => token(/\S(.*\S)?/),
 
     string: ($) =>
       seq(
