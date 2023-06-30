@@ -302,14 +302,16 @@ module.exports = grammar({
 
     key_action: ($) =>
       seq(
-        "key(",
+        "key",
+        "(",
         field("arguments", $._implicit_string_argument),
         ")"
       ),
 
     sleep_action: ($) =>
       seq(
-        "sleep(",
+        "sleep",
+        "(",
         field("arguments", $._implicit_string_argument),
         ")"
       ),
