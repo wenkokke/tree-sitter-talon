@@ -767,16 +767,6 @@
     "type": "settings_declaration",
     "named": true,
     "fields": {
-      "left": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "settings()",
-            "named": false
-          }
-        ]
-      },
       "right": {
         "multiple": false,
         "required": true,
@@ -856,16 +846,6 @@
     "type": "tag_import_declaration",
     "named": true,
     "fields": {
-      "left": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "tag()",
-            "named": false
-          }
-        ]
-      },
       "right": {
         "multiple": false,
         "required": true,
@@ -1009,10 +989,6 @@
     "named": true
   },
   {
-    "type": "settings()",
-    "named": false
-  },
-  {
     "type": "sleep(",
     "named": false
   },
@@ -1023,10 +999,6 @@
   {
     "type": "string_escape_sequence",
     "named": true
-  },
-  {
-    "type": "tag()",
-    "named": false
   },
   {
     "type": "word",
