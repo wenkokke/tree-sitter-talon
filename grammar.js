@@ -153,49 +153,6 @@ module.exports = grammar({
 
     /* Bindings */
 
-    // Deprecated in Talon 0.2 and removed in Talon 0.3
-    _action_binding: ($) =>
-      seq(
-        "action(",
-        field("arguments", $._implicit_string_argument),
-        ")"
-      ),
-
-    _app_binding: ($) =>
-      seq(
-        "app(",
-        field("arguments", $._implicit_string_argument),
-        ")"
-      ),
-
-    _face_binding: ($) =>
-      seq(
-        "face(",
-        field("arguments", $._implicit_string_argument),
-        ")"
-      ),
-
-    _gamepad_binding: ($) =>
-      seq(
-        "gamepad(",
-        field("arguments", $._implicit_string_argument),
-        ")"
-      ),
-
-    _noise_binding: ($) =>
-      seq(
-        "noise(",
-        field("arguments", $._implicit_string_argument),
-        ")"
-      ),
-
-    _parrot_binding: ($) =>
-      seq(
-        "parrot(",
-        field("arguments", $._implicit_string_argument),
-        ")"
-      ),
-
     _key_binding: ($) =>
       $.key_action,
 
