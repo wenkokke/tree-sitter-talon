@@ -1453,7 +1453,7 @@
       "type": "TOKEN",
       "content": {
         "type": "PATTERN",
-        "value": "(\\S(.+\\S)?)"
+        "value": "(\\S|\\S.+\\S)"
       }
     },
     "string": {

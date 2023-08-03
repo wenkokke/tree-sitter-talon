@@ -16,29 +16,29 @@ example_slugs=()
 # Clone a GitHub repository to the examples directory
 # clone_repo OWNER NAME SHA
 function clone_repo {
-  repo_owner=$1
-  repo_name=$2
-  repo_ref=$3
-  repo_slug="$repo_owner/$repo_name"
-
-  example_slug="$repo_owner-$repo_name"
-  example_path="examples/$example_slug"
-  example_slugs+=($example_slug)
-  if [ ! -d "$example_path" ]; then
-    git clone "https://github.com/$repo_slug" "$example_path" --quiet
-  fi
-
-  pushd "$example_path" >/dev/null
-  git fetch --quiet
-  git reset --hard "$repo_ref" --quiet
-  popd >/dev/null
+    repo_owner=$1
+    repo_name=$2
+    repo_ref=$3
+    repo_slug="$repo_owner/$repo_name"
+    
+    example_slug="$repo_owner-$repo_name"
+    example_path="examples/$example_slug"
+    example_slugs+=($example_slug)
+    if [ ! -d "$example_path" ]; then
+        git clone "https://github.com/$repo_slug" "$example_path" --quiet
+    fi
+    
+    pushd "$example_path" >/dev/null
+    git fetch --quiet
+    git reset --hard "$repo_ref" --quiet
+    popd >/dev/null
 }
 
-clone_repo knausj85 knausj_talon 000015ed1bd4cb1109d7d6ddaaa4146821821d70
-clone_repo AndreasArvidsson andreas-talon 9e467003d32da694b1fdf74ef97543c9b3d2d613
-clone_repo phillco talon-axkit ea39bb16d037c3ddcd5acc1666f20b2f80b9a931
-clone_repo nriley knausj_talon 5081c1af53be6692b8e6377172a9970ebda7dfb4
+clone_repo talonhub community 468fb16392e6a9907cb98e2526c1e5cbf3b5fc8d
+clone_repo AndreasArvidsson andreas-talon e9841d0f424501df09b2f200960af2a4d65345a1
+clone_repo phillco talon-axkit 9c33b80585011202eb69b2bdb9be52ed73d3ee85
+clone_repo nriley talon_community f7997eeb39f5f97ae517c057f528ec56635be0d7
 
 for example_slug in ${example_slugs[@]}; do
-  script/parse-example "$example_slug" "$mode"
+    script/parse-example "$example_slug" "$mode"
 done
