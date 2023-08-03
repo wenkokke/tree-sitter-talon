@@ -1,5 +1,2 @@
 examples/AndreasArvidsson-andreas-talon/core/modes/dictation_mode_sv.talon
-examples/AndreasArvidsson-andreas-talon/core/gamepad/gamepad.talon
 examples/AndreasArvidsson-andreas-talon/core/on_phrase/abort/abort.talon
-examples/AndreasArvidsson-andreas-talon/core/parrot/parrot.talon
-examples/AndreasArvidsson-andreas-talon/plugins/gamepad_tester/gamepad_tester_open.talon

@@ -4,11 +4,31 @@
     "named": true,
     "subtypes": [
       {
+        "type": "app_declaration",
+        "named": true
+      },
+      {
         "type": "command_declaration",
         "named": true
       },
       {
+        "type": "face_declaration",
+        "named": true
+      },
+      {
+        "type": "gamepad_declaration",
+        "named": true
+      },
+      {
         "type": "key_binding_declaration",
+        "named": true
+      },
+      {
+        "type": "noise_declaration",
+        "named": true
+      },
+      {
+        "type": "parrot_declaration",
         "named": true
       },
       {
@@ -115,6 +135,50 @@
         "types": [
           {
             "type": "argument_list",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "app_declaration",
+    "named": true,
+    "fields": {
+      "arguments": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "implicit_string",
+            "named": true
+          }
+        ]
+      },
+      "left": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": "app(",
+            "named": false
+          },
+          {
+            "type": "implicit_string",
+            "named": true
+          }
+        ]
+      },
+      "right": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "block",
             "named": true
           }
         ]
@@ -338,6 +402,94 @@
     }
   },
   {
+    "type": "face_declaration",
+    "named": true,
+    "fields": {
+      "arguments": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "implicit_string",
+            "named": true
+          }
+        ]
+      },
+      "left": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": "face(",
+            "named": false
+          },
+          {
+            "type": "implicit_string",
+            "named": true
+          }
+        ]
+      },
+      "right": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "block",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "gamepad_declaration",
+    "named": true,
+    "fields": {
+      "arguments": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "implicit_string",
+            "named": true
+          }
+        ]
+      },
+      "left": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": "gamepad(",
+            "named": false
+          },
+          {
+            "type": "implicit_string",
+            "named": true
+          }
+        ]
+      },
+      "right": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "block",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
     "type": "interpolation",
     "named": true,
     "fields": {},
@@ -467,6 +619,50 @@
     }
   },
   {
+    "type": "noise_declaration",
+    "named": true,
+    "fields": {
+      "arguments": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "implicit_string",
+            "named": true
+          }
+        ]
+      },
+      "left": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": "implicit_string",
+            "named": true
+          },
+          {
+            "type": "noise(",
+            "named": false
+          }
+        ]
+      },
+      "right": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "block",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
     "type": "optional",
     "named": true,
     "fields": {},
@@ -589,6 +785,50 @@
           "named": true
         }
       ]
+    }
+  },
+  {
+    "type": "parrot_declaration",
+    "named": true,
+    "fields": {
+      "arguments": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "implicit_string",
+            "named": true
+          }
+        ]
+      },
+      "left": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": "implicit_string",
+            "named": true
+          },
+          {
+            "type": "parrot(",
+            "named": false
+          }
+        ]
+      },
+      "right": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "block",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
@@ -953,6 +1193,10 @@
     "named": false
   },
   {
+    "type": "app(",
+    "named": false
+  },
+  {
     "type": "comment",
     "named": true
   },
@@ -961,8 +1205,16 @@
     "named": true
   },
   {
+    "type": "face(",
+    "named": false
+  },
+  {
     "type": "float",
     "named": true
+  },
+  {
+    "type": "gamepad(",
+    "named": false
   },
   {
     "type": "identifier",
@@ -981,12 +1233,20 @@
     "named": false
   },
   {
+    "type": "noise(",
+    "named": false
+  },
+  {
     "type": "not",
     "named": false
   },
   {
     "type": "operator",
     "named": true
+  },
+  {
+    "type": "parrot(",
+    "named": false
   },
   {
     "type": "sleep(",

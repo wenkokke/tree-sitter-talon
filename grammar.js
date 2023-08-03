@@ -73,6 +73,11 @@ module.exports = grammar({
     declaration: ($) =>
       choice(
         $.command_declaration,
+        $.app_declaration,
+        $.face_declaration,
+        $.gamepad_declaration,
+        $.noise_declaration,
+        $.parrot_declaration,
         $.tag_import_declaration,
         $.key_binding_declaration,
         $.settings_declaration,
@@ -81,6 +86,41 @@ module.exports = grammar({
     command_declaration: ($) =>
       seq(
         field("left", $.rule),
+        ":",
+        field("right", $._statements),
+      ),
+
+    app_declaration: ($) =>
+      seq(
+        field("left", $._app_binding),
+        ":",
+        field("right", $._statements),
+      ),
+
+    face_declaration: ($) =>
+      seq(
+        field("left", $._face_binding),
+        ":",
+        field("right", $._statements),
+      ),
+
+    gamepad_declaration: ($) =>
+      seq(
+        field("left", $._gamepad_binding),
+        ":",
+        field("right", $._statements),
+      ),
+
+    noise_declaration: ($) =>
+      seq(
+        field("left", $._noise_binding),
+        ":",
+        field("right", $._statements),
+      ),
+
+    parrot_declaration: ($) =>
+      seq(
+        field("left", $._parrot_binding),
         ":",
         field("right", $._statements),
       ),
@@ -152,6 +192,49 @@ module.exports = grammar({
     parenthesized_rule: ($) => seq("(", $._optional_choice, ")"),
 
     /* Bindings */
+
+    // Deprecated in Talon 0.2 and removed in Talon 0.3
+    // _action_binding: ($) =>
+    //   seq(
+    //     "action(",
+    //     field("arguments", $._implicit_string_argument),
+    //     ")"
+    //   ),
+
+    _app_binding: ($) =>
+      seq(
+        "app(",
+        field("arguments", $._implicit_string_argument),
+        ")"
+      ),
+
+    _face_binding: ($) =>
+      seq(
+        "face(",
+        field("arguments", $._implicit_string_argument),
+        ")"
+      ),
+
+    _gamepad_binding: ($) =>
+      seq(
+        "gamepad(",
+        field("arguments", $._implicit_string_argument),
+        ")"
+      ),
+
+    _noise_binding: ($) =>
+      seq(
+        "noise(",
+        field("arguments", $._implicit_string_argument),
+        ")"
+      ),
+
+    _parrot_binding: ($) =>
+      seq(
+        "parrot(",
+        field("arguments", $._implicit_string_argument),
+        ")"
+      ),
 
     _key_binding: ($) =>
       $.key_action,
