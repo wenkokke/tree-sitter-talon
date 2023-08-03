@@ -10,16 +10,16 @@ References:
 
 Tested with:
 
-- [knausj_talon]
-- [andreas-talon]
-- [talon-axkit]
-- [nriley's knausj_talon]
+- [talonhub/community]
+- [AndreasArvidsson/andreas-talon]
+- [phillco/talon-axkit]
+- [nriley/talon_community]
 
 If you would like to include your Talon user directory as part of the tests, please submit a pull request adding the relevant information to [`script/parse-examples`](script/parse-examples#L32-L37) and this file.
 
 [tree-sitter]: https://github.com/tree-sitter/tree-sitter
 [talon-wiki]: https://talon.wiki/unofficial_talon_docs/#talon-files
-[knausj_talon]: https://github.com/knausj85/knausj_talon
-[andreas-talon]: https://github.com/AndreasArvidsson/andreas-talon
-[talon-axkit]: https://github.com/phillco/talon-axkit
-[nriley's knausj_talon]: https://github.com/nriley/knausj_talon
+[talonhub/community]: https://github.com/talonhub/community
+[AndreasArvidsson/andreas-talon]: https://github.com/AndreasArvidsson/andreas-talon
+[phillco/talon-axkit]: https://github.com/phillco/talon-axkit
+[nriley/talon_community]: https://github.com/nriley/talon_community
