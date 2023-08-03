@@ -192,7 +192,7 @@
           "name": "left",
           "content": {
             "type": "SYMBOL",
-            "name": "_app_binding"
+            "name": "app_binding"
           }
         },
         {
@@ -217,7 +217,7 @@
           "name": "left",
           "content": {
             "type": "SYMBOL",
-            "name": "_face_binding"
+            "name": "face_binding"
           }
         },
         {
@@ -242,7 +242,7 @@
           "name": "left",
           "content": {
             "type": "SYMBOL",
-            "name": "_gamepad_binding"
+            "name": "gamepad_binding"
           }
         },
         {
@@ -267,7 +267,7 @@
           "name": "left",
           "content": {
             "type": "SYMBOL",
-            "name": "_noise_binding"
+            "name": "noise_binding"
           }
         },
         {
@@ -292,7 +292,7 @@
           "name": "left",
           "content": {
             "type": "SYMBOL",
-            "name": "_parrot_binding"
+            "name": "parrot_binding"
           }
         },
         {
@@ -639,7 +639,7 @@
         }
       ]
     },
-    "_app_binding": {
+    "app_binding": {
       "type": "SEQ",
       "members": [
         {
@@ -660,7 +660,7 @@
         }
       ]
     },
-    "_face_binding": {
+    "face_binding": {
       "type": "SEQ",
       "members": [
         {
@@ -681,7 +681,7 @@
         }
       ]
     },
-    "_gamepad_binding": {
+    "gamepad_binding": {
       "type": "SEQ",
       "members": [
         {
@@ -702,7 +702,7 @@
         }
       ]
     },
-    "_noise_binding": {
+    "noise_binding": {
       "type": "SEQ",
       "members": [
         {
@@ -723,7 +723,7 @@
         }
       ]
     },
-    "_parrot_binding": {
+    "parrot_binding": {
       "type": "SEQ",
       "members": [
         {
