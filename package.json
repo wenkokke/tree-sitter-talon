@@ -13,7 +13,8 @@
     "test-wasm": "npm run pretest-wasm && script/parse-examples wasm",
     "bump-patch": "pipx run bumpver update --patch",
     "bump-minor": "pipx run bumpver update --minor",
-    "bump-major": "pipx run bumpver update --major"
+    "bump-major": "pipx run bumpver update --major",
+    "prepublish": "npm run build && npm run build-wasm"
   },
   "repository": {
     "type": "git",
