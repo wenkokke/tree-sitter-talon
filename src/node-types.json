@@ -515,6 +515,22 @@
     }
   },
   {
+    "type": "key_binding",
+    "named": true,
+    "fields": {
+      "arguments": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "implicit_string",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
     "type": "key_binding_declaration",
     "named": true,
     "fields": {
@@ -523,7 +539,7 @@
         "required": true,
         "types": [
           {
-            "type": "key_action",
+            "type": "key_binding",
             "named": true
           }
         ]
@@ -997,6 +1013,16 @@
     "type": "settings_declaration",
     "named": true,
     "fields": {
+      "left": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "settings_binding",
+            "named": true
+          }
+        ]
+      },
       "right": {
         "multiple": false,
         "required": true,
@@ -1076,6 +1102,16 @@
     "type": "tag_import_declaration",
     "named": true,
     "fields": {
+      "left": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "tag_binding",
+            "named": true
+          }
+        ]
+      },
       "right": {
         "multiple": false,
         "required": true,
@@ -1239,6 +1275,10 @@
     "named": false
   },
   {
+    "type": "settings_binding",
+    "named": true
+  },
+  {
     "type": "sleep(",
     "named": false
   },
@@ -1248,6 +1288,10 @@
   },
   {
     "type": "string_escape_sequence",
+    "named": true
+  },
+  {
+    "type": "tag_binding",
     "named": true
   },
   {

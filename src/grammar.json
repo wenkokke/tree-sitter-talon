@@ -317,7 +317,7 @@
           "name": "left",
           "content": {
             "type": "SYMBOL",
-            "name": "_tag_binding"
+            "name": "tag_binding"
           }
         },
         {
@@ -345,8 +345,13 @@
           "type": "FIELD",
           "name": "left",
           "content": {
-            "type": "SYMBOL",
-            "name": "_key_binding"
+            "type": "ALIAS",
+            "content": {
+              "type": "SYMBOL",
+              "name": "key_action"
+            },
+            "named": true,
+            "value": "key_binding"
           }
         },
         {
@@ -371,7 +376,7 @@
           "name": "left",
           "content": {
             "type": "SYMBOL",
-            "name": "_settings_binding"
+            "name": "settings_binding"
           }
         },
         {
@@ -744,15 +749,11 @@
         }
       ]
     },
-    "_key_binding": {
-      "type": "SYMBOL",
-      "name": "key_action"
-    },
-    "_settings_binding": {
+    "settings_binding": {
       "type": "STRING",
       "value": "settings()"
     },
-    "_tag_binding": {
+    "tag_binding": {
       "type": "STRING",
       "value": "tag()"
     },

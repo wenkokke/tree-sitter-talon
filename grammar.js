@@ -127,7 +127,7 @@ module.exports = grammar({
 
     tag_import_declaration: ($) =>
       seq(
-        field("left", $._tag_binding),
+        field("left", $.tag_binding),
         ":",
         field("right", $.identifier),
         $._newline,
@@ -135,14 +135,14 @@ module.exports = grammar({
 
     key_binding_declaration: ($) =>
       seq(
-        field("left", $._key_binding),
+        field("left", alias($.key_action, $.key_binding)),
         ":",
         field("right", $._statements),
       ),
 
     settings_declaration: ($) =>
       seq(
-        field("left", $._settings_binding),
+        field("left", $.settings_binding),
         ":",
         field("right", $._statements),
       ),
@@ -236,13 +236,10 @@ module.exports = grammar({
         ")"
       ),
 
-    _key_binding: ($) =>
-      $.key_action,
-
-    _settings_binding: ($) =>
+    settings_binding: ($) =>
       "settings()",
 
-    _tag_binding: ($) =>
+    tag_binding: ($) =>
       "tag()",
 
     /* Statements */
