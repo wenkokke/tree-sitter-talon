@@ -528,6 +528,7 @@ settings():
   (matches)
   (declarations
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -1597,6 +1598,7 @@ settings():
   (matches)
   (declarations
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -1697,6 +1699,7 @@ settings():
   (matches)
   (declarations
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -5293,7 +5296,7 @@ key(keypad_0:down):   skip()
   (matches)
   (declarations
     (key_binding_declaration
-      (key_action
+      (key_binding
         (implicit_string))
       (block
         (expression_statement
@@ -5315,7 +5318,7 @@ key(keypad_0:up):     user.foot_switch_key(0)
   (matches)
   (declarations
     (key_binding_declaration
-      (key_action
+      (key_binding
         (implicit_string))
       (block
         (expression_statement
@@ -5338,7 +5341,7 @@ key(keypad_1:down):   skip()
   (matches)
   (declarations
     (key_binding_declaration
-      (key_action
+      (key_binding
         (implicit_string))
       (block
         (expression_statement
@@ -5360,7 +5363,7 @@ key(keypad_1:up):     user.foot_switch_key(1)
   (matches)
   (declarations
     (key_binding_declaration
-      (key_action
+      (key_binding
         (implicit_string))
       (block
         (expression_statement
@@ -5383,7 +5386,7 @@ key(keypad_2:down):   skip()
   (matches)
   (declarations
     (key_binding_declaration
-      (key_action
+      (key_binding
         (implicit_string))
       (block
         (expression_statement
@@ -5405,7 +5408,7 @@ key(keypad_2:up):     user.foot_switch_key(2)
   (matches)
   (declarations
     (key_binding_declaration
-      (key_action
+      (key_binding
         (implicit_string))
       (block
         (expression_statement
@@ -5428,7 +5431,7 @@ key(keypad_3:down):   skip()
   (matches)
   (declarations
     (key_binding_declaration
-      (key_action
+      (key_binding
         (implicit_string))
       (block
         (expression_statement
@@ -5450,7 +5453,7 @@ key(keypad_3:up):     user.foot_switch_key(3)
   (matches)
   (declarations
     (key_binding_declaration
-      (key_action
+      (key_binding
         (implicit_string))
       (block
         (expression_statement
@@ -9601,6 +9604,7 @@ settings():
   (matches)
   (declarations
     (settings_declaration
+      (settings_binding)
       (comment)
       (block
         (assignment_statement
@@ -9638,6 +9642,7 @@ settings():
   (matches)
   (declarations
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -9657,6 +9662,7 @@ tag(): user.operators
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -9673,6 +9679,7 @@ tag(): user.comments
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -9953,6 +9960,7 @@ tag(): user.generic_language
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -9969,6 +9977,7 @@ tag(): user.operators
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -9985,6 +9994,7 @@ tag(): user.comments
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -10027,6 +10037,7 @@ tag(): user.generic_language
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -10043,6 +10054,7 @@ tag(): user.c_common
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -10059,6 +10071,7 @@ tag(): user.operators
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -10075,6 +10088,7 @@ tag(): user.comments
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -10171,6 +10185,7 @@ tag(): user.comments
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -12236,6 +12251,7 @@ tag(): user.comments
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -12298,6 +12314,7 @@ tag(): user.javascript
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -12314,6 +12331,7 @@ tag(): user.generic_language
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -12330,6 +12348,7 @@ tag(): user.c_common
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -12346,6 +12365,7 @@ tag(): user.operators
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -12362,6 +12382,7 @@ tag(): user.comments
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -12458,6 +12479,7 @@ tag(): user.typescript
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -12474,6 +12496,7 @@ tag(): user.javascriptreact
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -12490,6 +12513,7 @@ tag(): user.javascript
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -12506,6 +12530,7 @@ tag(): user.html
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -13134,6 +13159,7 @@ tag(): user.av
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -13150,6 +13176,7 @@ tag(): user.navigation
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -14603,6 +14630,7 @@ tag(): user.tabs
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -14619,6 +14647,7 @@ tag(): user.bash
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -14941,6 +14970,7 @@ tag(): terminal
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16281,6 +16311,7 @@ tag(): user.file_manager
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16297,6 +16328,7 @@ tag(): user.git
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16313,6 +16345,7 @@ tag(): user.maven
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16329,6 +16362,7 @@ tag(): user.npm
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16345,6 +16379,7 @@ tag(): user.yarn
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16573,6 +16608,7 @@ tag(): user.zoom
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16589,6 +16625,7 @@ tag(): user.tabs
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16605,6 +16642,7 @@ tag(): user.find
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16621,6 +16659,7 @@ tag(): user.navigation
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -17055,6 +17094,7 @@ tag(): browser
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -17071,6 +17111,7 @@ tag(): user.scroll
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -17736,6 +17777,7 @@ tag(): user.file_manager
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -17892,6 +17934,7 @@ tag(): user.navigation
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -18612,6 +18655,7 @@ tag(): user.scroll
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -18628,6 +18672,7 @@ tag(): user.navigation
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -18644,6 +18689,7 @@ tag(): user.zoom
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -18660,6 +18706,7 @@ tag(): user.tabs
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -18676,6 +18723,7 @@ tag(): user.find
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -18692,6 +18740,7 @@ tag(): user.comments
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -18708,6 +18757,7 @@ tag(): user.cursorless_experimental_snippets
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -18725,6 +18775,7 @@ settings():
   (matches)
   (declarations
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -23834,6 +23885,7 @@ tag(): user.vscode_notebook
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -24429,6 +24481,7 @@ tag(): user.find
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================

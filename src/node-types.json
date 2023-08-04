@@ -142,7 +142,7 @@
     }
   },
   {
-    "type": "app_declaration",
+    "type": "app_binding",
     "named": true,
     "fields": {
       "arguments": {
@@ -154,21 +154,19 @@
             "named": true
           }
         ]
-      },
+      }
+    }
+  },
+  {
+    "type": "app_declaration",
+    "named": true,
+    "fields": {
       "left": {
-        "multiple": true,
+        "multiple": false,
         "required": true,
         "types": [
           {
-            "type": ")",
-            "named": false
-          },
-          {
-            "type": "app(",
-            "named": false
-          },
-          {
-            "type": "implicit_string",
+            "type": "app_binding",
             "named": true
           }
         ]
@@ -402,7 +400,7 @@
     }
   },
   {
-    "type": "face_declaration",
+    "type": "face_binding",
     "named": true,
     "fields": {
       "arguments": {
@@ -414,21 +412,19 @@
             "named": true
           }
         ]
-      },
+      }
+    }
+  },
+  {
+    "type": "face_declaration",
+    "named": true,
+    "fields": {
       "left": {
-        "multiple": true,
+        "multiple": false,
         "required": true,
         "types": [
           {
-            "type": ")",
-            "named": false
-          },
-          {
-            "type": "face(",
-            "named": false
-          },
-          {
-            "type": "implicit_string",
+            "type": "face_binding",
             "named": true
           }
         ]
@@ -446,7 +442,7 @@
     }
   },
   {
-    "type": "gamepad_declaration",
+    "type": "gamepad_binding",
     "named": true,
     "fields": {
       "arguments": {
@@ -458,21 +454,19 @@
             "named": true
           }
         ]
-      },
+      }
+    }
+  },
+  {
+    "type": "gamepad_declaration",
+    "named": true,
+    "fields": {
       "left": {
-        "multiple": true,
+        "multiple": false,
         "required": true,
         "types": [
           {
-            "type": ")",
-            "named": false
-          },
-          {
-            "type": "gamepad(",
-            "named": false
-          },
-          {
-            "type": "implicit_string",
+            "type": "gamepad_binding",
             "named": true
           }
         ]
@@ -521,6 +515,22 @@
     }
   },
   {
+    "type": "key_binding",
+    "named": true,
+    "fields": {
+      "arguments": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "implicit_string",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
     "type": "key_binding_declaration",
     "named": true,
     "fields": {
@@ -529,7 +539,7 @@
         "required": true,
         "types": [
           {
-            "type": "key_action",
+            "type": "key_binding",
             "named": true
           }
         ]
@@ -619,7 +629,7 @@
     }
   },
   {
-    "type": "noise_declaration",
+    "type": "noise_binding",
     "named": true,
     "fields": {
       "arguments": {
@@ -631,22 +641,20 @@
             "named": true
           }
         ]
-      },
+      }
+    }
+  },
+  {
+    "type": "noise_declaration",
+    "named": true,
+    "fields": {
       "left": {
-        "multiple": true,
+        "multiple": false,
         "required": true,
         "types": [
           {
-            "type": ")",
-            "named": false
-          },
-          {
-            "type": "implicit_string",
+            "type": "noise_binding",
             "named": true
-          },
-          {
-            "type": "noise(",
-            "named": false
           }
         ]
       },
@@ -788,7 +796,7 @@
     }
   },
   {
-    "type": "parrot_declaration",
+    "type": "parrot_binding",
     "named": true,
     "fields": {
       "arguments": {
@@ -800,22 +808,20 @@
             "named": true
           }
         ]
-      },
+      }
+    }
+  },
+  {
+    "type": "parrot_declaration",
+    "named": true,
+    "fields": {
       "left": {
-        "multiple": true,
+        "multiple": false,
         "required": true,
         "types": [
           {
-            "type": ")",
-            "named": false
-          },
-          {
-            "type": "implicit_string",
+            "type": "parrot_binding",
             "named": true
-          },
-          {
-            "type": "parrot(",
-            "named": false
           }
         ]
       },
@@ -1007,6 +1013,16 @@
     "type": "settings_declaration",
     "named": true,
     "fields": {
+      "left": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "settings_binding",
+            "named": true
+          }
+        ]
+      },
       "right": {
         "multiple": false,
         "required": true,
@@ -1086,6 +1102,16 @@
     "type": "tag_import_declaration",
     "named": true,
     "fields": {
+      "left": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "tag_binding",
+            "named": true
+          }
+        ]
+      },
       "right": {
         "multiple": false,
         "required": true,
@@ -1249,6 +1275,10 @@
     "named": false
   },
   {
+    "type": "settings_binding",
+    "named": true
+  },
+  {
     "type": "sleep(",
     "named": false
   },
@@ -1258,6 +1288,10 @@
   },
   {
     "type": "string_escape_sequence",
+    "named": true
+  },
+  {
+    "type": "tag_binding",
     "named": true
   },
   {

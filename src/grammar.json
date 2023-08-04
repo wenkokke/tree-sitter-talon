@@ -192,7 +192,7 @@
           "name": "left",
           "content": {
             "type": "SYMBOL",
-            "name": "_app_binding"
+            "name": "app_binding"
           }
         },
         {
@@ -217,7 +217,7 @@
           "name": "left",
           "content": {
             "type": "SYMBOL",
-            "name": "_face_binding"
+            "name": "face_binding"
           }
         },
         {
@@ -242,7 +242,7 @@
           "name": "left",
           "content": {
             "type": "SYMBOL",
-            "name": "_gamepad_binding"
+            "name": "gamepad_binding"
           }
         },
         {
@@ -267,7 +267,7 @@
           "name": "left",
           "content": {
             "type": "SYMBOL",
-            "name": "_noise_binding"
+            "name": "noise_binding"
           }
         },
         {
@@ -292,7 +292,7 @@
           "name": "left",
           "content": {
             "type": "SYMBOL",
-            "name": "_parrot_binding"
+            "name": "parrot_binding"
           }
         },
         {
@@ -317,7 +317,7 @@
           "name": "left",
           "content": {
             "type": "SYMBOL",
-            "name": "_tag_binding"
+            "name": "tag_binding"
           }
         },
         {
@@ -345,8 +345,13 @@
           "type": "FIELD",
           "name": "left",
           "content": {
-            "type": "SYMBOL",
-            "name": "_key_binding"
+            "type": "ALIAS",
+            "content": {
+              "type": "SYMBOL",
+              "name": "key_action"
+            },
+            "named": true,
+            "value": "key_binding"
           }
         },
         {
@@ -371,7 +376,7 @@
           "name": "left",
           "content": {
             "type": "SYMBOL",
-            "name": "_settings_binding"
+            "name": "settings_binding"
           }
         },
         {
@@ -639,7 +644,7 @@
         }
       ]
     },
-    "_app_binding": {
+    "app_binding": {
       "type": "SEQ",
       "members": [
         {
@@ -660,7 +665,7 @@
         }
       ]
     },
-    "_face_binding": {
+    "face_binding": {
       "type": "SEQ",
       "members": [
         {
@@ -681,7 +686,7 @@
         }
       ]
     },
-    "_gamepad_binding": {
+    "gamepad_binding": {
       "type": "SEQ",
       "members": [
         {
@@ -702,7 +707,7 @@
         }
       ]
     },
-    "_noise_binding": {
+    "noise_binding": {
       "type": "SEQ",
       "members": [
         {
@@ -723,7 +728,7 @@
         }
       ]
     },
-    "_parrot_binding": {
+    "parrot_binding": {
       "type": "SEQ",
       "members": [
         {
@@ -744,15 +749,11 @@
         }
       ]
     },
-    "_key_binding": {
-      "type": "SYMBOL",
-      "name": "key_action"
-    },
-    "_settings_binding": {
+    "settings_binding": {
       "type": "STRING",
       "value": "settings()"
     },
-    "_tag_binding": {
+    "tag_binding": {
       "type": "STRING",
       "value": "tag()"
     },

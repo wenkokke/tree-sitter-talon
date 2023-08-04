@@ -148,6 +148,8 @@ tag(): user.git
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))))

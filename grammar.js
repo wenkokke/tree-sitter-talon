@@ -92,42 +92,42 @@ module.exports = grammar({
 
     app_declaration: ($) =>
       seq(
-        field("left", $._app_binding),
+        field("left", $.app_binding),
         ":",
         field("right", $._statements),
       ),
 
     face_declaration: ($) =>
       seq(
-        field("left", $._face_binding),
+        field("left", $.face_binding),
         ":",
         field("right", $._statements),
       ),
 
     gamepad_declaration: ($) =>
       seq(
-        field("left", $._gamepad_binding),
+        field("left", $.gamepad_binding),
         ":",
         field("right", $._statements),
       ),
 
     noise_declaration: ($) =>
       seq(
-        field("left", $._noise_binding),
+        field("left", $.noise_binding),
         ":",
         field("right", $._statements),
       ),
 
     parrot_declaration: ($) =>
       seq(
-        field("left", $._parrot_binding),
+        field("left", $.parrot_binding),
         ":",
         field("right", $._statements),
       ),
 
     tag_import_declaration: ($) =>
       seq(
-        field("left", $._tag_binding),
+        field("left", $.tag_binding),
         ":",
         field("right", $.identifier),
         $._newline,
@@ -135,14 +135,14 @@ module.exports = grammar({
 
     key_binding_declaration: ($) =>
       seq(
-        field("left", $._key_binding),
+        field("left", alias($.key_action, $.key_binding)),
         ":",
         field("right", $._statements),
       ),
 
     settings_declaration: ($) =>
       seq(
-        field("left", $._settings_binding),
+        field("left", $.settings_binding),
         ":",
         field("right", $._statements),
       ),
@@ -201,48 +201,45 @@ module.exports = grammar({
     //     ")"
     //   ),
 
-    _app_binding: ($) =>
+    app_binding: ($) =>
       seq(
         "app(",
         field("arguments", $._implicit_string_argument),
         ")"
       ),
 
-    _face_binding: ($) =>
+    face_binding: ($) =>
       seq(
         "face(",
         field("arguments", $._implicit_string_argument),
         ")"
       ),
 
-    _gamepad_binding: ($) =>
+    gamepad_binding: ($) =>
       seq(
         "gamepad(",
         field("arguments", $._implicit_string_argument),
         ")"
       ),
 
-    _noise_binding: ($) =>
+    noise_binding: ($) =>
       seq(
         "noise(",
         field("arguments", $._implicit_string_argument),
         ")"
       ),
 
-    _parrot_binding: ($) =>
+    parrot_binding: ($) =>
       seq(
         "parrot(",
         field("arguments", $._implicit_string_argument),
         ")"
       ),
 
-    _key_binding: ($) =>
-      $.key_action,
-
-    _settings_binding: ($) =>
+    settings_binding: ($) =>
       "settings()",
 
-    _tag_binding: ($) =>
+    tag_binding: ($) =>
       "tag()",
 
     /* Statements */

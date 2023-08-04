@@ -16,6 +16,7 @@ settings():
       (implicit_string)))
   (declarations
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -343,6 +344,7 @@ cancel$:   skip()
       (implicit_string)))
   (declarations
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -1063,6 +1065,7 @@ drowse [<phrase>]$:   user.talon_sleep()
       (implicit_string)))
   (declarations
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -1130,6 +1133,7 @@ settings():
       (implicit_string)))
   (declarations
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -3088,7 +3092,7 @@ scroll reverse:       user.foot_switch_scroll_reverse()
   (comment)
   (declarations
     (key_binding_declaration
-      (key_action
+      (key_binding
         (implicit_string))
       (block
         (expression_statement
@@ -3096,7 +3100,7 @@ scroll reverse:       user.foot_switch_scroll_reverse()
             (identifier)
             (argument_list)))))
     (key_binding_declaration
-      (key_action
+      (key_binding
         (implicit_string))
       (block
         (expression_statement
@@ -3106,7 +3110,7 @@ scroll reverse:       user.foot_switch_scroll_reverse()
               (integer))))))
     (comment)
     (key_binding_declaration
-      (key_action
+      (key_binding
         (implicit_string))
       (block
         (expression_statement
@@ -3114,7 +3118,7 @@ scroll reverse:       user.foot_switch_scroll_reverse()
             (identifier)
             (argument_list)))))
     (key_binding_declaration
-      (key_action
+      (key_binding
         (implicit_string))
       (block
         (expression_statement
@@ -3124,7 +3128,7 @@ scroll reverse:       user.foot_switch_scroll_reverse()
               (integer))))))
     (comment)
     (key_binding_declaration
-      (key_action
+      (key_binding
         (implicit_string))
       (block
         (expression_statement
@@ -3132,7 +3136,7 @@ scroll reverse:       user.foot_switch_scroll_reverse()
             (identifier)
             (argument_list)))))
     (key_binding_declaration
-      (key_action
+      (key_binding
         (implicit_string))
       (block
         (expression_statement
@@ -3142,7 +3146,7 @@ scroll reverse:       user.foot_switch_scroll_reverse()
               (integer))))))
     (comment)
     (key_binding_declaration
-      (key_action
+      (key_binding
         (implicit_string))
       (block
         (expression_statement
@@ -3150,7 +3154,7 @@ scroll reverse:       user.foot_switch_scroll_reverse()
             (identifier)
             (argument_list)))))
     (key_binding_declaration
-      (key_action
+      (key_binding
         (implicit_string))
       (block
         (expression_statement
@@ -5713,6 +5717,7 @@ settings():
   (matches)
   (declarations
     (settings_declaration
+      (settings_binding)
       (comment)
       (block
         (assignment_statement
@@ -5805,8 +5810,10 @@ make key:
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (command_declaration
@@ -5941,10 +5948,13 @@ tag(): user.comments
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (command_declaration
@@ -5989,12 +5999,16 @@ new <user.text>:
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (command_declaration
@@ -6085,6 +6099,7 @@ make blank:                       "&nbsp;"
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (command_declaration
       (rule
@@ -7332,6 +7347,7 @@ make false:   "false"
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (command_declaration
       (rule
@@ -7368,6 +7384,7 @@ tag(): user.javascript
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -7398,12 +7415,16 @@ make arrow function <user.text>:
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (command_declaration
@@ -7473,8 +7494,10 @@ tag(): user.javascriptreact
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -7494,8 +7517,10 @@ tag(): user.html
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -7934,8 +7959,10 @@ go call:            key(ctrl-shift-alt-v)
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (command_declaration
       (rule
@@ -8712,8 +8739,10 @@ please <user.text>$:
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (command_declaration
       (rule
@@ -8931,6 +8960,7 @@ revert:                        key(alt-r)
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (command_declaration
       (rule
@@ -9446,14 +9476,19 @@ vscode package:
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (command_declaration
       (rule
@@ -9630,12 +9665,16 @@ fullscreen:                 key(f)
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (command_declaration
       (rule
@@ -9905,8 +9944,10 @@ copy video:
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (command_declaration
@@ -10273,6 +10314,7 @@ pop <user.text>$:
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (command_declaration
       (rule
@@ -10374,6 +10416,7 @@ terminal here:             user.file_manager_terminal_here()
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (command_declaration
@@ -11114,20 +11157,28 @@ please [<user.text>]$:
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -13733,6 +13784,7 @@ open output:         user.vscode("bashbook.cell.openOutputInNewFile")
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (command_declaration
       (rule
@@ -14040,6 +14092,7 @@ tag(): user.find
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================

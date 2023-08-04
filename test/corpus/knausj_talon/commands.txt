@@ -14,6 +14,7 @@ settings():
   (matches)
   (declarations
     (settings_declaration
+      (settings_binding)
       (comment)
       (block
         (assignment_statement
@@ -10869,6 +10870,7 @@ settings():
   (matches)
   (declarations
     (settings_declaration
+      (settings_binding)
       (comment)
       (block
         (assignment_statement
@@ -11327,6 +11329,7 @@ settings():
   (matches)
   (declarations
     (settings_declaration
+      (settings_binding)
       (comment)
       (comment)
       (block
@@ -11982,6 +11985,7 @@ tag(): user.code_comment_block_c_like
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -11998,6 +12002,7 @@ tag(): user.code_comment_line
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -12014,6 +12019,7 @@ tag(): user.code_data_bool
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -12030,6 +12036,7 @@ tag(): user.code_data_null
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -12046,6 +12053,7 @@ tag(): user.code_imperative
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -12062,6 +12070,7 @@ tag(): user.code_operators_assignment
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -12078,6 +12087,7 @@ tag(): user.code_operators_lambda
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -12094,6 +12104,7 @@ tag(): user.code_operators_math
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -12260,6 +12271,7 @@ tag(): user.code_operators_math
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -12276,6 +12288,7 @@ tag(): user.code_operators_assignment
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -12292,6 +12305,7 @@ tag(): user.code_comment_line
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -12308,6 +12322,7 @@ tag(): user.code_functions_common
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -13072,6 +13087,7 @@ tag(): user.code_imperative
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -13088,6 +13104,7 @@ tag(): user.code_operators_assignment
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -13104,6 +13121,7 @@ tag(): user.code_operators_math
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -13120,6 +13138,7 @@ tag(): user.code_comment_line
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -13142,6 +13161,7 @@ settings():
   (matches)
   (declarations
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -16189,6 +16209,7 @@ tag(): user.code_imperative
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16205,6 +16226,7 @@ tag(): user.code_object_oriented
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16221,6 +16243,7 @@ tag(): user.code_comment_line
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16237,6 +16260,7 @@ tag(): user.code_comment_documentation
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16253,6 +16277,7 @@ tag(): user.code_data_bool
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16269,6 +16294,7 @@ tag(): user.code_data_null
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16285,6 +16311,7 @@ tag(): user.code_functions
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16301,6 +16328,7 @@ tag(): user.code_functions_common
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16317,6 +16345,7 @@ tag(): user.code_keywords
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16333,6 +16362,7 @@ tag(): user.code_libraries
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16349,6 +16379,7 @@ tag(): user.code_libraries_gui
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16365,6 +16396,7 @@ tag(): user.code_operators_array
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16381,6 +16413,7 @@ tag(): user.code_operators_assignment
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16397,6 +16430,7 @@ tag(): user.code_operators_bitwise
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16413,6 +16447,7 @@ tag(): user.code_operators_math
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16435,6 +16470,7 @@ settings():
   (matches)
   (declarations
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -16964,6 +17000,7 @@ tag(): user.code_comment_block_c_like
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16980,6 +17017,7 @@ tag(): user.code_functions_common
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -16996,6 +17034,7 @@ tag(): user.code_libraries
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -17012,6 +17051,7 @@ tag(): user.code_operators_math
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -17029,6 +17069,7 @@ settings():
   (matches)
   (declarations
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -17713,6 +17754,7 @@ tag(): user.javascript
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -17729,6 +17771,7 @@ tag(): user.typescript
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -17745,6 +17788,7 @@ tag(): user.javascriptreact
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -17761,6 +17805,7 @@ tag(): user.code_comment_line
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -17777,6 +17822,7 @@ tag(): user.code_comment_block_c_like
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -17793,6 +17839,7 @@ tag(): user.code_comment_documentation
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -17809,6 +17856,7 @@ tag(): user.code_imperative
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -17825,6 +17873,7 @@ tag(): user.code_object_oriented
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -17841,6 +17890,7 @@ tag(): user.code_data_bool
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -17857,6 +17907,7 @@ tag(): user.code_data_null
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -17873,6 +17924,7 @@ tag(): user.code_functions
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -17889,6 +17941,7 @@ tag(): user.code_functions_common
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -17905,6 +17958,7 @@ tag(): user.code_libraries
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -17921,6 +17975,7 @@ tag(): user.code_libraries_gui
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -17937,6 +17992,7 @@ tag(): user.code_operators_array
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -17953,6 +18009,7 @@ tag(): user.code_operators_assignment
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -17969,6 +18026,7 @@ tag(): user.code_operators_bitwise
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -17985,6 +18043,7 @@ tag(): user.code_operators_math
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -18007,6 +18066,7 @@ settings():
   (matches)
   (declarations
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -19164,6 +19224,7 @@ tag(): user.code_imperative
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -19180,6 +19241,7 @@ tag(): user.code_comment_line
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -19196,6 +19258,7 @@ tag(): user.code_data_bool
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -19212,6 +19275,7 @@ tag(): user.code_data_null
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -19228,6 +19292,7 @@ tag(): user.code_functions
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -19244,6 +19309,7 @@ tag(): user.code_functions_common
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -19260,6 +19326,7 @@ tag(): user.code_libraries
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -19276,6 +19343,7 @@ tag(): user.code_libraries_gui
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -19292,6 +19360,7 @@ tag(): user.code_operators_assignment
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -19308,6 +19377,7 @@ tag(): user.code_operators_bitwise
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -19324,6 +19394,7 @@ tag(): user.code_operators_math
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -19346,6 +19417,7 @@ settings():
   (matches)
   (declarations
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -19617,6 +19689,7 @@ tag(): user.code_imperative
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -19633,6 +19706,7 @@ tag(): user.code_object_oriented
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -19649,6 +19723,7 @@ tag(): user.code_comment_line
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -19665,6 +19740,7 @@ tag(): user.code_comment_block_c_like
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -19681,6 +19757,7 @@ tag(): user.code_data_bool
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -19697,6 +19774,7 @@ tag(): user.code_data_null
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -19713,6 +19791,7 @@ tag(): user.code_functions
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -19729,6 +19808,7 @@ tag(): user.code_libraries
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -19745,6 +19825,7 @@ tag(): user.code_operators_array
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -19761,6 +19842,7 @@ tag(): user.code_operators_assignment
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -19777,6 +19859,7 @@ tag(): user.code_operators_bitwise
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -19793,6 +19876,7 @@ tag(): user.code_operators_lambda
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -19809,6 +19893,7 @@ tag(): user.code_operators_math
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -19831,6 +19916,7 @@ settings():
   (matches)
   (declarations
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -20060,6 +20146,7 @@ tag(): user.code_imperative
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -20076,6 +20163,7 @@ tag(): user.code_object_oriented
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -20092,6 +20180,7 @@ tag(): user.code_libraries
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -20108,6 +20197,7 @@ tag(): user.code_comment_line
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -20124,6 +20214,7 @@ tag(): user.code_comment_block
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -20140,6 +20231,7 @@ tag(): user.code_comment_documentation
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -20156,6 +20248,7 @@ tag(): user.code_data_bool
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -20172,6 +20265,7 @@ tag(): user.code_data_null
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -20188,6 +20282,7 @@ tag(): user.code_operators_assignment
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -20204,6 +20299,7 @@ tag(): user.code_operators_math
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -20220,6 +20316,7 @@ tag(): user.code_functions
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -20242,6 +20339,7 @@ settings():
   (matches)
   (declarations
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -21884,6 +21982,7 @@ tag(): user.code_operators_math
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -21900,6 +21999,7 @@ tag(): user.code_operators_bitwise
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -22850,6 +22950,7 @@ tag(): user.code_imperative
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -22866,6 +22967,7 @@ tag(): user.code_object_oriented
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -22882,6 +22984,7 @@ tag(): user.code_comment_line
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -22898,6 +23001,7 @@ tag(): user.code_comment_block_c_like
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -22914,6 +23018,7 @@ tag(): user.code_data_bool
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -22930,6 +23035,7 @@ tag(): user.code_data_null
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -22946,6 +23052,7 @@ tag(): user.code_functions
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -22962,6 +23069,7 @@ tag(): user.code_libraries
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -22978,6 +23086,7 @@ tag(): user.code_operators_array
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -22994,6 +23103,7 @@ tag(): user.code_operators_assignment
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23010,6 +23120,7 @@ tag(): user.code_operators_bitwise
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23026,6 +23137,7 @@ tag(): user.code_operators_lambda
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23042,6 +23154,7 @@ tag(): user.code_operators_math
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23064,6 +23177,7 @@ settings():
   (matches)
   (declarations
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -23316,6 +23430,7 @@ tag(): user.code_comment_line
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23568,6 +23683,7 @@ tag(): user.code_imperative
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23584,6 +23700,7 @@ tag(): user.code_object_oriented
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23600,6 +23717,7 @@ tag(): user.code_comment_line
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23616,6 +23734,7 @@ tag(): user.code_comment_block_c_like
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23632,6 +23751,7 @@ tag(): user.code_data_bool
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23648,6 +23768,7 @@ tag(): user.code_data_null
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23664,6 +23785,7 @@ tag(): user.code_functions
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23680,6 +23802,7 @@ tag(): user.code_functions_common
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23696,6 +23819,7 @@ tag(): user.code_libraries
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23712,6 +23836,7 @@ tag(): user.code_operators_array
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23728,6 +23853,7 @@ tag(): user.code_operators_assignment
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23744,6 +23870,7 @@ tag(): user.code_operators_bitwise
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23760,6 +23887,7 @@ tag(): user.code_operators_lambda
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23776,6 +23904,7 @@ tag(): user.code_operators_math
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23792,6 +23921,7 @@ tag(): user.code_operators_pointer
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23814,6 +23944,7 @@ settings():
   (matches)
   (declarations
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -23854,6 +23985,7 @@ tag(): user.code_imperative
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23870,6 +24002,7 @@ tag(): user.code_object_oriented
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23886,6 +24019,7 @@ tag(): user.code_comment_line
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23902,6 +24036,7 @@ tag(): user.code_comment_block_c_like
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23918,6 +24053,7 @@ tag(): user.code_data_bool
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23934,6 +24070,7 @@ tag(): user.code_data_null
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23950,6 +24087,7 @@ tag(): user.code_functions
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23966,6 +24104,7 @@ tag(): user.code_functions_common
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23982,6 +24121,7 @@ tag(): user.code_keywords
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23998,6 +24138,7 @@ tag(): user.code_libraries
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -24014,6 +24155,7 @@ tag(): user.code_operators_array
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -24030,6 +24172,7 @@ tag(): user.code_operators_assignment
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -24046,6 +24189,7 @@ tag(): user.code_operators_bitwise
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -24062,6 +24206,7 @@ tag(): user.code_operators_lambda
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -24078,6 +24223,7 @@ tag(): user.code_operators_math
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -24100,6 +24246,7 @@ settings():
   (matches)
   (declarations
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -24521,6 +24668,7 @@ tag(): user.javascript
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -24537,6 +24685,7 @@ tag(): user.code_imperative
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -24553,6 +24702,7 @@ tag(): user.code_comment_line
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -24569,6 +24719,7 @@ tag(): user.code_comment_block_c_like
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -24585,6 +24736,7 @@ tag(): user.code_data_bool
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -24601,6 +24753,7 @@ tag(): user.code_data_null
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -24617,6 +24770,7 @@ tag(): user.code_functions
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -24633,6 +24787,7 @@ tag(): user.code_functions_common
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -24649,6 +24804,7 @@ tag(): user.code_libraries
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -24665,6 +24821,7 @@ tag(): user.code_libraries_gui
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -24681,6 +24838,7 @@ tag(): user.code_operators_array
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -24697,6 +24855,7 @@ tag(): user.code_operators_assignment
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -24713,6 +24872,7 @@ tag(): user.code_operators_bitwise
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -24729,6 +24889,7 @@ tag(): user.code_operators_math
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -24745,6 +24906,7 @@ tag(): user.code_operators_pointer
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -24769,6 +24931,7 @@ settings():
   (matches)
   (declarations
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -25600,6 +25763,7 @@ tag(): user.code_imperative
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -25616,6 +25780,7 @@ tag(): user.code_object_oriented
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -25632,6 +25797,7 @@ tag(): user.code_comment_line
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -25648,6 +25814,7 @@ tag(): user.code_comment_documentation
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -25664,6 +25831,7 @@ tag(): user.code_data_bool
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -25680,6 +25848,7 @@ tag(): user.code_data_null
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -25696,6 +25865,7 @@ tag(): user.code_functions
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -25712,6 +25882,7 @@ tag(): user.code_libraries
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -25728,6 +25899,7 @@ tag(): user.code_operators_array
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -25744,6 +25916,7 @@ tag(): user.code_operators_assignment
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -25760,6 +25933,7 @@ tag(): user.code_operators_bitwise
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -25776,6 +25950,7 @@ tag(): user.code_operators_lambda
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -25792,6 +25967,7 @@ tag(): user.code_operators_math
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -25814,6 +25990,7 @@ settings():
   (matches)
   (declarations
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -26053,6 +26230,7 @@ tag(): user.code_operators_math
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -26069,6 +26247,7 @@ tag(): user.code_comment_line
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -26085,6 +26264,7 @@ tag(): user.code_comment_block_c_like
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -26101,6 +26281,7 @@ tag(): user.code_data_null
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -26117,6 +26298,7 @@ tag(): user.code_functions_common
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -32414,6 +32596,7 @@ tag(): browser
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -32430,6 +32613,7 @@ tag(): user.tabs
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -33306,6 +33490,7 @@ tag(): user.pages
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -34632,6 +34817,7 @@ tag(): user.pages
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -34648,6 +34834,7 @@ tag(): user.chapters
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -34664,6 +34851,7 @@ tag(): user.pages
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -34680,6 +34868,7 @@ tag(): terminal
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -34696,6 +34885,7 @@ tag(): user.file_manager
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -34712,6 +34902,7 @@ tag(): user.generic_unix_shell
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -34728,6 +34919,7 @@ tag(): user.git
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -34744,6 +34936,7 @@ tag(): user.kubectl
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -34848,6 +35041,7 @@ tag(): terminal
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -34864,6 +35058,7 @@ tag(): user.generic_windows_shell
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -34880,6 +35075,7 @@ tag(): user.git
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -34896,6 +35092,7 @@ tag(): user.anaconda
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -34926,6 +35123,7 @@ tag(): user.tabs
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -34956,6 +35154,7 @@ tag(): user.splits
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -35176,6 +35375,7 @@ tag(): user.pages
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -35192,6 +35392,7 @@ tag(): user.tabs
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -35208,6 +35409,7 @@ tag(): user.file_manager
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -35310,6 +35512,7 @@ tag(): terminal
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -35326,6 +35529,7 @@ tag(): user.generic_windows_shell
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -35342,6 +35546,7 @@ tag(): user.git
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -35358,6 +35563,7 @@ tag(): user.anaconda
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -35388,6 +35594,7 @@ tag(): user.pages
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -35404,6 +35611,7 @@ tag(): user.tabs
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -35592,6 +35800,7 @@ tag(): terminal
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -35636,6 +35845,7 @@ tag(): user.generic_unix_shell
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -35652,6 +35862,7 @@ tag(): user.git
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -35668,6 +35879,7 @@ tag(): user.kubectl
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -35684,6 +35896,7 @@ tag(): user.tabs
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -35700,6 +35913,7 @@ tag(): terminal
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -35716,6 +35930,7 @@ tag(): user.generic_unix_shell
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -35732,6 +35947,7 @@ tag(): user.git
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -35748,6 +35964,7 @@ tag(): user.anaconda
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -35764,6 +35981,7 @@ tag(): user.kubectl
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -35794,6 +36012,7 @@ tag(): user.tabs
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -35810,6 +36029,7 @@ tag(): user.file_manager
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -36523,6 +36743,7 @@ tag(): user.file_manager
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -36539,6 +36760,7 @@ tag(): user.tabs
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -40219,6 +40441,7 @@ tag(): user.pages
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -40249,6 +40472,7 @@ tag(): user.kubectl
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -40265,6 +40489,7 @@ tag(): user.git
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -40281,6 +40506,7 @@ tag(): user.taskwarrior
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -40297,6 +40523,7 @@ tag(): terminal
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -40429,6 +40656,7 @@ tag(): terminal
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -40445,6 +40673,7 @@ tag(): user.tabs
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -40461,6 +40690,7 @@ tag(): user.generic_unix_shell
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -40477,6 +40707,7 @@ tag(): user.git
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -40493,6 +40724,7 @@ tag(): user.kubectl
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -40509,6 +40741,7 @@ tag(): user.tabs
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -40525,6 +40758,7 @@ tag(): user.file_manager
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -40541,6 +40775,7 @@ tag(): terminal
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -40557,6 +40792,7 @@ tag(): user.generic_unix_shell
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -40573,6 +40809,7 @@ tag(): user.git
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -40589,6 +40826,7 @@ tag(): user.anaconda
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -40619,6 +40857,7 @@ tag(): user.tabs
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -40649,6 +40888,7 @@ tag(): user.pages
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -41908,6 +42148,7 @@ tag(): user.gdb
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -41924,6 +42165,7 @@ tag(): user.debugger
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -43382,6 +43624,7 @@ tag(): user.messaging
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -43398,6 +43641,7 @@ tag(): user.emoji
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -43763,6 +44007,7 @@ tag(): user.find_and_replace
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -43779,6 +44024,7 @@ tag(): user.line_commands
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -43823,6 +44069,7 @@ tag(): user.splits
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -43839,6 +44086,7 @@ tag(): user.tabs
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -45482,6 +45730,7 @@ tag(): user.tabs
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -45498,6 +45747,7 @@ tag(): user.line_commands
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -45514,6 +45764,7 @@ tag(): user.find_and_replace
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -45530,6 +45781,7 @@ tag(): user.snippets
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -45546,6 +45798,7 @@ tag(): user.multiple_cursors
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -46878,6 +47131,7 @@ settings():
   (matches)
   (declarations
     (settings_declaration
+      (settings_binding)
       (comment)
       (block
         (assignment_statement
@@ -54663,6 +54917,7 @@ tag(): user.debugger
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -54679,6 +54934,7 @@ tag(): user.windbg
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -55449,6 +55705,7 @@ tag(): user.line_commands
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -55465,6 +55722,7 @@ tag(): user.multiple_cursors
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -55481,6 +55739,7 @@ tag(): user.splits
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -55497,6 +55756,7 @@ tag(): user.tabs
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -60324,6 +60584,7 @@ tag(): user.tabs
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -60340,6 +60601,7 @@ tag(): user.pages
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -63173,6 +63435,7 @@ tag(): user.messaging
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -63189,6 +63452,7 @@ tag(): user.emoji
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -64337,6 +64601,7 @@ tag(): user.messaging
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -64353,6 +64618,7 @@ tag(): user.emoji
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -65888,6 +66154,7 @@ tag(): user.talon_python
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -68242,6 +68509,7 @@ tag(): user.find_and_replace
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -68258,6 +68526,7 @@ tag(): user.line_commands
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -68274,6 +68543,7 @@ tag(): user.multiple_cursors
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -68290,6 +68560,7 @@ tag(): user.snippets
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -68306,6 +68577,7 @@ tag(): user.splits
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -68322,6 +68594,7 @@ tag(): user.tabs
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -72714,6 +72987,7 @@ tag(): user.tabs
   (matches)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================

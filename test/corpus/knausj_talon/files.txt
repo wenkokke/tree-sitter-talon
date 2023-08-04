@@ -6531,6 +6531,7 @@ settings():
       (implicit_string)))
   (declarations
     (settings_declaration
+      (settings_binding)
       (comment)
       (block
         (assignment_statement
@@ -6963,6 +6964,7 @@ replace <user.draft_anchor> with <user.text>:
       (implicit_string)))
   (declarations
     (settings_declaration
+      (settings_binding)
       (comment)
       (block
         (assignment_statement
@@ -7443,20 +7445,28 @@ type {user.code_type}: insert("{code_type}")
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (command_declaration
       (rule
@@ -7606,12 +7616,16 @@ funk wrap <number>:
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (comment)
@@ -8011,15 +8025,20 @@ state continue: "continue"
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -9929,36 +9948,52 @@ from import: user.insert_between("from ", " import ")
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -10264,14 +10299,19 @@ op important: " !important"
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -10654,6 +10694,7 @@ tag(): user.javascript
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -10674,8 +10715,10 @@ tag(): user.javascriptreact
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -10796,36 +10839,52 @@ inner block dock comment: user.code_comment_documentation_block_inner()
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -11441,28 +11500,40 @@ named arg {user.code_parameter_name}: user.code_insert_named_argument(code_param
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -11650,32 +11721,46 @@ op new:
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -11848,28 +11933,40 @@ var <phrase> [over]:
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -13383,8 +13480,10 @@ op mod equals: user.code_operator_modulo_assignment()
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (command_declaration
@@ -13970,32 +14069,46 @@ block string:
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -14148,6 +14261,7 @@ arg <number_small>: "%{number_small}"
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (command_declaration
@@ -14288,36 +14402,52 @@ settings():
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -14412,36 +14542,52 @@ from import:
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -14654,6 +14800,7 @@ tag(): user.javascript
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -14765,34 +14912,49 @@ include <user.code_libraries>:
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -15261,32 +15423,46 @@ state module: "module "
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (settings_declaration
+      (settings_binding)
       (block
         (assignment_statement
           (identifier)
@@ -15452,14 +15628,19 @@ date: user.insert_between("DATE '", "'")
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (command_declaration
       (rule
@@ -19259,8 +19440,10 @@ tab search <user.text>$:
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (command_declaration
       (rule
@@ -19691,6 +19874,7 @@ tag(): user.pages
   (comment)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -20242,8 +20426,10 @@ tag(): user.chapters
   (comment)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -20265,6 +20451,7 @@ tag(): user.pages
   (comment)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -20348,14 +20535,19 @@ tag(): user.kubectl
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (command_declaration
       (rule
@@ -20452,21 +20644,27 @@ find it <phrase>$:
   (comment)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (comment)
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (command_declaration
       (rule
@@ -20576,8 +20774,10 @@ tag(): user.tabs
   (comment)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -20604,6 +20804,7 @@ go program files: user.file_manager_open_directory("%programfiles%")
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (command_declaration
       (rule
@@ -20692,15 +20893,19 @@ tag(): user.anaconda
   (comment)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (comment)
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier)))
   (comment))
 
@@ -20724,8 +20929,10 @@ tag(): user.tabs
   (comment)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -20844,16 +21051,21 @@ tag(): user.tabs
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (comment)
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -20894,22 +21106,29 @@ resume:
   (comment)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (comment)
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (command_declaration
       (rule
@@ -21281,8 +21500,10 @@ hide others: app.window_hide_others()
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (command_declaration
       (rule
@@ -23056,6 +23277,7 @@ tag(): user.pages
   (comment)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23097,12 +23319,16 @@ visual line mode: key("V")
   (comment)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (command_declaration
@@ -23175,14 +23401,19 @@ tag(): user.kubectl
   (comment)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23205,8 +23436,10 @@ tag(): user.file_manager
   (comment)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -23246,18 +23479,23 @@ tag(): user.tabs
   (comment)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (comment)
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (tag_import_declaration
+      (tag_binding)
       (identifier)))
   (comment))
 
@@ -23280,6 +23518,7 @@ tag(): user.pages
   (comment)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -24044,8 +24283,10 @@ clear screen: "shell clear\n"
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (command_declaration
       (rule
@@ -24812,8 +25053,10 @@ decline call: user.discord_decline_call()
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (command_declaration
@@ -25136,14 +25379,18 @@ copy line up: key(ctrl-alt-up)
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (comment)
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (command_declaration
@@ -25696,14 +25943,19 @@ debug continue: key(f5)
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (comment)
@@ -26264,6 +26516,7 @@ settings():
       (implicit_string)))
   (declarations
     (settings_declaration
+      (settings_binding)
       (comment)
       (block
         (assignment_statement
@@ -30675,8 +30928,10 @@ dump function params: "r @rcx,@rdx,@r8,@r9\n"
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (command_declaration
       (rule
@@ -30942,8 +31197,10 @@ tag(): user.git
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -31322,12 +31579,16 @@ blacken: user.idea("action BLACKReformatCode")
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (comment)
@@ -33801,8 +34062,10 @@ tag(): user.pages
   (comment)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))))
 
 ================================================================================
@@ -35344,8 +35607,10 @@ toggle right sidebar: key(ctrl-.)
     (comment))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (command_declaration
@@ -35988,8 +36253,10 @@ toggle right sidebar: key(cmd-.)
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (command_declaration
@@ -36842,6 +37109,7 @@ tag(): user.talon_python
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (comment)
@@ -38345,16 +38613,22 @@ install local: user.vscode("workbench.extensions.action.installVSIX")
       (implicit_string)))
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (command_declaration
       (rule
@@ -40499,6 +40773,7 @@ dev tools: user.thunderbird_mod("shift-i")
   (comment)
   (declarations
     (tag_import_declaration
+      (tag_binding)
       (identifier))
     (comment)
     (command_declaration
