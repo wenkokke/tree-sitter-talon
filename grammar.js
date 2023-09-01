@@ -408,7 +408,7 @@ module.exports = grammar({
 
     /* Strings */
 
-    implicit_string: ($) => token(/(\S|\S.+\S)/),
+    implicit_string: ($) => token(/(\S|\S.*\S)/),
 
     string: ($) =>
       seq(
