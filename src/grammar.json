@@ -1704,7 +1704,7 @@
       "type": "TOKEN",
       "content": {
         "type": "PATTERN",
-        "value": "(\\S|\\S.+\\S)"
+        "value": "(\\S|\\S.*\\S)"
       }
     },
     "string": {

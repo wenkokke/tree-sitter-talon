@@ -11,9 +11,7 @@
     "pretest-wasm": "npm run build-wasm",
     "build-wasm": "tree-sitter build-wasm",
     "test-wasm": "npm run pretest-wasm && script/parse-examples wasm",
-    "bump-patch": "pipx run bumpver update --patch",
-    "bump-minor": "pipx run bumpver update --minor",
-    "bump-major": "pipx run bumpver update --major",
+    "bump": "pipx run bumpver update",
     "prepublish": "npm run build && npm run build-wasm"
   },
   "repository": {
