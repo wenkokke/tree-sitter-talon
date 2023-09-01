@@ -1,10 +1,16 @@
 name: CI
 
-on: [push]
-      
+on:
+  push:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+
 env:
   npm_config_yes: true
-      
+
 jobs:
   build:
     name: Build
@@ -32,7 +38,7 @@ jobs:
       - uses: mymindstorm/setup-emsdk@v12
         with:
           version: 3.1.14
-          actions-cache-folder: 'emsdk-cache'
+          actions-cache-folder: "emsdk-cache"
       - run: npm install
       - run: npm run build
       - run: npm run build-wasm
