@@ -44,6 +44,9 @@ module.exports = grammar({
 
     comment: ($) => token(/#.*?/),
 
+    // This is declared to avoid lexical precedence issues arising from ambiguity at the beginning
+    // of a file between $.word and $.identifier. By declaring a regular expression that is the
+    // intersection of both, we enable the parser to backtrack if needed.
     _simple_identifier: ($) => /[A-Za-z][A-Za-z0-9]*/,
 
     /* Context */
