@@ -51,7 +51,7 @@ module.exports = grammar({
     matches: ($) =>
       seq(
         repeat($.match),
-        "-",
+        repeat1("-"),
         $._newline),
 
     match_modifier: ($) => choice("and", "not"),

@@ -52,8 +52,11 @@
           }
         },
         {
-          "type": "STRING",
-          "value": "-"
+          "type": "REPEAT1",
+          "content": {
+            "type": "STRING",
+            "value": "-"
+          }
         },
         {
           "type": "SYMBOL",

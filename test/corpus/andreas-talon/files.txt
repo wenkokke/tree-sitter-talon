@@ -375,7 +375,6 @@ capture window clip:                  user.screenshot_window_clipboard()
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -468,7 +467,6 @@ capture window clip:                  user.screenshot_window_clipboard()
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (comment)
   (declarations
     (command_declaration
@@ -495,7 +493,6 @@ search for (this | dis):
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -883,7 +880,6 @@ command mode:             skip()
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (comment)
   (declarations
     (command_declaration
@@ -960,7 +956,6 @@ command mode:             skip()
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (comment)
   (declarations
     (command_declaration
@@ -1002,7 +997,6 @@ lorem ipsum <number_small>$:   user.lorem_ipsum(number_small)
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -1371,7 +1365,6 @@ open browser {user.webpage}:
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -1614,7 +1607,6 @@ clear line:               user.clear_line()
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (comment)
   (declarations
     (command_declaration
@@ -2240,7 +2232,6 @@ clear line:               user.clear_line()
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -2337,7 +2328,6 @@ mouse copy position:
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (comment)
   (declarations
     (command_declaration
@@ -3088,7 +3078,6 @@ scroll reverse:       user.foot_switch_scroll_reverse()
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (comment)
   (declarations
     (key_binding_declaration
@@ -3212,7 +3201,6 @@ subtitles (show | hide):          user.toggle_subtitles()
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -3357,7 +3345,6 @@ paste special <number_small> [and <number_small>]*:
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -3568,7 +3555,6 @@ screen numbers:             user.screens_show_numbering()
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -3853,7 +3839,6 @@ pick <user.letters>:
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -3974,7 +3959,6 @@ talon restart:                     user.talon_restart()
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -4432,7 +4416,6 @@ push {user.key_symbol}:
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (comment)
   (declarations
     (command_declaration
@@ -4912,7 +4895,6 @@ face {user.emoticon}:   " {emoticon}"
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -4940,7 +4922,6 @@ repeat phrase <user.repeater_phrase>:   core.repeat_partial_phrase(repeater_phra
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -5214,7 +5195,6 @@ mode: user.help_formatters
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -5364,7 +5344,6 @@ mode: user.help_formatters
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -5545,7 +5524,6 @@ use {user.playback_microphone_pair}:
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -5714,7 +5692,6 @@ settings():
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (settings_declaration
       (settings_binding)
@@ -7571,7 +7548,6 @@ ship <user.letters> [over]:
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (comment)
   (declarations
     (command_declaration
@@ -7816,7 +7792,6 @@ phones word:
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
