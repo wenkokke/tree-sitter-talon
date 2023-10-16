@@ -5,8 +5,16 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "matches"
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "matches"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -29,32 +37,27 @@
         "value": "#.*?"
       }
     },
+    "_simple_identifier": {
+      "type": "PATTERN",
+      "value": "[A-Za-z][A-Za-z0-9]*"
+    },
     "matches": {
-      "type": "CHOICE",
+      "type": "SEQ",
       "members": [
         {
-          "type": "SEQ",
-          "members": [
-            {
-              "type": "SYMBOL",
-              "name": "_matches_start"
-            },
-            {
-              "type": "REPEAT",
-              "content": {
-                "type": "SYMBOL",
-                "name": "match"
-              }
-            },
-            {
-              "type": "SYMBOL",
-              "name": "_matches_end"
-            }
-          ]
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "match"
+          }
+        },
+        {
+          "type": "STRING",
+          "value": "-"
         },
         {
           "type": "SYMBOL",
-          "name": "_matches_empty"
+          "name": "_newline"
         }
       ]
     },
@@ -539,8 +542,17 @@
       ]
     },
     "word": {
-      "type": "PATTERN",
-      "value": "[\\p{Letter}\\p{Number}][\\p{Letter}\\p{Number}\\-']*"
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "_simple_identifier"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\p{Letter}\\p{Number}][\\p{Letter}\\p{Number}\\-']*"
+        }
+      ]
     },
     "list": {
       "type": "SEQ",
@@ -1339,8 +1351,17 @@
       ]
     },
     "identifier": {
-      "type": "PATTERN",
-      "value": "([A-Za-z_][A-Za-z0-9_]*)(\\.[A-Za-z_][A-Za-z0-9_]*)*"
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "_simple_identifier"
+        },
+        {
+          "type": "PATTERN",
+          "value": "([A-Za-z_][A-Za-z0-9_]*)(\\.[A-Za-z_][A-Za-z0-9_]*)*"
+        }
+      ]
     },
     "value": {
       "type": "CHOICE",
@@ -1934,21 +1955,14 @@
       "value": "[\\s\\f\\uFEFF\\u2060\\u200B]|\\\\\\r?\\n"
     }
   ],
-  "conflicts": [],
+  "conflicts": [
+    [
+      "identifier",
+      "word"
+    ]
+  ],
   "precedences": [],
   "externals": [
-    {
-      "type": "SYMBOL",
-      "name": "_matches_start"
-    },
-    {
-      "type": "SYMBOL",
-      "name": "_matches_end"
-    },
-    {
-      "type": "SYMBOL",
-      "name": "_matches_empty"
-    },
     {
       "type": "SYMBOL",
       "name": "_newline"

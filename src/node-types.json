@@ -484,6 +484,11 @@
     }
   },
   {
+    "type": "identifier",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "interpolation",
     "named": true,
     "fields": {},
@@ -1057,7 +1062,7 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
         {
           "type": "declarations",
@@ -1167,6 +1172,11 @@
     }
   },
   {
+    "type": "word",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "\"",
     "named": false
   },
@@ -1188,6 +1198,10 @@
   },
   {
     "type": ",",
+    "named": false
+  },
+  {
+    "type": "-",
     "named": false
   },
   {
@@ -1243,10 +1257,6 @@
     "named": false
   },
   {
-    "type": "identifier",
-    "named": true
-  },
-  {
     "type": "implicit_string",
     "named": true
   },
@@ -1292,10 +1302,6 @@
   },
   {
     "type": "tag_binding",
-    "named": true
-  },
-  {
-    "type": "word",
     "named": true
   },
   {
