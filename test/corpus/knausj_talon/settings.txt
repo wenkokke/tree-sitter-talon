@@ -9,7 +9,6 @@ settings():
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (settings_declaration
       (settings_binding)
@@ -32,7 +31,6 @@ settings():
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (settings_declaration
       (settings_binding)
@@ -57,7 +55,6 @@ settings():
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (settings_declaration
       (settings_binding)
@@ -82,7 +79,6 @@ settings():
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (settings_declaration
       (settings_binding)
@@ -127,7 +123,6 @@ settings():
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (settings_declaration
       (settings_binding)
@@ -167,7 +162,6 @@ settings():
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (settings_declaration
       (settings_binding)
@@ -192,7 +186,6 @@ settings():
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (settings_declaration
       (settings_binding)
@@ -237,7 +230,6 @@ settings():
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (settings_declaration
       (settings_binding)
@@ -282,7 +274,6 @@ settings():
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (settings_declaration
       (settings_binding)
@@ -327,7 +318,6 @@ settings():
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (settings_declaration
       (settings_binding)
@@ -372,7 +362,6 @@ settings():
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (settings_declaration
       (settings_binding)
@@ -417,7 +406,6 @@ settings():
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (settings_declaration
       (settings_binding)
@@ -462,7 +450,6 @@ settings():
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (settings_declaration
       (settings_binding)
@@ -509,7 +496,6 @@ settings():
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (settings_declaration
       (settings_binding)
@@ -556,7 +542,6 @@ settings():
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (settings_declaration
       (settings_binding)
@@ -597,7 +582,6 @@ settings():
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (settings_declaration
       (settings_binding)

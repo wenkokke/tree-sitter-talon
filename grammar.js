@@ -22,9 +22,6 @@ module.exports = grammar({
   ],
 
   externals: ($) => [
-    $._matches_start,
-    $._matches_end,
-    $._matches_empty,
     $._newline,
     $._indent,
     $._dedent,
@@ -34,26 +31,31 @@ module.exports = grammar({
     $.comment,
   ],
 
+  conflicts: ($) => [
+    [$.identifier, $.word],
+  ],
+
   rules: {
     source_file: ($) =>
       seq(
-        $.matches,
+        optional($.matches),
         optional($.declarations),
       ),
 
     comment: ($) => token(/#.*?/),
 
+    // This is declared to avoid lexical precedence issues arising from ambiguity at the beginning
+    // of a file between $.word and $.identifier. By declaring a regular expression that is the
+    // intersection of both, we enable the parser to backtrack if needed.
+    _simple_identifier: ($) => /[A-Za-z][A-Za-z0-9]*/,
+
     /* Context */
 
     matches: ($) =>
-      choice(
-        seq(
-          $._matches_start,
-          repeat($.match),
-          $._matches_end,
-        ),
-        $._matches_empty,
-      ),
+      seq(
+        repeat($.match),
+        repeat1("-"),
+        $._newline),
 
     match_modifier: ($) => choice("and", "not"),
 
@@ -177,7 +179,10 @@ module.exports = grammar({
         $.parenthesized_rule
       ),
 
-    word: ($) => /[\p{Letter}\p{Number}][\p{Letter}\p{Number}\-']*/,
+    word: ($) => choice(
+      $._simple_identifier,
+      /[\p{Letter}\p{Number}][\p{Letter}\p{Number}\-']*/,
+    ),
 
     list: ($) => seq("{", field("list_name", $.identifier), "}"),
 
@@ -364,7 +369,10 @@ module.exports = grammar({
 
     /* Identifiers */
 
-    identifier: ($) => /([A-Za-z_][A-Za-z0-9_]*)(\.[A-Za-z_][A-Za-z0-9_]*)*/,
+    identifier: ($) => choice(
+      $._simple_identifier,
+      /([A-Za-z_][A-Za-z0-9_]*)(\.[A-Za-z_][A-Za-z0-9_]*)*/,
+    ),
 
     /* Values */
 

@@ -259,7 +259,6 @@ talon (bug report|report bug): user.open_url('https://github.com/knausj85/knausj
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -939,7 +938,6 @@ slap: edit.line_insert_down()
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (comment)
   (comment)
   (comment)
@@ -1197,7 +1195,6 @@ snap <user.running_applications> [screen] <number>:
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -1397,7 +1394,6 @@ snap <user.running_applications> [screen] <number>:
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -1455,7 +1451,6 @@ media (play | pause): user.play_pause()
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -1548,7 +1543,6 @@ macro play: user.macro_play()
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -1635,7 +1629,6 @@ nope that was <user.formatters>: user.formatters_reformat_last(formatters)
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (comment)
   (declarations
     (command_declaration
@@ -1870,7 +1863,6 @@ open {user.website}: user.open_url(website)
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -2062,7 +2054,6 @@ repeat that <number_small> [times]: core.repeat_command(number_small)
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (comment)
   (declarations
     (command_declaration
@@ -2140,7 +2131,6 @@ ignore [<phrase>]$: app.notify("Command ignored")
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (comment)
   (declarations
     (command_declaration
@@ -3436,7 +3426,6 @@ command history more: user.history_more()
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -3671,7 +3660,6 @@ window move desk right: user.window_move_desktop_right()
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -3768,7 +3756,6 @@ customize {user.talon_settings_csv}:
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -3811,7 +3798,6 @@ press <user.keys>: key(keys)
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -3931,7 +3917,6 @@ press <user.keys>: key(keys)
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -4168,7 +4153,6 @@ screen numbers:   user.screens_show_numbering()
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -4190,7 +4174,6 @@ screen numbers:   user.screens_show_numbering()
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -4403,7 +4386,6 @@ timestamp insert UTC high resolution:
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -4719,7 +4701,6 @@ curse no:
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -5324,7 +5305,6 @@ help scope$: user.help_scope_toggle()
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -5736,7 +5716,6 @@ disable debug mode:
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -6478,8 +6457,8 @@ talon mode: user.talon_mode()
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
   (matches
-    (comment)
     (match
       (identifier)
       (implicit_string))
@@ -6656,8 +6635,8 @@ mode: all
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
   (matches
-    (comment)
     (match
       (identifier)
       (implicit_string)))
@@ -6860,8 +6839,8 @@ draft submit:
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
   (matches
-    (comment)
     (match
       (identifier)
       (implicit_string)))
@@ -6957,8 +6936,8 @@ replace <user.draft_anchor> with <user.text>:
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
   (matches
-    (comment)
     (match
       (identifier)
       (implicit_string)))
@@ -7254,8 +7233,8 @@ mode: command
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
   (matches
-    (comment)
     (match
       (identifier)
       (implicit_string)))
@@ -15941,7 +15920,6 @@ big word pre [<number_small>]: user.navigation_by_name("SELECT", "LEFT", "DEFAUL
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (comment)
   (declarations
     (command_declaration
@@ -16311,7 +16289,6 @@ quote that:
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -16926,7 +16903,6 @@ phones [<user.ordinals>] word right:
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -18711,7 +18687,6 @@ cut line:
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -20502,34 +20477,34 @@ tag(): user.kubectl
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
   (matches
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
     (match
       (identifier)
       (implicit_string)))
@@ -25372,8 +25347,8 @@ copy line up: key(ctrl-alt-up)
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
   (matches
-    (comment)
     (match
       (identifier)
       (implicit_string)))
@@ -26601,8 +26576,8 @@ fullscreen toggle: key(shift-f)
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
   (matches
-    (comment)
     (match
       (identifier)
       (implicit_string))
@@ -27642,10 +27617,10 @@ categorize [this] message: key(c)
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
+  (comment)
+  (comment)
   (matches
-    (comment)
-    (comment)
-    (comment)
     (match
       (identifier)
       (implicit_string))
@@ -28843,9 +28818,9 @@ edit page: key(e)
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
+  (comment)
   (matches
-    (comment)
-    (comment)
     (match
       (identifier)
       (implicit_string))
@@ -30133,8 +30108,8 @@ new scratch (shell|window):
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
   (matches
-    (comment)
     (match
       (identifier)
       (implicit_string))
@@ -30919,10 +30894,10 @@ dump function params: "r @rcx,@rdx,@r8,@r9\n"
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
+  (comment)
+  (comment)
   (matches
-    (comment)
-    (comment)
-    (comment)
     (match
       (identifier)
       (implicit_string)))
@@ -31572,8 +31547,8 @@ blacken: user.idea("action BLACKReformatCode")
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
   (matches
-    (comment)
     (match
       (identifier)
       (implicit_string)))
@@ -38606,8 +38581,8 @@ install local: user.vscode("workbench.extensions.action.installVSIX")
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
   (matches
-    (comment)
     (match
       (identifier)
       (implicit_string)))
@@ -41698,8 +41673,8 @@ password show: user.password_show()
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches
-    (comment))
+  (comment)
+  (matches)
   (declarations
     (command_declaration
       (rule
@@ -41913,7 +41888,6 @@ grid screen [<number>]:
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
