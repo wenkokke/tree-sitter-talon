@@ -5,7 +5,7 @@
   "main": "bindings/node",
   "scripts": {
     "pretest": "npm run build",
-    "build": "tree-sitter generate",
+    "build": "tree-sitter generate && node-gyp build",
     "test": "tree-sitter test && mocha && script/parse-examples",
     "test-update": "npm run pretest && tree-sitter test --update",
     "pretest-wasm": "npm run build-wasm",
