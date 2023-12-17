@@ -23,7 +23,7 @@ jobs:
       - run: npm test
       - run: npm pack
       - run: mv tree-sitter-talon-*.tgz tree-sitter-talon.tgz
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: tree-sitter-talon.tgz
           path: tree-sitter-talon.tgz
@@ -44,7 +44,7 @@ jobs:
       - run: npm run build-wasm
       # Cannot test WASM due to tree-sitter/tree-sitter#1802
       # - run: npm run test-wasm
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: tree-sitter-talon.wasm
           path: tree-sitter-talon.wasm
