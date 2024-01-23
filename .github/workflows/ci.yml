@@ -35,7 +35,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-      - uses: mymindstorm/setup-emsdk@v13
+      - uses: mymindstorm/setup-emsdk@v14
         with:
           version: 3.1.14
           actions-cache-folder: "emsdk-cache"
