@@ -34,7 +34,7 @@
       "type": "TOKEN",
       "content": {
         "type": "PATTERN",
-        "value": "#.*?"
+        "value": "#[^\\r\\n]*?"
       }
     },
     "_simple_identifier": {

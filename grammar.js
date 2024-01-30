@@ -42,7 +42,7 @@ module.exports = grammar({
         optional($.declarations),
       ),
 
-    comment: ($) => token(/#.*?/),
+    comment: ($) => token(/#[^\r\n]*?/),
 
     // This is declared to avoid lexical precedence issues arising from ambiguity at the beginning
     // of a file between $.word and $.identifier. By declaring a regular expression that is the
