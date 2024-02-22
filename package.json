@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "tree-sitter-cli": "^0.20.8",
-    "web-tree-sitter": "^0.20"
+    "web-tree-sitter": "^0.21"
   },
   "tree-sitter": [
     {
