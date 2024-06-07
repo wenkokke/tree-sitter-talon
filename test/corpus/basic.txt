@@ -6,8 +6,7 @@ Basic: no match context
 
 --------------------------------------------------------------------------------
 
-(source_file
-  (matches))
+(source_file)
 
 ================================================================================
 Basic: empty match context
@@ -93,7 +92,6 @@ air: "a"
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule
@@ -112,7 +110,6 @@ command palette: key(cmd-shift-p)
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches)
   (declarations
     (command_declaration
       (rule

@@ -22,9 +22,6 @@ namespace
 
   enum TokenType
   {
-    MATCHES_START,
-    MATCHES_END,
-    MATCHES_EMPTY,
     NEWLINE,
     INDENT,
     DEDENT,
@@ -250,35 +247,8 @@ namespace
 
     bool scan(TSLexer *lexer, const bool *valid_symbols)
     {
-      // Check for match context.
-      if (valid_symbols[MATCHES_START] && valid_symbols[MATCHES_EMPTY])
-      {
-        // Don't consume input.
-        lexer->mark_end(lexer);
-
-        // Search for MATCHES_END.
-        if (find_match_end(lexer, true))
-        { // If MATCHES_END was found, return MATCHES_START.
-          lexer->result_symbol = MATCHES_START;
-          return true;
-        }
-        else
-        { // Otherwise, return MATCHES_EMPTY.
-          lexer->result_symbol = MATCHES_EMPTY;
-          return true;
-        }
-      }
-      else if (valid_symbols[MATCHES_END])
-      {
-        if (find_match_end(lexer, false))
-        {
-          lexer->mark_end(lexer);
-          lexer->result_symbol = MATCHES_END;
-          return true;
-        }
-      }
       // Check for string content.
-      else if (valid_symbols[STRING_CONTENT] && !delimiter_stack.empty())
+      if (valid_symbols[STRING_CONTENT] && !delimiter_stack.empty())
       {
         Delimiter delimiter = delimiter_stack.back();
         int32_t end_character = delimiter.end_character();

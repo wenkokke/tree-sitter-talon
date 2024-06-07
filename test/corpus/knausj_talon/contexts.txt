@@ -266,8 +266,8 @@ mode: all
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
   (matches
-    (comment)
     (match
       (identifier)
       (implicit_string))
@@ -317,8 +317,8 @@ mode: all
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
   (matches
-    (comment)
     (match
       (identifier)
       (implicit_string))))
@@ -368,8 +368,8 @@ tag: user.draft_window_showing
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
   (matches
-    (comment)
     (match
       (identifier)
       (implicit_string))))
@@ -385,8 +385,8 @@ title:Talon Draft
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
   (matches
-    (comment)
     (match
       (identifier)
       (implicit_string))))
@@ -402,8 +402,8 @@ mode: command
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
   (matches
-    (comment)
     (match
       (identifier)
       (implicit_string))))
@@ -1251,34 +1251,34 @@ tag: user.wsl
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
+  (comment)
   (matches
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
-    (comment)
     (match
       (identifier)
       (implicit_string))))
@@ -1730,8 +1730,8 @@ app: eclipse
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
   (matches
-    (comment)
     (match
       (identifier)
       (implicit_string))))
@@ -1786,8 +1786,8 @@ browser.host: github.com
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
   (matches
-    (comment)
     (match
       (identifier)
       (implicit_string))
@@ -1832,10 +1832,10 @@ win.title: /Outlook/
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
+  (comment)
+  (comment)
   (matches
-    (comment)
-    (comment)
-    (comment)
     (match
       (identifier)
       (implicit_string))
@@ -1880,9 +1880,9 @@ browser.host: /gitlab\.com/
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
+  (comment)
   (matches
-    (comment)
-    (comment)
     (match
       (identifier)
       (implicit_string))
@@ -1918,8 +1918,8 @@ tag: user.i3wm
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
   (matches
-    (comment)
     (match
       (identifier)
       (implicit_string))
@@ -1941,10 +1941,10 @@ mode: user.windbg
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
+  (comment)
+  (comment)
   (matches
-    (comment)
-    (comment)
-    (comment)
     (match
       (identifier)
       (implicit_string))))
@@ -1975,8 +1975,8 @@ app: jetbrains
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
   (matches
-    (comment)
     (match
       (identifier)
       (implicit_string))))
@@ -2194,8 +2194,8 @@ app: vscode
 --------------------------------------------------------------------------------
 
 (source_file
+  (comment)
   (matches
-    (comment)
     (match
       (identifier)
       (implicit_string))))
@@ -2312,8 +2312,8 @@ app: thunderbird_calendar
 --------------------------------------------------------------------------------
 
 (source_file
-  (matches
-    (comment)))
+  (comment)
+  (matches))
 
 ================================================================================
 6. Context knausj_talon/apps/1password/1password.talon
