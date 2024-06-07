@@ -75,6 +75,7 @@ module.exports = grammar({
         $.command_declaration,
         $.app_declaration,
         $.face_declaration,
+        $.deck_declaration,
         $.gamepad_declaration,
         $.noise_declaration,
         $.parrot_declaration,
@@ -100,6 +101,13 @@ module.exports = grammar({
     face_declaration: ($) =>
       seq(
         field("left", $.face_binding),
+        ":",
+        field("right", $._statements),
+      ),
+
+    deck_declaration: ($) =>
+      seq(
+        field("left", $.deck_binding),
         ":",
         field("right", $._statements),
       ),
@@ -211,6 +219,13 @@ module.exports = grammar({
     face_binding: ($) =>
       seq(
         "face(",
+        field("arguments", $._implicit_string_argument),
+        ")"
+      ),
+
+    deck_binding: ($) =>
+      seq(
+        "deck(",
         field("arguments", $._implicit_string_argument),
         ")"
       ),
