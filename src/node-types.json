@@ -12,6 +12,10 @@
         "named": true
       },
       {
+        "type": "deck_declaration",
+        "named": true
+      },
+      {
         "type": "face_declaration",
         "named": true
       },
@@ -352,6 +356,48 @@
         "types": [
           {
             "type": "rule",
+            "named": true
+          }
+        ]
+      },
+      "right": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "block",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "deck_binding",
+    "named": true,
+    "fields": {
+      "arguments": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "implicit_string",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "deck_declaration",
+    "named": true,
+    "fields": {
+      "left": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "deck_binding",
             "named": true
           }
         ]
@@ -1239,6 +1285,10 @@
   {
     "type": "comment",
     "named": true
+  },
+  {
+    "type": "deck(",
+    "named": false
   },
   {
     "type": "end_anchor",
