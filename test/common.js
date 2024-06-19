@@ -41,29 +41,30 @@ const TEST_DATA_DIR = path.join(__dirname, 'data');
 
 function fetchTestDataDirectory(url) {
   const match = url.match(RE_GITHUB_URL);
-  if (match !== undefined) {
-    const { user, repo, hash } = match.groups;
-    if (!fs.existsSync(TEST_DATA_DIR)) {
-      fs.mkdirSync(TEST_DATA_DIR, { recursive: true });
-    }
-    const dir = path.join(TEST_DATA_DIR, user, repo);
-    let result;
-    if (!fs.existsSync(dir)) {
-      result = spawnSync('git', ['clone', `https://github.com/${user}/${repo}`, dir]);
-      if (result.status !== 0) {
-        throw Error(`Could not clone ${url}: ${JSON.stringify(result)}`);
-      }
-    }
-    result = spawnSync('git', ['fetch', '--quiet'], { cwd: dir });
-    if (result.status !== 0) {
-      throw Error(`Could not fetch ${url}: ${JSON.stringify(result)}`);
-    }
-    spawnSync('git', ['reset', '--hard', hash, '--quiet'], { cwd: dir });
-    if (result.status !== 0) {
-      throw Error(`Could not reset ${url}: ${JSON.stringify(result)}`);
-    }
-    return dir;
+  if (match == undefined) {
+    throw Error(`Invalid test data URL: ${url}`);
   }
+  const { user, repo, hash } = match.groups;
+  if (!fs.existsSync(TEST_DATA_DIR)) {
+    fs.mkdirSync(TEST_DATA_DIR, { recursive: true });
+  }
+  const dir = path.join(TEST_DATA_DIR, user, repo);
+  let result;
+  if (!fs.existsSync(dir)) {
+    result = spawnSync('git', ['clone', `https://github.com/${user}/${repo}`, dir]);
+    if (result.status !== 0) {
+      throw Error(`Could not clone ${url}: ${JSON.stringify(result)}`);
+    }
+  }
+  result = spawnSync('git', ['fetch', '--quiet'], { cwd: dir });
+  if (result.status !== 0) {
+    throw Error(`Could not fetch ${url}: ${JSON.stringify(result)}`);
+  }
+  spawnSync('git', ['reset', '--hard', hash, '--quiet'], { cwd: dir });
+  if (result.status !== 0) {
+    throw Error(`Could not reset ${url}: ${JSON.stringify(result)}`);
+  }
+  return dir;
 }
 
 function fetchTestDataFiles(dir) {
