@@ -18,7 +18,7 @@ Tested with:
 If you would like to include your Talon user directory as part of the tests, please submit a pull request adding the relevant information to [`script/parse-examples`](script/parse-examples#L32-L37) and this file.
 
 [tree-sitter]: https://github.com/tree-sitter/tree-sitter
-[talon-wiki]: https://talon.wiki/unofficial_talon_docs/#talon-files
+[talon-wiki]: https://talon.wiki/customization/talon-files/
 [talonhub/community]: https://github.com/talonhub/community
 [AndreasArvidsson/andreas-talon]: https://github.com/AndreasArvidsson/andreas-talon
 [phillco/talon-axkit]: https://github.com/phillco/talon-axkit
