@@ -24,7 +24,7 @@ jobs:
           actions-cache-folder: "emsdk-cache"
       - run: npm pack
       - run: mv tree-sitter-talon-*.tgz tree-sitter-talon.tgz
-      - uses: actions/upload-artifact@v5
+      - uses: actions/upload-artifact@v6
         with:
           name: tree-sitter-talon.tgz
           path: tree-sitter-talon.tgz
