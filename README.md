@@ -12,10 +12,10 @@ Tested with:
 
 - [talonhub/community]
 - [AndreasArvidsson/andreas-talon]
-- [phillco/talon-axkit]
 - [nriley/talon_community]
+- [phillco/talon-axkit]
 
-If you would like to include your Talon user directory as part of the tests, please submit a pull request adding the relevant information to [`script/parse-examples`](script/parse-examples#L32-L37) and this file.
+If you would like to include your Talon user directory as part of the tests, please submit a pull request adding the relevant information to [`package.json/tree-sitter-talon/tested-with`](package.json#73) and this file.
 
 [tree-sitter]: https://github.com/tree-sitter/tree-sitter
 [talon-wiki]: https://talon.wiki/customization/talon-files/

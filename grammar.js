@@ -276,6 +276,26 @@ module.exports = grammar({
       choice(
         $.assignment_statement,
         $.expression_statement,
+        $.if_statement,
+        $.for_statement,
+      ),
+
+    if_statement: ($) =>
+      seq(
+        "if",
+        field("condition", $.expression),
+        ":",
+        field("body", $.statement),
+      ),
+
+    for_statement: ($) =>
+      seq(
+        "for",
+        field("name", $.identifier),
+        "in",
+        field("value", $.expression),
+        ":",
+        field("body", $.statement),
       ),
 
     assignment_statement: ($) =>

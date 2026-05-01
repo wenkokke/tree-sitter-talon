@@ -71,10 +71,10 @@
   ],
   "tree-sitter-talon": {
     "tested-with": [
-      "github:AndreasArvidsson/andreas-talon#43811bae4c1a75f2ecd29240891f6612a1b7cec5",
-      "github:nriley/talon_community#1ff0e36f47689193be1d8909b9935f7c7004a045",
-      "github:phillco/talon-axkit#8eecc78b2de65b68123a6e1eae72a5a790a4e407",
-      "github:talonhub/community#93c9261c240078c46290ae1a500f2c9cfc749833"
+      "github:AndreasArvidsson/andreas-talon#33d1d2d2b0931e65d1ce3a7a654c667a77947ff7",
+      "github:nriley/talon_community#51bc9087a723af0c6b8587cccea14068280fafee",
+      "github:phillco/talon-axkit#9fc628255f6fc7870a02b107d6eab079531557e1",
+      "github:talonhub/community#4eadd8f457500a841d739fc4823c4157f357c36d"
     ]
   }
 }
