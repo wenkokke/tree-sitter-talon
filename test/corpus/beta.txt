@@ -1,0 +1,60 @@
+================================================================================
+BETA: if statement
+================================================================================
+
+command:
+    if true: print("true")
+    if false: print("false")
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (declarations
+    (command_declaration
+      left: (rule
+        (word))
+      right: (block
+        (if_statement
+          condition: (variable
+            variable_name: (identifier))
+          body: (expression_statement
+            expression: (action
+              action_name: (identifier)
+              arguments: (argument_list
+                (string
+                  (string_content))))))
+        (if_statement
+          condition: (variable
+            variable_name: (identifier))
+          body: (expression_statement
+            expression: (action
+              action_name: (identifier)
+              arguments: (argument_list
+                (string
+                  (string_content))))))))))
+
+================================================================================
+BETA: for loop
+================================================================================
+
+command:
+    for a in "test": print(a)
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (declarations
+    (command_declaration
+      left: (rule
+        (word))
+      right: (block
+        (for_statement
+          name: (identifier)
+          value: (string
+            (string_content))
+          body: (expression_statement
+            expression: (action
+              action_name: (identifier)
+              arguments: (argument_list
+                (variable
+                  variable_name: (identifier))))))))))

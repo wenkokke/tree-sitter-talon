@@ -42,3 +42,6 @@ dist/
 
 /test/data/
 *.log
+
+parser.exp
+parser.lib
