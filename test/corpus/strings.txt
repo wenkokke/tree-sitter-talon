@@ -1,0 +1,100 @@
+================================================================================
+Strings: triple double quotes across lines
+================================================================================
+
+foo:
+    """Hello
+    world"""
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (declarations
+    (command_declaration
+      (rule (word))
+      (block
+        (expression_statement
+          (string (string_content)))))))
+
+================================================================================
+Strings: empty triple-quoted strings
+================================================================================
+
+foo:
+    """"""
+    ''''''
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (declarations
+    (command_declaration
+      (rule (word))
+      (block
+        (expression_statement (string))
+        (expression_statement (string))))))
+
+
+================================================================================
+Strings: quotes inside triple-quoted strings
+================================================================================
+
+foo:
+    """Say "hello" and ""world""
+    again"""
+    '''Say 'hello' and ''world''
+    again'''
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (declarations
+    (command_declaration
+      (rule (word))
+      (block
+        (expression_statement (string (string_content)))
+        (expression_statement (string (string_content)))))))
+
+
+================================================================================
+Strings: escapes and statements after a multiline string
+================================================================================
+
+foo:
+    """Hello\n
+    world"""
+    key(enter)
+bar: "done"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (declarations
+    (command_declaration
+      (rule (word))
+      (block
+        (expression_statement (string (string_content) (string_escape_sequence) (string_content)))
+        (expression_statement (key_action (implicit_string)))))
+    (command_declaration
+      (rule (word))
+      (block
+        (expression_statement (string (string_content)))))))
+
+
+================================================================================
+Strings: triple single quotes across lines
+================================================================================
+
+foo:
+    '''Hello
+    world'''
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (declarations
+    (command_declaration
+      (rule (word))
+      (block
+        (expression_statement
+          (string (string_content)))))))

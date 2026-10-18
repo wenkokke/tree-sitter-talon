@@ -32,6 +32,7 @@ typedef struct
 
 #define SINGLE_QUOTE (1 << 0)
 #define DOUBLE_QUOTE (1 << 1)
+#define TRIPLE_QUOTE (1 << 2)
 
 typedef struct
 {
@@ -258,20 +259,36 @@ Scanner_scan (Scanner *scanner, TSLexer *lexer, const bool *valid_symbols)
             }
           else if (lexer->lookahead == end_character)
             {
+              lexer->mark_end (lexer);
+              advance (lexer);
+              if (delimiter.flags & TRIPLE_QUOTE)
+                {
+                  unsigned quote_count = 1;
+                  while (quote_count < 3 && lexer->lookahead == end_character)
+                    {
+                      advance (lexer);
+                      quote_count++;
+                    }
+                  if (quote_count < 3)
+                    {
+                      has_content = true;
+                      continue;
+                    }
+                }
               if (has_content)
                 {
                   lexer->result_symbol = STRING_CONTENT;
                 }
               else
                 {
-                  advance (lexer);
                   DelimiterStack_pop (&scanner->delimiter_stack);
                   lexer->result_symbol = STRING_END;
+                  lexer->mark_end (lexer);
                 }
-              lexer->mark_end (lexer);
               return true;
             }
-          else if (lexer->lookahead == '\n' && has_content)
+          else if (lexer->lookahead == '\n' && has_content
+                   && !(delimiter.flags & TRIPLE_QUOTE))
             {
               return false;
             }
@@ -386,6 +403,17 @@ Scanner_scan (Scanner *scanner, TSLexer *lexer, const bool *valid_symbols)
 
       if (Delimiter_end_character (&delimiter))
         {
+          int32_t end_character = Delimiter_end_character (&delimiter);
+          if (lexer->lookahead == end_character)
+            {
+              advance (lexer);
+              if (lexer->lookahead == end_character)
+                {
+                  advance (lexer);
+                  delimiter.flags |= TRIPLE_QUOTE;
+                  lexer->mark_end (lexer);
+                }
+            }
           DelimiterStack_push (&scanner->delimiter_stack, delimiter);
           lexer->result_symbol = STRING_START;
           return true;
