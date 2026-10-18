@@ -18,6 +18,8 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
       - uses: mymindstorm/setup-emsdk@v14
         with:
           version: 3.1.14
@@ -36,6 +38,8 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
       - uses: mymindstorm/setup-emsdk@v14
         with:
           version: 3.1.14
